@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-03-14T21:47:30.159Z",
+  "lastUpdated": "2026-03-14T21:58:51.158Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Sobota 14. 3.",
-      "scrapedAt": "2026-03-14T21:47:16.817Z",
+      "scrapedAt": "2026-03-14T21:58:39.738Z",
       "sections": [
         {
-          "title": "Sobota 14. 3.",
+          "title": "Hlavní jídla",
           "items": [
             {
               "name": "Boršč s vepřovým masem",
@@ -43,13 +43,13 @@
       ]
     },
     {
-      "name": "Reporyjská Sokolovna",
+      "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
-      "menuDate": "Polední menu-Pátek",
-      "scrapedAt": "2026-03-14T21:47:17.701Z",
+      "menuDate": "Pátek",
+      "scrapedAt": "2026-03-14T21:58:40.161Z",
       "sections": [
         {
-          "title": "POLEDNÍ MENU - POLÉVKA",
+          "title": "POLÉVKA",
           "items": [
             {
               "name": "Hovězí vývar s nudlemi a zeleninou -TÝDEN",
@@ -107,7 +107,7 @@
           ]
         },
         {
-          "title": "POLEDNÍ MENU -DEZERT",
+          "title": "DEZERT",
           "items": [
             {
               "name": "Brownies",
@@ -120,8 +120,8 @@
     {
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
-      "menuDate": "Polední menu 13.03.2026",
-      "scrapedAt": "2026-03-14T21:47:30.047Z",
+      "menuDate": "13.03.2026",
+      "scrapedAt": "2026-03-14T21:58:50.752Z",
       "sections": [
         {
           "title": "Polední menu",

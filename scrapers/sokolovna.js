@@ -18,7 +18,7 @@ async function scrapeSokolovna() {
 
   if (lunchSections.length === 0) {
     return {
-      name: 'Reporyjská Sokolovna',
+      name: 'Řeporyjská Sokolovna',
       source: 'https://reporyjskasokolovna.cz/',
       menuDate: 'Polední menu nenalezeno',
       scrapedAt: new Date().toISOString(),
@@ -62,13 +62,19 @@ async function scrapeSokolovna() {
     });
   }
 
-  const result = Object.entries(grouped).map(([title, items]) => ({ title, items }));
+  // Clean section titles: strip "POLEDNÍ MENU -" prefix, keep the rest
+  const result = Object.entries(grouped).map(([title, items]) => {
+    let clean = title.replace(/^POLEDNÍ MENU\s*-\s*/i, '').trim();
+    return { title: clean || title, items };
+  });
 
   // Section name contains the day info (e.g. "Polední menu-Pátek")
-  const menuDate = lunchSections[0].name || 'Polední menu';
+  const rawDate = lunchSections[0].name || '';
+  // Extract just the day part: "Polední menu-Pátek" → "Pátek"
+  const menuDate = rawDate.replace(/^polední\s+menu\s*-?\s*/i, '').trim() || rawDate;
 
   return {
-    name: 'Reporyjská Sokolovna',
+    name: 'Řeporyjská Sokolovna',
     source: 'https://reporyjskasokolovna.cz/',
     menuDate,
     scrapedAt: new Date().toISOString(),

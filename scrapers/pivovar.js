@@ -76,11 +76,14 @@ async function scrapePivovar() {
     const lines = rawLines.map(l => l.replace(/\s*\([0-9,\s]+\)\s*/g, '').trim()).filter(l => l.length > 0);
 
     // Try to extract date from header line (e.g. "Polední menu 14.03.2026")
-    let menuDate = 'Polední menu';
+    let menuDate = '';
+    let menuDateFullLine = '';
     for (const line of lines) {
       const dateMatch = line.match(/(\d{1,2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{2,4})/);
       if (dateMatch) {
-        menuDate = line.replace(/\s+/g, ' ');
+        menuDateFullLine = line.replace(/\s+/g, ' ');
+        // Extract just the date part, strip "Polední menu" prefix
+        menuDate = dateMatch[1] + '.' + dateMatch[2] + '.' + dateMatch[3];
         break;
       }
     }
@@ -97,7 +100,7 @@ async function scrapePivovar() {
     ];
 
     function shouldSkip(line) {
-      if (line === menuDate) return true;
+      if (line === menuDateFullLine || line === menuDate) return true;
       return skipPatterns.some(p => p.test(line));
     }
 

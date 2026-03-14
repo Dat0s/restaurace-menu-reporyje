@@ -8,7 +8,7 @@ async function main() {
 
   const scrapers = [
     { name: 'Kavárna na Náměstí', fn: scrapeKavarna },
-    { name: 'Reporyjská Sokolovna', fn: scrapeSokolovna },
+    { name: 'Řeporyjská Sokolovna', fn: scrapeSokolovna },
     { name: 'Pivovar Řeporyje', fn: scrapePivovar }
   ];
 

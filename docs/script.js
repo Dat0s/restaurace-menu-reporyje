@@ -29,7 +29,11 @@
 
     let sectionsHtml = '';
     for (const s of r.sections) {
-      sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
+      // Don't show "Polední menu" as section title - it's already in the page heading
+      const skipTitle = /^polední\s+menu$/i.test(s.title);
+      if (!skipTitle) {
+        sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
+      }
       for (const item of s.items) {
         sectionsHtml +=
           '<div class="menu-item">' +
@@ -43,10 +47,13 @@
       ? new Date(r.scrapedAt).toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' })
       : '';
 
+    // Don't show menuDate if it's just "Polední menu" or empty
+    const showDate = r.menuDate && !/^polední\s+menu$/i.test(r.menuDate);
+
     card.innerHTML =
       '<div class="card-header">' +
         '<h2>' + escapeHtml(r.name) + '</h2>' +
-        '<div class="card-date">' + escapeHtml(r.menuDate) + '</div>' +
+        (showDate ? '<div class="card-date">' + escapeHtml(r.menuDate) + '</div>' : '') +
       '</div>' +
       '<div class="card-body">' + sectionsHtml + '</div>' +
       '<div class="card-footer">' +
