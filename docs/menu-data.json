@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-14T21:26:08.095Z",
+  "lastUpdated": "2026-03-14T21:33:39.800Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Sobota 14. 3.",
-      "scrapedAt": "2026-03-14T21:25:57.433Z",
+      "scrapedAt": "2026-03-14T21:33:28.028Z",
       "sections": [
         {
           "title": "Sobota 14. 3.",
@@ -46,7 +46,7 @@
       "name": "Reporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Polední menu-Pátek",
-      "scrapedAt": "2026-03-14T21:25:58.492Z",
+      "scrapedAt": "2026-03-14T21:33:28.486Z",
       "sections": [
         {
           "title": "POLEDNÍ MENU - POLÉVKA",
@@ -120,17 +120,39 @@
     {
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
-      "menuDate": "Polední menu",
-      "scrapedAt": "2026-03-14T21:26:07.977Z",
-      "imageUrl": "https://res2.weblium.site/res/6685145de189dbc54c372591/69b3e2913284f2ff66f8b278_optimized.webp",
+      "menuDate": "Polední menu 13.03.2026",
+      "scrapedAt": "2026-03-14T21:33:39.316Z",
       "sections": [
         {
           "title": "Polední menu",
           "items": [
             {
-              "name": "__IMAGE__",
-              "price": "",
-              "imageUrl": "https://res2.weblium.site/res/6685145de189dbc54c372591/69b3e2913284f2ff66f8b278_optimized.webp"
+              "name": "Boršč/Bograč",
+              "price": "60 Kč"
+            },
+            {
+              "name": "Vepřový karbanátek zapečený se sýrem, krokety a česneková omáčka",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Smažený květák s vařenými bramborami a tatarskou omáčkou",
+              "price": "160 Kč"
+            },
+            {
+              "name": "Kuřecí steak s houbovou omáčkou a rýže",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Varenyky s bramborem, cibulkou a škvarky a zakysanou smetanou",
+              "price": "165 Kč"
+            },
+            {
+              "name": "Caesar salát s kuřecím masem",
+              "price": "155 Kč"
+            },
+            {
+              "name": "Palačinka s ovocem",
+              "price": "55 Kč"
             }
           ]
         }

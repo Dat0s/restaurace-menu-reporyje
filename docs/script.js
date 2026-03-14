@@ -31,18 +31,11 @@
     for (const s of r.sections) {
       sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
       for (const item of s.items) {
-        if (item.name === '__IMAGE__' && item.imageUrl) {
-          sectionsHtml +=
-            '<div class="menu-image">' +
-              '<img src="' + escapeHtml(item.imageUrl) + '" alt="Polední menu" loading="lazy">' +
-            '</div>';
-        } else {
-          sectionsHtml +=
-            '<div class="menu-item">' +
-              '<span class="name">' + escapeHtml(item.name) + '</span>' +
-              '<span class="price">' + escapeHtml(item.price || '') + '</span>' +
-            '</div>';
-        }
+        sectionsHtml +=
+          '<div class="menu-item">' +
+            '<span class="name">' + escapeHtml(item.name) + '</span>' +
+            '<span class="price">' + escapeHtml(item.price || '') + '</span>' +
+          '</div>';
       }
     }
 
