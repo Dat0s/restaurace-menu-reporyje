@@ -46,7 +46,9 @@ async function scrapeKavarna() {
       }
     });
 
-    if (items.length > 0) {
+    // Filter out non-food sections
+    const excluded = ['malá jídla', 'dezerty', 'káva', 'alkoholické nápoje', 'nealkoholické nápoje'];
+    if (items.length > 0 && !excluded.some(e => sectionName.toLowerCase().includes(e))) {
       sections.push({ title: sectionName, items });
     }
   });

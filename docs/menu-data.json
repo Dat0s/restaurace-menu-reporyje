@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-14T20:52:42.369Z",
+  "lastUpdated": "2026-03-14T21:24:23.132Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Sobota 14. 3.",
-      "scrapedAt": "2026-03-14T20:52:41.138Z",
+      "scrapedAt": "2026-03-14T21:24:12.080Z",
       "sections": [
         {
           "title": "Sobota 14. 3.",
@@ -39,171 +39,6 @@
               "price": "235 Kč"
             }
           ]
-        },
-        {
-          "title": "Malá jídla",
-          "items": [
-            {
-              "name": "Naložený hermelín se sušenými rajčaty a vlašskými ořechy, domácí chléb",
-              "price": "125 Kč"
-            },
-            {
-              "name": "Domácí utopenec s pečivem",
-              "price": "95 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DEZERTY",
-          "items": [
-            {
-              "name": "Lotuskový cheesecake",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Tiramisu",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Jablkovo-mandlový koláč s mascarpone",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Blondie",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Kynutá maková buchta",
-              "price": "65 Kč"
-            },
-            {
-              "name": "Cheesecake s lesním ovocem",
-              "price": "95 Kč"
-            }
-          ]
-        },
-        {
-          "title": "KÁVA",
-          "items": [
-            {
-              "name": "ESPRESSO",
-              "price": "59 Kč"
-            },
-            {
-              "name": "DOUBLE ESPRESSO",
-              "price": "75 Kč"
-            },
-            {
-              "name": "ESPRESSO MACCHIATO",
-              "price": "69 Kč"
-            },
-            {
-              "name": "ESPRESSO AMERICANO",
-              "price": "69 Kč"
-            },
-            {
-              "name": "DOUBLE ESPRESSO AMERICANO",
-              "price": "75 Kč"
-            },
-            {
-              "name": "CAPPUCCINO",
-              "price": "75 Kč"
-            },
-            {
-              "name": "DOUBLE CAPPUCCINO",
-              "price": "89 Kč"
-            },
-            {
-              "name": "FLAT WHITE",
-              "price": "89 Kč"
-            },
-            {
-              "name": "CAFE LATTÉ",
-              "price": "75 Kč"
-            },
-            {
-              "name": "Chai Latte",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Chai Latte s espressem",
-              "price": "110 Kč"
-            }
-          ]
-        },
-        {
-          "title": "ALKOHOLICKÉ NÁPOJE",
-          "items": [
-            {
-              "name": "KAVÁRENSKÝ POVALEČ 11,5° 0,3l/0,5l",
-              "price": "45/69 Kč"
-            },
-            {
-              "name": "Plzeňský prazdroj  0,3l/0,5l",
-              "price": "45/69 Kč"
-            },
-            {
-              "name": "PROSECCO Soligo DOC Treviso 1DCL/0,7l",
-              "price": "75/395 Kč"
-            },
-            {
-              "name": "BÍLÉ VÍNO 1DCL",
-              "price": "59 Kč"
-            },
-            {
-              "name": "Aperol Spritz",
-              "price": "155 Kč"
-            },
-            {
-              "name": "Gin Tonic",
-              "price": "145 Kč"
-            },
-            {
-              "name": "Grepový Gin Tonic",
-              "price": "155 Kč"
-            },
-            {
-              "name": "ČERVENÉ VÍNO 1DCL",
-              "price": "65 Kč"
-            }
-          ]
-        },
-        {
-          "title": "NEALKOHOLICKÉ NÁPOJE",
-          "items": [
-            {
-              "name": "TOČENÁ KOFOLA 0,3L/0.5L",
-              "price": "39/49 Kč"
-            },
-            {
-              "name": "MATTONI JEMNĚ PERLIVÁ 0,3L",
-              "price": "45 Kč"
-            },
-            {
-              "name": "Bernard Free 0,5l",
-              "price": "59 Kč"
-            },
-            {
-              "name": "Karaskova limonáda 0,33l",
-              "price": "55 Kč"
-            },
-            {
-              "name": "Domácí ledový čaj",
-              "price": "55 Kč"
-            },
-            {
-              "name": "Aquila neperlivá 0,3l",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Polabský jablečný mošt 0,3l",
-              "price": "59 Kč"
-            },
-            {
-              "name": "Domácí grepová limonáda 0,3l",
-              "price": "75 Kč"
-            }
-          ]
         }
       ]
     },
@@ -211,7 +46,7 @@
       "name": "Reporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Polední menu-Pátek",
-      "scrapedAt": "2026-03-14T20:52:41.787Z",
+      "scrapedAt": "2026-03-14T21:24:12.494Z",
       "sections": [
         {
           "title": "POLEDNÍ MENU - POLÉVKA",
@@ -284,128 +119,18 @@
     },
     {
       "name": "Pivovar Řeporyje",
-      "source": "https://pivovarfood.cz/menu",
-      "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-14T20:52:42.368Z",
+      "source": "https://pivovarfood.cz/#catering",
+      "menuDate": "Polední menu",
+      "scrapedAt": "2026-03-14T21:24:22.713Z",
+      "imageUrl": "https://res2.weblium.site/res/6685145de189dbc54c372591/69b3e2913284f2ff66f8b278_optimized.webp",
       "sections": [
         {
-          "title": "Menu",
+          "title": "Polední menu",
           "items": [
             {
-              "name": "Domácí slanina / Salo  150g",
-              "price": "119 Kč"
-            },
-            {
-              "name": "Domácí klobásy se slaninou  200g",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Ukrajinský boršč   300g",
-              "price": "109 Kč"
-            },
-            {
-              "name": "Domácí masový talíř  300g",
-              "price": "349 Kč"
-            },
-            {
-              "name": "Salát Olivier  300g",
-              "price": "219 Kč"
-            },
-            {
-              "name": "Maďarská gulášová polévka bograč   300g",
-              "price": "109 Kč"
-            },
-            {
-              "name": "Palačinky s masem (kuřecí) a houbovou omáčkou",
-              "price": "209 Kč"
-            },
-            {
-              "name": "Bramboráky se smetanou / houbová omáčka",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Pelmeně    200g",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Karpatský banoš se škvarky a brynzou  300g",
-              "price": "189 Kč"
-            },
-            {
-              "name": "Varenyky s bramborem, cibulkou a škvarky  200g",
-              "price": "189 Kč"
-            },
-            {
-              "name": "Holubtsi se zakysanou smetanou  300g",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Šašlik   200g",
-              "price": "279 Kč"
-            },
-            {
-              "name": "Kyjevský kotlet   200g",
-              "price": "289 Kč"
-            },
-            {
-              "name": "Pečené vepřové koleno na černém pivu, hořčíce, křen a pečivo    1ks",
-              "price": "352 Kč"
-            },
-            {
-              "name": "Hovězí pivovarský guláš, bramboráčky",
-              "price": "219 Kč"
-            },
-            {
-              "name": "Grilovaný losos na špenátovém lůžku",
-              "price": "369 Kč"
-            },
-            {
-              "name": "Pečená marinovaná vepřová žebra na pivu, pečivo  500g",
-              "price": "329 Kč"
-            },
-            {
-              "name": "Hovězí steak",
-              "price": "463 Kč"
-            },
-            {
-              "name": "10° SVĚTLÉ VÝČEPNÍ– VILDA (spodně kvašené)        0,3l/0,5l",
-              "price": "36 Kč / 48 Kč"
-            },
-            {
-              "name": "12° SVĚTLÝ LEŽÁK– PREFUNDA (spodně kvašené)    0,3l/0,5l",
-              "price": "45 Kč / 55 Kč"
-            },
-            {
-              "name": "12° POLOTMAVÝ LEŽÁK (spodně kvašené)                  0,3l/0,5l",
-              "price": "45 Kč / 55 Kč"
-            },
-            {
-              "name": "14° TMAVÝ SPECIÁL (spodně kvašené)                         0,3l/0,5l",
-              "price": "48 Kč / 62 Kč"
-            },
-            {
-              "name": "12° EJLÍK (svrchně kvašené)                                            0,3l/0,5l",
-              "price": "48 Kč / 62 Kč"
-            },
-            {
-              "name": "Všechna piva na čepu 6x0,2",
-              "price": "140 Kč"
-            },
-            {
-              "name": "Palačinky s tvarohem  2ks",
-              "price": "129 Kč"
-            },
-            {
-              "name": "Syrniky s kondenzovaným mlékem  3ks",
-              "price": "139 Kč"
-            },
-            {
-              "name": "Varenyky s višněmi a zakysanou smetanou 200g",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Medovník se šlehačkou",
-              "price": "1 Kč"
+              "name": "__IMAGE__",
+              "price": "",
+              "imageUrl": "https://res2.weblium.site/res/6685145de189dbc54c372591/69b3e2913284f2ff66f8b278_optimized.webp"
             }
           ]
         }

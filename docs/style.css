@@ -114,3 +114,6 @@ footer {
 }
 
 footer a { color: #888; }
+
+.menu-image { margin: 8px 0; }
+.menu-image img { width: 100%; border-radius: 6px; }
