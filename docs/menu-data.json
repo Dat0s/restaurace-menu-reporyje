@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-15T07:32:24.316Z",
+  "lastUpdated": "2026-03-15T08:04:03.653Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
-      "menuDate": "Sobota 14. 3.",
-      "scrapedAt": "2026-03-15T07:32:08.325Z",
+      "menuDate": "Neděle 15. 3.",
+      "scrapedAt": "2026-03-15T08:03:50.827Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -15,15 +15,11 @@
               "price": "95 Kč"
             },
             {
-              "name": "Kulajda s pošírovaným vejcem",
-              "price": "85 Kč"
-            },
-            {
               "name": "Hovězí svíčková  s karlovarským knedlíkem a brusinkami",
               "price": "325 Kč"
             },
             {
-              "name": "Segedínský guláš s houskovým knedlíkem, zakysanou smetanou a smaženým zelím",
+              "name": "Domácí linguine s bazalkou a mozzarellou",
               "price": "255 Kč"
             },
             {
@@ -35,8 +31,8 @@
               "price": "255 Kč"
             },
             {
-              "name": "Sekaná s bramborovou kaší a majoránkovou omáčkou",
-              "price": "235 Kč"
+              "name": "Cuketový karbanátek s květákem a domácím kimchi",
+              "price": "265 Kč"
             }
           ]
         }
@@ -46,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pátek",
-      "scrapedAt": "2026-03-15T07:32:09.144Z",
+      "scrapedAt": "2026-03-15T08:03:51.736Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -121,7 +117,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "13.03.2026",
-      "scrapedAt": "2026-03-15T07:32:24.201Z",
+      "scrapedAt": "2026-03-15T08:04:03.547Z",
       "sections": [
         {
           "title": "Polední menu",
