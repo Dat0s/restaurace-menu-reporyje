@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-15T20:51:36.532Z",
+  "lastUpdated": "2026-03-15T21:20:28.962Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Neděle 15. 3.",
-      "scrapedAt": "2026-03-15T20:51:25.196Z",
+      "scrapedAt": "2026-03-15T21:20:14.648Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pátek",
-      "scrapedAt": "2026-03-15T20:51:26.351Z",
+      "scrapedAt": "2026-03-15T21:20:15.457Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -116,39 +116,119 @@
     {
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
-      "menuDate": "13.03.2026",
-      "scrapedAt": "2026-03-15T20:51:36.422Z",
+      "menuDate": "",
+      "scrapedAt": "2026-03-15T21:20:28.844Z",
       "sections": [
         {
           "title": "Polední menu",
           "items": [
             {
-              "name": "Boršč/Bograč",
+              "name": "Polévka v ceně menu. Polévka samostatné",
               "price": "60 Kč"
             },
             {
-              "name": "Vepřový karbanátek zapečený se sýrem, krokety a česneková omáčka",
-              "price": "170 Kč"
+              "name": "1. Smažený květák, vařené brambory, tatarská omáčka",
+              "price": "199 Kč"
             },
             {
-              "name": "Smažený květák s vařenými bramborami a tatarskou omáčkou",
-              "price": "160 Kč"
+              "name": "2. Vepřová žebra, salát coleslaw, chléb",
+              "price": "199 Kč"
             },
             {
-              "name": "Kuřecí steak s houbovou omáčkou a rýže",
-              "price": "170 Kč"
+              "name": "3. Gnocchi Carbonara",
+              "price": "199 Kč"
             },
             {
-              "name": "Varenyky s bramborem, cibulkou a škvarky a zakysanou smetanou",
-              "price": "165 Kč"
+              "name": "4. Kuřecí steak zapečeny se sýrem na fazolovém lůžku",
+              "price": "199 Kč"
             },
             {
-              "name": "Caesar salát s kuřecím masem",
-              "price": "155 Kč"
+              "name": "5. Mix salátů se sýrem a šunkou, jogurtový dresink",
+              "price": "199 Kč"
             },
             {
-              "name": "Palačinka s ovocem",
-              "price": "55 Kč"
+              "name": "1. Kuřecí kapsa plněná sušenými rajčaty a mozzarellou, hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Čevabčiči s vařenými brambory a cibule -199 Kč",
+              "price": ""
+            },
+            {
+              "name": "3. Zelné závitky s rajčatovo-smetanovou omáčkou (HOLUBTSI)",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Špagety Carbonara",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Míchaný salát s nakládaným hermelínem",
+              "price": "199 Kč"
+            },
+            {
+              "name": "1. Vepřový steak na pečené paprice, sweet chilli, smetanové brambory",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Pečeny kuřecí steak ze stehna, bramborová kaše",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Špagety s lososem a špenátem na smetaně",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Vareniky s bramborem (cibule, slanina, smetana)",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů se ztraceným vejcem, hořčičnou-medový dresink",
+              "price": "199 Kč"
+            },
+            {
+              "name": "1. Krůtí steak s hermelínem a brusinkami, americké brambory",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Tortilla s trhaným masem, hranolky, česnekový dresink",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Penne s parmskou šunkou a hráškem na smetaně",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Vepřový steak se sazením vejcem, krokety",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů s kuřecími střípky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "1. Kyjevská kotleta s pohankovou kaši na másle",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Směs z vepřové panenky a brokolice na smetaně, rýže",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Gnocchi Picante",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Pelmene kuřecí, smetana",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů s červenou řepou, fetou a vlašskými ořechy, citrónovou-hořčičný",
+              "price": ""
+            },
+            {
+              "name": "dresink",
+              "price": "199 Kč"
             }
           ]
         }
