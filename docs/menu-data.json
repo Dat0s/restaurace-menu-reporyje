@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-16T12:36:00.729Z",
+  "lastUpdated": "2026-03-16T14:05:01.450Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Pondělí 16. 3.",
-      "scrapedAt": "2026-03-16T12:35:46.382Z",
+      "scrapedAt": "2026-03-16T14:04:46.122Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pondělí",
-      "scrapedAt": "2026-03-16T12:35:47.151Z",
+      "scrapedAt": "2026-03-16T14:04:46.947Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -58,19 +58,20 @@
           ]
         },
         {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
+            }
+          ]
+        },
+        {
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Cikánská hovězí pečeně s houskovým knedlíkem",
-              "price": "169 Kč"
-            },
-            {
               "name": "Penne all’ arrabbiata s kuřecím masem, parmazán",
               "price": "159 Kč"
-            },
-            {
-              "name": "PO-Min  SL Vepřová krkovice s opečenou slaninou a sázené vejce, hranolky",
-              "price": "169 Kč"
             },
             {
               "name": "EXELENT HOT BURGER",
@@ -105,15 +106,6 @@
               "price": "179 Kč"
             }
           ]
-        },
-        {
-          "title": "DEZERT",
-          "items": [
-            {
-              "name": "Brownies",
-              "price": "59 Kč"
-            }
-          ]
         }
       ]
     },
@@ -121,7 +113,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-16T12:36:00.609Z",
+      "scrapedAt": "2026-03-16T14:05:01.317Z",
       "sections": [
         {
           "title": "Polední menu",
