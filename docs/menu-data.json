@@ -1,33 +1,33 @@
 {
-  "lastUpdated": "2026-03-16T08:45:55.594Z",
+  "lastUpdated": "2026-03-16T09:56:34.045Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
-      "menuDate": "Neděle 15. 3.",
-      "scrapedAt": "2026-03-16T08:45:41.888Z",
+      "menuDate": "Pondělí 16. 3.",
+      "scrapedAt": "2026-03-16T09:56:18.441Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Boršč s vepřovým masem",
-              "price": "95 Kč"
+              "name": "Fazolová polévka",
+              "price": "75 Kč"
             },
             {
-              "name": "Hovězí svíčková  s karlovarským knedlíkem a brusinkami",
-              "price": "325 Kč"
+              "name": "Hovězí guláš s těstovinami a červenou cibulkou",
+              "price": "265 Kč"
             },
             {
-              "name": "Domácí linguine s bazalkou a mozzarellou",
-              "price": "255 Kč"
+              "name": "Francouzské brambory s šunkovým kolínkem a pošírovaným vajíčkem",
+              "price": "245 Kč"
             },
             {
               "name": "Hovězí burger s tzatziki, slaninou a cheddarem, hranolky",
               "price": "345 Kč"
             },
             {
-              "name": "Langoš s trhanou uzenou krkovicí a švestkovou omáčkou",
+              "name": "Domácí linguine s bazalkou a mozzarellou",
               "price": "255 Kč"
             },
             {
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pondělí",
-      "scrapedAt": "2026-03-16T08:45:42.721Z",
+      "scrapedAt": "2026-03-16T09:56:19.281Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -125,7 +125,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-16T08:45:55.470Z",
+      "scrapedAt": "2026-03-16T09:56:33.931Z",
       "sections": [
         {
           "title": "Polední menu",
