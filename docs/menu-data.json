@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-16T10:49:30.228Z",
+  "lastUpdated": "2026-03-16T11:40:43.324Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Pondělí 16. 3.",
-      "scrapedAt": "2026-03-16T10:49:18.273Z",
+      "scrapedAt": "2026-03-16T11:40:29.541Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pondělí",
-      "scrapedAt": "2026-03-16T10:49:19.203Z",
+      "scrapedAt": "2026-03-16T11:40:30.422Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -70,10 +70,6 @@
             },
             {
               "name": "PO-Min  SL Vepřová krkovice s opečenou slaninou a sázené vejce, hranolky",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažená sýrová jehla s vařeným bramborem, tatarská omáčka",
               "price": "169 Kč"
             },
             {
@@ -125,7 +121,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-16T10:49:30.125Z",
+      "scrapedAt": "2026-03-16T11:40:43.200Z",
       "sections": [
         {
           "title": "Polední menu",
