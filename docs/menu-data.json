@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-16T19:40:04.950Z",
+  "lastUpdated": "2026-03-16T20:05:10.574Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Pondělí 16. 3.",
-      "scrapedAt": "2026-03-16T19:39:51.903Z",
+      "scrapedAt": "2026-03-16T20:04:57.581Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Pondělí",
-      "scrapedAt": "2026-03-16T19:39:52.866Z",
+      "scrapedAt": "2026-03-16T20:04:58.416Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -113,7 +113,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-16T19:40:04.841Z",
+      "scrapedAt": "2026-03-16T20:05:10.483Z",
       "sections": [
         {
           "title": "Polední menu",
