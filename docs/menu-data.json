@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-17T08:29:02.555Z",
+  "lastUpdated": "2026-03-17T09:28:53.270Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
-      "menuDate": "Pondělí 16. 3.",
-      "scrapedAt": "2026-03-17T08:28:50.475Z",
+      "menuDate": "Úterý 17. 3.",
+      "scrapedAt": "2026-03-17T09:28:37.593Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -23,15 +23,15 @@
               "price": "245 Kč"
             },
             {
-              "name": "Hovězí burger s tzatziki, slaninou a cheddarem, hranolky",
-              "price": "345 Kč"
-            },
-            {
-              "name": "Domácí linguine s bazalkou a mozzarellou",
+              "name": "Quesadilla s kuřecím masem, cheddarem, jalapeňos a chipotle majonezou, míchaný salát",
               "price": "255 Kč"
             },
             {
-              "name": "Cuketový karbanátek s květákem a domácím kimchi",
+              "name": "Hlíva v pivním těstíčku s paprikovou tarhoňou",
+              "price": "255 Kč"
+            },
+            {
+              "name": "Cuketový karbanátek s květákem a domácím kimchi, bramborová kaše",
               "price": "265 Kč"
             }
           ]
@@ -41,28 +41,19 @@
     {
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
-      "menuDate": "Pondělí",
-      "scrapedAt": "2026-03-17T08:28:51.333Z",
+      "menuDate": "Úterý",
+      "scrapedAt": "2026-03-17T09:28:38.567Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou -TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "Pórková polévka s vejci",
+              "name": "Frankfurtská polévka s uzeninou",
               "price": "39 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DEZERT",
-          "items": [
-            {
-              "name": "Brownies",
-              "price": "59 Kč"
             }
           ]
         },
@@ -70,8 +61,20 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Penne all’ arrabbiata s kuřecím masem, parmazán",
+              "name": "Vepřová játra na grilu, opečený brambor, tatarská omáčka",
               "price": "159 Kč"
+            },
+            {
+              "name": "Zbojnická krkovice s houskovým knedlíkem",
+              "price": "159 Kč"
+            },
+            {
+              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
+              "price": "169 Kč"
             },
             {
               "name": "EXELENT HOT BURGER",
@@ -113,7 +116,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T08:29:02.448Z",
+      "scrapedAt": "2026-03-17T09:28:53.155Z",
       "sections": [
         {
           "title": "Polední menu",
