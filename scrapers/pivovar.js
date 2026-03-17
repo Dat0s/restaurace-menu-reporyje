@@ -104,8 +104,20 @@ async function scrapePivovar() {
       return skipPatterns.some(p => p.test(line));
     }
 
-    // Extract items with prices
-    const items = [];
+    // Day names to detect as section headers
+    const dayNames = ['pondělí', 'úterý', 'středa', 'čtvrtek', 'čtvertek', 'pátek'];
+    const dayDisplayNames = {
+      'pondělí': 'Pondělí', 'úterý': 'Úterý', 'středa': 'Středa',
+      'čtvrtek': 'Čtvrtek', 'čtvertek': 'Čtvrtek', 'pátek': 'Pátek'
+    };
+
+    // Extract items grouped by day
+    const sections = [];
+    let currentDay = 'Polední menu';
+    let currentItems = [];
+
+    // First collect any "header" items before the first day (e.g. "Polévka v ceně menu...")
+    let headerItems = [];
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
@@ -114,47 +126,66 @@ async function scrapePivovar() {
       // Skip "Dezerty:" header but keep dessert items
       if (/^dezert[yí]?\s*:?\s*$/i.test(line)) continue;
 
-      // Match: "Item name 60Kč" or "Item name 155 Kč" (price at end, with or without space)
+      // Check if line is a day name
+      const lineLower = line.toLowerCase().trim();
+      if (dayNames.includes(lineLower)) {
+        // Save previous section
+        if (currentItems.length > 0) {
+          sections.push({ title: currentDay, items: currentItems });
+        }
+        currentDay = dayDisplayNames[lineLower] || line;
+        currentItems = [];
+        continue;
+      }
+
+      // Match: "Item name — 60 Kč" or "Item name 155 Kč" (price at end)
       const priceInLine = line.match(/^(.+?)\s+(\d+)\s*[Kk][čc]\s*$/);
       if (priceInLine) {
         const name = priceInLine[1].replace(/[.\-–—,]+$/, '').trim();
         if (name.length > 2) {
-          items.push({ name, price: priceInLine[2] + ' Kč' });
+          currentItems.push({ name, price: priceInLine[2] + ' Kč' });
         }
         continue;
       }
 
       // Standalone price line like "170Kč" or "170 Kč" - attach to previous item
       const standalonePrice = line.match(/^(\d+)\s*[Kk][čc]\s*$/);
-      if (standalonePrice && items.length > 0 && !items[items.length - 1].price) {
-        items[items.length - 1].price = standalonePrice[1] + ' Kč';
+      if (standalonePrice && currentItems.length > 0 && !currentItems[currentItems.length - 1].price) {
+        currentItems[currentItems.length - 1].price = standalonePrice[1] + ' Kč';
         continue;
       }
 
-      // Check if next line is a standalone price - then this line is the item name
+      // Check if next line is a standalone price
       const nextLine = i + 1 < lines.length ? lines[i + 1] : '';
       const nextIsPrice = /^\d+\s*[Kk][čc]\s*$/.test(nextLine);
 
       if (nextIsPrice && line.length > 3) {
-        items.push({ name: line.replace(/[.\-–—,]+$/, '').trim(), price: '' });
+        currentItems.push({ name: line.replace(/[.\-–—,]+$/, '').trim(), price: '' });
         continue;
       }
 
-      // Regular food item line (longer text, likely a dish name)
+      // Regular food item line
       if (line.length > 5 && /[a-záčďéěíňóřšťúůýž]/i.test(line)) {
-        items.push({ name: line.replace(/[.\-–—,]+$/, '').trim(), price: '' });
+        currentItems.push({ name: line.replace(/[.\-–—,]+$/, '').trim(), price: '' });
       }
     }
 
-    // Remove items with no price and very short names (likely OCR noise)
-    const cleanItems = items.filter(it => it.price || it.name.length > 10);
-
-    // If OCR produced no usable items, return fallback
-    if (cleanItems.length === 0) {
-      return fallbackResult();
+    // Push last section
+    if (currentItems.length > 0) {
+      sections.push({ title: currentDay, items: currentItems });
     }
 
-    const sections = [{ title: 'Polední menu', items: cleanItems }];
+    // Clean: remove items with no price and very short names (likely OCR noise)
+    for (const s of sections) {
+      s.items = s.items.filter(it => it.price || it.name.length > 10);
+    }
+    // Remove empty sections
+    const cleanSections = sections.filter(s => s.items.length > 0);
+
+    // If OCR produced no usable items, return fallback
+    if (cleanSections.length === 0) {
+      return fallbackResult();
+    }
 
     return {
       name: 'Pivovar Řeporyje',
@@ -162,7 +193,7 @@ async function scrapePivovar() {
       phone: '+420 274 772 837',
       menuDate,
       scrapedAt: new Date().toISOString(),
-      sections
+      sections: cleanSections
     };
 
   } finally {
