@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T20:37:59.677Z",
+  "lastUpdated": "2026-03-17T20:56:35.662Z",
   "restaurants": [
     {
       "name": "HQ Pippi Grill",
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T20:37:50.686Z",
+      "scrapedAt": "2026-03-17T20:56:24.493Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -79,7 +79,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "17.03.2026",
-      "scrapedAt": "2026-03-17T20:37:50.806Z",
+      "scrapedAt": "2026-03-17T20:56:25.495Z",
       "sections": [
         {
           "title": "Polévky",
@@ -202,7 +202,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T20:37:38.601Z",
+      "scrapedAt": "2026-03-17T20:56:10.247Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -240,7 +240,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T20:37:50.319Z",
+      "scrapedAt": "2026-03-17T20:56:24.386Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -386,90 +386,14 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "16.3. - 20.3.",
-      "scrapedAt": "2026-03-17T20:37:59.358Z",
+      "menuDate": "",
+      "scrapedAt": "2026-03-17T20:56:35.564Z",
       "sections": [
         {
-          "title": "Pondělí",
+          "title": "Polední menu",
           "items": [
             {
-              "name": "dršťková polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "buřtguláš",
-              "price": "139 Kč"
-            },
-            {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Úterý",
-          "items": [
-            {
-              "name": "gulášová polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "katův šleh, rýže",
-              "price": "139 Kč"
-            },
-            {
-              "name": "uzené maso (krk, bok, koleno), pečené koleno",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Středa",
-          "items": [
-            {
-              "name": "zabijačková polévka (prdelačka)",
-              "price": "39 Kč"
-            },
-            {
-              "name": "čevapčiči, brambor, obloha",
-              "price": "139 Kč"
-            },
-            {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Čtvrtek",
-          "items": [
-            {
-              "name": "franfurtská polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "moravský vrabec, zelí,h.knedlík",
-              "price": "149 Kč"
-            },
-            {
-              "name": "uzené maso (krk,bok, koleno), pečené koleno",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Pátek",
-          "items": [
-            {
-              "name": "hovězí polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "ovocné knedlíky",
-              "price": "139 Kč"
-            },
-            {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
+              "name": "Menu nebylo nalezeno. Podívejte se na Instagram @svoboda_reznictvi",
               "price": ""
             }
           ]
@@ -481,7 +405,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T20:37:39.085Z",
+      "scrapedAt": "2026-03-17T20:56:11.682Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -748,7 +672,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T20:37:59.668Z",
+      "scrapedAt": "2026-03-17T20:56:35.655Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -949,7 +873,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T20:37:50.685Z",
+      "scrapedAt": "2026-03-17T20:56:24.493Z",
       "sections": [
         {
           "title": "Nejprodávanější",
