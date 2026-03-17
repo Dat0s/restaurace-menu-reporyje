@@ -68,6 +68,13 @@ async function scrapeDoner() {
         ]
       },
       {
+        title: 'HRANOLKY',
+        items: [
+          { name: 'Malé hranolky', price: '60 Kč' },
+          { name: 'Velké hranolky', price: '75 Kč' }
+        ]
+      },
+      {
         title: 'SALÁTY',
         items: [
           { name: 'Selský salát', price: '90 Kč' },
