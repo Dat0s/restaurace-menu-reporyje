@@ -1,6 +1,7 @@
 const { scrapeKavarna } = require('./kavarna');
 const { scrapeSokolovna } = require('./sokolovna');
 const { scrapePivovar } = require('./pivovar');
+const { scrapePapaCipolla } = require('./papacipolla');
 const { readData, writeData, upsertRestaurant } = require('./utils');
 
 async function main() {
@@ -9,7 +10,8 @@ async function main() {
   const scrapers = [
     { name: 'Kavárna na Náměstí', fn: scrapeKavarna },
     { name: 'Řeporyjská Sokolovna', fn: scrapeSokolovna },
-    { name: 'Pivovar Řeporyje', fn: scrapePivovar }
+    { name: 'Pivovar Řeporyje', fn: scrapePivovar },
+    { name: 'Papa Cipolla', fn: scrapePapaCipolla }
   ];
 
   for (const { name, fn } of scrapers) {
