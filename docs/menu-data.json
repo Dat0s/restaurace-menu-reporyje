@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T11:54:12.716Z",
+  "lastUpdated": "2026-03-17T12:48:53.060Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T11:53:59.672Z",
+      "scrapedAt": "2026-03-17T12:48:41.374Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -44,7 +44,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T11:54:12.614Z",
+      "scrapedAt": "2026-03-17T12:48:52.946Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -166,7 +166,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T11:54:00.933Z",
+      "scrapedAt": "2026-03-17T12:48:42.222Z",
       "sections": [
         {
           "title": "POLÉVKA",
