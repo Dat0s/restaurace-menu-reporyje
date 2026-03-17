@@ -84,8 +84,10 @@ async function scrapeSokolovna() {
       'SALÁTY',
       'MOUČNÍK'
     ];
-    result.push({ title: 'CELODENNÍ BURGER MENU', items: [] });
-    for (const cat of wantedBurger) {
+    // Merge BURGER items into the CELODENNÍ BURGER MENU header section
+    const burgerItems = burgerGrouped['BURGER'] || [];
+    result.push({ title: 'CELODENNÍ BURGER MENU', items: burgerItems });
+    for (const cat of wantedBurger.slice(1)) {
       const items = burgerGrouped[cat] || [];
       if (items.length > 0) {
         result.push({ title: cat, items });
