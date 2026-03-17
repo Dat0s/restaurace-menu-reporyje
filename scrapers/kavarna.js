@@ -58,6 +58,7 @@ async function scrapeKavarna() {
   return {
     name: 'Kavárna na Náměstí',
     source: 'https://kavarnananamesti.cz/#Menu',
+    phone: '+420 739 563 091',
     menuDate,
     scrapedAt: new Date().toISOString(),
     sections

@@ -159,6 +159,7 @@ async function scrapePivovar() {
     return {
       name: 'Pivovar Řeporyje',
       source: 'https://pivovarfood.cz/#catering',
+      phone: '+420 274 772 837',
       menuDate,
       scrapedAt: new Date().toISOString(),
       sections
@@ -173,6 +174,7 @@ function fallbackResult() {
   return {
     name: 'Pivovar Řeporyje',
     source: 'https://pivovarfood.cz/#catering',
+    phone: '+420 274 772 837',
     menuDate: 'Polední menu',
     scrapedAt: new Date().toISOString(),
     sections: [{

@@ -24,6 +24,7 @@ async function main() {
     }
   }
 
+  data.restaurants.sort((a, b) => a.name.localeCompare(b.name, 'cs'));
   writeData(data);
   console.log('Data saved to menu-data.json');
 }

@@ -76,6 +76,7 @@ async function scrapeSokolovna() {
   return {
     name: 'Řeporyjská Sokolovna',
     source: 'https://reporyjskasokolovna.cz/',
+    phone: '+420 731 484 493',
     menuDate,
     scrapedAt: new Date().toISOString(),
     sections: result

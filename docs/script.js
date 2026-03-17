@@ -1,5 +1,5 @@
 (async function () {
-  const res = await fetch('menu-data.json');
+  const res = await fetch('menu-data.json?t=' + Date.now(), { cache: 'no-store' });
   if (!res.ok) {
     document.getElementById('restaurants').innerHTML = '<p>Nepodařilo se načíst data.</p>';
     return;
@@ -50,6 +50,11 @@
     // Don't show menuDate if it's just "Polední menu" or empty
     const showDate = r.menuDate && !/^polední\s+menu$/i.test(r.menuDate);
 
+    // Phone link
+    const phoneHtml = r.phone
+      ? '<a href="tel:' + escapeHtml(r.phone) + '">' + escapeHtml(r.phone) + '</a>'
+      : '';
+
     card.innerHTML =
       '<div class="card-header">' +
         '<h2>' + escapeHtml(r.name) + '</h2>' +
@@ -58,11 +63,15 @@
       '<div class="card-body">' + sectionsHtml + '</div>' +
       '<div class="card-footer">' +
         '<a href="' + escapeHtml(r.source) + '" target="_blank" rel="noopener">Zdroj</a>' +
+        (phoneHtml ? '<span>' + phoneHtml + '</span>' : '') +
         '<span>Staženo ' + escapeHtml(scrapedTime) + '</span>' +
       '</div>';
 
     main.appendChild(card);
   }
+
+  // Auto-refresh every 12 hours
+  setTimeout(function () { location.reload(); }, 12 * 60 * 60 * 1000);
 
   function escapeHtml(text) {
     const div = document.createElement('div');
