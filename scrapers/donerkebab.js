@@ -2,7 +2,7 @@ async function scrapeDoner() {
   return {
     name: 'DÖNER KEBAB HOUSE',
     source: 'https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/',
-    phone: '',
+    phone: '+420 731 585 442',
     menuDate: 'Stálé menu',
     scrapedAt: new Date().toISOString(),
     sections: [
