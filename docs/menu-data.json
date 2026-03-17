@@ -1,11 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T11:09:34.330Z",
+  "lastUpdated": "2026-03-17T11:54:12.716Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
+      "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T11:09:19.406Z",
+      "scrapedAt": "2026-03-17T11:53:59.672Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -39,80 +40,11 @@
       ]
     },
     {
-      "name": "Řeporyjská Sokolovna",
-      "source": "https://reporyjskasokolovna.cz/",
-      "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T11:09:20.587Z",
-      "sections": [
-        {
-          "title": "POLÉVKA",
-          "items": [
-            {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Frankfurtská polévka s uzeninou",
-              "price": "39 Kč"
-            }
-          ]
-        },
-        {
-          "title": "POLEDNÍ MENU",
-          "items": [
-            {
-              "name": "Zbojnická krkovice s houskovým knedlíkem",
-              "price": "159 Kč"
-            },
-            {
-              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
-              "price": "169 Kč"
-            },
-            {
-              "name": "EXELENT HOT BURGER",
-              "price": "199 Kč"
-            },
-            {
-              "name": "LUCKY BBQ burger",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený kuřecí popkorn s hranolkami,tatarka",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
-              "price": "179 Kč"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
+      "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T11:09:34.205Z",
+      "scrapedAt": "2026-03-17T11:54:12.614Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -224,6 +156,77 @@
             {
               "name": "dresink",
               "price": "199 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Řeporyjská Sokolovna",
+      "source": "https://reporyjskasokolovna.cz/",
+      "phone": "+420 731 484 493",
+      "menuDate": "Úterý",
+      "scrapedAt": "2026-03-17T11:54:00.933Z",
+      "sections": [
+        {
+          "title": "POLÉVKA",
+          "items": [
+            {
+              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Frankfurtská polévka s uzeninou",
+              "price": "39 Kč"
+            }
+          ]
+        },
+        {
+          "title": "POLEDNÍ MENU",
+          "items": [
+            {
+              "name": "Zbojnická krkovice s houskovým knedlíkem",
+              "price": "159 Kč"
+            },
+            {
+              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "EXELENT HOT BURGER",
+              "price": "199 Kč"
+            },
+            {
+              "name": "LUCKY BBQ burger",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený kuřecí popkorn s hranolkami,tatarka",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
+              "price": "179 Kč"
             }
           ]
         }
