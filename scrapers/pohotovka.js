@@ -20,11 +20,13 @@ async function scrapePohotovka() {
     const weight = (item.vaha || '').trim();
     const price = item.cena;
 
-    grouped[cat].push({
+    const entry = {
       name: name + (weight ? ' (' + weight + ')' : ''),
       price: price + ' Kč',
       order: item.poradi || 99
-    });
+    };
+    if (item.vyprodano) entry.soldOut = true;
+    grouped[cat].push(entry);
   }
 
   // Sort items within each category by order

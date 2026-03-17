@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T14:15:22.971Z",
+  "lastUpdated": "2026-03-17T14:54:19.398Z",
   "restaurants": [
     {
       "name": "HQ Pippi Grill",
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T14:15:22.100Z",
+      "scrapedAt": "2026-03-17T14:54:19.286Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -79,7 +79,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "17.03.2026",
-      "scrapedAt": "2026-03-17T14:15:22.960Z",
+      "scrapedAt": "2026-03-17T14:54:19.381Z",
       "sections": [
         {
           "title": "Polévky",
@@ -116,10 +116,6 @@
             {
               "name": "Gnocchi Arrabiata, kuřecí, chilli, česnek, olivy, sušená, omáčka z drcených rajčat",
               "price": "159 Kč"
-            },
-            {
-              "name": "Grilovaná vepřová játra po Anglicku, smažené americké brambory, domácí tatarská omáčka, zelný salát (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Maďarský vepřový guláš s pikantní klobásou zdobený cibulkou, houskový knedlík (150g)",
@@ -160,11 +156,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -180,7 +178,8 @@
             },
             {
               "name": "Bramborový salát (100g)",
-              "price": "22 Kč"
+              "price": "22 Kč",
+              "soldOut": true
             }
           ]
         }
@@ -191,7 +190,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T14:15:05.736Z",
+      "scrapedAt": "2026-03-17T14:54:07.403Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -229,7 +228,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T14:15:22.100Z",
+      "scrapedAt": "2026-03-17T14:54:19.286Z",
       "sections": [
         {
           "title": "Nejprodávanější",
@@ -255,7 +254,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T14:15:21.984Z",
+      "scrapedAt": "2026-03-17T14:54:18.913Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -263,7 +262,12 @@
             {
               "name": "Polévka v ceně menu. Polévka samostatné",
               "price": "60 Kč"
-            },
+            }
+          ]
+        },
+        {
+          "title": "Pondělí",
+          "items": [
             {
               "name": "1. Smažený květák, vařené brambory, tatarská omáčka",
               "price": "199 Kč"
@@ -283,7 +287,12 @@
             {
               "name": "5. Mix salátů se sýrem a šunkou, jogurtový dresink",
               "price": "199 Kč"
-            },
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
             {
               "name": "1. Kuřecí kapsa plněná sušenými rajčaty a mozzarellou, hranolky",
               "price": "199 Kč"
@@ -303,7 +312,12 @@
             {
               "name": "5. Míchaný salát s nakládaným hermelínem",
               "price": "199 Kč"
-            },
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
             {
               "name": "1. Vepřový steak na pečené paprice, sweet chilli, smetanové brambory",
               "price": "199 Kč"
@@ -323,7 +337,12 @@
             {
               "name": "5. Mix salátů se ztraceným vejcem, hořčičnou-medový dresink",
               "price": "199 Kč"
-            },
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
             {
               "name": "1. Krůtí steak s hermelínem a brusinkami, americké brambory",
               "price": "199 Kč"
@@ -343,7 +362,12 @@
             {
               "name": "5. Mix salátů s kuřecími střípky",
               "price": "199 Kč"
-            },
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
             {
               "name": "1. Kyjevská kotleta s pohankovou kaši na másle",
               "price": "199 Kč"
@@ -377,7 +401,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T14:15:06.697Z",
+      "scrapedAt": "2026-03-17T14:54:07.731Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -444,7 +468,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T14:15:22.961Z",
+      "scrapedAt": "2026-03-17T14:54:19.381Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",

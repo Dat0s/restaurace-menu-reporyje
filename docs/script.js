@@ -35,10 +35,11 @@
         sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
       }
       for (const item of s.items) {
+        const cls = 'menu-item' + (item.soldOut ? ' sold-out' : '');
         sectionsHtml +=
-          '<div class="menu-item">' +
+          '<div class="' + cls + '">' +
             '<span class="name">' + escapeHtml(item.name) + '</span>' +
-            '<span class="price">' + escapeHtml(item.price || '') + '</span>' +
+            '<span class="price">' + escapeHtml(item.soldOut ? 'Vyprodáno' : (item.price || '')) + '</span>' +
           '</div>';
       }
     }
