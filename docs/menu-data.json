@@ -1,12 +1,85 @@
 {
-  "lastUpdated": "2026-03-17T12:48:53.060Z",
+  "lastUpdated": "2026-03-17T13:42:21.600Z",
   "restaurants": [
+    {
+      "name": "HQ Pippi Grill",
+      "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
+      "phone": "+420 774 304 494",
+      "menuDate": "Stálé menu",
+      "scrapedAt": "2026-03-17T13:42:21.580Z",
+      "sections": [
+        {
+          "title": "Do křupava smažené",
+          "items": [
+            {
+              "name": "Kuřecí křídla Sriracha (12ks)",
+              "price": "245 Kč"
+            },
+            {
+              "name": "Kuřecí křídla Teriyaki (12ks)",
+              "price": "245 Kč"
+            },
+            {
+              "name": "Jižanské kuře",
+              "price": "155 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Sendvič s kuřecím masem",
+          "items": [
+            {
+              "name": "Klasik sendvič",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Kari sendvič",
+              "price": "185 Kč"
+            },
+            {
+              "name": "Chilli sendvič",
+              "price": "185 Kč"
+            },
+            {
+              "name": "Lanýžový sendvič",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Sendviče s Pastrami",
+          "items": [
+            {
+              "name": "Chilli pastrami",
+              "price": "205 Kč"
+            },
+            {
+              "name": "Lanýžové pastrami",
+              "price": "225 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Sendvič s vepřovým masem",
+          "items": [
+            {
+              "name": "Porchetta klasik",
+              "price": "175 Kč"
+            },
+            {
+              "name": "Porchetta speciál",
+              "price": "195 Kč"
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T12:48:41.374Z",
+      "scrapedAt": "2026-03-17T13:42:07.995Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -40,11 +113,37 @@
       ]
     },
     {
+      "name": "Papa Cipolla",
+      "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
+      "phone": "+420 725 558 866",
+      "menuDate": "Stálé menu",
+      "scrapedAt": "2026-03-17T13:42:21.578Z",
+      "sections": [
+        {
+          "title": "Nejprodávanější",
+          "items": [
+            {
+              "name": "Vesuvio 32",
+              "price": "219 Kč"
+            },
+            {
+              "name": "Margherita 32",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Quattro Formaggi 32",
+              "price": "249 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T12:48:52.946Z",
+      "scrapedAt": "2026-03-17T13:42:21.212Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -166,7 +265,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T12:48:42.222Z",
+      "scrapedAt": "2026-03-17T13:42:08.345Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -184,10 +283,6 @@
         {
           "title": "POLEDNÍ MENU",
           "items": [
-            {
-              "name": "Zbojnická krkovice s houskovým knedlíkem",
-              "price": "159 Kč"
-            },
             {
               "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
               "price": "169 Kč"

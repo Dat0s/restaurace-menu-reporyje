@@ -53,6 +53,7 @@ header h1 {
 .card:nth-child(2) { border-left-color: #2980b9; }
 .card:nth-child(3) { border-left-color: #27ae60; }
 .card:nth-child(4) { border-left-color: #d4a017; }
+.card:nth-child(5) { border-left-color: #8e44ad; }
 
 .card-header {
   padding: 14px 16px 8px;
