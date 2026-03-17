@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-17T10:13:38.153Z",
+  "lastUpdated": "2026-03-17T11:09:34.330Z",
   "restaurants": [
     {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T10:13:23.667Z",
+      "scrapedAt": "2026-03-17T11:09:19.406Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -42,7 +42,7 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T10:13:24.404Z",
+      "scrapedAt": "2026-03-17T11:09:20.587Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -60,10 +60,6 @@
         {
           "title": "POLEDNÍ MENU",
           "items": [
-            {
-              "name": "Vepřová játra na grilu, opečený brambor, tatarská omáčka",
-              "price": "159 Kč"
-            },
             {
               "name": "Zbojnická krkovice s houskovým knedlíkem",
               "price": "159 Kč"
@@ -116,7 +112,7 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T10:13:38.041Z",
+      "scrapedAt": "2026-03-17T11:09:34.205Z",
       "sections": [
         {
           "title": "Polední menu",
