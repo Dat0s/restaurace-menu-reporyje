@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T13:51:19.596Z",
+  "lastUpdated": "2026-03-17T13:54:16.384Z",
   "restaurants": [
     {
       "name": "HQ Pippi Grill",
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T13:51:19.579Z",
+      "scrapedAt": "2026-03-17T13:54:16.274Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -75,11 +75,123 @@
       ]
     },
     {
+      "name": "Jídelna Pohotovka",
+      "source": "https://pohotovka.cz/#menu",
+      "phone": "+420 775 104 350",
+      "menuDate": "17.03.2026",
+      "scrapedAt": "2026-03-17T13:54:16.368Z",
+      "sections": [
+        {
+          "title": "Polévky",
+          "items": [
+            {
+              "name": "Frankfurtská s párkem a bramborem (0,33l)",
+              "price": "44 Kč"
+            },
+            {
+              "name": "Hovězí vývar se zeleninou, masem a těstovinami (0,33l)",
+              "price": "44 Kč"
+            },
+            {
+              "name": "Chléb (Ks)",
+              "price": "3 Kč"
+            },
+            {
+              "name": "Rohlík",
+              "price": "5 Kč"
+            },
+            {
+              "name": "Změna přílohy za hranolky, krokety, bramborovou kaši",
+              "price": "10 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Hlavní jídla",
+          "items": [
+            {
+              "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Gnocchi Arrabiata, kuřecí, chilli, česnek, olivy, sušená, omáčka z drcených rajčat",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Grilovaná vepřová játra po Anglicku, smažené americké brambory, domácí tatarská omáčka, zelný salát (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Maďarský vepřový guláš s pikantní klobásou zdobený cibulkou, houskový knedlík (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Medailonky z vepřové kotlety s přírodní šťávou, opečený brambor, domácí tatarská omáčka, zelný salát (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová plec dušená s mrkví, vařený brambor (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřové karé s přírodní šťávou, domácí bramborová kaše, znojemská okurka (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Zapečené francouzské brambory s uzeninou a vejci, znojemská okurka (400g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová pečeně na slanině, houskový knedlík (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřové výpečky se špenátem a domácím bramborovým knedlíkem (150g)",
+              "price": "159 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Snídaně & svačiny",
+          "items": [
+            {
+              "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
+              "price": "27 Kč"
+            },
+            {
+              "name": "Javořický párek s křenem a hořčicí (1ks)",
+              "price": "25 Kč"
+            },
+            {
+              "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
+              "price": "65 Kč"
+            },
+            {
+              "name": "Domácí bramborák,, Poctivec\" se slaninou a salátkem z kysaného zelí (1 ks)",
+              "price": "65 Kč"
+            },
+            {
+              "name": "Domácí vaječná smaženka se zeleninou (1ks)",
+              "price": "46 Kč"
+            },
+            {
+              "name": "Bramborový salát (100g)",
+              "price": "22 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Kavárna na Náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T13:51:06.904Z",
+      "scrapedAt": "2026-03-17T13:54:04.093Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -117,7 +229,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T13:51:19.577Z",
+      "scrapedAt": "2026-03-17T13:54:16.273Z",
       "sections": [
         {
           "title": "Nejprodávanější",
@@ -143,7 +255,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-17T13:51:19.231Z",
+      "scrapedAt": "2026-03-17T13:54:15.741Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -265,7 +377,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T13:51:07.219Z",
+      "scrapedAt": "2026-03-17T13:54:04.501Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -332,7 +444,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T13:51:19.580Z",
+      "scrapedAt": "2026-03-17T13:54:16.370Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
