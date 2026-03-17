@@ -29,8 +29,8 @@
 
     let sectionsHtml = '';
     for (const s of r.sections) {
-      // Don't show "Polední menu" as section title - it's already in the page heading
-      const skipTitle = /^polední\s+menu$/i.test(s.title);
+      // Don't show "Polední menu" if it's the only section (redundant with page heading)
+      const skipTitle = /^polední\s+menu$/i.test(s.title) && r.sections.length === 1;
       if (!skipTitle) {
         sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
       }
