@@ -34,8 +34,8 @@ async function main() {
     }
   }
 
-  // Sort alphabetically, DÖNER KEBAB HOUSE second-to-last, Papa Cipolla last
-  const pinOrder = { 'DÖNER KEBAB HOUSE': 1, 'Papa Cipolla': 2 };
+  // Sort alphabetically, with pinned restaurants at the end
+  const pinOrder = { 'Řeporyjská Sokolovna': 1, 'DÖNER KEBAB HOUSE': 2, 'Papa Cipolla': 3 };
   data.restaurants.sort((a, b) => {
     const aPin = pinOrder[a.name] || 0;
     const bPin = pinOrder[b.name] || 0;
