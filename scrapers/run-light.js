@@ -32,12 +32,12 @@ async function main() {
     }
   }
 
-  // Sort alphabetically, but keep DÖNER KEBAB HOUSE at the end
+  // Sort alphabetically, DÖNER KEBAB HOUSE second-to-last, Papa Cipolla last
+  const pinOrder = { 'DÖNER KEBAB HOUSE': 1, 'Papa Cipolla': 2 };
   data.restaurants.sort((a, b) => {
-    const aLast = a.name === 'DÖNER KEBAB HOUSE';
-    const bLast = b.name === 'DÖNER KEBAB HOUSE';
-    if (aLast) return 1;
-    if (bLast) return -1;
+    const aPin = pinOrder[a.name] || 0;
+    const bPin = pinOrder[b.name] || 0;
+    if (aPin !== bPin) return aPin - bPin;
     return a.name.localeCompare(b.name, 'cs');
   });
   writeData(data);

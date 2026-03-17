@@ -15,58 +15,81 @@
     document.getElementById('lastUpdated').textContent =
       'Aktualizováno: ' + new Date(data.lastUpdated).toLocaleString('cs-CZ');
     if (hours > 24) {
-      const warn = document.createElement('div');
+      var warn = document.createElement('div');
       warn.className = 'stale-warning';
       warn.textContent = '\u26A0 Data mohou být neaktuální (poslední aktualizace před více než 24 hodinami)';
       main.before(warn);
     }
   }
 
+  // Current day name for Pivovar highlighting
+  var dayNames = ['Neděle', 'Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek', 'Sobota'];
+  var todayName = dayNames[new Date().getDay()];
+
   // Render cards
-  for (const r of data.restaurants) {
-    const card = document.createElement('div');
+  for (var ri = 0; ri < data.restaurants.length; ri++) {
+    var r = data.restaurants[ri];
+    var card = document.createElement('article');
     card.className = 'card';
 
-    let sectionsHtml = '';
-    for (const s of r.sections) {
-      // Don't show "Polední menu" if it's the only section (redundant with page heading)
-      const skipTitle = /^polední\s+menu$/i.test(s.title) && r.sections.length === 1;
+    var isPivovar = r.name === 'Pivovar Řeporyje';
+
+    var sectionsHtml = '';
+    for (var si = 0; si < r.sections.length; si++) {
+      var s = r.sections[si];
+      // Check if this section matches today (for Pivovar)
+      var isToday = isPivovar && s.title === todayName;
+      var isDimmed = isPivovar && !isToday && dayNames.indexOf(s.title) > 0;
+
+      var sectionClass = 'menu-section';
+      if (isToday) sectionClass += ' today-section';
+      if (isDimmed) sectionClass += ' dimmed-section';
+
+      sectionsHtml += '<section class="' + sectionClass + '">';
+
+      // Don't show "Polední menu" if it's the only section
+      var skipTitle = /^polední\s+menu$/i.test(s.title) && r.sections.length === 1;
       if (!skipTitle) {
-        sectionsHtml += '<div class="section-title">' + escapeHtml(s.title) + '</div>';
+        var titleHtml = '<h3 class="section-title">' + escapeHtml(s.title);
+        if (isToday) titleHtml += ' <span class="today-badge">DNES</span>';
+        titleHtml += '</h3>';
+        sectionsHtml += titleHtml;
       }
-      for (const item of s.items) {
-        const cls = 'menu-item' + (item.soldOut ? ' sold-out' : '');
+      for (var ii = 0; ii < s.items.length; ii++) {
+        var item = s.items[ii];
+        var cls = 'menu-item' + (item.soldOut ? ' sold-out' : '');
         sectionsHtml +=
           '<div class="' + cls + '">' +
             '<span class="name">' + escapeHtml(item.name) + '</span>' +
             '<span class="price">' + escapeHtml(item.soldOut ? 'Vyprodáno' : (item.price || '')) + '</span>' +
           '</div>';
       }
+      sectionsHtml += '</section>';
     }
 
-    const scrapedTime = r.scrapedAt
+    var scrapedTime = r.scrapedAt
       ? new Date(r.scrapedAt).toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' })
       : '';
 
     // Don't show menuDate if it's just "Polední menu" or empty
-    const showDate = r.menuDate && !/^polední\s+menu$/i.test(r.menuDate);
+    var showDate = r.menuDate && !/^polední\s+menu$/i.test(r.menuDate);
 
     // Phone link
-    const phoneHtml = r.phone
+    var phoneHtml = r.phone
       ? '<a href="tel:' + escapeHtml(r.phone) + '">' + escapeHtml(r.phone) + '</a>'
       : '';
 
     card.innerHTML =
-      '<div class="card-header">' +
+      '<header class="card-header">' +
         '<h2>' + escapeHtml(r.name) + '</h2>' +
         (showDate ? '<div class="card-date">' + escapeHtml(r.menuDate) + '</div>' : '') +
-      '</div>' +
+      '</header>' +
       '<div class="card-body">' + sectionsHtml + '</div>' +
-      '<div class="card-footer">' +
+      '<footer class="card-footer">' +
         '<a href="' + escapeHtml(r.source) + '" target="_blank" rel="noopener">Zdroj</a>' +
         (phoneHtml ? '<span>' + phoneHtml + '</span>' : '') +
         '<span>Staženo ' + escapeHtml(scrapedTime) + '</span>' +
-      '</div>';
+      '</footer>';
 
     main.appendChild(card);
   }
@@ -75,7 +98,7 @@
   setTimeout(function () { location.reload(); }, 12 * 60 * 60 * 1000);
 
   function escapeHtml(text) {
-    const div = document.createElement('div');
+    var div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
   }

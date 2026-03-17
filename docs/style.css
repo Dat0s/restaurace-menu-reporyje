@@ -13,12 +13,12 @@ body {
   padding: 16px;
 }
 
-header {
+body > .container > header {
   text-align: center;
   margin-bottom: 24px;
 }
 
-header h1 {
+body > .container > header h1 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -56,6 +56,8 @@ header h1 {
 .card:nth-child(5) { border-left-color: #8e44ad; }
 .card:nth-child(6) { border-left-color: #e67e22; }
 .card:nth-child(7) { border-left-color: #16a085; }
+.card:nth-child(8) { border-left-color: #2c3e50; }
+.card:nth-child(9) { border-left-color: #d35400; }
 
 .card-header {
   padding: 14px 16px 8px;
@@ -115,11 +117,35 @@ header h1 {
 
 .card-footer a { color: #aaa; }
 
-footer {
+.today-section {
+  background: #f0faf0;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 4px -8px;
+}
+
+.today-badge {
+  display: inline-block;
+  background: #27ae60;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 6px;
+  text-transform: none;
+}
+
+.dimmed-section {
+  opacity: 0.5;
+}
+
+body > .container > footer {
   text-align: center;
   margin-top: 32px;
   font-size: 0.85rem;
   color: #aaa;
 }
 
-footer a { color: #888; }
+body > .container > footer a { color: #888; }
