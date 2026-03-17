@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-17T17:07:50.320Z",
+  "lastUpdated": "2026-03-17T17:22:44.052Z",
   "restaurants": [
     {
       "name": "HQ Pippi Grill",
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T17:07:50.050Z",
+      "scrapedAt": "2026-03-17T17:22:43.372Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -79,7 +79,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "17.03.2026",
-      "scrapedAt": "2026-03-17T17:07:50.310Z",
+      "scrapedAt": "2026-03-17T17:22:44.045Z",
       "sections": [
         {
           "title": "Polévky",
@@ -202,7 +202,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-17T17:07:38.673Z",
+      "scrapedAt": "2026-03-17T17:22:28.756Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -236,11 +236,413 @@
       ]
     },
     {
+      "name": "Pivovar Řeporyje",
+      "source": "https://pivovarfood.cz/#catering",
+      "phone": "+420 274 772 837",
+      "menuDate": "",
+      "scrapedAt": "2026-03-17T17:22:43.272Z",
+      "sections": [
+        {
+          "title": "Polední menu",
+          "items": [
+            {
+              "name": "Polévka v ceně menu. Polévka samostatné",
+              "price": "60 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pondělí",
+          "items": [
+            {
+              "name": "1. Smažený květák, vařené brambory, tatarská omáčka",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Vepřová žebra, salát coleslaw, chléb",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Gnocchi Carbonara",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Kuřecí steak zapečeny se sýrem na fazolovém lůžku",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů se sýrem a šunkou, jogurtový dresink",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "1. Kuřecí kapsa plněná sušenými rajčaty a mozzarellou, hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Čevabčiči s vařenými brambory a cibule -199 Kč",
+              "price": ""
+            },
+            {
+              "name": "3. Zelné závitky s rajčatovo-smetanovou omáčkou (HOLUBTSI)",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Špagety Carbonara",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Míchaný salát s nakládaným hermelínem",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "1. Vepřový steak na pečené paprice, sweet chilli, smetanové brambory",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Pečeny kuřecí steak ze stehna, bramborová kaše",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Špagety s lososem a špenátem na smetaně",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Vareniky s bramborem (cibule, slanina, smetana)",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů se ztraceným vejcem, hořčičnou-medový dresink",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "1. Krůtí steak s hermelínem a brusinkami, americké brambory",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Tortilla s trhaným masem, hranolky, česnekový dresink",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Penne s parmskou šunkou a hráškem na smetaně",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Vepřový steak se sazením vejcem, krokety",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů s kuřecími střípky",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "1. Kyjevská kotleta s pohankovou kaši na másle",
+              "price": "199 Kč"
+            },
+            {
+              "name": "2. Směs z vepřové panenky a brokolice na smetaně, rýže",
+              "price": "199 Kč"
+            },
+            {
+              "name": "3. Gnocchi Picante",
+              "price": "199 Kč"
+            },
+            {
+              "name": "4. Pelmene kuřecí, smetana",
+              "price": "199 Kč"
+            },
+            {
+              "name": "5. Mix salátů s červenou řepou, fetou a vlašskými ořechy, citrónovou-hořčičný",
+              "price": ""
+            },
+            {
+              "name": "dresink",
+              "price": "199 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Řeporyjská Sokolovna",
+      "source": "https://reporyjskasokolovna.cz/",
+      "phone": "+420 731 484 493",
+      "menuDate": "Úterý",
+      "scrapedAt": "2026-03-17T17:22:29.548Z",
+      "sections": [
+        {
+          "title": "POLÉVKA",
+          "items": [
+            {
+              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Frankfurtská polévka s uzeninou",
+              "price": "39 Kč"
+            }
+          ]
+        },
+        {
+          "title": "POLEDNÍ MENU",
+          "items": [
+            {
+              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "EXELENT HOT BURGER",
+              "price": "199 Kč"
+            },
+            {
+              "name": "LUCKY BBQ burger",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený kuřecí popkorn s hranolkami,tatarka",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
+              "price": "179 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DÖNER KEBAB HOUSE",
+      "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
+      "phone": "+420 731 585 442",
+      "menuDate": "Stálé menu",
+      "scrapedAt": "2026-03-17T17:22:44.045Z",
+      "sections": [
+        {
+          "title": "DÖNER KEBAB",
+          "items": [
+            {
+              "name": "Döner kebab klasik",
+              "price": "165 Kč"
+            },
+            {
+              "name": "Döner kebab se sýrem",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Döner kebab hawai",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Döner kebab jen maso",
+              "price": "180 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DÜRÜM KEBAB",
+          "items": [
+            {
+              "name": "Dürüm kebab klasik",
+              "price": "175 Kč"
+            },
+            {
+              "name": "Dürüm kebab se sýrem",
+              "price": "180 Kč"
+            },
+            {
+              "name": "Dürüm kebab hawai",
+              "price": "175 Kč"
+            },
+            {
+              "name": "Mega dürüm",
+              "price": "210 Kč"
+            },
+            {
+              "name": "Dürüm jen maso",
+              "price": "210 Kč"
+            },
+            {
+              "name": "Dürüm s hranolkami",
+              "price": "210 Kč"
+            }
+          ]
+        },
+        {
+          "title": "VELKÝ TALÍŘ KEBAB",
+          "items": [
+            {
+              "name": "Velký talíř kebab",
+              "price": "180 Kč"
+            },
+            {
+              "name": "Velký talíř kebab se sýrem",
+              "price": "195 Kč"
+            },
+            {
+              "name": "Velký talíř kebab s hranolky",
+              "price": "210 Kč"
+            },
+            {
+              "name": "Velký talíř kebab s těstovinami",
+              "price": "195 Kč"
+            },
+            {
+              "name": "Velký talíř kebab jen maso",
+              "price": "210 Kč"
+            }
+          ]
+        },
+        {
+          "title": "MALÝ TALÍŘ KEBAB",
+          "items": [
+            {
+              "name": "Malý talíř kebab",
+              "price": "160 Kč"
+            },
+            {
+              "name": "Malý talíř kebab se sýrem",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Malý talíř kebab s hranolky",
+              "price": "170 Kč"
+            },
+            {
+              "name": "Malý talíř kebab s těstovinami",
+              "price": "165 Kč"
+            },
+            {
+              "name": "Malý talíř kebab jen maso",
+              "price": "175 Kč"
+            }
+          ]
+        },
+        {
+          "title": "VEGETARIÁNSKÁ JÍDLA",
+          "items": [
+            {
+              "name": "Vegetariánský Döner",
+              "price": "130 Kč"
+            },
+            {
+              "name": "Vegetariánský dürüm",
+              "price": "135 Kč"
+            },
+            {
+              "name": "Ziggaren Borek 4 ks",
+              "price": "145 Kč"
+            },
+            {
+              "name": "Falafel dürüm",
+              "price": "140 Kč"
+            },
+            {
+              "name": "Talíř falafel",
+              "price": "160 Kč"
+            },
+            {
+              "name": "Halloumi twister",
+              "price": "145 Kč"
+            },
+            {
+              "name": "Halloumi talíř",
+              "price": "165 Kč"
+            }
+          ]
+        },
+        {
+          "title": "RYCHLÉ OBČERSTVENÍ",
+          "items": [
+            {
+              "name": "Smažený sýr v chlebu",
+              "price": "140 Kč"
+            },
+            {
+              "name": "Smažený sýr s hranolky",
+              "price": "165 Kč"
+            },
+            {
+              "name": "Kuřecí stripsy v tortile",
+              "price": "140 Kč"
+            },
+            {
+              "name": "Kuřecí stripsy talíř",
+              "price": "160 Kč"
+            }
+          ]
+        },
+        {
+          "title": "SALÁTY",
+          "items": [
+            {
+              "name": "Selský salát",
+              "price": "90 Kč"
+            },
+            {
+              "name": "Míchaný salát",
+              "price": "100 Kč"
+            },
+            {
+              "name": "Těstovinový salát",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Tuňákový salát",
+              "price": "110 Kč"
+            },
+            {
+              "name": "Kuřecí salát",
+              "price": "135 Kč"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Papa Cipolla",
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T17:07:50.050Z",
+      "scrapedAt": "2026-03-17T17:22:43.372Z",
       "sections": [
         {
           "title": "Nejprodávanější",
@@ -829,408 +1231,6 @@
             {
               "name": "Dolce Banana 40",
               "price": "309 Kč"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Pivovar Řeporyje",
-      "source": "https://pivovarfood.cz/#catering",
-      "phone": "+420 274 772 837",
-      "menuDate": "",
-      "scrapedAt": "2026-03-17T17:07:49.755Z",
-      "sections": [
-        {
-          "title": "Polední menu",
-          "items": [
-            {
-              "name": "Polévka v ceně menu. Polévka samostatné",
-              "price": "60 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Pondělí",
-          "items": [
-            {
-              "name": "1. Smažený květák, vařené brambory, tatarská omáčka",
-              "price": "199 Kč"
-            },
-            {
-              "name": "2. Vepřová žebra, salát coleslaw, chléb",
-              "price": "199 Kč"
-            },
-            {
-              "name": "3. Gnocchi Carbonara",
-              "price": "199 Kč"
-            },
-            {
-              "name": "4. Kuřecí steak zapečeny se sýrem na fazolovém lůžku",
-              "price": "199 Kč"
-            },
-            {
-              "name": "5. Mix salátů se sýrem a šunkou, jogurtový dresink",
-              "price": "199 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Úterý",
-          "items": [
-            {
-              "name": "1. Kuřecí kapsa plněná sušenými rajčaty a mozzarellou, hranolky",
-              "price": "199 Kč"
-            },
-            {
-              "name": "2. Čevabčiči s vařenými brambory a cibule -199 Kč",
-              "price": ""
-            },
-            {
-              "name": "3. Zelné závitky s rajčatovo-smetanovou omáčkou (HOLUBTSI)",
-              "price": "199 Kč"
-            },
-            {
-              "name": "4. Špagety Carbonara",
-              "price": "199 Kč"
-            },
-            {
-              "name": "5. Míchaný salát s nakládaným hermelínem",
-              "price": "199 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Středa",
-          "items": [
-            {
-              "name": "1. Vepřový steak na pečené paprice, sweet chilli, smetanové brambory",
-              "price": "199 Kč"
-            },
-            {
-              "name": "2. Pečeny kuřecí steak ze stehna, bramborová kaše",
-              "price": "199 Kč"
-            },
-            {
-              "name": "3. Špagety s lososem a špenátem na smetaně",
-              "price": "199 Kč"
-            },
-            {
-              "name": "4. Vareniky s bramborem (cibule, slanina, smetana)",
-              "price": "199 Kč"
-            },
-            {
-              "name": "5. Mix salátů se ztraceným vejcem, hořčičnou-medový dresink",
-              "price": "199 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Čtvrtek",
-          "items": [
-            {
-              "name": "1. Krůtí steak s hermelínem a brusinkami, americké brambory",
-              "price": "199 Kč"
-            },
-            {
-              "name": "2. Tortilla s trhaným masem, hranolky, česnekový dresink",
-              "price": "199 Kč"
-            },
-            {
-              "name": "3. Penne s parmskou šunkou a hráškem na smetaně",
-              "price": "199 Kč"
-            },
-            {
-              "name": "4. Vepřový steak se sazením vejcem, krokety",
-              "price": "199 Kč"
-            },
-            {
-              "name": "5. Mix salátů s kuřecími střípky",
-              "price": "199 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Pátek",
-          "items": [
-            {
-              "name": "1. Kyjevská kotleta s pohankovou kaši na másle",
-              "price": "199 Kč"
-            },
-            {
-              "name": "2. Směs z vepřové panenky a brokolice na smetaně, rýže",
-              "price": "199 Kč"
-            },
-            {
-              "name": "3. Gnocchi Picante",
-              "price": "199 Kč"
-            },
-            {
-              "name": "4. Pelmene kuřecí, smetana",
-              "price": "199 Kč"
-            },
-            {
-              "name": "5. Mix salátů s červenou řepou, fetou a vlašskými ořechy, citrónovou-hořčičný",
-              "price": ""
-            },
-            {
-              "name": "dresink",
-              "price": "199 Kč"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Řeporyjská Sokolovna",
-      "source": "https://reporyjskasokolovna.cz/",
-      "phone": "+420 731 484 493",
-      "menuDate": "Úterý",
-      "scrapedAt": "2026-03-17T17:07:39.123Z",
-      "sections": [
-        {
-          "title": "POLÉVKA",
-          "items": [
-            {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Frankfurtská polévka s uzeninou",
-              "price": "39 Kč"
-            }
-          ]
-        },
-        {
-          "title": "POLEDNÍ MENU",
-          "items": [
-            {
-              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
-              "price": "169 Kč"
-            },
-            {
-              "name": "EXELENT HOT BURGER",
-              "price": "199 Kč"
-            },
-            {
-              "name": "LUCKY BBQ burger",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený kuřecí popkorn s hranolkami,tatarka",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
-              "price": "179 Kč"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "DÖNER KEBAB HOUSE",
-      "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
-      "phone": "+420 731 585 442",
-      "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-17T17:07:50.311Z",
-      "sections": [
-        {
-          "title": "DÖNER KEBAB",
-          "items": [
-            {
-              "name": "Döner kebab klasik",
-              "price": "165 Kč"
-            },
-            {
-              "name": "Döner kebab se sýrem",
-              "price": "170 Kč"
-            },
-            {
-              "name": "Döner kebab hawai",
-              "price": "170 Kč"
-            },
-            {
-              "name": "Döner kebab jen maso",
-              "price": "180 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DÜRÜM KEBAB",
-          "items": [
-            {
-              "name": "Dürüm kebab klasik",
-              "price": "175 Kč"
-            },
-            {
-              "name": "Dürüm kebab se sýrem",
-              "price": "180 Kč"
-            },
-            {
-              "name": "Dürüm kebab hawai",
-              "price": "175 Kč"
-            },
-            {
-              "name": "Mega dürüm",
-              "price": "210 Kč"
-            },
-            {
-              "name": "Dürüm jen maso",
-              "price": "210 Kč"
-            },
-            {
-              "name": "Dürüm s hranolkami",
-              "price": "210 Kč"
-            }
-          ]
-        },
-        {
-          "title": "VELKÝ TALÍŘ KEBAB",
-          "items": [
-            {
-              "name": "Velký talíř kebab",
-              "price": "180 Kč"
-            },
-            {
-              "name": "Velký talíř kebab se sýrem",
-              "price": "195 Kč"
-            },
-            {
-              "name": "Velký talíř kebab s hranolky",
-              "price": "210 Kč"
-            },
-            {
-              "name": "Velký talíř kebab s těstovinami",
-              "price": "195 Kč"
-            },
-            {
-              "name": "Velký talíř kebab jen maso",
-              "price": "210 Kč"
-            }
-          ]
-        },
-        {
-          "title": "MALÝ TALÍŘ KEBAB",
-          "items": [
-            {
-              "name": "Malý talíř kebab",
-              "price": "160 Kč"
-            },
-            {
-              "name": "Malý talíř kebab se sýrem",
-              "price": "170 Kč"
-            },
-            {
-              "name": "Malý talíř kebab s hranolky",
-              "price": "170 Kč"
-            },
-            {
-              "name": "Malý talíř kebab s těstovinami",
-              "price": "165 Kč"
-            },
-            {
-              "name": "Malý talíř kebab jen maso",
-              "price": "175 Kč"
-            }
-          ]
-        },
-        {
-          "title": "VEGETARIÁNSKÁ JÍDLA",
-          "items": [
-            {
-              "name": "Vegetariánský Döner",
-              "price": "130 Kč"
-            },
-            {
-              "name": "Vegetariánský dürüm",
-              "price": "135 Kč"
-            },
-            {
-              "name": "Ziggaren Borek 4 ks",
-              "price": "145 Kč"
-            },
-            {
-              "name": "Falafel dürüm",
-              "price": "140 Kč"
-            },
-            {
-              "name": "Talíř falafel",
-              "price": "160 Kč"
-            },
-            {
-              "name": "Halloumi twister",
-              "price": "145 Kč"
-            },
-            {
-              "name": "Halloumi talíř",
-              "price": "165 Kč"
-            }
-          ]
-        },
-        {
-          "title": "RYCHLÉ OBČERSTVENÍ",
-          "items": [
-            {
-              "name": "Smažený sýr v chlebu",
-              "price": "140 Kč"
-            },
-            {
-              "name": "Smažený sýr s hranolky",
-              "price": "165 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy v tortile",
-              "price": "140 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy talíř",
-              "price": "160 Kč"
-            }
-          ]
-        },
-        {
-          "title": "SALÁTY",
-          "items": [
-            {
-              "name": "Selský salát",
-              "price": "90 Kč"
-            },
-            {
-              "name": "Míchaný salát",
-              "price": "100 Kč"
-            },
-            {
-              "name": "Těstovinový salát",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Tuňákový salát",
-              "price": "110 Kč"
-            },
-            {
-              "name": "Kuřecí salát",
-              "price": "135 Kč"
             }
           ]
         }
