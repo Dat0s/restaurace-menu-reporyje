@@ -3,6 +3,7 @@ const { scrapeSokolovna } = require('./sokolovna');
 const { scrapePivovar } = require('./pivovar');
 const { scrapePapaCipolla } = require('./papacipolla');
 const { scrapePippiGrill } = require('./pippigrill');
+const { scrapeDoner } = require('./donerkebab');
 const { readData, writeData, upsertRestaurant } = require('./utils');
 
 async function main() {
@@ -13,7 +14,8 @@ async function main() {
     { name: 'Řeporyjská Sokolovna', fn: scrapeSokolovna },
     { name: 'Pivovar Řeporyje', fn: scrapePivovar },
     { name: 'Papa Cipolla', fn: scrapePapaCipolla },
-    { name: 'HQ Pippi Grill', fn: scrapePippiGrill }
+    { name: 'HQ Pippi Grill', fn: scrapePippiGrill },
+    { name: 'DÖNER KEBAB HOUSE', fn: scrapeDoner }
   ];
 
   for (const { name, fn } of scrapers) {
@@ -28,7 +30,14 @@ async function main() {
     }
   }
 
-  data.restaurants.sort((a, b) => a.name.localeCompare(b.name, 'cs'));
+  // Sort alphabetically, but keep DÖNER KEBAB HOUSE at the end
+  data.restaurants.sort((a, b) => {
+    const aLast = a.name === 'DÖNER KEBAB HOUSE';
+    const bLast = b.name === 'DÖNER KEBAB HOUSE';
+    if (aLast) return 1;
+    if (bLast) return -1;
+    return a.name.localeCompare(b.name, 'cs');
+  });
   writeData(data);
   console.log('Data saved to menu-data.json');
 }
