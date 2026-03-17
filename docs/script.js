@@ -32,7 +32,7 @@
     var card = document.createElement('article');
     card.className = 'card';
 
-    var isPivovar = r.name === 'Pivovar Řeporyje';
+    var isPivovar = r.name === 'Pivovar Řeporyje' || r.name === 'Řeznictví Svoboda';
 
     var sectionsHtml = '';
     for (var si = 0; si < r.sections.length; si++) {
