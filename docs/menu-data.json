@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T05:40:52.128Z",
+  "lastUpdated": "2026-03-18T06:43:19.687Z",
   "restaurants": [
     {
       "name": "Jídelna Pohotovka",
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.03.2026",
-      "scrapedAt": "2026-03-18T05:40:42.065Z",
+      "scrapedAt": "2026-03-18T06:43:08.906Z",
       "sections": [
         {
           "title": "Polévky",
@@ -36,10 +36,6 @@
         {
           "title": "Hlavní jídla",
           "items": [
-            {
-              "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
-              "price": "149 Kč"
-            },
             {
               "name": "Gnocchi Arrabiata, kuřecí, chilli, česnek, olivy, sušená, omáčka z drcených rajčat",
               "price": "159 Kč"
@@ -73,7 +69,11 @@
               "price": "159 Kč"
             },
             {
-              "name": "Vepřová plec na kmíně, kolínka (150g)",
+              "name": "Vepřová plec dušená s mrkví, vařený brambor (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřové kostky na kmíně, kolínka (150g)",
               "price": "159 Kč"
             },
             {
@@ -83,6 +83,10 @@
             {
               "name": "Zapečené francouzské brambory s uzeninou a vejci, znojemská okurka (400g)",
               "price": "159 Kč"
+            },
+            {
+              "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
+              "price": "149 Kč"
             },
             {
               "name": "Vepřové výpečky se špenátem a domácím bramborovým knedlíkem (150g)",
@@ -95,13 +99,11 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč",
-              "soldOut": true
+              "price": "27 Kč"
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč",
-              "soldOut": true
+              "price": "25 Kč"
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -129,7 +131,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 17. 3.",
-      "scrapedAt": "2026-03-18T05:40:26.653Z",
+      "scrapedAt": "2026-03-18T06:42:55.496Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -167,7 +169,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T05:40:41.159Z",
+      "scrapedAt": "2026-03-18T06:43:08.048Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -314,7 +316,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T05:40:52.029Z",
+      "scrapedAt": "2026-03-18T06:43:19.609Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -331,18 +333,18 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Úterý",
-      "scrapedAt": "2026-03-18T05:40:27.801Z",
+      "menuDate": "Středa",
+      "scrapedAt": "2026-03-18T06:42:56.457Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou  -TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "Frankfurtská polévka s uzeninou",
+              "name": "Kulajda s houbami",
               "price": "39 Kč"
             }
           ]
@@ -351,7 +353,15 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "UT-Min SLKuřecí plátek zapečený s broskví a sýrem, hranolky",
+              "name": "ST-M1Hovězí maso v rajské omáčce s houskovým knedlíkem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažené kuřecí gordon blue s bramborem/hranolky",
+              "price": "159 Kč"
+            },
+            {
+              "name": "ST-Min SL Přírodní vepřová krkovice s fazolkami a anglickou slaninou, sázené 150g vejce, hranolky",
               "price": "169 Kč"
             },
             {
@@ -391,6 +401,15 @@
               "price": "179 Kč"
             }
           ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
+            }
+          ]
         }
       ]
     },
@@ -399,7 +418,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T05:40:41.285Z",
+      "scrapedAt": "2026-03-18T06:43:08.166Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -472,7 +491,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T05:40:52.121Z",
+      "scrapedAt": "2026-03-18T06:43:19.679Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -673,7 +692,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T05:40:41.285Z",
+      "scrapedAt": "2026-03-18T06:43:08.165Z",
       "sections": [
         {
           "title": "Nejprodávanější",
