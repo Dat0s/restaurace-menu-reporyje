@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T20:27:53.933Z",
+  "lastUpdated": "2026-03-18T21:03:12.308Z",
   "restaurants": [
     {
       "name": "Jídelna Pohotovka",
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.03.2026",
-      "scrapedAt": "2026-03-18T20:27:44.057Z",
+      "scrapedAt": "2026-03-18T21:03:02.504Z",
       "sections": [
         {
           "title": "Polévky",
@@ -131,7 +131,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 18. 3.",
-      "scrapedAt": "2026-03-18T20:27:31.113Z",
+      "scrapedAt": "2026-03-18T21:02:46.192Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -169,7 +169,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T20:27:43.024Z",
+      "scrapedAt": "2026-03-18T21:03:01.712Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -316,7 +316,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T20:27:53.827Z",
+      "scrapedAt": "2026-03-18T21:03:12.206Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -334,7 +334,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa",
-      "scrapedAt": "2026-03-18T20:27:32.040Z",
+      "scrapedAt": "2026-03-18T21:02:47.404Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -406,57 +406,6 @@
               "price": "59 Kč"
             }
           ]
-        },
-        {
-          "title": "Wing It! COMBO Menu",
-          "items": [
-            {
-              "name": "Marinovaná křídla COMBO",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Obalovaná křídla HOT COMBO",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy COMBO",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Kuřecí popcorn COMBO",
-              "price": "259 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Wing It! Wings Strips Popcorn",
-          "items": [
-            {
-              "name": "Marinovaná křídla",
-              "price": "149 Kč"
-            },
-            {
-              "name": "Obalovaná křídla HOT",
-              "price": "149 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy",
-              "price": "149 Kč"
-            },
-            {
-              "name": "Kuřecí popcorn",
-              "price": "169 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Wing It! Smažený květák",
-          "items": [
-            {
-              "name": "Smažený květák",
-              "price": "129 Kč"
-            }
-          ]
         }
       ]
     },
@@ -465,7 +414,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T20:27:43.147Z",
+      "scrapedAt": "2026-03-18T21:03:01.832Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -538,7 +487,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T20:27:53.926Z",
+      "scrapedAt": "2026-03-18T21:03:12.301Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -739,7 +688,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T20:27:43.147Z",
+      "scrapedAt": "2026-03-18T21:03:01.832Z",
       "sections": [
         {
           "title": "Nejprodávanější",
