@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-18T11:10:11.966Z",
+  "lastUpdated": "2026-03-18T11:58:02.699Z",
   "restaurants": [
     {
       "name": "Jídelna Pohotovka",
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.03.2026",
-      "scrapedAt": "2026-03-18T11:10:02.187Z",
+      "scrapedAt": "2026-03-18T11:57:52.993Z",
       "sections": [
         {
           "title": "Polévky",
@@ -109,7 +109,8 @@
             },
             {
               "name": "Domácí bramborák,, Poctivec\" se slaninou a salátkem z kysaného zelí (1 ks)",
-              "price": "65 Kč"
+              "price": "65 Kč",
+              "soldOut": true
             },
             {
               "name": "Domácí vaječná smaženka se zeleninou (1ks)",
@@ -129,7 +130,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 18. 3.",
-      "scrapedAt": "2026-03-18T11:09:47.563Z",
+      "scrapedAt": "2026-03-18T11:57:36.193Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -167,7 +168,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T11:10:01.310Z",
+      "scrapedAt": "2026-03-18T11:57:52.226Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -314,7 +315,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-03-18T11:10:11.872Z",
+      "scrapedAt": "2026-03-18T11:58:02.617Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -332,7 +333,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa",
-      "scrapedAt": "2026-03-18T10:12:15.086Z",
+      "scrapedAt": "2026-03-18T11:57:38.229Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -357,10 +358,6 @@
             {
               "name": "Smažené kuřecí gordon blue s bramborem/hranolky",
               "price": "159 Kč"
-            },
-            {
-              "name": "ST-Min SL Přírodní vepřová krkovice s fazolkami a anglickou slaninou, sázené 150g vejce, hranolky",
-              "price": "169 Kč"
             },
             {
               "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
@@ -616,7 +613,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T11:10:01.422Z",
+      "scrapedAt": "2026-03-18T11:57:52.319Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -689,7 +686,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T11:10:11.958Z",
+      "scrapedAt": "2026-03-18T11:58:02.692Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -890,7 +887,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-18T11:10:01.422Z",
+      "scrapedAt": "2026-03-18T11:57:52.319Z",
       "sections": [
         {
           "title": "Nejprodávanější",
