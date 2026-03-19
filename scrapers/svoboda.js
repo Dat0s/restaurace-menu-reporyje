@@ -47,7 +47,8 @@ async function scrapeSvoboda() {
     // Strategy 1: Call API from page context (uses page's own session)
     let imageUrl = await page.evaluate(async () => {
       try {
-        const csrfToken = document.cookie.match(/csrftoken=([^;]+)/)?.[1] || '';
+        let csrfToken = '';
+        try { csrfToken = document.cookie.match(/csrftoken=([^;]+)/)?.[1] || ''; } catch {}
         const res = await fetch('/api/v1/users/web_profile_info/?username=svoboda_reznictvi', {
           headers: {
             'X-CSRFToken': csrfToken,
@@ -63,7 +64,7 @@ async function scrapeSvoboda() {
         }
       } catch {}
       return '';
-    });
+    }).catch(() => '');
 
     // Strategy 2: Find grid images in DOM
     if (!imageUrl) {
@@ -78,15 +79,17 @@ async function scrapeSvoboda() {
     }
 
     // Log debug info for CI troubleshooting
-    const debugInfo = await page.evaluate(() => ({
-      url: location.href,
-      title: document.title,
-      hasCookies: document.cookie.length > 0,
-      hasCsrf: document.cookie.includes('csrftoken'),
-      articleCount: document.querySelectorAll('article').length,
-      imgCount: document.querySelectorAll('img').length,
-      hasLoginForm: !!document.querySelector('input[name="username"]'),
-    }));
+    const debugInfo = await page.evaluate(() => {
+      let hasCookies = false;
+      try { hasCookies = document.cookie.length > 0; } catch {}
+      return {
+        url: location.href,
+        title: document.title,
+        hasCookies,
+        articleCount: document.querySelectorAll('article').length,
+        imgCount: document.querySelectorAll('img').length,
+      };
+    }).catch(() => ({ error: 'evaluate failed' }));
     console.log('  Page state:', JSON.stringify(debugInfo));
     console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND');
 
