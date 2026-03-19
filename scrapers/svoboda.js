@@ -14,30 +14,36 @@ async function scrapeSvoboda() {
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     );
 
-    // Intercept Instagram web_profile_info API response to get post image URLs
-    // This works even on GitHub Actions where grid images don't render in DOM
-    const apiResponsePromise = page.waitForResponse(
-      res => res.url().includes('web_profile_info'),
-      { timeout: 20000 }
-    ).catch(() => null);
-
+    // Load Instagram page to establish session, then call API from page context
+    // This works even on GitHub Actions because the page's own session/cookies
+    // are used for the fetch call, bypassing datacenter IP restrictions
     await page.goto('https://www.instagram.com/svoboda_reznictvi/', {
       waitUntil: 'networkidle2',
       timeout: 30000
     });
 
-    let imageUrl = '';
-    const apiResponse = await apiResponsePromise;
-    if (apiResponse) {
+    await new Promise(r => setTimeout(r, 2000));
+
+    const imageUrl = await page.evaluate(async () => {
       try {
-        const json = await apiResponse.json();
+        const csrfToken = document.cookie.match(/csrftoken=([^;]+)/)?.[1] || '';
+        const res = await fetch('/api/v1/users/web_profile_info/?username=svoboda_reznictvi', {
+          headers: {
+            'X-CSRFToken': csrfToken,
+            'X-IG-App-ID': '936619743392459',
+            'X-Requested-With': 'XMLHttpRequest',
+          }
+        });
+        if (!res.ok) return '';
+        const json = await res.json();
         const edges = json?.data?.user?.edge_owner_to_timeline_media?.edges;
         if (edges && edges.length > 0) {
-          imageUrl = edges[0].node.display_url || edges[0].node.thumbnail_src || '';
+          return edges[0].node.display_url || edges[0].node.thumbnail_src || '';
         }
       } catch {}
-    }
-    console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND (API)');
+      return '';
+    });
+    console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND');
 
     if (!imageUrl) {
       return fallbackResult();
