@@ -14,28 +14,30 @@ async function scrapeSvoboda() {
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     );
 
-    // Collect grid image URLs from network responses (works even behind login wall)
-    const networkImages = [];
-    page.on('response', response => {
-      const url = response.url();
-      const ct = response.headers()['content-type'] || '';
-      // Grid post images use t51.71878, profile pics use t51.2885-19
-      if (url.includes('scontent') && ct.includes('image') && !url.includes('t51.2885-19') && !url.includes('s150x150')) {
-        networkImages.push(url);
-      }
-    });
+    // Intercept Instagram web_profile_info API response to get post image URLs
+    // This works even on GitHub Actions where grid images don't render in DOM
+    const apiResponsePromise = page.waitForResponse(
+      res => res.url().includes('web_profile_info'),
+      { timeout: 20000 }
+    ).catch(() => null);
 
     await page.goto('https://www.instagram.com/svoboda_reznictvi/', {
       waitUntil: 'networkidle2',
       timeout: 30000
     });
 
-    await new Promise(r => setTimeout(r, 3000));
-
-    // First image collected from network is the newest post
-    const imageUrl = networkImages[0] || '';
-    console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND');
-    console.log('  Grid images collected from network:', networkImages.length);
+    let imageUrl = '';
+    const apiResponse = await apiResponsePromise;
+    if (apiResponse) {
+      try {
+        const json = await apiResponse.json();
+        const edges = json?.data?.user?.edge_owner_to_timeline_media?.edges;
+        if (edges && edges.length > 0) {
+          imageUrl = edges[0].node.display_url || edges[0].node.thumbnail_src || '';
+        }
+      } catch {}
+    }
+    console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND (API)');
 
     if (!imageUrl) {
       return fallbackResult();
