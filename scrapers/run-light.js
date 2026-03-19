@@ -26,6 +26,10 @@ async function main() {
     console.log(`Scraping ${name}...`);
     try {
       const result = await fn();
+      if (!result) {
+        console.log(`  SKIP: no data (keeping previous)`);
+        continue;
+      }
       upsertRestaurant(data, result);
       const totalItems = result.sections.reduce((sum, s) => sum + s.items.length, 0);
       console.log(`  OK: ${totalItems} items`);

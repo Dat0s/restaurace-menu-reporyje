@@ -14,17 +14,38 @@ async function scrapeSvoboda() {
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
     );
 
-    // Load Instagram page to establish session, then call API from page context
-    // This works even on GitHub Actions because the page's own session/cookies
-    // are used for the fetch call, bypassing datacenter IP restrictions
+    // Navigate to Instagram and establish a session
+    await page.goto('https://www.instagram.com/', {
+      waitUntil: 'networkidle2',
+      timeout: 30000
+    });
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Now navigate to the profile page (with session cookies from first load)
     await page.goto('https://www.instagram.com/svoboda_reznictvi/', {
       waitUntil: 'networkidle2',
       timeout: 30000
     });
-
     await new Promise(r => setTimeout(r, 2000));
 
-    const imageUrl = await page.evaluate(async () => {
+    // Dismiss any login/cookie dialogs
+    try {
+      const buttons = await page.$$('button');
+      for (const btn of buttons) {
+        const text = await page.evaluate(el => el.textContent, btn);
+        if (/not now|dismiss|close|decline|reject|log in|allow/i.test(text)) {
+          await btn.click();
+          await new Promise(r => setTimeout(r, 500));
+        }
+      }
+    } catch {}
+
+    // Scroll to trigger lazy loading
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Strategy 1: Call API from page context (uses page's own session)
+    let imageUrl = await page.evaluate(async () => {
       try {
         const csrfToken = document.cookie.match(/csrftoken=([^;]+)/)?.[1] || '';
         const res = await fetch('/api/v1/users/web_profile_info/?username=svoboda_reznictvi', {
@@ -43,10 +64,35 @@ async function scrapeSvoboda() {
       } catch {}
       return '';
     });
+
+    // Strategy 2: Find grid images in DOM
+    if (!imageUrl) {
+      imageUrl = await page.evaluate(() => {
+        const imgs = Array.from(document.querySelectorAll('article img, main img'));
+        for (const img of imgs) {
+          const src = img.src || '';
+          if (src.includes('scontent') && !src.includes('t51.2885-19') && img.width > 100) return src;
+        }
+        return '';
+      });
+    }
+
+    // Log debug info for CI troubleshooting
+    const debugInfo = await page.evaluate(() => ({
+      url: location.href,
+      title: document.title,
+      hasCookies: document.cookie.length > 0,
+      hasCsrf: document.cookie.includes('csrftoken'),
+      articleCount: document.querySelectorAll('article').length,
+      imgCount: document.querySelectorAll('img').length,
+      hasLoginForm: !!document.querySelector('input[name="username"]'),
+    }));
+    console.log('  Page state:', JSON.stringify(debugInfo));
     console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND');
 
     if (!imageUrl) {
-      return fallbackResult();
+      console.log('  Returning null to preserve previous data');
+      return null;
     }
 
     // Download image with Instagram referer
@@ -59,14 +105,14 @@ async function scrapeSvoboda() {
 
     if (!imgResponse.ok) {
       console.log('  Image download failed:', imgResponse.status);
-      return fallbackResult();
+      return null;
     }
 
     const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
 
     if (imgBuffer.length < 5000) {
       console.log('  Image too small, likely not a menu:', imgBuffer.length, 'bytes');
-      return fallbackResult();
+      return null;
     }
 
     // Run Czech OCR
@@ -175,7 +221,7 @@ function parseMenuText(text) {
   const cleanSections = sections.filter(s => s.items.length > 0);
 
   if (cleanSections.length === 0) {
-    return fallbackResult();
+    return null;
   }
 
   return {
