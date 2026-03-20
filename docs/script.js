@@ -75,7 +75,7 @@
       for (var di = 0; di < daySections.length; di++) {
         var ds = daySections[di];
         if (ds.isToday) {
-          sectionsHtml += renderSections([{ section: ds.section, isToday: false, isOtherDay: false, markAsToday: true }], r.sections.length);
+          sectionsHtml += renderSections([{ section: ds.section, isToday: false, isOtherDay: false, markAsToday: true, hideTitle: true }], r.sections.length);
         }
       }
       // Collapsed: all non-today days in correct order
@@ -212,13 +212,20 @@
         }
         collapsed.remove();
 
-        // Activate today highlight on the today section
+        // Activate today highlight and restore hidden title
         var todaySection = cardBody.querySelector('.menu-section[data-today]');
         if (todaySection) {
           todaySection.classList.add('today-section');
-          var titleEl = todaySection.querySelector('.section-title');
-          if (titleEl && !titleEl.querySelector('.today-badge')) {
-            titleEl.insertAdjacentHTML('beforeend', ' <span class="today-badge">DNES</span>');
+          // Restore day title if it was hidden
+          var dayTitle = todaySection.getAttribute('data-day-title');
+          if (dayTitle && !todaySection.querySelector('.section-title')) {
+            var titleHtml = '<h3 class="section-title">' + dayTitle + ' <span class="today-badge">DNES</span></h3>';
+            todaySection.insertAdjacentHTML('afterbegin', titleHtml);
+          } else {
+            var titleEl = todaySection.querySelector('.section-title');
+            if (titleEl && !titleEl.querySelector('.today-badge')) {
+              titleEl.insertAdjacentHTML('beforeend', ' <span class="today-badge">DNES</span>');
+            }
           }
         }
 
@@ -263,15 +270,17 @@
       var isToday = entries[i].isToday;
       var isOtherDay = entries[i].isOtherDay;
       var markAsToday = entries[i].markAsToday;
+      var hideTitle = entries[i].hideTitle;
 
       var sectionClass = 'menu-section';
       if (isToday) sectionClass += ' today-section';
       if (isOtherDay) sectionClass += ' dimmed-section';
 
       var attrs = markAsToday ? ' data-today="1"' : '';
+      if (hideTitle) attrs += ' data-day-title="' + escapeHtml(s.title) + '"';
       html += '<section class="' + sectionClass + '"' + attrs + '>';
 
-      var skipTitle = /^polední\s+menu$/i.test(s.title) && totalSections === 1;
+      var skipTitle = hideTitle || (/^polední\s+menu$/i.test(s.title) && totalSections === 1);
       if (!skipTitle) {
         var titleHtml = '<h3 class="section-title">' + escapeHtml(s.title);
         if (isToday) titleHtml += ' <span class="today-badge">DNES</span>';
