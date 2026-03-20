@@ -38,14 +38,8 @@ async function main() {
     }
   }
 
-  // Sort alphabetically, with pinned restaurants at the end
-  const pinOrder = { 'Řeporyjská Sokolovna': 1, 'HQ Pippi Grill': 2, 'DÖNER KEBAB HOUSE': 3, 'Papa Cipolla': 4 };
-  data.restaurants.sort((a, b) => {
-    const aPin = pinOrder[a.name] || 0;
-    const bPin = pinOrder[b.name] || 0;
-    if (aPin !== bPin) return aPin - bPin;
-    return a.name.localeCompare(b.name, 'cs');
-  });
+  // Sort alphabetically by Czech locale
+  data.restaurants.sort((a, b) => a.name.localeCompare(b.name, 'cs'));
   writeData(data);
   console.log('Data saved to menu-data.json');
 }
