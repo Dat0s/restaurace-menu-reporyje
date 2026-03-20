@@ -124,8 +124,8 @@
     main.appendChild(card);
   }
 
-  // ── Truncate cards with 10+ priced items ──
-  // Count priced items across all visible sections. After the 10th priced item,
+  // ── Truncate cards with 11+ priced items ──
+  // Count priced items across all visible sections. After the 11th priced item,
   // hide remaining items within the current section + hide all subsequent sections.
   var cards = main.querySelectorAll('.card');
   for (var ci = 0; ci < cards.length; ci++) {
@@ -136,7 +136,7 @@
       var p = allItems[ii].querySelector('.price');
       if (p && p.textContent.trim()) totalPriced++;
     }
-    if (totalPriced <= 10) continue;
+    if (totalPriced <= 11) continue;
 
     // Walk through visible sections and hide items/sections after 10th priced item
     var visibleSections = cardEl.querySelectorAll('.card-body > .menu-section');
@@ -154,7 +154,7 @@
         var priceEl = items[ii].querySelector('.price');
         if (priceEl && priceEl.textContent.trim()) {
           pricedSeen++;
-          if (pricedSeen > 10) {
+          if (pricedSeen > 11) {
             items[ii].classList.add('truncated-item');
             if (!cutoff) cutoff = true;
           }
@@ -164,7 +164,7 @@
       }
     }
 
-    var hiddenCount = totalPriced - Math.min(pricedSeen, 10);
+    var hiddenCount = totalPriced - Math.min(pricedSeen, 11);
     if (hiddenCount > 0) {
       var btn = document.createElement('button');
       btn.className = 'expand-btn expand-items-btn';
