@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-20T10:02:45.030Z",
+  "lastUpdated": "2026-03-20T10:56:49.791Z",
   "restaurants": [
     {
       "name": "Jídelna Pohotovka",
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.03.2026",
-      "scrapedAt": "2026-03-20T10:02:35.104Z",
+      "scrapedAt": "2026-03-20T10:56:38.832Z",
       "sections": [
         {
           "title": "Polévky",
@@ -131,7 +131,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 20. 3.",
-      "scrapedAt": "2026-03-20T10:02:21.119Z",
+      "scrapedAt": "2026-03-20T10:56:24.482Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -169,7 +169,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-20T10:02:34.156Z",
+      "scrapedAt": "2026-03-20T10:56:37.993Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -410,7 +410,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek",
-      "scrapedAt": "2026-03-20T10:02:22.271Z",
+      "scrapedAt": "2026-03-20T10:56:26.116Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -694,7 +694,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T10:02:34.280Z",
+      "scrapedAt": "2026-03-20T10:56:38.100Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -767,7 +767,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T10:02:45.022Z",
+      "scrapedAt": "2026-03-20T10:56:49.783Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -968,7 +968,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T10:02:34.280Z",
+      "scrapedAt": "2026-03-20T10:56:38.100Z",
       "sections": [
         {
           "title": "Nejprodávanější",
