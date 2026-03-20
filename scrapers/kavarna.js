@@ -47,7 +47,7 @@ async function scrapeKavarna() {
     });
 
     // Filter out non-food sections
-    const excluded = ['malá jídla', 'dezerty', 'káva', 'alkoholické nápoje', 'nealkoholické nápoje'];
+    const excluded = ['káva', 'alkoholické nápoje', 'nealkoholické nápoje'];
     if (items.length > 0 && !excluded.some(e => sectionName.toLowerCase().includes(e))) {
       // Don't repeat the date as section title - use "Hlavní jídla" or keep original if not the date
       const isDate = sectionName === menuDate;
