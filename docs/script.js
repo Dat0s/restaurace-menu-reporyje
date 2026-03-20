@@ -43,17 +43,22 @@
       }
     }
 
-    // Categorize sections
-    var nonDaySections = []; // e.g. "Polední menu"
-    var daySections = [];    // day-named sections
+    // Categorize sections into: daily header (e.g. "Polední menu"), day-named, and static (rest)
+    var dailyHeaderSections = []; // e.g. "Polední menu" - shown before today
+    var daySections = [];         // day-named sections (Po-Pá)
+    var staticSections = [];      // e.g. "Ukrajinské speciality" - shown after daily
+
+    var dailyHeaderNames = ['polední menu'];
 
     for (var si = 0; si < r.sections.length; si++) {
       var s = r.sections[si];
       var dayIdx = dayOrder.indexOf(s.title);
       if (isMultiDay && dayIdx >= 0) {
         daySections.push({ section: s, dayIdx: dayIdx, isToday: s.title === todayName });
+      } else if (isMultiDay && dailyHeaderNames.indexOf(s.title.toLowerCase()) >= 0) {
+        dailyHeaderSections.push({ section: s, isToday: false, isOtherDay: false });
       } else {
-        nonDaySections.push({ section: s, isToday: false, isOtherDay: false });
+        staticSections.push({ section: s, isToday: false, isOtherDay: false });
       }
     }
 
@@ -67,8 +72,8 @@
       sectionsHtml += '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
 
-    // Render non-day sections first (e.g. "Polední menu")
-    sectionsHtml += renderSections(nonDaySections, r.sections.length);
+    // Render daily header sections first (e.g. "Polední menu")
+    sectionsHtml += renderSections(dailyHeaderSections, r.sections.length);
 
     if (isMultiDay && daySections.length > 0) {
       // Render today without highlight (shown plain when it's the only visible day)
@@ -93,9 +98,11 @@
         sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ ' + btnLabel + '</button>';
       }
     } else if (!isMultiDay) {
-      // Regular restaurant: render all sections as-is
-      // (nonDaySections already rendered above, but for non-multi-day all sections are in nonDaySections)
+      // Regular restaurant: all sections are in staticSections
     }
+
+    // Render static/permanent sections last (e.g. Ukrajinské speciality, Hlavní jídla, Dezerty)
+    sectionsHtml += renderSections(staticSections, r.sections.length);
 
     var scrapedTime = r.scrapedAt
       ? new Date(r.scrapedAt).toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' })
