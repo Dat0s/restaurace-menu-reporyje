@@ -118,7 +118,7 @@ body {
 .page-header {
   text-align: center;
   margin-bottom: 24px;
-  margin-top: 8px;
+  margin-top: -4px;
 }
 
 .page-header h1 {
