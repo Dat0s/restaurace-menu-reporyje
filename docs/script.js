@@ -205,9 +205,10 @@
         var collapsed = cardBody.querySelector('.collapsed-days');
         if (!collapsed) { btn.remove(); return; }
 
-        // Move all day sections from collapsed into card-body
+        // Move all day sections from collapsed into card-body and remove dimming
         var collapsedSections = collapsed.querySelectorAll('.menu-section');
         for (var i = 0; i < collapsedSections.length; i++) {
+          collapsedSections[i].classList.remove('dimmed-section');
           cardBody.appendChild(collapsedSections[i]);
         }
         collapsed.remove();
