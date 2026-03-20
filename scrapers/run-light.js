@@ -38,8 +38,14 @@ async function main() {
     }
   }
 
-  // Sort alphabetically by Czech locale
-  data.restaurants.sort((a, b) => a.name.localeCompare(b.name, 'cs'));
+  // Sort: daily menu restaurants first (alphabetically), then static menu (alphabetically)
+  const staticMenu = new Set(['DÖNER KEBAB HOUSE', 'HQ Pippi Grill', 'Papa Cipolla']);
+  data.restaurants.sort((a, b) => {
+    const aStatic = staticMenu.has(a.name) ? 1 : 0;
+    const bStatic = staticMenu.has(b.name) ? 1 : 0;
+    if (aStatic !== bStatic) return aStatic - bStatic;
+    return a.name.localeCompare(b.name, 'cs');
+  });
   writeData(data);
   console.log('Data saved to menu-data.json');
 }
