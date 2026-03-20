@@ -24,8 +24,8 @@
 
   // Current day name for multi-day restaurants
   var dayNames = ['Neděle', 'Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek', 'Sobota'];
+  var dayOrder = ['Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek'];
   var todayName = dayNames[new Date().getDay()];
-  var isWeekday = new Date().getDay() >= 1 && new Date().getDay() <= 5;
 
   // Render cards
   for (var ri = 0; ri < data.restaurants.length; ri++) {
@@ -43,22 +43,22 @@
       }
     }
 
-    // Split sections into visible (today + non-day) and collapsed (other days)
-    var visibleSections = [];
-    var collapsedSections = [];
+    // Categorize sections
+    var nonDaySections = []; // e.g. "Polední menu"
+    var daySections = [];    // day-named sections
 
     for (var si = 0; si < r.sections.length; si++) {
       var s = r.sections[si];
-      var isDaySection = dayNames.indexOf(s.title) > 0;
-      var isToday = isMultiDay && s.title === todayName;
-      var isOtherDay = isMultiDay && isDaySection && !isToday;
-
-      if (isOtherDay) {
-        collapsedSections.push({ section: s, isToday: false, isOtherDay: true });
+      var dayIdx = dayOrder.indexOf(s.title);
+      if (isMultiDay && dayIdx >= 0) {
+        daySections.push({ section: s, dayIdx: dayIdx, isToday: s.title === todayName });
       } else {
-        visibleSections.push({ section: s, isToday: isToday, isOtherDay: false });
+        nonDaySections.push({ section: s, isToday: false, isOtherDay: false });
       }
     }
+
+    // Sort day sections by day order (Po, Út, St, Čt, Pá)
+    daySections.sort(function(a, b) { return a.dayIdx - b.dayIdx; });
 
     var sectionsHtml = '';
 
@@ -67,16 +67,34 @@
       sectionsHtml += '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
 
-    // Render visible sections (today + non-day like "Polední menu")
-    sectionsHtml += renderSections(visibleSections, r.sections.length);
+    // Render non-day sections first (e.g. "Polední menu")
+    sectionsHtml += renderSections(nonDaySections, r.sections.length);
 
-    // Render collapsed sections (other days)
-    if (collapsedSections.length > 0) {
-      sectionsHtml += '<div class="collapsed-days" hidden>';
-      sectionsHtml += renderSections(collapsedSections, r.sections.length);
-      sectionsHtml += '</div>';
-      var btnLabel = hasTodaySection ? 'Zobrazit celý týden' : 'Zobrazit týdenní menu';
-      sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ ' + btnLabel + '</button>';
+    if (isMultiDay && daySections.length > 0) {
+      // Render all days in order, but wrap in a structure where today is outside collapsed
+      for (var di = 0; di < daySections.length; di++) {
+        var ds = daySections[di];
+        if (ds.isToday) {
+          sectionsHtml += renderSections([{ section: ds.section, isToday: true, isOtherDay: false }], r.sections.length);
+        }
+      }
+      // Collapsed: all non-today days in correct order
+      var otherDays = [];
+      for (var di = 0; di < daySections.length; di++) {
+        if (!daySections[di].isToday) {
+          otherDays.push({ section: daySections[di].section, isToday: false, isOtherDay: true });
+        }
+      }
+      if (otherDays.length > 0) {
+        sectionsHtml += '<div class="collapsed-days" hidden>';
+        sectionsHtml += renderSections(otherDays, r.sections.length);
+        sectionsHtml += '</div>';
+        var btnLabel = hasTodaySection ? 'Zobrazit celý týden' : 'Zobrazit týdenní menu';
+        sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ ' + btnLabel + '</button>';
+      }
+    } else if (!isMultiDay) {
+      // Regular restaurant: render all sections as-is
+      // (nonDaySections already rendered above, but for non-multi-day all sections are in nonDaySections)
     }
 
     var scrapedTime = r.scrapedAt
@@ -107,43 +125,55 @@
   }
 
   // ── Truncate cards with 10+ priced items ──
+  // Truncate whole sections: count priced items, once we pass 10 hide remaining sections
   var cards = main.querySelectorAll('.card');
   for (var ci = 0; ci < cards.length; ci++) {
     var cardEl = cards[ci];
-    var allItems = cardEl.querySelectorAll('.card-body .menu-item');
+    // Only count visible items (not inside collapsed-days)
+    var visibleSections = cardEl.querySelectorAll('.card-body > .menu-section');
     var pricedCount = 0;
-    var truncateAfter = null;
+    var totalPriced = 0;
+    var sectionsToHide = [];
+    var cutoffReached = false;
 
-    for (var ii = 0; ii < allItems.length; ii++) {
-      var priceEl = allItems[ii].querySelector('.price');
-      if (priceEl && priceEl.textContent.trim()) {
-        pricedCount++;
-        if (pricedCount === 10) {
-          truncateAfter = allItems[ii];
+    for (var si = 0; si < visibleSections.length; si++) {
+      var section = visibleSections[si];
+      var items = section.querySelectorAll('.menu-item');
+      var sectionPriced = 0;
+      for (var ii = 0; ii < items.length; ii++) {
+        var priceEl = items[ii].querySelector('.price');
+        if (priceEl && priceEl.textContent.trim()) {
+          totalPriced++;
+          if (!cutoffReached) sectionPriced++;
         }
-        if (pricedCount > 10) {
-          allItems[ii].classList.add('truncated-item');
-        }
+      }
+      if (!cutoffReached) {
+        pricedCount += sectionPriced;
+        if (pricedCount >= 10) cutoffReached = true;
+      } else {
+        sectionsToHide.push(section);
       }
     }
 
-    if (pricedCount > 10 && truncateAfter) {
-      var extraCount = pricedCount - 10;
+    var hiddenPriced = totalPriced - pricedCount;
+    if (hiddenPriced > 0 && sectionsToHide.length > 0) {
+      for (var hi = 0; hi < sectionsToHide.length; hi++) {
+        sectionsToHide[hi].classList.add('truncated-section');
+      }
       var btn = document.createElement('button');
       btn.className = 'expand-btn expand-items-btn';
       btn.type = 'button';
-      btn.textContent = '+ Zobrazit ' + (extraCount === 1 ? 'další 1 jídlo' :
-        extraCount < 5 ? 'další ' + extraCount + ' jídla' :
-        'dalších ' + extraCount + ' jídel');
-      // Insert button after card-body, before card-footer
+      btn.textContent = '+ Zobrazit ' + (hiddenPriced === 1 ? 'další 1 jídlo' :
+        hiddenPriced < 5 ? 'další ' + hiddenPriced + ' jídla' :
+        'dalších ' + hiddenPriced + ' jídel');
       var cardBody = cardEl.querySelector('.card-body');
       cardBody.appendChild(btn);
 
       btn.addEventListener('click', (function(card, button) {
         return function() {
-          var hidden = card.querySelectorAll('.truncated-item');
+          var hidden = card.querySelectorAll('.truncated-section');
           for (var i = 0; i < hidden.length; i++) {
-            hidden[i].classList.remove('truncated-item');
+            hidden[i].classList.remove('truncated-section');
           }
           button.remove();
         };
