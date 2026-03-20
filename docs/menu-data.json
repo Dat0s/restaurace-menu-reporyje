@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-20T11:52:17.870Z",
+  "lastUpdated": "2026-03-20T11:58:01.940Z",
   "restaurants": [
     {
       "name": "DÖNER KEBAB HOUSE",
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T11:52:17.862Z",
+      "scrapedAt": "2026-03-20T11:58:01.930Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -207,7 +207,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T11:52:07.938Z",
+      "scrapedAt": "2026-03-20T11:57:48.762Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -280,7 +280,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.03.2026",
-      "scrapedAt": "2026-03-20T11:52:08.776Z",
+      "scrapedAt": "2026-03-20T11:57:48.844Z",
       "sections": [
         {
           "title": "Polévky",
@@ -397,7 +397,7 @@
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 20. 3.",
-      "scrapedAt": "2026-03-20T11:51:52.882Z",
+      "scrapedAt": "2026-03-20T11:57:36.716Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -435,7 +435,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T11:52:07.937Z",
+      "scrapedAt": "2026-03-20T11:57:48.761Z",
       "sections": [
         {
           "title": "Nejprodávanější",
@@ -1034,7 +1034,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-20T11:52:07.827Z",
+      "scrapedAt": "2026-03-20T11:57:48.466Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -1181,7 +1181,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek",
-      "scrapedAt": "2026-03-20T11:51:54.276Z",
+      "scrapedAt": "2026-03-20T11:57:37.082Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -1457,21 +1457,21 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "16.3. - 20.3.",
-      "scrapedAt": "2026-03-20T11:46:45.575Z",
+      "scrapedAt": "2026-03-20T11:58:01.512Z",
       "sections": [
         {
           "title": "Pondělí",
           "items": [
             {
-              "name": "dršťková polévka",
+              "name": "Dršťková polévka",
               "price": "39 Kč"
             },
             {
-              "name": "buřtguláš",
+              "name": "Buřtguláš",
               "price": "139 Kč"
             },
             {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
               "price": ""
             }
           ]
@@ -1480,15 +1480,15 @@
           "title": "Úterý",
           "items": [
             {
-              "name": "gulášová polévka",
+              "name": "Gulášová polévka",
               "price": "39 Kč"
             },
             {
-              "name": "katův šleh, rýže",
+              "name": "Katův šleh, rýže",
               "price": "139 Kč"
             },
             {
-              "name": "uzené maso (krk, bok, koleno), pečené koleno",
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
               "price": ""
             }
           ]
@@ -1497,15 +1497,15 @@
           "title": "Středa",
           "items": [
             {
-              "name": "zabijačková polévka (prdelačka)",
+              "name": "Zabijačková polévka (prdelačka)",
               "price": "39 Kč"
             },
             {
-              "name": "čevapčiči, brambor, obloha",
+              "name": "Čevapčiči, brambor, obloha",
               "price": "139 Kč"
             },
             {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
               "price": ""
             }
           ]
@@ -1514,15 +1514,15 @@
           "title": "Čtvrtek",
           "items": [
             {
-              "name": "franfurtská polévka",
+              "name": "Franfurtská polévka",
               "price": "39 Kč"
             },
             {
-              "name": "moravský vrabec, zelí,h.knedlík",
+              "name": "Moravský vrabec, zelí,h.knedlík",
               "price": "149 Kč"
             },
             {
-              "name": "uzené maso (krk,bok, koleno), pečené koleno",
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
               "price": ""
             }
           ]
@@ -1531,15 +1531,15 @@
           "title": "Pátek",
           "items": [
             {
-              "name": "hovězí polévka",
+              "name": "Hovězí polévka",
               "price": "39 Kč"
             },
             {
-              "name": "ovocné knedlíky",
+              "name": "Ovocné knedlíky",
               "price": "139 Kč"
             },
             {
-              "name": "pečené maso (krk,bok,koleno), ovarové maso",
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
               "price": ""
             }
           ]

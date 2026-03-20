@@ -221,6 +221,15 @@ function parseMenuText(text) {
     sections.push({ title: currentSection, items: currentItems });
   }
 
+  // Capitalize first letter of each item name
+  for (const s of sections) {
+    for (const item of s.items) {
+      if (item.name) {
+        item.name = item.name.charAt(0).toUpperCase() + item.name.slice(1);
+      }
+    }
+  }
+
   const cleanSections = sections.filter(s => s.items.length > 0);
 
   if (cleanSections.length === 0) {
