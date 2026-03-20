@@ -187,17 +187,80 @@ async function scrapePivovar() {
       return fallbackResult();
     }
 
+    // Add static menu sections from /menu page
+    const staticSections = await scrapeStaticMenu();
+    const allSections = cleanSections.concat(staticSections);
+
     return {
       name: 'Pivovar Řeporyje',
       source: 'https://pivovarfood.cz/#catering',
       phone: '+420 274 772 837',
       menuDate,
       scrapedAt: new Date().toISOString(),
-      sections: cleanSections
+      sections: allSections
     };
 
   } finally {
     await browser.close();
+  }
+}
+
+async function scrapeStaticMenu() {
+  try {
+    const cheerio = require('cheerio');
+    const res = await fetch('https://pivovarfood.cz/menu', {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    const html = await res.text();
+
+    // Page content is concatenated into one long string. Extract sections using regex.
+    // Format: "- SPECIALS -Ukrajinské specialityDescription...ItemName  Weight Price,-..."
+    const text = cheerio.load(html)('body').text();
+
+    const sectionDefs = [
+      { marker: /- Specials -/i, name: 'Ukrajinské speciality', stopAt: /- Lunch -/i },
+      { marker: /- Main -/i, name: 'Hlavní jídla', stopAt: /- Drinks -/i },
+      { marker: /- Desserts -/i, name: 'Dezerty', stopAt: /Menu Full|- Reserve -/i },
+    ];
+
+    const sections = [];
+
+    for (const def of sectionDefs) {
+      const startMatch = text.match(def.marker);
+      if (!startMatch) continue;
+      const startIdx = startMatch.index + startMatch[0].length;
+      const rest = text.substring(startIdx);
+      const stopMatch = rest.match(def.stopAt);
+      const sectionText = stopMatch ? rest.substring(0, stopMatch.index) : rest;
+
+      // Extract items: "ItemName  WeightPrice,-" pattern
+      // Match: text followed by digits and ",-"
+      const itemPattern = /([A-ZÁ-Ža-zá-ž][A-ZÁ-Ža-zá-ž0-9\s\/\(\),–—.čřžšďťňůúýáéíó]+?)\s*(\d+,-(?:\/\d+,-)?)/g;
+      let match;
+      const items = [];
+      while ((match = itemPattern.exec(sectionText)) !== null) {
+        let name = match[1].trim();
+        let price = match[2].replace(/,-/g, ' Kč').replace(/\//g, ' / ');
+
+        // Skip descriptions and non-food text
+        if (name.length < 5) continue;
+        if (/Nenechte|Našim|Máte chuť|Čekají|nabízíme|ochutnat|Položky v tomto/i.test(name)) continue;
+
+        // Clean up: remove trailing weight info already in name
+        name = name.replace(/\s+/g, ' ').trim();
+
+        items.push({ name, price });
+      }
+
+      if (items.length > 0) {
+        sections.push({ title: def.name, items });
+      }
+    }
+
+    return sections;
+  } catch (e) {
+    console.log('  Static menu scrape failed:', e.message);
+    return [];
   }
 }
 
