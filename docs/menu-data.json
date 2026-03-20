@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-20T20:55:46.575Z",
+  "lastUpdated": "2026-03-20T21:23:24.595Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 20. 3.",
-      "scrapedAt": "2026-03-20T20:55:23.498Z",
+      "scrapedAt": "2026-03-20T21:22:58.171Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -90,7 +90,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.03.2026",
-      "scrapedAt": "2026-03-20T20:55:36.698Z",
+      "scrapedAt": "2026-03-20T21:23:14.582Z",
       "sections": [
         {
           "title": "Polévky",
@@ -215,7 +215,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-20T20:55:35.907Z",
+      "scrapedAt": "2026-03-20T21:23:13.685Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -457,7 +457,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek",
-      "scrapedAt": "2026-03-20T20:55:24.475Z",
+      "scrapedAt": "2026-03-20T21:22:59.383Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -531,49 +531,6 @@
             {
               "name": "Brownies",
               "price": "59 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Wing It! COMBO Menu",
-          "items": [
-            {
-              "name": "Obalovaná křídla HOT COMBO",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy COMBO",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Kuřecí popcorn COMBO",
-              "price": "259 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Wing It! Wings Strips Popcorn",
-          "items": [
-            {
-              "name": "Obalovaná křídla HOT",
-              "price": "149 Kč"
-            },
-            {
-              "name": "Kuřecí stripsy",
-              "price": "149 Kč"
-            },
-            {
-              "name": "Kuřecí popcorn",
-              "price": "169 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Wing It! Smažený květák",
-          "items": [
-            {
-              "name": "Smažený květák",
-              "price": "129 Kč"
             }
           ]
         }
@@ -678,7 +635,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T20:55:46.567Z",
+      "scrapedAt": "2026-03-20T21:23:24.588Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -879,7 +836,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T20:55:36.018Z",
+      "scrapedAt": "2026-03-20T21:23:13.776Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -952,7 +909,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-20T20:55:36.017Z",
+      "scrapedAt": "2026-03-20T21:23:13.776Z",
       "sections": [
         {
           "title": "Nejprodávanější",
