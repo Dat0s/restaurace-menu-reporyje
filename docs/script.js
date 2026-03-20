@@ -188,15 +188,49 @@
   }
 
   // ── Expand days buttons ──
+  var dayOrderMap = { 'Pondělí': 1, 'Úterý': 2, 'Středa': 3, 'Čtvrtek': 4, 'Pátek': 5 };
   var dayBtns = main.querySelectorAll('.expand-days-btn');
   for (var bi = 0; bi < dayBtns.length; bi++) {
     dayBtns[bi].addEventListener('click', (function(btn) {
       return function() {
         var cardBody = btn.closest('.card-body');
         var collapsed = cardBody.querySelector('.collapsed-days');
-        if (collapsed) {
-          collapsed.hidden = false;
+        if (!collapsed) { btn.remove(); return; }
+
+        // Move all day sections from collapsed into card-body
+        var collapsedSections = collapsed.querySelectorAll('.menu-section');
+        for (var i = 0; i < collapsedSections.length; i++) {
+          cardBody.appendChild(collapsedSections[i]);
         }
+        collapsed.remove();
+
+        // Now sort all day sections in card-body by day order (Po–Pá)
+        // Non-day sections (e.g. "Polední menu") stay at the top
+        var allSections = cardBody.querySelectorAll('.menu-section');
+        var nonDays = [];
+        var days = [];
+        for (var i = 0; i < allSections.length; i++) {
+          var title = allSections[i].querySelector('.section-title')?.textContent?.replace(/ DNES$/, '') || '';
+          if (dayOrderMap[title]) {
+            days.push({ el: allSections[i], order: dayOrderMap[title] });
+          } else {
+            nonDays.push(allSections[i]);
+          }
+        }
+        days.sort(function(a, b) { return a.order - b.order; });
+
+        // Re-append in order: non-days first, then days Po–Pá
+        // Collect other elements (buttons etc) to append after
+        var others = [];
+        for (var i = 0; i < cardBody.children.length; i++) {
+          var child = cardBody.children[i];
+          if (child.tagName !== 'SECTION') others.push(child);
+        }
+
+        for (var i = 0; i < nonDays.length; i++) cardBody.appendChild(nonDays[i]);
+        for (var i = 0; i < days.length; i++) cardBody.appendChild(days[i].el);
+        for (var i = 0; i < others.length; i++) cardBody.appendChild(others[i]);
+
         btn.remove();
       };
     })(dayBtns[bi]));
