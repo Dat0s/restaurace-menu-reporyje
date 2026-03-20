@@ -101,8 +101,16 @@
       ? new Date(r.scrapedAt).toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' })
       : '';
 
-    // Don't show menuDate if it's just "Polední menu" or empty
-    var showDate = r.menuDate && !/^polední\s+menu$/i.test(r.menuDate);
+    // Unified date display: daily menu restaurants get today's date, static keep "Stálé menu"
+    var staticMenuNames = ['DÖNER KEBAB HOUSE', 'HQ Pippi Grill', 'Papa Cipolla'];
+    var isStaticMenu = staticMenuNames.indexOf(r.name) >= 0;
+    var displayDate = '';
+    if (isStaticMenu) {
+      displayDate = r.menuDate || 'Stálé menu';
+    } else {
+      var now = new Date();
+      displayDate = todayName + ' ' + now.getDate() + '.' + (now.getMonth() + 1) + '.' + now.getFullYear();
+    }
 
     // Phone link
     var phoneHtml = r.phone
@@ -112,7 +120,7 @@
     card.innerHTML =
       '<header class="card-header">' +
         '<h2>' + escapeHtml(r.name) + '</h2>' +
-        (showDate ? '<div class="card-date">' + escapeHtml(r.menuDate) + '</div>' : '') +
+        '<div class="card-date">' + escapeHtml(displayDate) + '</div>' +
       '</header>' +
       '<div class="card-body">' + sectionsHtml + '</div>' +
       '<footer class="card-footer">' +
