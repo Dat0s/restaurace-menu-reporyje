@@ -179,6 +179,16 @@
       }
     }
 
+    // Hide sections where all items are truncated (only title remains visible)
+    var visibleSectionsAfter = cardEl.querySelectorAll('.card-body > .menu-section:not(.truncated-section)');
+    for (var si2 = 0; si2 < visibleSectionsAfter.length; si2++) {
+      var sec = visibleSectionsAfter[si2];
+      var visItems = sec.querySelectorAll('.menu-item:not(.truncated-item)');
+      if (visItems.length === 0) {
+        sec.classList.add('truncated-section');
+      }
+    }
+
     var hiddenCount = totalPriced - Math.min(pricedSeen, 11);
     if (hiddenCount > 0) {
       var btn = document.createElement('button');
