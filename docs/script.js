@@ -125,56 +125,62 @@
   }
 
   // ── Truncate cards with 10+ priced items ──
-  // Truncate whole sections: count priced items, once we pass 10 hide remaining sections
+  // Count priced items across all visible sections. After the 10th priced item,
+  // hide remaining items within the current section + hide all subsequent sections.
   var cards = main.querySelectorAll('.card');
   for (var ci = 0; ci < cards.length; ci++) {
     var cardEl = cards[ci];
-    // Only count visible items (not inside collapsed-days)
-    var visibleSections = cardEl.querySelectorAll('.card-body > .menu-section');
-    var pricedCount = 0;
+    var allItems = cardEl.querySelectorAll('.card-body > .menu-section .menu-item');
     var totalPriced = 0;
-    var sectionsToHide = [];
-    var cutoffReached = false;
+    for (var ii = 0; ii < allItems.length; ii++) {
+      var p = allItems[ii].querySelector('.price');
+      if (p && p.textContent.trim()) totalPriced++;
+    }
+    if (totalPriced <= 10) continue;
+
+    // Walk through visible sections and hide items/sections after 10th priced item
+    var visibleSections = cardEl.querySelectorAll('.card-body > .menu-section');
+    var pricedSeen = 0;
+    var cutoff = false;
 
     for (var si = 0; si < visibleSections.length; si++) {
       var section = visibleSections[si];
+      if (cutoff) {
+        section.classList.add('truncated-section');
+        continue;
+      }
       var items = section.querySelectorAll('.menu-item');
-      var sectionPriced = 0;
       for (var ii = 0; ii < items.length; ii++) {
         var priceEl = items[ii].querySelector('.price');
         if (priceEl && priceEl.textContent.trim()) {
-          totalPriced++;
-          if (!cutoffReached) sectionPriced++;
+          pricedSeen++;
+          if (pricedSeen > 10) {
+            items[ii].classList.add('truncated-item');
+            if (!cutoff) cutoff = true;
+          }
+        } else if (cutoff) {
+          items[ii].classList.add('truncated-item');
         }
-      }
-      if (!cutoffReached) {
-        pricedCount += sectionPriced;
-        if (pricedCount >= 10) cutoffReached = true;
-      } else {
-        sectionsToHide.push(section);
       }
     }
 
-    var hiddenPriced = totalPriced - pricedCount;
-    if (hiddenPriced > 0 && sectionsToHide.length > 0) {
-      for (var hi = 0; hi < sectionsToHide.length; hi++) {
-        sectionsToHide[hi].classList.add('truncated-section');
-      }
+    var hiddenCount = totalPriced - Math.min(pricedSeen, 10);
+    if (hiddenCount > 0) {
       var btn = document.createElement('button');
       btn.className = 'expand-btn expand-items-btn';
       btn.type = 'button';
-      btn.textContent = '+ Zobrazit ' + (hiddenPriced === 1 ? 'další 1 jídlo' :
-        hiddenPriced < 5 ? 'další ' + hiddenPriced + ' jídla' :
-        'dalších ' + hiddenPriced + ' jídel');
+      btn.textContent = '+ Zobrazit ' + (hiddenCount === 1 ? 'další 1 jídlo' :
+        hiddenCount < 5 ? 'další ' + hiddenCount + ' jídla' :
+        'dalších ' + hiddenCount + ' jídel');
       var cardBody = cardEl.querySelector('.card-body');
       cardBody.appendChild(btn);
 
       btn.addEventListener('click', (function(card, button) {
         return function() {
-          var hidden = card.querySelectorAll('.truncated-section');
-          for (var i = 0; i < hidden.length; i++) {
-            hidden[i].classList.remove('truncated-section');
-          }
+          var items = card.querySelectorAll('.truncated-item');
+          for (var i = 0; i < items.length; i++) items[i].classList.remove('truncated-item');
+          var secs = card.querySelectorAll('.truncated-section');
+          for (var i = 0; i < secs.length; i++) secs[i].classList.remove('truncated-section');
           button.remove();
         };
       })(cardEl, btn));

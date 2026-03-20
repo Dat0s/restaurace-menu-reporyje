@@ -274,7 +274,8 @@ body {
   padding: 8px 0;
 }
 
-.truncated-section {
+.truncated-section,
+.truncated-item {
   display: none;
 }
 
