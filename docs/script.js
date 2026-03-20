@@ -71,11 +71,11 @@
     sectionsHtml += renderSections(nonDaySections, r.sections.length);
 
     if (isMultiDay && daySections.length > 0) {
-      // Render all days in order, but wrap in a structure where today is outside collapsed
+      // Render today without highlight (shown plain when it's the only visible day)
       for (var di = 0; di < daySections.length; di++) {
         var ds = daySections[di];
         if (ds.isToday) {
-          sectionsHtml += renderSections([{ section: ds.section, isToday: true, isOtherDay: false }], r.sections.length);
+          sectionsHtml += renderSections([{ section: ds.section, isToday: false, isOtherDay: false, markAsToday: true }], r.sections.length);
         }
       }
       // Collapsed: all non-today days in correct order
@@ -204,8 +204,17 @@
         }
         collapsed.remove();
 
+        // Activate today highlight on the today section
+        var todaySection = cardBody.querySelector('.menu-section[data-today]');
+        if (todaySection) {
+          todaySection.classList.add('today-section');
+          var titleEl = todaySection.querySelector('.section-title');
+          if (titleEl && !titleEl.querySelector('.today-badge')) {
+            titleEl.insertAdjacentHTML('beforeend', ' <span class="today-badge">DNES</span>');
+          }
+        }
+
         // Now sort all day sections in card-body by day order (Po–Pá)
-        // Non-day sections (e.g. "Polední menu") stay at the top
         var allSections = cardBody.querySelectorAll('.menu-section');
         var nonDays = [];
         var days = [];
@@ -245,12 +254,14 @@
       var s = entries[i].section;
       var isToday = entries[i].isToday;
       var isOtherDay = entries[i].isOtherDay;
+      var markAsToday = entries[i].markAsToday;
 
       var sectionClass = 'menu-section';
       if (isToday) sectionClass += ' today-section';
       if (isOtherDay) sectionClass += ' dimmed-section';
 
-      html += '<section class="' + sectionClass + '">';
+      var attrs = markAsToday ? ' data-today="1"' : '';
+      html += '<section class="' + sectionClass + '"' + attrs + '>';
 
       var skipTitle = /^polední\s+menu$/i.test(s.title) && totalSections === 1;
       if (!skipTitle) {
