@@ -12,7 +12,7 @@ async function main() {
   const data = readData();
 
   const scrapers = [
-    { name: 'Kavárna na Náměstí', fn: scrapeKavarna },
+    { name: 'Bistro a Kavárna Na náměstí', fn: scrapeKavarna },
     { name: 'Řeporyjská Sokolovna', fn: scrapeSokolovna },
     { name: 'Pivovar Řeporyje', fn: scrapePivovar },
     { name: 'Papa Cipolla', fn: scrapePapaCipolla },

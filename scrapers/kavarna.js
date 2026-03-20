@@ -56,7 +56,7 @@ async function scrapeKavarna() {
   });
 
   return {
-    name: 'Kavárna na Náměstí',
+    name: 'Bistro a Kavárna Na náměstí',
     source: 'https://kavarnananamesti.cz/#Menu',
     phone: '+420 739 563 091',
     menuDate,
