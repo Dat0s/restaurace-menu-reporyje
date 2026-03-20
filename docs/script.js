@@ -121,7 +121,7 @@
 
     // Phone link
     var phoneHtml = r.phone
-      ? '<a href="tel:' + escapeHtml(r.phone) + '">' + escapeHtml(r.phone) + '</a>'
+      ? 'Tel. <a href="tel:' + escapeHtml(r.phone) + '">' + escapeHtml(r.phone) + '</a>'
       : '';
 
     card.innerHTML =
