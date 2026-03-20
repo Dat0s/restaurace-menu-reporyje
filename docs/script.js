@@ -22,9 +22,10 @@
     }
   }
 
-  // Current day name for Pivovar highlighting
+  // Current day name for multi-day restaurants
   var dayNames = ['Neděle', 'Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek', 'Sobota'];
   var todayName = dayNames[new Date().getDay()];
+  var isWeekday = new Date().getDay() >= 1 && new Date().getDay() <= 5;
 
   // Render cards
   for (var ri = 0; ri < data.restaurants.length; ri++) {
@@ -32,39 +33,50 @@
     var card = document.createElement('article');
     card.className = 'card';
 
-    var isPivovar = r.name === 'Pivovar Řeporyje' || r.name === 'Řeznictví Svoboda';
+    var isMultiDay = r.name === 'Pivovar Řeporyje' || r.name === 'Řeznictví Svoboda';
 
-    var sectionsHtml = '';
+    // Check if this restaurant has a today section
+    var hasTodaySection = false;
+    if (isMultiDay) {
+      for (var si = 0; si < r.sections.length; si++) {
+        if (r.sections[si].title === todayName) { hasTodaySection = true; break; }
+      }
+    }
+
+    // Split sections into visible (today + non-day) and collapsed (other days)
+    var visibleSections = [];
+    var collapsedSections = [];
+
     for (var si = 0; si < r.sections.length; si++) {
       var s = r.sections[si];
-      // Check if this section matches today (for Pivovar)
-      var isToday = isPivovar && s.title === todayName;
-      var isDimmed = isPivovar && !isToday && dayNames.indexOf(s.title) > 0;
+      var isDaySection = dayNames.indexOf(s.title) > 0;
+      var isToday = isMultiDay && s.title === todayName;
+      var isOtherDay = isMultiDay && isDaySection && !isToday;
 
-      var sectionClass = 'menu-section';
-      if (isToday) sectionClass += ' today-section';
-      if (isDimmed) sectionClass += ' dimmed-section';
-
-      sectionsHtml += '<section class="' + sectionClass + '">';
-
-      // Don't show "Polední menu" if it's the only section
-      var skipTitle = /^polední\s+menu$/i.test(s.title) && r.sections.length === 1;
-      if (!skipTitle) {
-        var titleHtml = '<h3 class="section-title">' + escapeHtml(s.title);
-        if (isToday) titleHtml += ' <span class="today-badge">DNES</span>';
-        titleHtml += '</h3>';
-        sectionsHtml += titleHtml;
+      if (isOtherDay) {
+        collapsedSections.push({ section: s, isToday: false, isOtherDay: true });
+      } else {
+        visibleSections.push({ section: s, isToday: isToday, isOtherDay: false });
       }
-      for (var ii = 0; ii < s.items.length; ii++) {
-        var item = s.items[ii];
-        var cls = 'menu-item' + (item.soldOut ? ' sold-out' : '');
-        sectionsHtml +=
-          '<div class="' + cls + '">' +
-            '<span class="name">' + escapeHtml(item.name) + '</span>' +
-            '<span class="price">' + escapeHtml(item.soldOut ? 'Vyprodáno' : (item.price || '')) + '</span>' +
-          '</div>';
-      }
-      sectionsHtml += '</section>';
+    }
+
+    var sectionsHtml = '';
+
+    // For multi-day restaurants on weekend: show "no menu today" message
+    if (isMultiDay && !hasTodaySection) {
+      sectionsHtml += '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
+    }
+
+    // Render visible sections (today + non-day like "Polední menu")
+    sectionsHtml += renderSections(visibleSections, r.sections.length);
+
+    // Render collapsed sections (other days)
+    if (collapsedSections.length > 0) {
+      sectionsHtml += '<div class="collapsed-days" hidden>';
+      sectionsHtml += renderSections(collapsedSections, r.sections.length);
+      sectionsHtml += '</div>';
+      var btnLabel = hasTodaySection ? 'Zobrazit celý týden' : 'Zobrazit týdenní menu';
+      sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ ' + btnLabel + '</button>';
     }
 
     var scrapedTime = r.scrapedAt
@@ -94,8 +106,102 @@
     main.appendChild(card);
   }
 
+  // ── Truncate cards with 10+ priced items ──
+  var cards = main.querySelectorAll('.card');
+  for (var ci = 0; ci < cards.length; ci++) {
+    var cardEl = cards[ci];
+    var allItems = cardEl.querySelectorAll('.card-body .menu-item');
+    var pricedCount = 0;
+    var truncateAfter = null;
+
+    for (var ii = 0; ii < allItems.length; ii++) {
+      var priceEl = allItems[ii].querySelector('.price');
+      if (priceEl && priceEl.textContent.trim()) {
+        pricedCount++;
+        if (pricedCount === 10) {
+          truncateAfter = allItems[ii];
+        }
+        if (pricedCount > 10) {
+          allItems[ii].classList.add('truncated-item');
+        }
+      }
+    }
+
+    if (pricedCount > 10 && truncateAfter) {
+      var extraCount = pricedCount - 10;
+      var btn = document.createElement('button');
+      btn.className = 'expand-btn expand-items-btn';
+      btn.type = 'button';
+      btn.textContent = '+ Zobrazit ' + (extraCount === 1 ? 'další 1 jídlo' :
+        extraCount < 5 ? 'další ' + extraCount + ' jídla' :
+        'dalších ' + extraCount + ' jídel');
+      // Insert button after card-body, before card-footer
+      var cardBody = cardEl.querySelector('.card-body');
+      cardBody.appendChild(btn);
+
+      btn.addEventListener('click', (function(card, button) {
+        return function() {
+          var hidden = card.querySelectorAll('.truncated-item');
+          for (var i = 0; i < hidden.length; i++) {
+            hidden[i].classList.remove('truncated-item');
+          }
+          button.remove();
+        };
+      })(cardEl, btn));
+    }
+  }
+
+  // ── Expand days buttons ──
+  var dayBtns = main.querySelectorAll('.expand-days-btn');
+  for (var bi = 0; bi < dayBtns.length; bi++) {
+    dayBtns[bi].addEventListener('click', (function(btn) {
+      return function() {
+        var cardBody = btn.closest('.card-body');
+        var collapsed = cardBody.querySelector('.collapsed-days');
+        if (collapsed) {
+          collapsed.hidden = false;
+        }
+        btn.remove();
+      };
+    })(dayBtns[bi]));
+  }
+
   // Auto-refresh every 12 hours
   setTimeout(function () { location.reload(); }, 12 * 60 * 60 * 1000);
+
+  function renderSections(entries, totalSections) {
+    var html = '';
+    for (var i = 0; i < entries.length; i++) {
+      var s = entries[i].section;
+      var isToday = entries[i].isToday;
+      var isOtherDay = entries[i].isOtherDay;
+
+      var sectionClass = 'menu-section';
+      if (isToday) sectionClass += ' today-section';
+      if (isOtherDay) sectionClass += ' dimmed-section';
+
+      html += '<section class="' + sectionClass + '">';
+
+      var skipTitle = /^polední\s+menu$/i.test(s.title) && totalSections === 1;
+      if (!skipTitle) {
+        var titleHtml = '<h3 class="section-title">' + escapeHtml(s.title);
+        if (isToday) titleHtml += ' <span class="today-badge">DNES</span>';
+        titleHtml += '</h3>';
+        html += titleHtml;
+      }
+      for (var ii = 0; ii < s.items.length; ii++) {
+        var item = s.items[ii];
+        var cls = 'menu-item' + (item.soldOut ? ' sold-out' : '');
+        html +=
+          '<div class="' + cls + '">' +
+            '<span class="name">' + escapeHtml(item.name) + '</span>' +
+            '<span class="price">' + escapeHtml(item.soldOut ? 'Vyprodáno' : (item.price || '')) + '</span>' +
+          '</div>';
+      }
+      html += '</section>';
+    }
+    return html;
+  }
 
   function escapeHtml(text) {
     var div = document.createElement('div');
