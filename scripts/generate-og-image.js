@@ -49,49 +49,49 @@ async function generateOgImage() {
       background: #004d92;
     }
     .logo {
-      font-size: 54px;
+      font-size: 64px;
       font-weight: 700;
       color: #004d92;
       letter-spacing: -0.5px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
     .logo .dot { color: #ecb800; }
     .tagline {
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 500;
       color: #999;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
     .title {
-      font-size: 64px;
+      font-size: 76px;
       font-weight: 800;
       color: #1a1a1a;
       text-align: center;
-      line-height: 1.15;
-      margin-bottom: 16px;
+      line-height: 1.1;
+      margin-bottom: 12px;
     }
     .subtitle {
-      font-size: 24px;
+      font-size: 27px;
       font-weight: 500;
       color: #666;
       text-align: center;
     }
     .restaurants {
-      margin-top: 28px;
+      margin-top: 22px;
       display: flex;
-      gap: 14px;
+      gap: 12px;
       flex-wrap: wrap;
       justify-content: center;
-      max-width: 1000px;
+      max-width: 1100px;
     }
     .restaurants span {
       background: #f0f4f8;
       color: #004d92;
-      font-size: 15px;
+      font-size: 17px;
       font-weight: 600;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 20px;
     }
   </style>
