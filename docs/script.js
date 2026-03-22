@@ -110,8 +110,8 @@
         }
       }
       if (closedSection) {
-        // Show closed message, hide menu behind expand button
-        sectionsHtml += renderSections([closedSection], r.sections.length);
+        // Show closed message (same style as multi-day restaurants), hide menu behind expand button
+        sectionsHtml += '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
         if (menuSections.length > 0) {
           sectionsHtml += '<div class="collapsed-days" hidden>';
           sectionsHtml += renderSections(menuSections, r.sections.length);
