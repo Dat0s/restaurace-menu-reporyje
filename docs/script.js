@@ -98,7 +98,28 @@
         sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ ' + btnLabel + '</button>';
       }
     } else if (!isMultiDay) {
-      // Regular restaurant: all sections are in staticSections
+      // Check if restaurant is closed (has "Otevírací doba" section with "Zavřeno")
+      var closedSection = null;
+      var menuSections = [];
+      for (var si2 = 0; si2 < staticSections.length; si2++) {
+        var sec = staticSections[si2].section;
+        if (sec.title === 'Otevírací doba' && sec.items.some(function(it) { return it.name.toLowerCase().includes('zavřeno'); })) {
+          closedSection = staticSections[si2];
+        } else {
+          menuSections.push(staticSections[si2]);
+        }
+      }
+      if (closedSection) {
+        // Show closed message, hide menu behind expand button
+        sectionsHtml += renderSections([closedSection], r.sections.length);
+        if (menuSections.length > 0) {
+          sectionsHtml += '<div class="collapsed-days" hidden>';
+          sectionsHtml += renderSections(menuSections, r.sections.length);
+          sectionsHtml += '</div>';
+          sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ Zobrazit týdenní menu</button>';
+        }
+        staticSections = []; // already rendered
+      }
     }
 
     // Render static/permanent sections last (e.g. Ukrajinské speciality, Hlavní jídla, Dezerty)

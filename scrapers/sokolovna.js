@@ -10,21 +10,7 @@ async function fetchNextData(url) {
 }
 
 async function scrapeSokolovna() {
-  // Sokolovna is closed on Sundays
-  const dayOfWeek = new Date().getDay(); // 0 = Sunday
-  if (dayOfWeek === 0) {
-    return {
-      name: 'Řeporyjská Sokolovna',
-      source: 'https://reporyjskasokolovna.cz/',
-      phone: '+420 731 484 493',
-      menuDate: '',
-      scrapedAt: new Date().toISOString(),
-      sections: [{
-        title: 'Otevírací doba',
-        items: [{ name: 'Neděle — Zavřeno', price: '' }]
-      }]
-    };
-  }
+  const isSunday = new Date().getDay() === 0;
 
   // Fetch all three section pages (each has different menu items in __NEXT_DATA__)
   const [mainData, burgerData, wingData] = await Promise.all([
@@ -126,6 +112,14 @@ async function scrapeSokolovna() {
         result.push({ title: cat.replace(/\s+/g, ' '), items });
       }
     }
+  }
+
+  // On Sundays, prepend "Zavřeno" section
+  if (isSunday) {
+    result.unshift({
+      title: 'Otevírací doba',
+      items: [{ name: 'Neděle — Zavřeno', price: '' }]
+    });
   }
 
   return {
