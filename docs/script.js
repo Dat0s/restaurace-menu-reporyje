@@ -247,7 +247,16 @@
         var collapsed = cardBody.querySelector('.collapsed-days');
         if (!collapsed) { btn.remove(); return; }
 
-        // Move all day sections from collapsed into card-body and remove dimming
+        // Move closed notice right after the no-menu-today message
+        var closedNotice = collapsed.querySelector('.closed-notice');
+        if (closedNotice) {
+          var noMenuMsg = cardBody.querySelector('.no-menu-today');
+          if (noMenuMsg) {
+            noMenuMsg.after(closedNotice);
+          } else {
+            cardBody.insertBefore(closedNotice, cardBody.firstChild);
+          }
+        }
         var collapsedSections = collapsed.querySelectorAll('.menu-section');
         for (var i = 0; i < collapsedSections.length; i++) {
           collapsedSections[i].classList.remove('dimmed-section');
@@ -286,17 +295,24 @@
         }
         days.sort(function(a, b) { return a.order - b.order; });
 
-        // Re-append in order: non-days first, then days Po–Pá
-        // Collect other elements (buttons etc) to append after
-        var others = [];
+        // Re-append in order: notices first, then non-day sections, then days Po–Pá, then buttons
+        var notices = [];
+        var buttons = [];
         for (var i = 0; i < cardBody.children.length; i++) {
           var child = cardBody.children[i];
-          if (child.tagName !== 'SECTION') others.push(child);
+          if (child.tagName !== 'SECTION') {
+            if (child.classList.contains('no-menu-today') || child.classList.contains('closed-notice')) {
+              notices.push(child);
+            } else {
+              buttons.push(child);
+            }
+          }
         }
 
+        for (var i = 0; i < notices.length; i++) cardBody.appendChild(notices[i]);
         for (var i = 0; i < nonDays.length; i++) cardBody.appendChild(nonDays[i]);
         for (var i = 0; i < days.length; i++) cardBody.appendChild(days[i].el);
-        for (var i = 0; i < others.length; i++) cardBody.appendChild(others[i]);
+        for (var i = 0; i < buttons.length; i++) cardBody.appendChild(buttons[i]);
 
         btn.remove();
       };
