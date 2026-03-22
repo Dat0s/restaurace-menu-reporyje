@@ -274,6 +274,13 @@ body {
   padding: 8px 0;
 }
 
+.closed-notice {
+  font-size: 0.9rem;
+  color: #c0392b;
+  font-weight: 600;
+  padding: 8px 0 4px;
+}
+
 .truncated-section,
 .truncated-item {
   display: none;

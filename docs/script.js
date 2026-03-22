@@ -92,6 +92,9 @@
       }
       if (otherDays.length > 0) {
         sectionsHtml += '<div class="collapsed-days" hidden>';
+        if (!hasTodaySection) {
+          sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
+        }
         sectionsHtml += renderSections(otherDays, r.sections.length);
         sectionsHtml += '</div>';
         var btnLabel = hasTodaySection ? 'Zobrazit celý týden' : 'Zobrazit týdenní menu';
@@ -114,6 +117,7 @@
         sectionsHtml += '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
         if (menuSections.length > 0) {
           sectionsHtml += '<div class="collapsed-days" hidden>';
+          sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
           sectionsHtml += renderSections(menuSections, r.sections.length);
           sectionsHtml += '</div>';
           sectionsHtml += '<button class="expand-btn expand-days-btn" type="button">+ Zobrazit týdenní menu</button>';
