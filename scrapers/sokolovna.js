@@ -117,8 +117,8 @@ async function scrapeSokolovna() {
   // On Sundays, prepend "Zavřeno" section
   if (isSunday) {
     result.unshift({
-      title: 'Otevírací doba',
-      items: [{ name: 'Neděle — Zavřeno', price: '' }]
+      title: '',
+      items: [{ name: 'Na dnes není žádné denní menu', price: '' }]
     });
   }
 

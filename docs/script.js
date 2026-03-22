@@ -103,7 +103,7 @@
       var menuSections = [];
       for (var si2 = 0; si2 < staticSections.length; si2++) {
         var sec = staticSections[si2].section;
-        if (sec.title === 'Otevírací doba' && sec.items.some(function(it) { return it.name.toLowerCase().includes('zavřeno'); })) {
+        if (sec.items.some(function(it) { return it.name.toLowerCase().includes('na dnes není žádné denní menu'); })) {
           closedSection = staticSections[si2];
         } else {
           menuSections.push(staticSections[si2]);
