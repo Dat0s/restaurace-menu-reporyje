@@ -133,7 +133,7 @@
       ? new Date(r.scrapedAt).toLocaleTimeString('cs-CZ', { hour: '2-digit', minute: '2-digit' })
       : '';
 
-    // Unified date display: daily menu restaurants get today's date, static keep "Stálé menu"
+    // Unified date display: daily menu restaurants show date, static keep "Stálé menu"
     var staticMenuNames = ['DÖNER KEBAB HOUSE', 'HQ Pippi Grill', 'Papa Cipolla'];
     var isStaticMenu = staticMenuNames.indexOf(r.name) >= 0;
     var displayDate = '';
@@ -141,7 +141,18 @@
       displayDate = r.menuDate || 'Stálé menu';
     } else {
       var now = new Date();
-      displayDate = todayName + ' ' + now.getDate() + '.' + (now.getMonth() + 1) + '.' + now.getFullYear();
+      var todayFormatted = todayName + ' ' + now.getDate() + '.' + (now.getMonth() + 1) + '.' + now.getFullYear();
+      // Try to detect if scraped menuDate matches today by extracting day.month
+      var menuIsToday = false;
+      if (r.menuDate) {
+        var dateMatch = r.menuDate.match(/(\d{1,2})\s*\.\s*(\d{1,2})/);
+        if (dateMatch) {
+          var menuDay = parseInt(dateMatch[1], 10);
+          var menuMonth = parseInt(dateMatch[2], 10);
+          menuIsToday = (menuDay === now.getDate() && menuMonth === (now.getMonth() + 1));
+        }
+      }
+      displayDate = menuIsToday ? todayFormatted : (r.menuDate || todayFormatted);
     }
 
     // Phone link
