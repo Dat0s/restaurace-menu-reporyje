@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Crawl-Delay: 5
+
+Sitemap: https://jidlo.reporyje.info/sitemap.xml

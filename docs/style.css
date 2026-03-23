@@ -115,6 +115,10 @@ body {
   padding: 16px;
 }
 
+#restaurants:empty {
+  min-height: 80vh;
+}
+
 .page-header {
   text-align: center;
   margin-bottom: 24px;
