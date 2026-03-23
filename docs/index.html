@@ -8,9 +8,9 @@
   <meta name="keywords" content="polední menu Řeporyje, denní menu Řeporyje, obědy Řeporyje, restaurace Řeporyje, jídlo Řeporyje, menu dnes Řeporyje">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jidlo.reporyje.info/">
-  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png">
-  <link rel="apple-touch-icon" href="/favicon-192x192.png">
+  <link rel="icon" href="/favicon-32x32.jpg" sizes="32x32" type="image/jpeg">
+  <link rel="icon" href="/favicon-192x192.jpg" sizes="192x192" type="image/jpeg">
+  <link rel="apple-touch-icon" href="/favicon-192x192.jpg">
   <meta property="og:title" content="Polední menu Řeporyje — denní nabídka restaurací dnes">
   <meta property="og:description" content="Aktuální polední menu restaurací v Řeporyjích. Denní nabídka aktualizovaná každých 15 minut.">
   <meta property="og:type" content="website">
@@ -28,9 +28,6 @@
   <meta name="geo.region" content="CZ-10">
   <meta name="geo.placename" content="Řeporyje">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
@@ -41,6 +38,7 @@
         "@id": "https://reporyje.info/#organization",
         "name": "reporyje.info",
         "url": "https://reporyje.info/",
+        "logo": "https://jidlo.reporyje.info/favicon-192x192.jpg",
         "sameAs": [
           "https://www.facebook.com/reporyje.info",
           "https://instagram.com/reporyje.info"
@@ -62,8 +60,7 @@
         "url": "https://jidlo.reporyje.info/",
         "inLanguage": "cs",
         "isPartOf": { "@id": "https://reporyje.info/#website" },
-        "breadcrumb": { "@id": "https://jidlo.reporyje.info/#breadcrumb" },
-        "about": { "@type": "Thing", "name": "Polední menu restaurací v Řeporyjích, Praha" }
+        "breadcrumb": { "@id": "https://jidlo.reporyje.info/#breadcrumb" }
       },
       {
         "@type": "BreadcrumbList",
@@ -84,14 +81,14 @@
     "description": "Seznam restaurací s denním a stálým menu v Řeporyjích, Praha 13",
     "numberOfItems": 8,
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "item": {"@type": "Restaurant", "name": "Jídelna Pohotovka", "url": "https://pohotovka.cz/", "telephone": "+420 775 104 350", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 2, "item": {"@type": "Restaurant", "name": "Bistro a Kavárna Na náměstí", "url": "https://kavarnananamesti.cz/", "telephone": "+420 739 563 091", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 3, "item": {"@type": "Restaurant", "name": "Pivovar Řeporyje", "url": "https://pivovarfood.cz/", "telephone": "+420 274 772 837", "servesCuisine": ["Česká", "Ukrajinská"], "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 4, "item": {"@type": "Restaurant", "name": "Řeporyjská Sokolovna", "url": "https://reporyjskasokolovna.cz/", "telephone": "+420 731 484 493", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 5, "item": {"@type": "Restaurant", "name": "Řeznictví Svoboda", "url": "https://www.instagram.com/svoboda_reznictvi/", "telephone": "+420 251 625 847", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 6, "item": {"@type": "Restaurant", "name": "DÖNER KEBAB HOUSE", "url": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/", "telephone": "+420 731 585 442", "servesCuisine": "Turecká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 7, "item": {"@type": "Restaurant", "name": "HQ Pippi Grill", "url": "https://pippigrill-stodulky.choiceqr.com/", "telephone": "+420 774 304 494", "servesCuisine": "Americká", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}},
-      {"@type": "ListItem", "position": 8, "item": {"@type": "Restaurant", "name": "Papa Cipolla", "url": "https://speedlo.cz/app/pizzacipolla/", "telephone": "+420 725 558 866", "servesCuisine": "Italská", "address": {"@type": "PostalAddress", "addressLocality": "Řeporyje", "addressRegion": "Praha"}}}
+      {"@type": "ListItem", "position": 1, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#jidelna-pohotovka", "name": "Jídelna Pohotovka", "url": "https://pohotovka.cz/", "telephone": "+420 775 104 350", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "streetAddress": "Řeporyjské náměstí 30", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 2, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#bistro-kavarna", "name": "Bistro a Kavárna Na náměstí", "url": "https://kavarnananamesti.cz/", "telephone": "+420 739 563 091", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "streetAddress": "Řeporyjské náměstí 27", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 3, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#pivovar-reporyje", "name": "Pivovar Řeporyje", "url": "https://pivovarfood.cz/", "telephone": "+420 274 772 837", "servesCuisine": ["Česká", "Ukrajinská"], "address": {"@type": "PostalAddress", "streetAddress": "Prvomájová 52", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 4, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#sokolovna", "name": "Řeporyjská Sokolovna", "url": "https://reporyjskasokolovna.cz/", "telephone": "+420 731 484 493", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "streetAddress": "Na Vrážku 155", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 5, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#reznictvi-svoboda", "name": "Řeznictví Svoboda", "url": "https://www.instagram.com/svoboda_reznictvi/", "telephone": "+420 251 625 847", "servesCuisine": "Česká", "address": {"@type": "PostalAddress", "streetAddress": "Řeporyjské náměstí 5", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 6, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#doner-kebab", "name": "DÖNER KEBAB HOUSE", "url": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/", "telephone": "+420 731 585 442", "servesCuisine": "Turecká", "address": {"@type": "PostalAddress", "streetAddress": "Ke Smíchovu 1", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 7, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#hq-pippi-grill", "name": "HQ Pippi Grill", "url": "https://pippigrill-stodulky.choiceqr.com/", "telephone": "+420 774 304 494", "servesCuisine": "Americká", "address": {"@type": "PostalAddress", "streetAddress": "Řeporyjské náměstí 36", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}},
+      {"@type": "ListItem", "position": 8, "item": {"@type": "Restaurant", "@id": "https://jidlo.reporyje.info/#papa-cipolla", "name": "Papa Cipolla", "url": "https://speedlo.cz/app/pizzacipolla/", "telephone": "+420 725 558 866", "servesCuisine": "Italská", "address": {"@type": "PostalAddress", "streetAddress": "Řeporyjské náměstí 36", "addressLocality": "Praha - Řeporyje", "postalCode": "155 00", "addressRegion": "Praha", "addressCountry": "CZ"}}}
     ]
   }
   </script>
@@ -128,7 +125,10 @@
           <a href="https://kavarnananamesti.cz/">Bistro a Kavárna Na náměstí</a>,
           <a href="https://pivovarfood.cz/">Pivovar Řeporyje</a>,
           <a href="https://reporyjskasokolovna.cz/">Řeporyjská Sokolovna</a>,
-          <a href="https://www.instagram.com/svoboda_reznictvi/">Řeznictví Svoboda</a>.
+          <a href="https://www.instagram.com/svoboda_reznictvi/">Řeznictví Svoboda</a>,
+          <a href="https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/">DÖNER KEBAB HOUSE</a>,
+          <a href="https://pippigrill-stodulky.choiceqr.com/">HQ Pippi Grill</a>,
+          <a href="https://speedlo.cz/app/pizzacipolla/">Papa Cipolla</a>.
         </p>
       </noscript>
     </main>
