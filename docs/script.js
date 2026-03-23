@@ -152,7 +152,8 @@
           menuIsToday = (menuDay === now.getDate() && menuMonth === (now.getMonth() + 1));
         }
       }
-      displayDate = menuIsToday ? todayFormatted : (r.menuDate || todayFormatted);
+      var dateStr = menuIsToday ? todayFormatted : (r.menuDate || todayFormatted);
+      displayDate = 'Na webu restaurace je k dispozici menu z ' + dateStr;
     }
 
     // Phone link
