@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T08:03:23.088Z",
+  "lastUpdated": "2026-03-23T09:12:09.246Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -94,7 +94,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "23.03.2026",
-      "scrapedAt": "2026-03-23T08:03:13.119Z",
+      "scrapedAt": "2026-03-23T09:11:56.590Z",
       "sections": [
         {
           "title": "Polévky",
@@ -215,7 +215,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-23T08:03:12.135Z",
+      "scrapedAt": "2026-03-23T09:11:55.673Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -457,7 +457,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 23.3.",
-      "scrapedAt": "2026-03-23T08:02:59.602Z",
+      "scrapedAt": "2026-03-23T09:11:41.357Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -533,6 +533,198 @@
               "price": "59 Kč"
             }
           ]
+        },
+        {
+          "title": "CELODENNÍ BURGER MENU",
+          "items": [
+            {
+              "name": "LUCKY BBQ BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "EXELENT HOT BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "CHEESE BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "GREECE BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "BARBECUE BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "BACON BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "SAMURAJ BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "JALAPEŇO BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "VEGE BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "STRIPS BURGER",
+              "price": "269 Kč"
+            },
+            {
+              "name": "BURGER TRHANÉ HOVĚZÍ",
+              "price": "269 Kč"
+            },
+            {
+              "name": "BURGER TRHANÉ VEPŘOVÉ",
+              "price": "269 Kč"
+            }
+          ]
+        },
+        {
+          "title": "BURGER SAMOSTATNĚ BEZ HRANOLEK A EXTRA OMÁČKY",
+          "items": [
+            {
+              "name": "LUCKY BBQ BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "EXELENT HOT BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "GREECE BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "CHEESE BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "BARBECUE BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "BACON BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "SAMURAJ BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "JALAPEŇO BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "VEGE BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "STRIPS BURGER",
+              "price": "189 Kč"
+            },
+            {
+              "name": "BURGER TRHANE HOVĚZÍ",
+              "price": "189 Kč"
+            },
+            {
+              "name": "BURGER TRHANE VEPŘOVÉ",
+              "price": "189 Kč"
+            }
+          ]
+        },
+        {
+          "title": "MENU Kuřecí speciality",
+          "items": [
+            {
+              "name": "Obalovaná křídla a paličky 6ks ( 330 - 350g ),200g hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Marinovaná křídla paličky 6 ks ( 250 - 280g ),200g hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Kuřecí stripsy 3ks ( 175g ),200g hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Kuřecí popcorn (200g), 200g hranolky",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Smažený květák (200g), 200g hranolky",
+              "price": "199 Kč"
+            }
+          ]
+        },
+        {
+          "title": "SALÁTY",
+          "items": [
+            {
+              "name": "COLESLAW SALÁT",
+              "price": "59 Kč"
+            }
+          ]
+        },
+        {
+          "title": "MOUČNÍK",
+          "items": [
+            {
+              "name": "BROWNIE",
+              "price": "59 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Wing It! COMBO Menu",
+          "items": [
+            {
+              "name": "Obalovaná křídla HOT COMBO",
+              "price": "239 Kč"
+            },
+            {
+              "name": "Kuřecí stripsy COMBO",
+              "price": "239 Kč"
+            },
+            {
+              "name": "Kuřecí popcorn COMBO",
+              "price": "259 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Wing It! Wings Strips Popcorn",
+          "items": [
+            {
+              "name": "Obalovaná křídla HOT",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Kuřecí stripsy",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Kuřecí popcorn",
+              "price": "169 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Wing It! Smažený květák",
+          "items": [
+            {
+              "name": "Smažený květák",
+              "price": "129 Kč"
+            }
+          ]
         }
       ]
     },
@@ -540,8 +732,8 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "16.3. - 20.3.",
-      "scrapedAt": "2026-03-23T07:10:36.799Z",
+      "menuDate": "23.3. - 27.3.",
+      "scrapedAt": "2026-03-23T09:12:08.843Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -551,7 +743,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Buřtguláš",
+              "name": "Vepřové na kmíně, těstoviny",
               "price": "139 Kč"
             },
             {
@@ -568,7 +760,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Katův šleh, rýže",
+              "name": "Srbské žebírko, brambor",
               "price": "139 Kč"
             },
             {
@@ -585,7 +777,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Čevapčiči, brambor, obloha",
+              "name": "Rizoto, sýr, okurka",
               "price": "139 Kč"
             },
             {
@@ -598,11 +790,11 @@
           "title": "Čtvrtek",
           "items": [
             {
-              "name": "Franfurtská polévka",
+              "name": "Polévka s játrovou rýží",
               "price": "39 Kč"
             },
             {
-              "name": "Moravský vrabec, zelí,h.knedlík",
+              "name": "Maďarský guláš, h.knedlík",
               "price": "149 Kč"
             },
             {
@@ -619,8 +811,8 @@
               "price": "39 Kč"
             },
             {
-              "name": "Ovocné knedlíky",
-              "price": "139 Kč"
+              "name": "Smažený řízek, br.salát",
+              "price": "149 Kč"
             },
             {
               "name": "Pečené maso (krk,bok,koleno), ovarové maso",
@@ -635,7 +827,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-23T08:03:23.078Z",
+      "scrapedAt": "2026-03-23T09:12:09.239Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -836,7 +1028,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-23T08:03:12.258Z",
+      "scrapedAt": "2026-03-23T09:11:55.785Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -909,7 +1101,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-23T08:03:12.258Z",
+      "scrapedAt": "2026-03-23T09:11:55.784Z",
       "sections": [
         {
           "title": "Nejprodávanější",
