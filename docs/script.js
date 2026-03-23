@@ -8,6 +8,9 @@
   const data = await res.json();
   const main = document.getElementById('restaurants');
 
+  // Clear pre-rendered static content (replaced by interactive version below)
+  main.innerHTML = '';
+
   // Stale warning
   if (data.lastUpdated) {
     const age = Date.now() - new Date(data.lastUpdated).getTime();
