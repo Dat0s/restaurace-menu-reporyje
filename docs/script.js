@@ -153,7 +153,8 @@
         }
       }
       var dateStr = menuIsToday ? todayFormatted : (r.menuDate || todayFormatted);
-      displayDate = 'Na webu restaurace je k dispozici menu z ' + dateStr;
+      var dateStrLower = dateStr.charAt(0).toLowerCase() + dateStr.slice(1);
+      displayDate = 'Na webu restaurace je k dispozici menu z ' + dateStrLower;
     }
 
     // Phone link
