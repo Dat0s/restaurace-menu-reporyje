@@ -30,6 +30,13 @@ async function main() {
         console.log(`  SKIP: no data (keeping previous)`);
         continue;
       }
+      // Preserve previous menuDate if new scrape has empty date
+      if (!result.menuDate) {
+        const existing = data.restaurants.find(r => r.name === result.name);
+        if (existing && existing.menuDate) {
+          result.menuDate = existing.menuDate;
+        }
+      }
       upsertRestaurant(data, result);
       const totalItems = result.sections.reduce((sum, s) => sum + s.items.length, 0);
       console.log(`  OK: ${totalItems} items`);

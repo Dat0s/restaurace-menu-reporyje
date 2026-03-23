@@ -72,7 +72,21 @@ async function scrapeSokolovna() {
     }
 
     const rawDate = lunchSections[0].name || '';
-    menuDate = rawDate.replace(/^polední\s+menu\s*-?\s*/i, '').trim() || rawDate;
+    let dayName = rawDate.replace(/^polední\s+menu\s*-?\s*/i, '').trim();
+
+    // Convert day name to full date (e.g. "Pondělí" → "Pondělí 23.3.")
+    const dayMap = { 'pondělí': 1, 'úterý': 2, 'středa': 3, 'čtvrtek': 4, 'pátek': 5 };
+    const dayNum = dayMap[dayName.toLowerCase()];
+    if (dayNum) {
+      const now = new Date();
+      const currentDay = now.getDay() || 7; // Sunday = 7
+      const diff = dayNum - currentDay;
+      const menuDateObj = new Date(now);
+      menuDateObj.setDate(now.getDate() + diff);
+      menuDate = dayName + ' ' + menuDateObj.getDate() + '.' + (menuDateObj.getMonth() + 1) + '.';
+    } else {
+      menuDate = dayName || rawDate;
+    }
   }
 
   // --- Celodenní burger menu ---
