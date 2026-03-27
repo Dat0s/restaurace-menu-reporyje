@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-27T05:50:38.514Z",
+  "lastUpdated": "2026-03-27T06:58:46.970Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 26. 3.",
-      "scrapedAt": "2026-03-27T05:50:07.423Z",
+      "scrapedAt": "2026-03-27T06:58:06.830Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -90,7 +90,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "27.03.2026",
-      "scrapedAt": "2026-03-27T05:50:23.421Z",
+      "scrapedAt": "2026-03-27T06:58:34.378Z",
       "sections": [
         {
           "title": "Polévky",
@@ -215,7 +215,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-27T05:50:22.599Z",
+      "scrapedAt": "2026-03-27T06:58:33.662Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -457,7 +457,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 27.3.",
-      "scrapedAt": "2026-03-27T05:50:08.583Z",
+      "scrapedAt": "2026-03-27T06:58:07.824Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -749,122 +749,110 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "23.3. - 27.3.",
-      "scrapedAt": "2026-03-27T05:50:38.402Z",
+      "scrapedAt": "2026-03-27T06:58:46.870Z",
       "sections": [
         {
           "title": "Polední menu",
           "items": [
             {
-              "name": "K d o É \"AŽ -Ve 4",
+              "name": "BT. ae —-- i). dn",
               "price": ""
             },
             {
-              "name": ", »* NI nA sa",
+              "name": "Nd „S 4NIc. e ny 4. A",
               "price": ""
             },
             {
-              "name": "09 Po bo-C> © Jho 4",
+              "name": "O. % kud dle A M +",
               "price": ""
             },
             {
-              "name": ">>- — ROA 00",
+              "name": "“% nK Zo ©- “\"\"*\"nů",
               "price": ""
             },
             {
-              "name": "1 4 vé INA",
+              "name": "P M . a nl: .A",
               "price": ""
             },
             {
-              "name": "5 ží K5. MU VA",
+              "name": "Do onoční cas se blíží! e",
               "price": ""
             },
             {
-              "name": "É vohoť“ s eg",
+              "name": "Jak na naše poctivé uzené maso a další speciality, žá",
               "price": ""
             },
             {
-              "name": "A lik ee jš blíží!",
+              "name": "Taki na pečivo. „č",
               "price": ""
             },
             {
-              "name": "Č +,Velikonoční čas se blíží!",
+              "name": "% Dopřejte si kvalitní maso i čerstvé pečivo na jednom místě. ť",
               "price": ""
             },
             {
-              "name": "MARA ——— ef ekeký",
+              "name": "K „8 -em A sp",
               "price": ""
             },
             {
-              "name": "„| „jak na naše poctivé uzené maso a další speciality, „»",
+              "name": "MS% 6 V příštím týdnu budeme",
               "price": ""
             },
             {
-              "name": ") tak i na pečivo. o kt",
+              "name": ": >. SA Vyndávat čerstvé uzené maso z udírny: 4",
               "price": ""
             },
             {
-              "name": "Eg Dopřejte si kvalitní maso — ZA",
+              "name": "%. » Son : * v pondělí po 11:30 4 A",
               "price": ""
             },
             {
-              "name": "A- i čerstvé pečivo na jednom místě. ČAU",
+              "name": "Je Al Kea * ve středu po 11:20 f6 Zi J",
               "price": ""
             },
             {
-              "name": "2 —EE==— je á",
+              "name": "Aádř z \"niki Mj za, WV",
               "price": ""
             },
             {
-              "name": "Č E + V příštím týdnu budeme vyndávat v AS",
+              "name": ": = Am. ao dl úl0á Faxy A",
               "price": ""
             },
             {
-              "name": "A Oj Čerstvé uzené maso z udírny: MŘIÍ",
+              "name": "P, Ma. Wa 1 0",
               "price": ""
             },
             {
-              "name": "+ y pondělí po 11:30 A =",
+              "name": "Dý F = | oa Z",
               "price": ""
             },
             {
-              "name": "Zeman + ve středu po 11:30 V p. úd Ý",
+              "name": "M ! ». Náš tým jede na plné obrátky, 4 FD",
               "price": ""
             },
             {
-              "name": "-A K zum- ké Ň p. +",
+              "name": "% abychom pro vás připravili to nejlepší! ( hs",
               "price": ""
             },
             {
-              "name": "S tmu, — „el čteno dy- VM v é",
+              "name": "Otevírací doba na příští týden: Co x",
               "price": ""
             },
             {
-              "name": "— S E PALA ALP a",
+              "name": "K * Pondělí - Úterý: 7:30 -13:00 0N—— d",
               "price": ""
             }
           ]
         },
         {
-          "title": "Pondělí",
+          "title": "Středa",
           "items": [
             {
-              "name": "| (EE) « Středa - Čtvrtek: — 7:30 -15:00 na plné obrátky, | -t",
+              "name": "M + Pátek: zavřeno ý »",
               "price": ""
             },
             {
-              "name": "MRK: pórek: zavřeno abychom pro vás připravili",
-              "price": ""
-            },
-            {
-              "name": "Zaan: s% to nejlepší! k < %",
-              "price": ""
-            },
-            {
-              "name": "Eg: 4 \"4 Řeznictví Svoboda Mo ©",
-              "price": ""
-            },
-            {
-              "name": "AMAZŽO EEE -c o",
+              "name": "JŠ A vy Řeznictví Svoboda z",
               "price": ""
             }
           ]
@@ -876,7 +864,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T05:50:38.507Z",
+      "scrapedAt": "2026-03-27T06:58:46.963Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1077,7 +1065,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T05:50:22.723Z",
+      "scrapedAt": "2026-03-27T06:58:33.763Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1150,7 +1138,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T05:50:22.723Z",
+      "scrapedAt": "2026-03-27T06:58:33.762Z",
       "sections": [
         {
           "title": "Nejprodávanější",
