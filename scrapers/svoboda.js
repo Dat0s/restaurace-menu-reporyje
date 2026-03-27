@@ -44,8 +44,8 @@ async function scrapeSvoboda() {
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await new Promise(r => setTimeout(r, 2000));
 
-    // Strategy 1: Call API from page context (uses page's own session)
-    let imageUrl = await page.evaluate(async () => {
+    // Strategy 1: Call API from page context (uses page's own session) — get multiple post images
+    let imageUrls = await page.evaluate(async () => {
       try {
         let csrfToken = '';
         try { csrfToken = document.cookie.match(/csrftoken=([^;]+)/)?.[1] || ''; } catch {}
@@ -56,25 +56,26 @@ async function scrapeSvoboda() {
             'X-Requested-With': 'XMLHttpRequest',
           }
         });
-        if (!res.ok) return '';
+        if (!res.ok) return [];
         const json = await res.json();
         const edges = json?.data?.user?.edge_owner_to_timeline_media?.edges;
         if (edges && edges.length > 0) {
-          return edges[0].node.display_url || edges[0].node.thumbnail_src || '';
+          return edges.map(e => e.node.display_url || e.node.thumbnail_src || '').filter(Boolean);
         }
       } catch {}
-      return '';
-    }).catch(() => '');
+      return [];
+    }).catch(() => []);
 
     // Strategy 2: Find grid images in DOM
-    if (!imageUrl) {
-      imageUrl = await page.evaluate(() => {
+    if (imageUrls.length === 0) {
+      imageUrls = await page.evaluate(() => {
         const imgs = Array.from(document.querySelectorAll('article img, main img'));
-        for (const img of imgs) {
-          const src = img.src || '';
-          if (src.includes('scontent') && !src.includes('t51.2885-19') && img.width > 100) return src;
-        }
-        return '';
+        return imgs
+          .filter(img => {
+            const src = img.src || '';
+            return src.includes('scontent') && !src.includes('t51.2885-19') && img.width > 100;
+          })
+          .map(img => img.src);
       });
     }
 
@@ -91,38 +92,54 @@ async function scrapeSvoboda() {
       };
     }).catch(() => ({ error: 'evaluate failed' }));
     console.log('  Page state:', JSON.stringify(debugInfo));
-    console.log('  Instagram image URL:', imageUrl ? imageUrl.substring(0, 80) + '...' : 'NOT FOUND');
+    console.log('  Found', imageUrls.length, 'candidate image(s)');
 
-    if (!imageUrl) {
+    if (imageUrls.length === 0) {
       console.log('  Returning null to preserve previous data');
       return null;
     }
 
-    // Download image with Instagram referer
-    const imgResponse = await fetch(imageUrl, {
-      headers: {
-        'Referer': 'https://www.instagram.com/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    // Iterate through posts (newest first) until we find one with "DENNÍ MENU"
+    for (let idx = 0; idx < imageUrls.length; idx++) {
+      const imageUrl = imageUrls[idx];
+      console.log('  Trying image', idx + 1, '/', imageUrls.length, ':', imageUrl.substring(0, 80) + '...');
+
+      // Download image with Instagram referer
+      const imgResponse = await fetch(imageUrl, {
+        headers: {
+          'Referer': 'https://www.instagram.com/',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+        }
+      });
+
+      if (!imgResponse.ok) {
+        console.log('  Image download failed:', imgResponse.status);
+        continue;
       }
-    });
 
-    if (!imgResponse.ok) {
-      console.log('  Image download failed:', imgResponse.status);
-      return null;
+      const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
+
+      if (imgBuffer.length < 5000) {
+        console.log('  Image too small, likely not a menu:', imgBuffer.length, 'bytes');
+        continue;
+      }
+
+      // Run Czech OCR
+      const { data: { text } } = await Tesseract.recognize(imgBuffer, 'ces');
+      console.log('  OCR text length:', text.length);
+
+      // Check if this image contains "DENNÍ MENU" — if not, try the next (older) post
+      if (!/denn[ií]\s*menu/i.test(text)) {
+        console.log('  No "DENNÍ MENU" found in OCR text, trying next post...');
+        continue;
+      }
+
+      console.log('  Found "DENNÍ MENU" in image', idx + 1);
+      return parseMenuText(text);
     }
 
-    const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
-
-    if (imgBuffer.length < 5000) {
-      console.log('  Image too small, likely not a menu:', imgBuffer.length, 'bytes');
-      return null;
-    }
-
-    // Run Czech OCR
-    const { data: { text } } = await Tesseract.recognize(imgBuffer, 'ces');
-    console.log('  OCR text length:', text.length);
-
-    return parseMenuText(text);
+    console.log('  No image with "DENNÍ MENU" found in any post');
+    return null;
 
   } finally {
     await browser.close();
