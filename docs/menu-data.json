@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-03-27T14:15:11.231Z",
+  "lastUpdated": "2026-03-27T14:17:50.927Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 27. 3.",
-      "scrapedAt": "2026-03-27T14:14:47.561Z",
+      "scrapedAt": "2026-03-27T14:17:18.720Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -90,7 +90,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "27.03.2026",
-      "scrapedAt": "2026-03-27T14:15:01.167Z",
+      "scrapedAt": "2026-03-27T14:17:36.146Z",
       "sections": [
         {
           "title": "Polévky",
@@ -213,7 +213,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-03-27T14:15:00.406Z",
+      "scrapedAt": "2026-03-27T14:17:35.108Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -455,7 +455,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 27.3.",
-      "scrapedAt": "2026-03-27T14:14:48.557Z",
+      "scrapedAt": "2026-03-27T14:17:20.128Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -747,97 +747,38 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "23.3. - 27.3.",
-      "scrapedAt": "2026-03-27T12:03:21.644Z",
+      "scrapedAt": "2026-03-27T14:17:50.824Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "name": "BT. ae —-- i). dn",
-              "price": ""
+              "name": "Dršťková polévka",
+              "price": "39 Kč"
             },
             {
-              "name": "Nd „S 4NIc. e ny 4. A",
-              "price": ""
+              "name": "Vepřové na kmíně, těstoviny",
+              "price": "139 Kč"
             },
             {
-              "name": "O. % kud dle A M +",
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
               "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Gulášová polévka",
+              "price": "39 Kč"
             },
             {
-              "name": "“% nK Zo ©- “\"\"*\"nů",
-              "price": ""
+              "name": "Srbské žebírko, brambor",
+              "price": "139 Kč"
             },
             {
-              "name": "P M . a nl: .A",
-              "price": ""
-            },
-            {
-              "name": "Do onoční cas se blíží! e",
-              "price": ""
-            },
-            {
-              "name": "Jak na naše poctivé uzené maso a další speciality, žá",
-              "price": ""
-            },
-            {
-              "name": "Taki na pečivo. „č",
-              "price": ""
-            },
-            {
-              "name": "% Dopřejte si kvalitní maso i čerstvé pečivo na jednom místě. ť",
-              "price": ""
-            },
-            {
-              "name": "K „8 -em A sp",
-              "price": ""
-            },
-            {
-              "name": "MS% 6 V příštím týdnu budeme",
-              "price": ""
-            },
-            {
-              "name": ": >. SA Vyndávat čerstvé uzené maso z udírny: 4",
-              "price": ""
-            },
-            {
-              "name": "%. » Son : * v pondělí po 11:30 4 A",
-              "price": ""
-            },
-            {
-              "name": "Je Al Kea * ve středu po 11:20 f6 Zi J",
-              "price": ""
-            },
-            {
-              "name": "Aádř z \"niki Mj za, WV",
-              "price": ""
-            },
-            {
-              "name": ": = Am. ao dl úl0á Faxy A",
-              "price": ""
-            },
-            {
-              "name": "P, Ma. Wa 1 0",
-              "price": ""
-            },
-            {
-              "name": "Dý F = | oa Z",
-              "price": ""
-            },
-            {
-              "name": "M ! ». Náš tým jede na plné obrátky, 4 FD",
-              "price": ""
-            },
-            {
-              "name": "% abychom pro vás připravili to nejlepší! ( hs",
-              "price": ""
-            },
-            {
-              "name": "Otevírací doba na příští týden: Co x",
-              "price": ""
-            },
-            {
-              "name": "K * Pondělí - Úterý: 7:30 -13:00 0N—— d",
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
               "price": ""
             }
           ]
@@ -846,11 +787,49 @@
           "title": "Středa",
           "items": [
             {
-              "name": "M + Pátek: zavřeno ý »",
-              "price": ""
+              "name": "Zabijačková polévka (prdelačka)",
+              "price": "39 Kč"
             },
             {
-              "name": "JŠ A vy Řeznictví Svoboda z",
+              "name": "Rizoto, sýr, okurka",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka s játrovou rýží",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Maďarský guláš, h.knedlík",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Hovězí polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Smažený řízek, br.salát",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
               "price": ""
             }
           ]
@@ -862,7 +841,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T14:15:11.219Z",
+      "scrapedAt": "2026-03-27T14:17:50.919Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1063,7 +1042,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T14:15:00.501Z",
+      "scrapedAt": "2026-03-27T14:17:35.219Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1136,7 +1115,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-03-27T14:15:00.501Z",
+      "scrapedAt": "2026-03-27T14:17:35.219Z",
       "sections": [
         {
           "title": "Nejprodávanější",
