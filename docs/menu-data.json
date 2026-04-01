@@ -1,43 +1,35 @@
 {
-  "lastUpdated": "2026-04-01T07:10:01.877Z",
+  "lastUpdated": "2026-04-01T08:21:59.079Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Úterý 31. 3.",
-      "scrapedAt": "2026-04-01T07:09:35.511Z",
+      "menuDate": "Středa 1. 4.",
+      "scrapedAt": "2026-04-01T08:21:30.702Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Česnečka s uzeným a krutóny",
-              "price": "75 Kč"
-            },
-            {
               "name": "Houbová krémová polévka",
               "price": "75 Kč"
             },
             {
-              "name": "Kuřecí řízek s bramborovou kaší a okurkovým salátem",
+              "name": "Pad Krapow s jasmínovou rýží, smaženým vajíčkem a thajskou bazalkou",
+              "price": "275 Kč"
+            },
+            {
+              "name": "Domácí pelmeně s křenovou omáčkou a smaženou cibulkou",
               "price": "255 Kč"
-            },
-            {
-              "name": "Kančí na portském víně s pastinákovým pyré a liškami",
-              "price": "355 Kč"
-            },
-            {
-              "name": "Hovězí s koprovou omáčkou a houskovým knedlíkem",
-              "price": "245 Kč"
             },
             {
               "name": "Kančí sekaná na červeném víně s kaší s pečeným česnekem",
               "price": "265 Kč"
             },
             {
-              "name": "Rigatoni s pestem z medvědího česneku, mozzarellou a lískovými oříšky",
-              "price": "255 Kč"
+              "name": "Rajčatové risotto s mozzarellou a bazalkou",
+              "price": "245 Kč"
             }
           ]
         },
@@ -62,11 +54,11 @@
           "title": "DEZERTY",
           "items": [
             {
-              "name": "Moravský koláč s tvarohem drobenkou a lesním ovocem",
+              "name": "Moravský koláč s ořechovým krémem, drobenkou a jablky",
               "price": "85 Kč"
             },
             {
-              "name": "Cheesecake s lesním ovocem",
+              "name": "Moravský koláč s ořechovým krémem, drobenkou a švestkam",
               "price": "95 Kč"
             },
             {
@@ -78,7 +70,7 @@
               "price": "95 Kč"
             },
             {
-              "name": "Lotuskový cheesecake",
+              "name": "Mrkvový dort",
               "price": "95 Kč"
             },
             {
@@ -98,7 +90,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "01.04.2026",
-      "scrapedAt": "2026-04-01T07:09:51.133Z",
+      "scrapedAt": "2026-04-01T08:21:45.693Z",
       "sections": [
         {
           "title": "Polévky",
@@ -191,11 +183,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -223,7 +217,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-01T07:09:50.126Z",
+      "scrapedAt": "2026-04-01T08:21:44.819Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -461,7 +455,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 1.4.",
-      "scrapedAt": "2026-04-01T07:09:36.533Z",
+      "scrapedAt": "2026-04-01T08:21:31.826Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -753,7 +747,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "30.3. - 4.4.",
-      "scrapedAt": "2026-04-01T07:10:01.785Z",
+      "scrapedAt": "2026-04-01T08:21:58.978Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -830,7 +824,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-01T07:10:01.869Z",
+      "scrapedAt": "2026-04-01T08:21:59.070Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1031,7 +1025,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-01T07:09:50.239Z",
+      "scrapedAt": "2026-04-01T08:21:44.935Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1104,7 +1098,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-01T07:09:50.239Z",
+      "scrapedAt": "2026-04-01T08:21:44.935Z",
       "sections": [
         {
           "title": "Nejprodávanější",
