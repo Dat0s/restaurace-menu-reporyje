@@ -14,6 +14,7 @@ Agregátor poledních menu restaurací v Řeporyjích. Automaticky stahuje aktu�
 | Jídelna Pohotovka | Denní | JSON API |
 | HQ Pippi Grill | Stálé | Statické |
 | DÖNER KEBAB HOUSE | Stálé | Statické |
+| Řeznictví Svoboda | Denní | Instagram OCR |
 | Papa Cipolla | Stálé | Statické |
 
 ## Jak to funguje
