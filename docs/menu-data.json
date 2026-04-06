@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-06T14:14:53.313Z",
+  "lastUpdated": "2026-04-06T15:06:56.924Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 6. 4.",
-      "scrapedAt": "2026-04-06T14:14:29.382Z",
+      "scrapedAt": "2026-04-06T15:06:31.281Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "06.04.2026",
-      "scrapedAt": "2026-04-06T14:14:43.910Z",
+      "scrapedAt": "2026-04-06T15:06:46.952Z",
       "sections": [
         {
           "title": "Polévky",
@@ -121,7 +121,7 @@
               "price": "44 Kč"
             },
             {
-              "name": "Hovězí vývar se zeleninou, masem a těstovinami (0,33l)",
+              "name": "Staročeská česnečka s masem a vejci (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -142,11 +142,19 @@
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Hamburská vepřová pečeně ( šunka, okurka ) houskové knedlíky (150g)",
-              "price": "159 Kč"
+              "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
+              "price": "149 Kč"
             },
             {
-              "name": "Katův šleh sypaný sýrem s domácími bramboráčky (150g)",
+              "name": "Hovězí plátek v šumavské houbové omáčce, houskový knedlík (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Humpolecká vepřová směs se žampióny, pórkem a kapií, sypané sýrem, 4ks domácích bramboráčků (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Kuřecí nudličky Bombay na kari, pórek, zeleninou a rozinkami, dušená rýže (150g)",
               "price": "159 Kč"
             },
             {
@@ -154,7 +162,7 @@
               "price": "169 Kč"
             },
             {
-              "name": "Nadívané kuřecí stehno s vařeným bramborem, přírodní šťáva (350g)",
+              "name": "Kuřecí roláda plněná mletým masem a špenátem, bramborová kaše, okurka (150g)",
               "price": "159 Kč"
             },
             {
@@ -162,12 +170,16 @@
               "price": "159 Kč"
             },
             {
-              "name": "Sekaná svíčková na smetaně, houskový knedlík (150g)",
+              "name": "Pšeničná tortilla plněná kuřecím masem a fazolovou pastou, zeleninový salátek se zakysanou smetanou (200g)",
               "price": "159 Kč"
             },
             {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
-              "price": "159 Kč"
+              "name": "Rozlítaný ptáček z hovězího masa s houskovým knedlíkem (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažená kuřecí kapsa Cordon bleu ( šunka, niva ) bramborová kaše nebo bramborový salát, okurka (150g)",
+              "price": "169 Kč"
             },
             {
               "name": "Srbské vepřové rizoto se zeleninou sypané sýrem, znojemská okurka (400g)",
@@ -178,7 +190,7 @@
               "price": "159 Kč"
             },
             {
-              "name": "Vepřová pečeně v houbové omáčce zjemněné smetanou, houskové  knedlíky (150g)",
+              "name": "Zapečené fleky s uzeným masem, smetanou a vejcem, okurka (150g)",
               "price": "159 Kč"
             },
             {
@@ -192,13 +204,11 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč",
-              "soldOut": true
+              "price": "27 Kč"
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč",
-              "soldOut": true
+              "price": "25 Kč"
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -210,8 +220,7 @@
             },
             {
               "name": "Domácí vaječná smaženka se zeleninou (1ks)",
-              "price": "46 Kč",
-              "soldOut": true
+              "price": "46 Kč"
             },
             {
               "name": "Bramborový salát (100g)",
@@ -226,7 +235,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-06T14:14:43.104Z",
+      "scrapedAt": "2026-04-06T15:06:46.085Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -443,7 +452,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Polední menu nenalezeno",
-      "scrapedAt": "2026-04-06T14:14:30.411Z",
+      "scrapedAt": "2026-04-06T15:06:32.513Z",
       "sections": [
         {
           "title": "CELODENNÍ BURGER MENU",
@@ -737,7 +746,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-06T14:14:53.301Z",
+      "scrapedAt": "2026-04-06T15:06:56.917Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -938,7 +947,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-06T14:14:43.216Z",
+      "scrapedAt": "2026-04-06T15:06:46.205Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1011,7 +1020,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-06T14:14:43.216Z",
+      "scrapedAt": "2026-04-06T15:06:46.205Z",
       "sections": [
         {
           "title": "Nejprodávanější",
