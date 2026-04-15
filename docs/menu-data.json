@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-15T05:07:12.013Z",
+  "lastUpdated": "2026-04-15T07:01:35.447Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 14. 4.",
-      "scrapedAt": "2026-04-15T05:06:45.901Z",
+      "scrapedAt": "2026-04-15T07:01:11.722Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "15.04.2026",
-      "scrapedAt": "2026-04-15T05:07:01.933Z",
+      "scrapedAt": "2026-04-15T07:01:25.533Z",
       "sections": [
         {
           "title": "Polévky",
@@ -224,7 +224,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-15T05:07:01.131Z",
+      "scrapedAt": "2026-04-15T07:01:24.732Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -440,18 +440,18 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Úterý 14.4.",
-      "scrapedAt": "2026-04-15T05:06:47.271Z",
+      "menuDate": "Středa 15.4.",
+      "scrapedAt": "2026-04-15T07:01:12.681Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou  -TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "PO UTMrkvová polévka se zázvorem",
+              "name": "Frankfurtská polévka s uzeninou",
               "price": "39 Kč"
             }
           ]
@@ -460,11 +460,15 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Guláš z hlívy ústřičné,bramborový knedlík",
+              "name": "ST-M1Chilli con carne s rýží",
               "price": "159 Kč"
             },
             {
-              "name": "UT-Min SLKuřecí plátek s žampiónovou omáčkou , hranolky",
+              "name": "Pečená krkovice, fazolové lusky na slanině sázené vejce, šťouchaný  brambor",
+              "price": "169 Kč"
+            },
+            {
+              "name": "ST-Min SL Vepřová krkovice, samurai dresink, hranolky",
               "price": "169 Kč"
             },
             {
@@ -502,6 +506,15 @@
             {
               "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
               "price": "179 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
             }
           ]
         },
@@ -814,7 +827,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T05:07:12.004Z",
+      "scrapedAt": "2026-04-15T07:01:35.439Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1015,7 +1028,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T05:07:01.235Z",
+      "scrapedAt": "2026-04-15T07:01:24.834Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1088,7 +1101,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T05:07:01.235Z",
+      "scrapedAt": "2026-04-15T07:01:24.834Z",
       "sections": [
         {
           "title": "Nejprodávanější",
