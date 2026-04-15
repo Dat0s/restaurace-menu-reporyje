@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-15T10:09:34.057Z",
+  "lastUpdated": "2026-04-15T11:15:48.797Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 15. 4.",
-      "scrapedAt": "2026-04-15T10:09:07.497Z",
+      "scrapedAt": "2026-04-15T11:15:22.337Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "15.04.2026",
-      "scrapedAt": "2026-04-15T10:09:22.979Z",
+      "scrapedAt": "2026-04-15T11:15:38.667Z",
       "sections": [
         {
           "title": "Polévky",
@@ -142,20 +142,12 @@
               "price": "169 Kč"
             },
             {
-              "name": "Vepřové ražniči s klobásou a cibulí, americké brambory, domácí tatarská omáčka, zelný salát (200g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Frankfurtská vepřová pečeně s párky, houskový knedlík (150g)",
               "price": "159 Kč"
             },
             {
               "name": "Mexické chilli con carne z mletého masa s fazolemi, dušená rýže, sypané sýrem (150g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Smažená kuřecí kapsa plněná šunkou a sýrem gouda, bramborová kaše, okurka, citrón (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Štěpánská hovězí pečeně ,houskový knedlik (150g)",
@@ -227,7 +219,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-15T10:09:21.918Z",
+      "scrapedAt": "2026-04-15T11:15:37.852Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -444,7 +436,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 15.4.",
-      "scrapedAt": "2026-04-15T10:09:08.963Z",
+      "scrapedAt": "2026-04-15T11:15:23.936Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -465,10 +457,6 @@
             {
               "name": "ST-M1Chilli con carne s rýží",
               "price": "159 Kč"
-            },
-            {
-              "name": "Pečená krkovice, fazolové lusky na slanině sázené vejce, šťouchaný  brambor",
-              "price": "169 Kč"
             },
             {
               "name": "ST-Min SL Vepřová krkovice, samurai dresink, hranolky",
@@ -830,7 +818,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T10:09:34.051Z",
+      "scrapedAt": "2026-04-15T11:15:48.790Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1031,7 +1019,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T10:09:22.014Z",
+      "scrapedAt": "2026-04-15T11:15:37.965Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1104,7 +1092,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-15T10:09:22.014Z",
+      "scrapedAt": "2026-04-15T11:15:37.965Z",
       "sections": [
         {
           "title": "Nejprodávanější",
