@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-16T15:06:19.361Z",
+  "lastUpdated": "2026-04-16T16:48:54.198Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 16. 4.",
-      "scrapedAt": "2026-04-16T15:05:45.097Z",
+      "scrapedAt": "2026-04-16T16:48:27.492Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,17 +111,17 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "16.04.2026",
-      "scrapedAt": "2026-04-16T15:06:08.365Z",
+      "scrapedAt": "2026-04-16T16:48:42.174Z",
       "sections": [
         {
           "title": "Polévky",
           "items": [
             {
-              "name": "Pórkova s vejcem (0,33l)",
+              "name": "Gulášová z mletého masa s bramborem (0,33l)",
               "price": "44 Kč"
             },
             {
-              "name": "Thajská polévka s vepřovým masem a zeleninou, rýžové nudle (vývar)",
+              "name": "Hovězí vývar se zeleninou, masem a těstovinami (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -142,27 +142,15 @@
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Grilovaná vepřová žebra v medové marinádě, pečené brambory se sweet chilli majonézou, zelný salát (300g)",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Frankfurtská vepřová pečeně s párky, houskový knedlík (150g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
               "price": "169 Kč"
             },
             {
-              "name": "Mexické chilli con carne z mletého masa s fazolemi, dušená rýže, sypané sýrem (150g)",
+              "name": "Debrecínská vepřová pečeně s párkem, houskový knedlík (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Štěpánská hovězí pečeně ,houskový knedlik (150g)",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Farfalle Arabiáta s kuřecím masem, slanina,drcená rajčata, česnek, bazalkové pesto, parmezán (150g)",
+              "name": "Kovbojské fazole s mletým masem sypané sýrem, pečený brambor ve slupce, zakysaná smetana (150g)",
               "price": "159 Kč"
             },
             {
@@ -170,19 +158,39 @@
               "price": "159 Kč"
             },
             {
-              "name": "Segedinský guláš s houskovým  knedlíkem (150g)",
+              "name": "Pečená kančí krkovička se šipkovou omáčkou, domácí bramborové knedlíky (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Pikantní vepřová směs \"Pohotovka\" se žampióny  a zeleninou, smažené hranolky, sypané sýrem (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
               "price": "159 Kč"
             },
             {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
+              "name": "Smažený holandský řízek s domácí bramborovou kaší, znojemská okurka (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený kuřecí řízek, citrón, domácí bramborový salát (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Srbské vepřové rizoto se zeleninou sypané sýrem, znojemská okurka (400g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Sváteční Táborská bašta  s vepřovou pečení, moravským uzeným a klobásou, bílé zelí,variace knedlíků (200g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Vepřové kostky na paprice , kolínka (150g)",
               "price": "159 Kč"
             },
             {
               "name": "Moravský vrabec se špenátem, bramborový knedlík (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Segedinský guláš s houskovým  knedlíkem (150g)",
               "price": "159 Kč"
             }
           ]
@@ -192,13 +200,11 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč",
-              "soldOut": true
+              "price": "27 Kč"
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč",
-              "soldOut": true
+              "price": "25 Kč"
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -214,8 +220,7 @@
             },
             {
               "name": "Bramborový salát (100g)",
-              "price": "22 Kč",
-              "soldOut": true
+              "price": "22 Kč"
             }
           ]
         }
@@ -226,7 +231,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-16T15:06:07.520Z",
+      "scrapedAt": "2026-04-16T16:48:41.310Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -340,6 +345,101 @@
               "price": "199 Kč"
             }
           ]
+        },
+        {
+          "title": "Ukrajinské speciality",
+          "items": [
+            {
+              "name": "Domácí klobásy se slaninou 200g",
+              "price": "229 Kč"
+            },
+            {
+              "name": "Ukrajinský boršč 300g",
+              "price": "109 Kč"
+            },
+            {
+              "name": "Domácí masový talíř 300g",
+              "price": "349 Kč"
+            },
+            {
+              "name": "Salát Olivier 300g",
+              "price": "219 Kč"
+            },
+            {
+              "name": "Maďarská gulášová polévka bograč 300g",
+              "price": "109 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Hlavní jídla",
+          "items": [
+            {
+              "name": "Bramboráky se smetanou / houbová omáčka",
+              "price": "229 Kč"
+            },
+            {
+              "name": "Pelmeně 200g",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Karpatský banoš se škvarky a brynzou 300g",
+              "price": "189 Kč"
+            },
+            {
+              "name": "Varenyky s bramborem, cibulkou a škvarky 200g",
+              "price": "189 Kč"
+            },
+            {
+              "name": "Holubtsi se zakysanou smetanou 300g",
+              "price": "239 Kč"
+            },
+            {
+              "name": "Šašlik 200g",
+              "price": "279 Kč"
+            },
+            {
+              "name": "Kyjevský kotlet 200g",
+              "price": "289 Kč"
+            },
+            {
+              "name": "Pečené vepřové koleno na černém pivu, hořčíce, křen a pečivo 1ks",
+              "price": "352 Kč"
+            },
+            {
+              "name": "Hovězí pivovarský guláš, bramboráčky",
+              "price": "219 Kč"
+            },
+            {
+              "name": "Grilovaný losos na špenátovém lůžku",
+              "price": "369 Kč"
+            },
+            {
+              "name": "Pečená marinovaná vepřová žebra na pivu, pečivo 500g",
+              "price": "329 Kč"
+            },
+            {
+              "name": "Hovězí steak",
+              "price": "463 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Dezerty",
+          "items": [
+            {
+              "name": "Syrniky s kondenzovaným mlékem 3ks",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Varenyky s višněmi a zakysanou smetanou 200g",
+              "price": "229 Kč"
+            },
+            {
+              "name": "Medovník se šlehačkou",
+              "price": "1 Kč"
+            }
+          ]
         }
       ]
     },
@@ -348,7 +448,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 16.4.",
-      "scrapedAt": "2026-04-16T15:05:46.176Z",
+      "scrapedAt": "2026-04-16T16:48:28.891Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -628,7 +728,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "13.4. - 17.4.",
-      "scrapedAt": "2026-04-16T11:55:59.349Z",
+      "scrapedAt": "2026-04-16T16:48:54.094Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -722,7 +822,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-16T15:06:19.354Z",
+      "scrapedAt": "2026-04-16T16:48:54.190Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -923,7 +1023,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-16T15:06:07.613Z",
+      "scrapedAt": "2026-04-16T16:48:41.428Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -996,7 +1096,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-16T15:06:07.613Z",
+      "scrapedAt": "2026-04-16T16:48:41.428Z",
       "sections": [
         {
           "title": "Nejprodávanější",
