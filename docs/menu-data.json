@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-17T07:21:08.358Z",
+  "lastUpdated": "2026-04-17T08:59:21.632Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Čtvrtek 16. 4.",
-      "scrapedAt": "2026-04-17T07:20:37.484Z",
+      "menuDate": "Pátek 17. 4.",
+      "scrapedAt": "2026-04-17T08:58:56.921Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -16,23 +16,27 @@
               "price": "75 Kč"
             },
             {
-              "name": "Kuřecí prso s omáčkou z choriza s čočkovým ragú a celerovým pyré",
-              "price": "295 Kč"
+              "name": "Kulajda s pošírovaným vejcem",
+              "price": "85 Kč"
             },
             {
-              "name": "Caesar salát s kuřecím masem, slaninou a parmazánem",
-              "price": "275 Kč"
+              "name": "Hovězí burger se salsou verde, naloženou cibulkou, slaninou, cheddarem, hranolky",
+              "price": "345 Kč"
             },
             {
               "name": "Plněné papriky s rajskou omáčkou a bramborovými šiškami",
               "price": "255 Kč"
             },
             {
-              "name": "Vepřové na mrkvi se šťouchanými bramborami se špekem",
-              "price": "285 Kč"
+              "name": "Caesar salát s kuřecím masem, slaninou a parmazánem",
+              "price": "275 Kč"
             },
             {
-              "name": "Spaghetti s pestem z medvědího česneku, lískovými oříšky a mozzarellou",
+              "name": "Kuřecí prso s omáčkou z choriza s čočkovým ragú a celerovým pyré",
+              "price": "295 Kč"
+            },
+            {
+              "name": "Spaghetti se sušenými rajčaty, bazalkou a fetou",
               "price": "265 Kč"
             }
           ]
@@ -58,7 +62,7 @@
           "title": "DEZERTY",
           "items": [
             {
-              "name": "Mandlový dort s mascarpone a borůvkami",
+              "name": "Mangový cheesecake",
               "price": "95 Kč"
             },
             {
@@ -70,15 +74,11 @@
               "price": "95 Kč"
             },
             {
-              "name": "Brownie",
-              "price": "95 Kč"
-            },
-            {
               "name": "Linecký koláč se švestkami, mákem a drobenkou",
               "price": "95 Kč"
             },
             {
-              "name": "Mrkvový dort",
+              "name": "Mandlový dort s borůvkami a mascarpone",
               "price": "95 Kč"
             },
             {
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "17.04.2026",
-      "scrapedAt": "2026-04-17T07:20:53.394Z",
+      "scrapedAt": "2026-04-17T08:59:11.604Z",
       "sections": [
         {
           "title": "Polévky",
@@ -204,11 +204,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -235,7 +237,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-17T07:20:51.729Z",
+      "scrapedAt": "2026-04-17T08:59:10.748Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -451,9 +453,80 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Polední menu nenalezeno",
-      "scrapedAt": "2026-04-17T07:20:38.883Z",
+      "menuDate": "Pátek 17.4.",
+      "scrapedAt": "2026-04-17T08:58:57.931Z",
       "sections": [
+        {
+          "title": "POLÉVKA",
+          "items": [
+            {
+              "name": "Hovězí vývar s nudlemi a zeleninou -TÝDEN",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Tomatová polévka s těstovinovou rýží",
+              "price": "39 Kč"
+            }
+          ]
+        },
+        {
+          "title": "POLEDNÍ MENU",
+          "items": [
+            {
+              "name": "Halušky s uzeným masem,zelí, cibulka",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová krkovice s vídeňskou cibulkou, hranolky",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený hermelín,brusinky,vařený brambor,tatarská omáčka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "EXELENT HOT BURGER",
+              "price": "199 Kč"
+            },
+            {
+              "name": "LUCKY BBQ burger",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažený kuřecí popkorn s hranolkami,tatarka",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
+              "price": "179 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
+            }
+          ]
+        },
         {
           "title": "CELODENNÍ BURGER MENU",
           "items": [
@@ -763,7 +836,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-17T07:21:08.352Z",
+      "scrapedAt": "2026-04-17T08:59:21.624Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -964,7 +1037,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-17T07:20:52.324Z",
+      "scrapedAt": "2026-04-17T08:59:10.858Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1037,7 +1110,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-17T07:20:52.324Z",
+      "scrapedAt": "2026-04-17T08:59:10.858Z",
       "sections": [
         {
           "title": "Nejprodávanější",
