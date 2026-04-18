@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-04-18T07:46:13.552Z",
+  "lastUpdated": "2026-04-18T08:39:29.990Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Pátek 17. 4.",
-      "scrapedAt": "2026-04-18T07:45:49.120Z",
+      "menuDate": "Sobota 18. 4.",
+      "scrapedAt": "2026-04-18T08:39:05.372Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Špenátová polévka",
+              "name": "Kuřecí vývar s nudlemi",
               "price": "75 Kč"
             },
             {
@@ -24,16 +24,16 @@
               "price": "345 Kč"
             },
             {
-              "name": "Plněné papriky s rajskou omáčkou a bramborovými šiškami",
-              "price": "255 Kč"
+              "name": "Řízek z vepřové krkovice s bramborovým salátem",
+              "price": "275 Kč"
+            },
+            {
+              "name": "Hovězí žebro s pečenými bramborami s majonézou s pečeným česnekem, zelný salát s jablky a křenem",
+              "price": "375 Kč"
             },
             {
               "name": "Caesar salát s kuřecím masem, slaninou a parmazánem",
               "price": "275 Kč"
-            },
-            {
-              "name": "Kuřecí prso s omáčkou z choriza s čočkovým ragú a celerovým pyré",
-              "price": "295 Kč"
             },
             {
               "name": "Spaghetti se sušenými rajčaty, bazalkou a fetou",
@@ -62,7 +62,7 @@
           "title": "DEZERTY",
           "items": [
             {
-              "name": "Mangový cheesecake",
+              "name": "Lotuskový cheesecake",
               "price": "95 Kč"
             },
             {
@@ -78,12 +78,8 @@
               "price": "95 Kč"
             },
             {
-              "name": "Mandlový dort s borůvkami a mascarpone",
+              "name": "Brownie",
               "price": "95 Kč"
-            },
-            {
-              "name": "Lotusková roláda",
-              "price": "85 Kč"
             }
           ]
         },
@@ -111,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.04.2026",
-      "scrapedAt": "2026-04-18T07:46:03.633Z",
+      "scrapedAt": "2026-04-18T08:39:20.537Z",
       "sections": [
         {
           "title": "Polévky",
@@ -239,7 +235,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-18T07:46:02.647Z",
+      "scrapedAt": "2026-04-18T08:39:19.490Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -456,7 +452,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 17.4.",
-      "scrapedAt": "2026-04-18T07:45:50.241Z",
+      "scrapedAt": "2026-04-18T08:39:06.667Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -834,7 +830,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-18T07:46:13.543Z",
+      "scrapedAt": "2026-04-18T08:39:29.983Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1035,7 +1031,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-18T07:46:02.755Z",
+      "scrapedAt": "2026-04-18T08:39:19.583Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1108,7 +1104,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-18T07:46:02.754Z",
+      "scrapedAt": "2026-04-18T08:39:19.583Z",
       "sections": [
         {
           "title": "Nejprodávanější",
