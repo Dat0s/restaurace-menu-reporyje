@@ -6,6 +6,7 @@ const { scrapePippiGrill } = require('./pippigrill');
 const { scrapeDoner } = require('./donerkebab');
 const { scrapePohotovka } = require('./pohotovka');
 const { scrapeSvoboda } = require('./svoboda');
+const { scrapeMamaBowl } = require('./mamabowl');
 const { readData, writeData, upsertRestaurant } = require('./utils');
 
 async function main() {
@@ -19,6 +20,7 @@ async function main() {
     { name: 'HQ Pippi Grill', fn: scrapePippiGrill },
     { name: 'Jídelna Pohotovka', fn: scrapePohotovka },
     { name: 'Řeznictví Svoboda', fn: scrapeSvoboda },
+    { name: 'Mama Bowl', fn: scrapeMamaBowl },
     { name: 'DÖNER KEBAB HOUSE', fn: scrapeDoner }
   ];
 
