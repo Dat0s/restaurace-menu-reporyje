@@ -48,7 +48,7 @@ async function main() {
   }
 
   // Sort: daily menu restaurants first (alphabetically), then static menu (alphabetically)
-  const staticMenu = new Set(['DÖNER KEBAB HOUSE', 'HQ Pippi Grill', 'Papa Cipolla']);
+  const staticMenu = new Set(['DÖNER KEBAB HOUSE', 'HQ Pippi Grill', 'Mama Bowl', 'Papa Cipolla']);
   data.restaurants.sort((a, b) => {
     const aStatic = staticMenu.has(a.name) ? 1 : 0;
     const bStatic = staticMenu.has(b.name) ? 1 : 0;
