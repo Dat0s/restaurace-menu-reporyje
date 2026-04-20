@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-20T18:53:42.768Z",
+  "lastUpdated": "2026-04-20T19:56:05.851Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 20. 4.",
-      "scrapedAt": "2026-04-20T18:53:15.375Z",
+      "scrapedAt": "2026-04-20T19:55:32.608Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.04.2026",
-      "scrapedAt": "2026-04-20T18:53:31.028Z",
+      "scrapedAt": "2026-04-20T19:55:56.151Z",
       "sections": [
         {
           "title": "Polévky",
@@ -223,7 +223,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-20T18:53:29.941Z",
+      "scrapedAt": "2026-04-20T19:55:55.320Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -337,101 +337,6 @@
               "price": "199 Kč"
             }
           ]
-        },
-        {
-          "title": "Ukrajinské speciality",
-          "items": [
-            {
-              "name": "Domácí klobásy se slaninou 200g",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Ukrajinský boršč 300g",
-              "price": "109 Kč"
-            },
-            {
-              "name": "Domácí masový talíř 300g",
-              "price": "349 Kč"
-            },
-            {
-              "name": "Salát Olivier 300g",
-              "price": "219 Kč"
-            },
-            {
-              "name": "Maďarská gulášová polévka bograč 300g",
-              "price": "109 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Hlavní jídla",
-          "items": [
-            {
-              "name": "Bramboráky se smetanou / houbová omáčka",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Pelmeně 200g",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Karpatský banoš se škvarky a brynzou 300g",
-              "price": "189 Kč"
-            },
-            {
-              "name": "Varenyky s bramborem, cibulkou a škvarky 200g",
-              "price": "189 Kč"
-            },
-            {
-              "name": "Holubtsi se zakysanou smetanou 300g",
-              "price": "239 Kč"
-            },
-            {
-              "name": "Šašlik 200g",
-              "price": "279 Kč"
-            },
-            {
-              "name": "Kyjevský kotlet 200g",
-              "price": "289 Kč"
-            },
-            {
-              "name": "Pečené vepřové koleno na černém pivu, hořčíce, křen a pečivo 1ks",
-              "price": "352 Kč"
-            },
-            {
-              "name": "Hovězí pivovarský guláš, bramboráčky",
-              "price": "219 Kč"
-            },
-            {
-              "name": "Grilovaný losos na špenátovém lůžku",
-              "price": "369 Kč"
-            },
-            {
-              "name": "Pečená marinovaná vepřová žebra na pivu, pečivo 500g",
-              "price": "329 Kč"
-            },
-            {
-              "name": "Hovězí steak",
-              "price": "463 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Dezerty",
-          "items": [
-            {
-              "name": "Syrniky s kondenzovaným mlékem 3ks",
-              "price": "139 Kč"
-            },
-            {
-              "name": "Varenyky s višněmi a zakysanou smetanou 200g",
-              "price": "229 Kč"
-            },
-            {
-              "name": "Medovník se šlehačkou",
-              "price": "1 Kč"
-            }
-          ]
         }
       ]
     },
@@ -440,7 +345,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 20.4.",
-      "scrapedAt": "2026-04-20T18:53:17.083Z",
+      "scrapedAt": "2026-04-20T19:55:33.517Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -792,7 +697,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-20T18:53:42.761Z",
+      "scrapedAt": "2026-04-20T19:56:05.839Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -993,7 +898,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-20T18:53:30.034Z",
+      "scrapedAt": "2026-04-20T19:55:55.422Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1066,7 +971,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-04-20T18:53:42.760Z",
+      "scrapedAt": "2026-04-20T19:56:05.838Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1138,7 +1043,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-20T18:53:30.033Z",
+      "scrapedAt": "2026-04-20T19:55:55.422Z",
       "sections": [
         {
           "title": "Nejprodávanější",
