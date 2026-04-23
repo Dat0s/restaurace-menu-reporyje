@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-04-23T07:13:09.048Z",
+  "lastUpdated": "2026-04-23T09:03:05.247Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 23. 4.",
-      "scrapedAt": "2026-04-23T07:12:32.910Z",
+      "scrapedAt": "2026-04-23T09:02:40.401Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -24,7 +24,7 @@
               "price": "285 Kč"
             },
             {
-              "name": "Trhané vepřové v domácí briošce se salátem coleslaw, americké brambory",
+              "name": "Trhané vepřové v domácí briošce se salátem coleslaw, hranolky",
               "price": "295 Kč"
             },
             {
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "23.04.2026",
-      "scrapedAt": "2026-04-23T07:12:58.123Z",
+      "scrapedAt": "2026-04-23T09:02:55.230Z",
       "sections": [
         {
           "title": "Polévky",
@@ -138,6 +138,14 @@
           "title": "Hlavní jídla",
           "items": [
             {
+              "name": "Pečená kachna, červené zelí, domácí bramborové knedlíky (1/4)",
+              "price": "179 Kč"
+            },
+            {
+              "name": "Pečené švédské masové kuličky s domácí bramborovou kaší, jemná pepřová omáčka zjemněná koňakem (5ks)",
+              "price": "169 Kč"
+            },
+            {
               "name": "Cikánská vepřová pečeně smažené krokety, zelný salát (150g)",
               "price": "169 Kč"
             },
@@ -146,24 +154,12 @@
               "price": "169 Kč"
             },
             {
-              "name": "Halušky s uzenou krkovičkou, bílé zelí, smažená cibulka, přelité výpekem ze špeku (400g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
               "price": "169 Kč"
             },
             {
               "name": "Kuřecí směs po čínsku \"Kung pao\" se zeleninou a burskými oříšky, dušená rýže (150g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Pečená kachna, červené zelí, domácí bramborové knedlíky (1/4)",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Pečené švédské masové kuličky s domácí bramborovou kaší, jemná pepřová omáčka zjemněná koňakem (4ks)",
-              "price": "169 Kč"
             },
             {
               "name": "Smažený sýr Gouda, vařený brambor maštěný máslem, domácí tatarská omáčka,zelný salát (150g)",
@@ -186,6 +182,10 @@
               "price": "169 Kč"
             },
             {
+              "name": "Halušky s uzenou krkovičkou, bílé zelí, smažená cibulka, přelité výpekem ze špeku (400g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Široké nudle s mákem a máslem (300g)",
               "price": "99 Kč"
             },
@@ -200,11 +200,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -232,7 +234,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-04-23T07:12:57.040Z",
+      "scrapedAt": "2026-04-23T09:02:54.458Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -346,6 +348,23 @@
               "price": "199 Kč"
             }
           ]
+        },
+        {
+          "title": "Dezerty",
+          "items": [
+            {
+              "name": "Syrniky s kondenzovaným mlékem 3ks",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Varenyky s višněmi a zakysanou smetanou 200g",
+              "price": "229 Kč"
+            },
+            {
+              "name": "Medovník se šlehačkou",
+              "price": "1 Kč"
+            }
+          ]
         }
       ]
     },
@@ -354,7 +373,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 23.4.",
-      "scrapedAt": "2026-04-23T07:12:33.970Z",
+      "scrapedAt": "2026-04-23T09:02:41.409Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -706,7 +725,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-23T07:13:09.041Z",
+      "scrapedAt": "2026-04-23T09:03:05.240Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -907,7 +926,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-23T07:12:57.141Z",
+      "scrapedAt": "2026-04-23T09:02:54.552Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -980,7 +999,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-04-23T07:13:09.041Z",
+      "scrapedAt": "2026-04-23T09:03:05.239Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1052,7 +1071,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-04-23T07:12:57.140Z",
+      "scrapedAt": "2026-04-23T09:02:54.552Z",
       "sections": [
         {
           "title": "Nejprodávanější",
