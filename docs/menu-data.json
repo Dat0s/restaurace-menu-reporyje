@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-02T09:20:11.695Z",
+  "lastUpdated": "2026-05-02T10:27:31.317Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Sobota 2. 5.",
-      "scrapedAt": "2026-05-02T09:19:46.628Z",
+      "scrapedAt": "2026-05-02T10:27:04.625Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "02.05.2026",
-      "scrapedAt": "2026-05-02T09:20:01.335Z",
+      "scrapedAt": "2026-05-02T10:27:20.781Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,10 +146,6 @@
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
               "price": "159 Kč"
             },
@@ -163,6 +159,10 @@
             },
             {
               "name": "Pečená krkovička na česneku,  bílé zelí,  variace knedlíků (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Sekaná svíčková svíčková  na  smetaně s houskovým  knedlíkem (200g)",
               "price": "159 Kč"
             },
             {
@@ -210,7 +210,8 @@
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
-              "price": "65 Kč"
+              "price": "65 Kč",
+              "soldOut": true
             },
             {
               "name": "Domácí bramborák,, Poctivec\" se slaninou a salátkem z kysaného zelí (1 ks)",
@@ -234,7 +235,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-05-02T09:20:00.558Z",
+      "scrapedAt": "2026-05-02T10:27:19.820Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -356,7 +357,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Polední menu nenalezeno",
-      "scrapedAt": "2026-05-02T09:19:47.694Z",
+      "scrapedAt": "2026-05-02T10:27:06.156Z",
       "sections": [
         {
           "title": "CELODENNÍ BURGER MENU",
@@ -642,7 +643,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-02T09:20:11.683Z",
+      "scrapedAt": "2026-05-02T10:27:31.309Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -843,7 +844,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-02T09:20:00.654Z",
+      "scrapedAt": "2026-05-02T10:27:19.914Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -916,7 +917,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-02T09:20:11.683Z",
+      "scrapedAt": "2026-05-02T10:27:31.309Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -988,7 +989,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-02T09:20:00.654Z",
+      "scrapedAt": "2026-05-02T10:27:19.914Z",
       "sections": [
         {
           "title": "Nejprodávanější",
