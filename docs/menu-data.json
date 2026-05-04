@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-04T11:25:29.501Z",
+  "lastUpdated": "2026-05-04T13:03:59.455Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 4. 5.",
-      "scrapedAt": "2026-05-04T11:25:06.120Z",
+      "scrapedAt": "2026-05-04T13:03:32.539Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "04.05.2026",
-      "scrapedAt": "2026-05-04T11:25:19.260Z",
+      "scrapedAt": "2026-05-04T13:03:47.504Z",
       "sections": [
         {
           "title": "Polévky",
@@ -154,6 +154,10 @@
               "price": "149 Kč"
             },
             {
+              "name": "Domácí uzená krkovicka s bramborovou kaší, znojemská okurka (150g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Hovězí plátek v rajské omáčce,  houskový knedlík (150g)",
               "price": "169 Kč"
             },
@@ -166,19 +170,7 @@
               "price": "159 Kč"
             },
             {
-              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Vepřový steak s vídeňskou cibulkou, hranolky, domácí tatarka (150g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Zapečené francouzské brambory s uzeninou a vejci, znojemská okurka (400g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Smažený květák, vařené brambory, domácí tatarská omačka (200g)",
               "price": "159 Kč"
             },
             {
@@ -210,7 +202,8 @@
             },
             {
               "name": "Domácí bramborák,, Poctivec\" se slaninou a salátkem z kysaného zelí (1 ks)",
-              "price": "65 Kč"
+              "price": "65 Kč",
+              "soldOut": true
             },
             {
               "name": "Domácí vaječná smaženka se zeleninou (1ks)",
@@ -230,7 +223,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-05-04T11:25:18.544Z",
+      "scrapedAt": "2026-05-04T13:03:46.646Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -352,7 +345,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 4.5.",
-      "scrapedAt": "2026-05-04T11:25:07.180Z",
+      "scrapedAt": "2026-05-04T13:03:33.872Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -631,8 +624,8 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "27.4. - 1.5.",
-      "scrapedAt": "2026-05-03T21:58:37.880Z",
+      "menuDate": "4.5. - 8.5.",
+      "scrapedAt": "2026-05-04T13:03:59.030Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -642,7 +635,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Bretaňské fazole",
+              "name": "Špagety, mleté,sýr",
               "price": "139 Kč"
             },
             {
@@ -659,7 +652,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Kuře s nádivkou, brambor",
+              "name": "Katův šleh, rýže",
               "price": "139 Kč"
             },
             {
@@ -676,7 +669,7 @@
               "price": "39 Kč"
             },
             {
-              "name": "Šunkofleky, okurka",
+              "name": "Holandský řízek, br.kaše",
               "price": "139 Kč"
             },
             {
@@ -689,11 +682,11 @@
           "title": "Čtvrtek",
           "items": [
             {
-              "name": "Franfurtská polévka",
+              "name": "Hrachová polévka",
               "price": "39 Kč"
             },
             {
-              "name": "Znojemská omáčka, h.knedlík",
+              "name": "Koprová omáčka, h.knedlík",
               "price": "159 Kč"
             },
             {
@@ -709,7 +702,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T11:25:29.493Z",
+      "scrapedAt": "2026-05-04T13:03:59.448Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -910,7 +903,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T11:25:18.643Z",
+      "scrapedAt": "2026-05-04T13:03:46.746Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -983,7 +976,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-04T11:25:29.493Z",
+      "scrapedAt": "2026-05-04T13:03:59.447Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1055,7 +1048,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T11:25:18.643Z",
+      "scrapedAt": "2026-05-04T13:03:46.746Z",
       "sections": [
         {
           "title": "Nejprodávanější",
