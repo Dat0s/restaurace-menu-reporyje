@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-04T21:19:14.461Z",
+  "lastUpdated": "2026-05-04T22:31:12.609Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 4. 5.",
-      "scrapedAt": "2026-05-04T21:18:49.878Z",
+      "scrapedAt": "2026-05-04T22:30:44.534Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "04.05.2026",
-      "scrapedAt": "2026-05-04T21:19:04.108Z",
+      "scrapedAt": "2026-05-04T22:31:01.000Z",
       "sections": [
         {
           "title": "Polévky",
@@ -232,7 +232,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-05-04T21:19:03.474Z",
+      "scrapedAt": "2026-05-04T22:31:00.280Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -354,7 +354,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 5.5.",
-      "scrapedAt": "2026-05-04T21:18:50.838Z",
+      "scrapedAt": "2026-05-04T22:30:45.660Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -710,7 +710,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T21:19:14.454Z",
+      "scrapedAt": "2026-05-04T22:31:12.600Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -911,7 +911,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T21:19:03.588Z",
+      "scrapedAt": "2026-05-04T22:31:00.392Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -984,79 +984,15 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-04T21:19:14.454Z",
-      "sections": [
-        {
-          "title": "Předkrmy",
-          "items": [
-            {
-              "name": "Nem Rán",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Nem Chay",
-              "price": "80 Kč"
-            },
-            {
-              "name": "Gyoza",
-              "price": "120 Kč"
-            },
-            {
-              "name": "Ha Cao",
-              "price": "120 Kč"
-            },
-            {
-              "name": "Sweet Potatos",
-              "price": "120 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Hlavní jídla",
-          "items": [
-            {
-              "name": "Phởčko",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Bún Bò Nam Bộ",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Bún Nem",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Mango Beef",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Bánh Bao",
-              "price": "150 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Nápoje",
-          "items": [
-            {
-              "name": "Časadá",
-              "price": "68 Kč"
-            },
-            {
-              "name": "Café Nâu Đá",
-              "price": "99 Kč"
-            }
-          ]
-        }
-      ]
+      "scrapedAt": "2026-05-04T22:31:12.599Z",
+      "sections": []
     },
     {
       "name": "Papa Cipolla",
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-04T21:19:03.588Z",
+      "scrapedAt": "2026-05-04T22:31:00.392Z",
       "sections": [
         {
           "title": "Nejprodávanější",
