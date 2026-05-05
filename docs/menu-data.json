@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-05T12:01:04.124Z",
+  "lastUpdated": "2026-05-05T14:22:14.104Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 5. 5.",
-      "scrapedAt": "2026-05-05T12:00:40.342Z",
+      "scrapedAt": "2026-05-05T14:21:49.820Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "05.05.2026",
-      "scrapedAt": "2026-05-05T12:00:54.640Z",
+      "scrapedAt": "2026-05-05T14:22:03.705Z",
       "sections": [
         {
           "title": "Polévky",
@@ -155,10 +155,6 @@
             },
             {
               "name": "Plzeňský hovězí guláš zdobený cibulkou, houskové knedlíky (150g)",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažená kapsa\"PREZIDENT \"1/2 kuřecí 1/2 vepřový, plněný šunkou a sýrem, bramborová kaše, citron, okurka (200g)",
               "price": "169 Kč"
             },
             {
@@ -219,7 +215,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-05-05T12:00:53.992Z",
+      "scrapedAt": "2026-05-05T14:22:03.072Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -341,7 +337,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 5.5.",
-      "scrapedAt": "2026-05-05T12:00:41.160Z",
+      "scrapedAt": "2026-05-05T14:21:50.767Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -359,14 +355,6 @@
         {
           "title": "POLEDNÍ MENU",
           "items": [
-            {
-              "name": "Čevabčiči s vařeným bramborem,hořčice,cibulka",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Maďarský guláš s houskovým knedlíkem",
-              "price": "169 Kč"
-            },
             {
               "name": "UT-Min SLKuřecí steak zapečený se šunkou a sýrem, hranolky",
               "price": "169 Kč"
@@ -685,7 +673,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-05T12:01:04.116Z",
+      "scrapedAt": "2026-05-05T14:22:14.097Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -886,7 +874,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-05T12:00:54.097Z",
+      "scrapedAt": "2026-05-05T14:22:03.179Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -959,7 +947,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-05T12:01:04.116Z",
+      "scrapedAt": "2026-05-05T14:22:14.096Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1031,7 +1019,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-05T12:00:54.097Z",
+      "scrapedAt": "2026-05-05T14:22:03.179Z",
       "sections": [
         {
           "title": "Nejprodávanější",
