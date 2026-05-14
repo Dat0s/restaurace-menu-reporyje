@@ -1,22 +1,18 @@
 {
-  "lastUpdated": "2026-05-14T08:16:35.446Z",
+  "lastUpdated": "2026-05-14T10:40:13.984Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Středa 13. 5.",
-      "scrapedAt": "2026-05-14T08:16:08.011Z",
+      "menuDate": "Čtvrtek 14. 5.",
+      "scrapedAt": "2026-05-14T10:39:39.775Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Mrkvová polévka s kokosovým mlékem",
-              "price": "75 Kč"
-            },
-            {
-              "name": "Cibulačka s krutóny s emmentálem",
+              "name": "Zelná polévka",
               "price": "85 Kč"
             },
             {
@@ -24,19 +20,19 @@
               "price": "195 Kč"
             },
             {
-              "name": "Smažený květák s bramborami grenaille a tatarskou omáčkou",
-              "price": "235 Kč"
+              "name": "Kuřecí prso s ratatouille a bylinkovým máslem",
+              "price": "275 Kč"
             },
             {
-              "name": "Chicken Burger se salátem coleslaw a rajčatovou salsou, hranolky",
+              "name": "Řízek z vepřové panenky se šťouchanými bramborami",
+              "price": "285 Kč"
+            },
+            {
+              "name": "Spaghetti s krevetami, cherry rajčaty a pečenými paprikami",
               "price": "295 Kč"
             },
             {
-              "name": "Znojemská hovězí pečeně s rýží",
-              "price": "265 Kč"
-            },
-            {
-              "name": "Bowl s trhaným kuřecím masem, naloženou zeleninou, tofu a hoisin majonézou",
+              "name": "Bílý chřest s holandskou omáčkou, bramborami a pošírovaným vejcem",
               "price": "275 Kč"
             }
           ]
@@ -70,19 +66,19 @@
               "price": "95 Kč"
             },
             {
-              "name": "Mrkvový dort",
+              "name": "Jahodový dort s mascarpone",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Tiramisu",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Mandlový dort s borůvkami a mascarpone",
               "price": "95 Kč"
             },
             {
               "name": "Brownie",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Mandlový dort s lesním ovocem a mascarpone",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Linecký koláč se švestkami a mákem",
               "price": "95 Kč"
             }
           ]
@@ -111,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "14.05.2026",
-      "scrapedAt": "2026-05-14T08:16:22.451Z",
+      "scrapedAt": "2026-05-14T10:39:54.804Z",
       "sections": [
         {
           "title": "Polévky",
@@ -141,10 +137,6 @@
         {
           "title": "Hlavní jídla",
           "items": [
-            {
-              "name": "Bramborové noky Čorizo s kuřecím masem, čorizem, parmská šunka,  česnek, sušené rajčata, rukola (150g)",
-              "price": "159 Kč"
-            },
             {
               "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
               "price": "169 Kč"
@@ -187,10 +179,6 @@
             },
             {
               "name": "Čočka na kyselo 2ks párku, sázené vejce, znojemská okurka, cibulka",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Zapečené fleky s kuřecím masem, slaninou, česnekem, baby špenátem, vejcem, okurka (150g)",
               "price": "159 Kč"
             },
             {
@@ -242,7 +230,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-05-14T08:16:21.751Z",
+      "scrapedAt": "2026-05-14T10:39:54.089Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -364,7 +352,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 14.5.",
-      "scrapedAt": "2026-05-14T08:16:09.081Z",
+      "scrapedAt": "2026-05-14T10:39:40.992Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -452,7 +440,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "11.5.15",
-      "scrapedAt": "2026-05-14T08:16:34.794Z",
+      "scrapedAt": "2026-05-14T10:40:08.598Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -546,7 +534,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-14T08:16:35.438Z",
+      "scrapedAt": "2026-05-14T10:40:13.975Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -747,7 +735,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-14T08:16:21.833Z",
+      "scrapedAt": "2026-05-14T10:39:54.227Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -820,7 +808,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-14T08:16:35.437Z",
+      "scrapedAt": "2026-05-14T10:40:13.975Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -892,7 +880,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-14T08:16:21.833Z",
+      "scrapedAt": "2026-05-14T10:39:54.227Z",
       "sections": [
         {
           "title": "Nejprodávanější",
