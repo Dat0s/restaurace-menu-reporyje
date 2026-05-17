@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-17T10:47:47.171Z",
+  "lastUpdated": "2026-05-17T11:55:13.298Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Neděle 17. 5.",
-      "scrapedAt": "2026-05-17T10:47:19.749Z",
+      "scrapedAt": "2026-05-17T11:54:43.297Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "17.05.2026",
-      "scrapedAt": "2026-05-17T10:47:35.319Z",
+      "scrapedAt": "2026-05-17T11:54:59.107Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,6 +146,10 @@
               "price": "159 Kč"
             },
             {
+              "name": "Humpolecka vepřová směs, žampiony, papriky, pórek, sypané sýrem, dušená rýže (150g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Koprová omáčka, 2ks vejce, houskové knedlíky (150g)",
               "price": "159 Kč"
             },
@@ -154,15 +158,11 @@
               "price": "159 Kč"
             },
             {
-              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Sekaná svíčková na smetaně, houskový knedlík (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Vepřová kotleta, šťouchaný brambor, omáčka z červeného vína (150g)",
+              "name": "Vepřová kotleta, pepřová omáčka, šťouchaný brambor (150g)",
               "price": "159 Kč"
             },
             {
@@ -172,10 +172,6 @@
             {
               "name": "Vepřová plec na pepři, kolínka (150g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Humpolecká vepřová směs se žampióny, pórkem a kapií, sypané sýrem, 4ks domácích bramboráčků (150g)",
-              "price": "169 Kč"
             }
           ]
         },
@@ -214,7 +210,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-05-17T10:47:34.658Z",
+      "scrapedAt": "2026-05-17T11:54:58.377Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -336,7 +332,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 15.5.",
-      "scrapedAt": "2026-05-17T10:47:20.857Z",
+      "scrapedAt": "2026-05-17T11:54:44.564Z",
       "sections": [
         {
           "title": "",
@@ -629,7 +625,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "11.5.15",
-      "scrapedAt": "2026-05-17T10:47:46.849Z",
+      "scrapedAt": "2026-05-17T11:55:11.269Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -723,7 +719,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-17T10:47:47.164Z",
+      "scrapedAt": "2026-05-17T11:55:13.288Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -924,7 +920,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-17T10:47:34.763Z",
+      "scrapedAt": "2026-05-17T11:54:58.472Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -997,7 +993,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-17T10:47:47.163Z",
+      "scrapedAt": "2026-05-17T11:55:13.287Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1069,7 +1065,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-17T10:47:34.762Z",
+      "scrapedAt": "2026-05-17T11:54:58.472Z",
       "sections": [
         {
           "title": "Nejprodávanější",
