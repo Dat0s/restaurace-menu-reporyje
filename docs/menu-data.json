@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-20T09:35:21.713Z",
+  "lastUpdated": "2026-05-20T12:10:55.164Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Úterý 19. 5.",
-      "scrapedAt": "2026-05-20T05:58:47.290Z",
+      "menuDate": "Středa 20. 5.",
+      "scrapedAt": "2026-05-20T12:10:28.306Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -16,15 +16,15 @@
               "price": "95 Kč"
             },
             {
+              "name": "Tomatová polévka s krutóny",
+              "price": "75 Kč"
+            },
+            {
               "name": "Buřtguláš s domácím chlebem",
               "price": "175 Kč"
             },
             {
-              "name": "Kuře na paprice se špeclemi",
-              "price": "245 Kč"
-            },
-            {
-              "name": "Španělský ptáček s rýží",
+              "name": "Tagliatelle Bolognese",
               "price": "265 Kč"
             },
             {
@@ -34,6 +34,10 @@
             {
               "name": "Curry s pečeným květákem s jasmínovou rýží a koraindrem",
               "price": "265 Kč"
+            },
+            {
+              "name": "Švédské masové kuličky s bramborovou kaší a brusinkami",
+              "price": "245 Kč"
             }
           ]
         },
@@ -51,10 +55,6 @@
             {
               "name": "Domácí tlačenka s cibulovo-petrželovým salátkem, domácí chléb",
               "price": "165 Kč"
-            },
-            {
-              "name": "Naložený hermelín se sušenými rajčaty a vlašskými ořechy, domácí chléb",
-              "price": "125 Kč"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "price": "95 Kč"
             },
             {
-              "name": "Malinový cheesecake",
+              "name": "Lotuskový cheesecake",
               "price": "95 Kč"
             },
             {
@@ -78,7 +78,11 @@
               "price": "95 Kč"
             },
             {
-              "name": "Mrkvový dort",
+              "name": "Linecký koláč s meruňkami a kokosem",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Jablkovo-mandlový koláč s mascarpone",
               "price": "95 Kč"
             }
           ]
@@ -107,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.05.2026",
-      "scrapedAt": "2026-05-20T09:35:11.713Z",
+      "scrapedAt": "2026-05-20T12:10:43.452Z",
       "sections": [
         {
           "title": "Polévky",
@@ -166,8 +170,8 @@
               "price": "159 Kč"
             },
             {
-              "name": "Štěpánská hovězí pečeně ,houskový knedlik (150g)",
-              "price": "169 Kč"
+              "name": "Štěpánská vepřová pečeně, dušená rýže (150g)",
+              "price": "159 Kč"
             },
             {
               "name": "Vepřová játra na cibulce a slanině, dušená rýže (150g)",
@@ -186,15 +190,11 @@
               "price": "149 Kč"
             },
             {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Zapečené fleky s uzeným masem, smetanou a vejcem, okurka (150g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Moravský vrabec se špenátem, bramborový knedlík (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
             }
           ]
@@ -218,7 +218,8 @@
             },
             {
               "name": "Domácí bramborák,, Poctivec\" se slaninou a salátkem z kysaného zelí (1 ks)",
-              "price": "65 Kč"
+              "price": "65 Kč",
+              "soldOut": true
             },
             {
               "name": "Domácí vaječná smaženka se zeleninou (1ks)",
@@ -238,7 +239,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-05-20T09:35:10.938Z",
+      "scrapedAt": "2026-05-20T12:10:42.637Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -360,7 +361,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 20.5.",
-      "scrapedAt": "2026-05-20T09:34:56.442Z",
+      "scrapedAt": "2026-05-20T12:10:29.574Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -644,7 +645,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "18.5.22",
-      "scrapedAt": "2026-05-20T01:49:33.084Z",
+      "scrapedAt": "2026-05-20T12:10:54.889Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -747,7 +748,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-20T09:35:21.705Z",
+      "scrapedAt": "2026-05-20T12:10:55.156Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -948,7 +949,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-20T09:35:11.046Z",
+      "scrapedAt": "2026-05-20T12:10:42.731Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1021,7 +1022,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-20T09:35:21.705Z",
+      "scrapedAt": "2026-05-20T12:10:55.156Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1093,7 +1094,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-20T09:35:11.046Z",
+      "scrapedAt": "2026-05-20T12:10:42.731Z",
       "sections": [
         {
           "title": "Nejprodávanější",
