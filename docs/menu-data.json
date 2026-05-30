@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-30T09:51:51.237Z",
+  "lastUpdated": "2026-05-30T11:13:53.874Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Sobota 30. 5.",
-      "scrapedAt": "2026-05-30T09:51:23.619Z",
+      "scrapedAt": "2026-05-30T11:13:09.105Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -91,7 +91,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "30.05.2026",
-      "scrapedAt": "2026-05-30T09:51:39.309Z",
+      "scrapedAt": "2026-05-30T11:13:43.095Z",
       "sections": [
         {
           "title": "Polévky",
@@ -126,16 +126,8 @@
               "price": "159 Kč"
             },
             {
-              "name": "Čertovo kolo  Pikantní vepřová směs servírovaná na velkém bramboráků, sypaná sýrem (150g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Cikánská vepřová pečeně s dušenou rýží (150g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Kuřecí rizoto se zeleninou sypané sýrem, znojemská okurka (150g)",
@@ -150,15 +142,19 @@
               "price": "159 Kč"
             },
             {
+              "name": "Sekaná svíčková svíčková  na  smetaně s houskovým  knedlíkem (200g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
             },
             {
-              "name": "Smažený kuřecí řízek, citrón, domácí bramborový salát (150g)",
-              "price": "169 Kč"
+              "name": "Vepřová plec na houbách s houskovým knedlíkem (150g)",
+              "price": "159 Kč"
             },
             {
-              "name": "Vepřová plec na houbách s houskovým knedlíkem (150g)",
+              "name": "Vepřová směs Pašerák sypaná sýrem,  rýže (150g)",
               "price": "159 Kč"
             },
             {
@@ -337,7 +333,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 29.5.",
-      "scrapedAt": "2026-05-30T09:51:25.244Z",
+      "scrapedAt": "2026-05-30T11:13:10.664Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -716,7 +712,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-30T09:51:51.227Z",
+      "scrapedAt": "2026-05-30T11:13:53.867Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -917,7 +913,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-30T09:51:38.622Z",
+      "scrapedAt": "2026-05-30T11:13:42.335Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -990,7 +986,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-05-30T09:51:51.227Z",
+      "scrapedAt": "2026-05-30T11:13:53.867Z",
       "sections": [
         {
           "title": "Předkrmy",
@@ -1062,7 +1058,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-05-30T09:51:38.621Z",
+      "scrapedAt": "2026-05-30T11:13:42.335Z",
       "sections": [
         {
           "title": "Nejprodávanější",
