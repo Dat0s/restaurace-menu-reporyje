@@ -202,6 +202,8 @@ function parseMenuText(text) {
     /^[v»\-\d\s.,]{1,8}$/,
     /^KW\s*\d/i,
     /^K\d+\s*$/i,
+    /řeporyje/i,
+    /^menu\s*box/i,
   ];
 
   function shouldSkip(line) {
