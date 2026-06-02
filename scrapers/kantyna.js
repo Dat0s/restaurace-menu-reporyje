@@ -14,34 +14,39 @@ async function scrapeKantyna() {
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     );
 
-    // Establish session cookies at facebook.com before navigating to group
-    await page.goto("https://www.facebook.com/", {
-      waitUntil: "networkidle2",
+    async function dismissDialogs() {
+      try {
+        const buttons = await page.$$(
+          'button, [role="button"], a[role="button"]',
+        );
+        for (const btn of buttons) {
+          const text = await page.evaluate((el) => el.textContent, btn);
+          if (
+            /not now|dismiss|close|decline|reject|allow|odmítnout|zavřít|přijmout|pouze nezbytné|accept only|cookie/i.test(
+              text,
+            )
+          ) {
+            await btn.click();
+            await new Promise((r) => setTimeout(r, 500));
+          }
+        }
+      } catch {}
+    }
+
+    // Mobile Facebook is less aggressive about login walls for public groups
+    await page.goto("https://m.facebook.com/", {
+      waitUntil: "domcontentloaded",
       timeout: 30000,
     });
     await new Promise((r) => setTimeout(r, 2000));
+    await dismissDialogs();
 
-    await page.goto("https://www.facebook.com/groups/1396911425536833", {
-      waitUntil: "networkidle2",
+    await page.goto("https://m.facebook.com/groups/1396911425536833", {
+      waitUntil: "domcontentloaded",
       timeout: 30000,
     });
     await new Promise((r) => setTimeout(r, 3000));
-
-    // Dismiss login / cookie / notification dialogs
-    try {
-      const buttons = await page.$$('button, [role="button"]');
-      for (const btn of buttons) {
-        const text = await page.evaluate((el) => el.textContent, btn);
-        if (
-          /not now|dismiss|close|decline|reject|allow|odmítnout|zavřít|přijmout/i.test(
-            text,
-          )
-        ) {
-          await btn.click();
-          await new Promise((r) => setTimeout(r, 500));
-        }
-      }
-    } catch {}
+    await dismissDialogs();
 
     // Scroll to trigger lazy-loaded posts
     for (let i = 0; i < 3; i++) {
@@ -102,7 +107,7 @@ async function scrapeKantyna() {
 
       const imgResponse = await fetch(imageUrl, {
         headers: {
-          Referer: "https://www.facebook.com/",
+          Referer: "https://m.facebook.com/",
           "User-Agent":
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
         },
