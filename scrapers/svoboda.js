@@ -114,8 +114,8 @@ async function scrapeSvoboda() {
     console.log("  Found", imageUrls.length, "candidate image(s)");
 
     if (imageUrls.length === 0) {
-      console.log("  Returning null to preserve previous data");
-      return null;
+      console.log("  No images found (Instagram blocked?), using fallback");
+      return fallbackResult();
     }
 
     // Iterate through posts (newest first) until we find one with "DENNÍ MENU"
@@ -168,11 +168,13 @@ async function scrapeSvoboda() {
       }
 
       console.log('  Found "DENNÍ MENU" in image', idx + 1);
-      return parseMenuText(text);
+      const parsed = parseMenuText(text);
+      if (parsed) return parsed;
+      console.log("  parseMenuText returned null, trying next image...");
     }
 
-    console.log('  No image with "DENNÍ MENU" found in any post');
-    return null;
+    console.log("  No usable image found, using fallback");
+    return fallbackResult();
   } finally {
     await browser.close();
   }
