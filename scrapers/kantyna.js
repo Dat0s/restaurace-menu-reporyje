@@ -154,7 +154,18 @@ function parseMenuText(text) {
   const lines = rawLines
     .map((l) => l.replace(/\s*\([0-9,\s]+\)\s*/g, "").trim())
     .map((l) => l.replace(/(\d+)\s*k?[Kk][čcČ]/g, "$1 Kč"))
+    .map((l) => l.replace(/\s+\d{1,2}(?:[,\s]+\d{1,2})+[\s.]*$/, "").trim())
     .filter((l) => l.length > 0);
+
+  // Extract default price from "CENA POLEDNÍHO MENU 119"
+  let defaultPrice = "";
+  for (const line of lines) {
+    const m = line.match(/cena\s+poledního\s+menu\s+(\d+)/i);
+    if (m) {
+      defaultPrice = m[1] + " Kč";
+      break;
+    }
+  }
 
   // Extract date range (e.g. "2.6. – 6.6." or "2.6- 6.6.")
   let menuDate = "";
@@ -204,6 +215,9 @@ function parseMenuText(text) {
     /^K\d+\s*$/i,
     /řeporyje/i,
     /^menu\s*box/i,
+    /^nově\s+otevřen/i,
+    /^cena\s+poledního\s+menu/i,
+    /^[\d,\s]+$/,
   ];
 
   function shouldSkip(line) {
@@ -231,7 +245,7 @@ function parseMenuText(text) {
 
     const priceMatch = line.match(/^(.+?)\s+(\d+)\s*Kč\s*$/);
     if (priceMatch) {
-      const name = priceMatch[1].replace(/[.\-–—,]+$/, "").trim();
+      const name = priceMatch[1].replace(/[.\-–—,:]+$/, "").trim();
       if (name.length > 2) {
         currentItems.push({ name, price: priceMatch[2] + " Kč" });
       }
@@ -250,8 +264,8 @@ function parseMenuText(text) {
 
     if (line.length > 10 && /[a-záčďéěíňóřšťúůýž]/i.test(line)) {
       currentItems.push({
-        name: line.replace(/[.\-–—,]+$/, "").trim(),
-        price: "",
+        name: line.replace(/[.\-–—,:]+$/, "").trim(),
+        price: defaultPrice,
       });
     }
   }
