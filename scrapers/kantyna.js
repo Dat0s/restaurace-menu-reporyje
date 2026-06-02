@@ -85,8 +85,8 @@ async function scrapeKantyna() {
     console.log("  Found", imageUrls.length, "candidate image(s)");
 
     if (imageUrls.length === 0) {
-      console.log("  No menu post found in visible feed, returning null");
-      return null;
+      console.log("  No menu post found (Facebook blocked?), using fallback");
+      return fallbackResult();
     }
 
     for (let idx = 0; idx < imageUrls.length; idx++) {
@@ -138,8 +138,8 @@ async function scrapeKantyna() {
       return parseMenuText(text);
     }
 
-    console.log("  No usable menu image found");
-    return null;
+    console.log("  No usable menu image found, using fallback");
+    return fallbackResult();
   } finally {
     await browser.close();
   }
