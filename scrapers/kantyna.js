@@ -268,15 +268,18 @@ function parseMenuText(text) {
     }
   }
 
-  const cleanSections = sections.filter((s) => s.items.length > 0);
+  let cleanSections = sections.filter((s) => s.items.length > 0);
 
   if (cleanSections.length === 0) return null;
 
-  // Quality check: no day sections + few/short items = OCR garbage → use fallback
   const hasDaySections = cleanSections.some((s) =>
     ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"].includes(s.title),
   );
-  if (!hasDaySections) {
+
+  if (hasDaySections) {
+    // "Polední menu" only collected OCR garbage before the first day header — drop it
+    cleanSections = cleanSections.filter((s) => s.title !== "Polední menu");
+  } else {
     const allItems = cleanSections.flatMap((s) => s.items);
     const avgLen =
       allItems.reduce((sum, i) => sum + i.name.length, 0) /
@@ -288,6 +291,8 @@ function parseMenuText(text) {
       return fallbackResult();
     }
   }
+
+  if (cleanSections.length === 0) return fallbackResult();
 
   return {
     name: "Kantýna STAPO",

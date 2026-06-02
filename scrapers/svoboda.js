@@ -303,18 +303,21 @@ function parseMenuText(text) {
     }
   }
 
-  const cleanSections = sections.filter((s) => s.items.length > 0);
+  let cleanSections = sections.filter((s) => s.items.length > 0);
 
   if (cleanSections.length === 0) {
     return null;
   }
 
-  // Quality check: if no day sections were found (only "Polední menu" fallback)
-  // and items look like OCR garbage (few items, short names), discard to preserve previous data
   const hasDaySections = cleanSections.some((s) =>
     ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"].includes(s.title),
   );
-  if (!hasDaySections) {
+
+  if (hasDaySections) {
+    // "Polední menu" only collected OCR garbage before the first day header — drop it
+    cleanSections = cleanSections.filter((s) => s.title !== "Polední menu");
+  } else {
+    // No day sections at all — garbage check
     const allItems = cleanSections.flatMap((s) => s.items);
     const avgLen =
       allItems.reduce((sum, i) => sum + i.name.length, 0) /
@@ -326,6 +329,8 @@ function parseMenuText(text) {
       return fallbackResult();
     }
   }
+
+  if (cleanSections.length === 0) return fallbackResult();
 
   return {
     name: "Řeznictví Svoboda",
