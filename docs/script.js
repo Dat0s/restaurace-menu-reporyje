@@ -102,7 +102,7 @@
     var sectionsHtml = "";
 
     // For multi-day restaurants on weekend: show "no menu today" message
-    if (isMultiDay && !hasTodaySection) {
+    if (isMultiDay && !hasTodaySection && daySections.length > 0) {
       sectionsHtml +=
         '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
