@@ -14,137 +14,115 @@ async function scrapeKantyna() {
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     );
 
-    async function dismissDialogs() {
-      try {
-        const buttons = await page.$$(
-          'button, [role="button"], a[role="button"]',
-        );
-        for (const btn of buttons) {
-          const text = await page.evaluate((el) => el.textContent, btn);
-          if (
-            /not now|dismiss|close|decline|reject|allow|odmítnout|zavřít|přijmout|pouze nezbytné|accept only|cookie/i.test(
-              text,
-            )
-          ) {
-            await btn.click();
-            await new Promise((r) => setTimeout(r, 500));
-          }
-        }
-      } catch {}
+    // Inject saved Facebook session cookies if available
+    if (process.env.FB_COOKIES) {
+      const cookies = process.env.FB_COOKIES.split("\n")
+        .filter((l) => l && !l.startsWith("#"))
+        .map((l) => {
+          const p = l.split("\t");
+          if (p.length < 7) return null;
+          const expires = parseInt(p[4]);
+          return {
+            domain: p[0],
+            path: p[2],
+            secure: p[3] === "TRUE",
+            ...(expires > 0 ? { expires } : {}),
+            name: p[5],
+            value: p[6].trim(),
+          };
+        })
+        .filter(Boolean);
+      await page.setCookie(...cookies);
+      console.log("  Injected", cookies.length, "cookies");
     }
 
-    // Mobile Facebook is less aggressive about login walls for public groups
-    await page.goto("https://m.facebook.com/", {
-      waitUntil: "domcontentloaded",
-      timeout: 30000,
-    });
-    await new Promise((r) => setTimeout(r, 2000));
-    await dismissDialogs();
-
-    await page.goto("https://m.facebook.com/groups/1396911425536833", {
-      waitUntil: "domcontentloaded",
+    await page.goto("https://www.facebook.com/groups/1396911425536833", {
+      waitUntil: "networkidle2",
       timeout: 30000,
     });
     await new Promise((r) => setTimeout(r, 3000));
-    await dismissDialogs();
 
-    // Scroll to trigger lazy-loaded posts
-    for (let i = 0; i < 3; i++) {
-      await page.evaluate(() => window.scrollBy(0, 800));
-      await new Promise((r) => setTimeout(r, 1500));
-    }
+    // Dismiss any remaining dialogs (notifications, etc.)
+    try {
+      const buttons = await page.$$('button, [role="button"]');
+      for (const btn of buttons) {
+        const text = await page.evaluate((el) => el.textContent, btn);
+        if (
+          /not now|dismiss|close|decline|reject|odmítnout|zavřít/i.test(text)
+        ) {
+          await btn.click();
+          await new Promise((r) => setTimeout(r, 500));
+        }
+      }
+    } catch {}
 
     const debugInfo = await page
-      .evaluate(() => ({
-        url: location.href,
-        title: document.title,
-        articleCount: document.querySelectorAll('[role="article"]').length,
-        imgCount: document.querySelectorAll("img").length,
-      }))
+      .evaluate(() => ({ url: location.href, title: document.title }))
       .catch(() => ({ error: "evaluate failed" }));
     console.log("  Page state:", JSON.stringify(debugInfo));
 
-    // Find the post whose visible text contains the menu keyword
-    const imageUrls = await page.evaluate(() => {
-      const articles = Array.from(
-        document.querySelectorAll('[role="article"]'),
-      );
-      for (const article of articles) {
-        const text = article.textContent || "";
-        if (/polední\s*menu|jídelní\s*lístek/i.test(text)) {
-          const imgs = Array.from(article.querySelectorAll("img"));
-          return imgs
-            .filter((img) => {
-              const src = img.src || "";
-              return (
-                (src.includes("scontent") || src.includes("fbcdn")) &&
-                img.width > 100
-              );
-            })
-            .map((img) => img.src);
-        }
-      }
-      return [];
-    });
-
-    console.log("  Found", imageUrls.length, "candidate image(s)");
-
-    if (imageUrls.length === 0) {
-      console.log("  No menu post found (Facebook blocked?), using fallback");
+    if (debugInfo.url && debugInfo.url.includes("/login")) {
+      console.log("  Redirected to login, using fallback");
       return fallbackResult();
     }
 
-    for (let idx = 0; idx < imageUrls.length; idx++) {
-      const imageUrl = imageUrls[idx];
-      console.log(
-        "  Trying image",
-        idx + 1,
-        "/",
-        imageUrls.length,
-        ":",
-        imageUrl.substring(0, 80) + "...",
-      );
+    // Intercept all CDN image URLs without dedup — same image appears twice:
+    // once as thumbnail (stp=s160x160) and once full-size (stp=p526x296).
+    // Collect all, filter by response size when fetching.
+    const interceptedUrls = [];
+    page.on("response", (response) => {
+      const url = response.url();
+      const ct = response.headers()["content-type"] || "";
+      if (
+        (url.includes("scontent") || url.includes("fbcdn")) &&
+        ct.startsWith("image/")
+      )
+        interceptedUrls.push(url);
+    });
 
+    // Scroll to trigger lazy-loading of post images
+    for (let i = 0; i < 6; i++) {
+      await page.evaluate(() => window.scrollBy(0, 800));
+      await new Promise((r) => setTimeout(r, 1500));
+    }
+    console.log("  Intercepted", interceptedUrls.length, "image URL(s)");
+
+    // Fetch each URL; skip thumbnails (< 30KB); OCR the rest
+    const candidates = [];
+    for (const imageUrl of interceptedUrls) {
       const imgResponse = await fetch(imageUrl, {
-        headers: {
-          Referer: "https://m.facebook.com/",
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-        },
+        headers: { Referer: "https://www.facebook.com/" },
       });
-
-      if (!imgResponse.ok) {
-        console.log("  Image download failed:", imgResponse.status);
-        continue;
-      }
-
+      if (!imgResponse.ok) continue;
       const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
-
-      if (imgBuffer.length < 5000) {
-        console.log(
-          "  Image too small, likely not a menu:",
-          imgBuffer.length,
-          "bytes",
-        );
-        continue;
-      }
+      if (imgBuffer.length < 30000) continue;
 
       const {
         data: { text },
       } = await Tesseract.recognize(imgBuffer, "ces");
-      console.log("  OCR text length:", text.length);
+      if (!/polední\s*menu|jídelní\s*lístek/i.test(text)) continue;
 
-      if (!/polední\s*menu|jídelní\s*lístek/i.test(text)) {
-        console.log("  Menu keyword not found in OCR text, trying next...");
-        continue;
+      const parsed = parseMenuText(text);
+      if (parsed) {
+        console.log("  Found menu, date:", parsed.menuDate);
+        candidates.push(parsed);
       }
-
-      console.log("  Menu keyword confirmed in OCR — parsing");
-      return parseMenuText(text);
     }
 
-    console.log("  No usable menu image found, using fallback");
-    return fallbackResult();
+    if (candidates.length === 0) {
+      console.log("  No menu found in intercepted images, using fallback");
+      return fallbackResult();
+    }
+
+    candidates.sort((a, b) => {
+      const toDate = (d) => {
+        const m = d.match(/(\d{1,2})\.(\d{1,2})/);
+        return m ? parseInt(m[2]) * 100 + parseInt(m[1]) : 0;
+      };
+      return toDate(b.menuDate) - toDate(a.menuDate);
+    });
+    console.log("  Best candidate date:", candidates[0].menuDate);
+    return candidates[0];
   } finally {
     await browser.close();
   }
