@@ -16,21 +16,54 @@ const IG_FETCH_HEADERS = {
   Referer: "https://www.instagram.com/",
 };
 
+function parseIgCookies(raw) {
+  raw = raw.trim();
+  if (raw.startsWith("[") || raw.startsWith("{")) {
+    const arr = Array.isArray(JSON.parse(raw))
+      ? JSON.parse(raw)
+      : [JSON.parse(raw)];
+    return arr.filter((c) => c.name && c.value);
+  }
+  return raw
+    .split("\n")
+    .filter((l) => l && !l.startsWith("#"))
+    .map((l) => {
+      const p = l.split("\t");
+      if (p.length < 7) return null;
+      return { name: p[5], value: p[6].trim() };
+    })
+    .filter(Boolean);
+}
+
 async function scrapeSvoboda() {
-  // Strategy 1: direct fetch API (fast, works from home IPs)
-  const fetchResult = await tryFetchStrategy();
+  // Strategy 1: direct fetch API without auth (fast, works from home IPs)
+  const fetchResult = await tryFetchStrategy({});
   if (fetchResult) return fetchResult;
 
-  // Strategy 2: puppeteer — intercepts the API call Instagram's own JS makes,
-  // which carries proper browser headers and bypasses IP-based blocks on our fetch
+  // Strategy 2: fetch API with IG session cookies (bypasses CI IP rate-limits)
+  if (process.env.IG_COOKIES) {
+    console.log("  Trying authenticated fetch with IG_COOKIES...");
+    const igCookies = parseIgCookies(process.env.IG_COOKIES);
+    const cookieStr = igCookies.map((c) => `${c.name}=${c.value}`).join("; ");
+    const csrfToken =
+      igCookies.find((c) => c.name === "csrftoken")?.value || "";
+    const authResult = await tryFetchStrategy({ cookieStr, csrfToken });
+    if (authResult) return authResult;
+  }
+
+  // Strategy 3: puppeteer — intercepts the API call Instagram's own JS makes
   console.log("  Fetch blocked, trying puppeteer...");
   return tryPuppeteerStrategy();
 }
 
-async function tryFetchStrategy() {
+async function tryFetchStrategy({ cookieStr, csrfToken } = {}) {
+  const extraHeaders = cookieStr
+    ? { Cookie: cookieStr, "X-CSRFToken": csrfToken }
+    : {};
+
   const apiRes = await fetch(
     "https://www.instagram.com/api/v1/users/web_profile_info/?username=svoboda_reznictvi",
-    { headers: IG_FETCH_HEADERS },
+    { headers: { ...IG_FETCH_HEADERS, ...extraHeaders } },
   ).catch(() => null);
 
   if (!apiRes?.ok) {

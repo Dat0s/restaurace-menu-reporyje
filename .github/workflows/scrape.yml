@@ -24,6 +24,7 @@ jobs:
       - run: npm run scrape
         env:
           FB_COOKIES: ${{ secrets.FB_COOKIES }}
+          IG_COOKIES: ${{ secrets.IG_COOKIES }}
 
       - name: Pre-render menu HTML
         run: node scripts/prerender.js
