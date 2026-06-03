@@ -2,7 +2,7 @@ name: Scrape Menu Data
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,12 +16,14 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - run: npm ci
 
       - run: npm run scrape
+        env:
+          FB_COOKIES: ${{ secrets.FB_COOKIES }}
 
       - name: Pre-render menu HTML
         run: node scripts/prerender.js

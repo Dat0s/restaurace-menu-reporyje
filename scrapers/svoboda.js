@@ -1,42 +1,123 @@
+const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 
-const IG_HEADERS = {
+const USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
+const IG_FETCH_HEADERS = {
   "X-IG-App-ID": "936619743392459",
   "X-ASBD-ID": "198387",
   "X-IG-WWW-Claim": "0",
   "Sec-Fetch-Dest": "empty",
   "Sec-Fetch-Mode": "cors",
   "Sec-Fetch-Site": "same-origin",
-  "User-Agent":
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "User-Agent": USER_AGENT,
   Accept: "*/*",
   Referer: "https://www.instagram.com/",
 };
 
 async function scrapeSvoboda() {
+  // Strategy 1: direct fetch API (fast, works from home IPs)
+  const fetchResult = await tryFetchStrategy();
+  if (fetchResult) return fetchResult;
+
+  // Strategy 2: puppeteer — intercepts the API call Instagram's own JS makes,
+  // which carries proper browser headers and bypasses IP-based blocks on our fetch
+  console.log("  Fetch blocked, trying puppeteer...");
+  return tryPuppeteerStrategy();
+}
+
+async function tryFetchStrategy() {
   const apiRes = await fetch(
     "https://www.instagram.com/api/v1/users/web_profile_info/?username=svoboda_reznictvi",
-    { headers: IG_HEADERS },
+    { headers: IG_FETCH_HEADERS },
   ).catch(() => null);
 
   if (!apiRes?.ok) {
-    console.log("  Instagram API unavailable, using fallback");
-    return fallbackResult();
+    console.log(
+      "  Instagram fetch API failed:",
+      apiRes?.status ?? "network error",
+    );
+    return null;
   }
 
   const json = await apiRes.json();
   const edges = json?.data?.user?.edge_owner_to_timeline_media?.edges ?? [];
-  console.log("  Found", edges.length, "posts");
+  console.log("  Fetch: found", edges.length, "posts");
+  if (edges.length === 0) return null;
 
-  if (edges.length === 0) return fallbackResult();
-
-  // display_url works for both GraphImage and GraphVideo (thumbnail)
   const imageUrls = edges.map((e) => e.node.display_url).filter(Boolean);
+  return ocrImages(imageUrls, "fetch");
+}
 
+async function tryPuppeteerStrategy() {
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+
+  try {
+    const page = await browser.newPage();
+    await page.setViewport({ width: 1400, height: 900 });
+    await page.setUserAgent(USER_AGENT);
+
+    // Intercept Instagram's own API call — Instagram's JS makes this request
+    // from within the browser with proper browser fingerprinting headers
+    const profileImages = [];
+    page.on("response", async (response) => {
+      const url = response.url();
+      if (
+        url.includes("/api/v1/users/web_profile_info/") ||
+        url.includes("/api/v1/feed/user/")
+      ) {
+        try {
+          const json = await response.json().catch(() => null);
+          const edges =
+            json?.data?.user?.edge_owner_to_timeline_media?.edges ?? [];
+          for (const e of edges) {
+            if (e.node.display_url) profileImages.push(e.node.display_url);
+          }
+        } catch {}
+      }
+    });
+
+    await page.goto("https://www.instagram.com/svoboda_reznictvi/", {
+      waitUntil: "networkidle2",
+      timeout: 45000,
+    });
+    await new Promise((r) => setTimeout(r, 3000));
+
+    // Scroll to trigger any lazy-loaded API calls
+    for (let i = 0; i < 3; i++) {
+      await page.evaluate(() => window.scrollBy(0, 800));
+      await new Promise((r) => setTimeout(r, 1000));
+    }
+
+    console.log(
+      "  Puppeteer: intercepted",
+      profileImages.length,
+      "image URL(s)",
+    );
+
+    if (profileImages.length === 0) {
+      console.log("  No images intercepted via puppeteer, using fallback");
+      return fallbackResult();
+    }
+
+    const result = await ocrImages(profileImages, "puppeteer");
+    return result ?? fallbackResult();
+  } finally {
+    await browser.close();
+  }
+}
+
+async function ocrImages(imageUrls, source) {
   for (let idx = 0; idx < imageUrls.length; idx++) {
     const imageUrl = imageUrls[idx];
     console.log(
-      "  Trying image",
+      " ",
+      source,
+      "trying image",
       idx + 1,
       "/",
       imageUrls.length,
@@ -47,7 +128,7 @@ async function scrapeSvoboda() {
     const imgRes = await fetch(imageUrl, {
       headers: {
         Referer: "https://www.instagram.com/",
-        "User-Agent": IG_HEADERS["User-Agent"],
+        "User-Agent": USER_AGENT,
       },
     }).catch(() => null);
 
@@ -68,18 +149,17 @@ async function scrapeSvoboda() {
     console.log("  OCR text length:", text.length);
 
     if (!/denn[ií]\s*menu/i.test(text)) {
-      console.log('  No "DENNÍ MENU" found, trying next post...');
+      console.log('  No "DENNÍ MENU" found, trying next...');
       continue;
     }
 
     console.log('  Found "DENNÍ MENU" in image', idx + 1);
     const parsed = parseMenuText(text);
     if (parsed) return parsed;
-    console.log("  parseMenuText returned null, trying next image...");
+    console.log("  parseMenuText returned null, trying next...");
   }
 
-  console.log("  No usable image found, using fallback");
-  return fallbackResult();
+  return null;
 }
 
 function parseMenuText(text) {
@@ -218,11 +298,11 @@ function parseMenuText(text) {
       (allItems.length || 1);
     if (allItems.length < 3 || avgLen < 15) {
       console.log("  OCR result looks like garbage, using fallback");
-      return fallbackResult();
+      return null;
     }
   }
 
-  if (cleanSections.length === 0) return fallbackResult();
+  if (cleanSections.length === 0) return null;
 
   return {
     name: "Řeznictví Svoboda",
