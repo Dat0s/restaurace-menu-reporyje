@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-04T06:55:20.343Z",
+  "lastUpdated": "2026-06-04T10:34:10.508Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Středa 3. 6.",
-      "scrapedAt": "2026-06-04T06:54:47.411Z",
+      "menuDate": "Čtvrtek 4. 6.",
+      "scrapedAt": "2026-06-04T10:33:40.230Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -24,16 +24,16 @@
               "price": "225 Kč"
             },
             {
-              "name": "Gyros z vepřové panenky s domácí pitou, tzatziki a majonézou z pečených paprik",
-              "price": "295 Kč"
+              "name": "Hovězí na pepři s gratinovanými bramborami",
+              "price": "325 Kč"
             },
             {
               "name": "Kuřecí řízek v panko strouhance s bramborovou kaší a rajčatovým salátem",
               "price": "275 Kč"
             },
             {
-              "name": "Fusilli s cuketou, pečenými paprikami a rajčaty, parmazán",
-              "price": "235 Kč"
+              "name": "Tagliatelle se smetanovou omáčkou s liškami",
+              "price": "265 Kč"
             }
           ]
         },
@@ -74,7 +74,7 @@
               "price": "95 Kč"
             },
             {
-              "name": "Linecký koláč s tvarohem a meruňkami",
+              "name": "Blondie",
               "price": "95 Kč"
             },
             {
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "04.06.2026",
-      "scrapedAt": "2026-06-04T06:55:04.629Z",
+      "scrapedAt": "2026-06-04T10:33:54.278Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,6 +146,10 @@
               "price": "159 Kč"
             },
             {
+              "name": "Chalupářský talíř ( vepřová pečeně, grilovaná klobása )  variace knedlíků ,červené zelí (150g)",
+              "price": "169 Kč"
+            },
+            {
               "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
               "price": "169 Kč"
             },
@@ -158,10 +162,6 @@
               "price": "159 Kč"
             },
             {
-              "name": "Pečená kachna, červené zelí, domácí bramborové knedlíky (1/4)",
-              "price": "179 Kč"
-            },
-            {
               "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
             },
@@ -170,7 +170,7 @@
               "price": "169 Kč"
             },
             {
-              "name": "Těstovinový salát s kuřecím masem, šunkou, sýrem a zeleninou zjemněný domácí majonézou (500g)",
+              "name": "Uzená krkovička s bramborovou kaší, znojemská okurka (150g)",
               "price": "159 Kč"
             },
             {
@@ -192,11 +192,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -212,7 +214,8 @@
             },
             {
               "name": "Bramborový salát (100g)",
-              "price": "22 Kč"
+              "price": "22 Kč",
+              "soldOut": true
             }
           ]
         }
@@ -223,7 +226,7 @@
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": null,
       "menuDate": "1.6.2026",
-      "scrapedAt": "2026-06-04T06:55:20.261Z",
+      "scrapedAt": "2026-06-04T10:34:10.417Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -241,7 +244,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-06-04T06:55:03.919Z",
+      "scrapedAt": "2026-06-04T10:33:53.523Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -363,7 +366,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 4.6.",
-      "scrapedAt": "2026-06-04T06:54:48.558Z",
+      "scrapedAt": "2026-06-04T10:33:41.238Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -643,7 +646,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "1.6. - 5.6.",
-      "scrapedAt": "2026-06-04T06:55:12.584Z",
+      "scrapedAt": "2026-06-04T10:34:02.791Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -661,7 +664,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-04T06:55:20.335Z",
+      "scrapedAt": "2026-06-04T10:34:10.500Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -862,7 +865,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-04T06:55:04.001Z",
+      "scrapedAt": "2026-06-04T10:33:53.612Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -935,7 +938,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-06-04T06:55:12.970Z",
+      "scrapedAt": "2026-06-04T10:34:03.068Z",
       "sections": []
     },
     {
@@ -943,7 +946,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-04T06:55:04.001Z",
+      "scrapedAt": "2026-06-04T10:33:53.612Z",
       "sections": [
         {
           "title": "Nejprodávanější",
