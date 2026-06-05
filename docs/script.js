@@ -499,9 +499,11 @@
       for (var ii = 0; ii < s.items.length; ii++) {
         var item = s.items[ii];
         var cls = "menu-item" + (item.soldOut ? " sold-out" : "");
-        var nameHtml = item.link
+        var safeLink =
+          item.link && /^https?:\/\//i.test(item.link) ? item.link : null;
+        var nameHtml = safeLink
           ? '<a href="' +
-            escapeHtml(item.link) +
+            escapeHtml(safeLink) +
             '" target="_blank" rel="noopener">' +
             escapeHtml(item.name) +
             "</a>"
