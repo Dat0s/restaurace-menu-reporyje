@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 
@@ -12,6 +14,21 @@ function isSupportedImageFormat(buf) {
 }
 
 async function scrapeKantyna() {
+  // Tier 1: best-effort automated scrape (Facebook group, usually blocked from CI)
+  const auto = await tryAutomated();
+  if (auto) return auto;
+
+  // Tier 2: OCR a manually uploaded image from menu-images/kantyna.{jpg,jpeg,png}
+  console.log("  Automated scrape failed, trying local menu image...");
+  const local = await ocrLocalImage("kantyna");
+  if (local) return local;
+
+  // Tier 3: friendly fallback card pointing at the Facebook group
+  console.log("  No local image menu found, using fallback");
+  return fallbackResult();
+}
+
+async function tryAutomated() {
   const browser = await puppeteer.launch({
     headless: "new",
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -112,8 +129,8 @@ async function scrapeKantyna() {
     console.log("  Page state:", JSON.stringify(debugInfo));
 
     if (debugInfo.url && debugInfo.url.includes("/login")) {
-      console.log("  Redirected to login, using fallback");
-      return fallbackResult();
+      console.log("  Redirected to login");
+      return null;
     }
 
     // Scroll to trigger lazy-loading of post images
@@ -181,8 +198,8 @@ async function scrapeKantyna() {
     }
 
     if (candidates.length === 0) {
-      console.log("  No menu found in images, using fallback");
-      return fallbackResult();
+      console.log("  No menu found in images");
+      return null;
     }
 
     candidates.sort((a, b) => {
@@ -354,13 +371,13 @@ function parseMenuText(text) {
       (allItems.length || 1);
     if (allItems.length < 3 || avgLen < 15) {
       console.log(
-        "  OCR result looks like garbage (no day sections, few/short items), using fallback",
+        "  OCR result looks like garbage (no day sections, few/short items)",
       );
-      return fallbackResult();
+      return null;
     }
   }
 
-  if (cleanSections.length === 0) return fallbackResult();
+  if (cleanSections.length === 0) return null;
 
   return {
     name: "Kantýna STAPO",
@@ -391,6 +408,51 @@ function fallbackResult() {
       },
     ],
   };
+}
+
+// Tier 2 fallback: OCR a menu image manually uploaded to menu-images/<name>.{jpg,jpeg,png}
+async function ocrLocalImage(baseName) {
+  const dir = path.join(__dirname, "..", "menu-images");
+  let imgPath = null;
+  for (const ext of ["jpg", "jpeg", "png"]) {
+    const candidate = path.join(dir, `${baseName}.${ext}`);
+    if (fs.existsSync(candidate)) {
+      imgPath = candidate;
+      break;
+    }
+  }
+  if (!imgPath) return null;
+
+  console.log("  Found local menu image:", imgPath);
+  let buf;
+  try {
+    buf = fs.readFileSync(imgPath);
+  } catch (e) {
+    console.log("  Could not read local image:", e.message);
+    return null;
+  }
+  if (!isSupportedImageFormat(buf)) {
+    console.log("  Local image is not a supported format (need JPEG/PNG)");
+    return null;
+  }
+
+  let text;
+  try {
+    ({
+      data: { text },
+    } = await Tesseract.recognize(buf, "ces"));
+  } catch (e) {
+    console.log("  OCR of local image failed:", e.message);
+    return null;
+  }
+
+  const parsed = parseMenuText(text);
+  if (parsed) {
+    console.log("  Parsed menu from local image, date:", parsed.menuDate);
+  } else {
+    console.log("  parseMenuText found no menu in local image");
+  }
+  return parsed;
 }
 
 module.exports = { scrapeKantyna };

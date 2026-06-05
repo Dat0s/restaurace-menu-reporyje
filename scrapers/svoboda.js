@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 
@@ -36,6 +38,21 @@ function parseIgCookies(raw) {
 }
 
 async function scrapeSvoboda() {
+  // Tier 1: best-effort automated scrape (usually blocked from CI datacenter IPs)
+  const auto = await tryAutomated();
+  if (auto) return auto;
+
+  // Tier 2: OCR a manually uploaded image from menu-images/svoboda.{jpg,jpeg,png}
+  console.log("  Automated scrape failed, trying local menu image...");
+  const local = await ocrLocalImage("svoboda");
+  if (local) return local;
+
+  // Tier 3: friendly fallback card pointing at Instagram
+  console.log("  No local image menu found, using fallback");
+  return fallbackResult();
+}
+
+async function tryAutomated() {
   // Strategy 1: direct fetch API without auth (fast, works from home IPs)
   const fetchResult = await tryFetchStrategy({});
   if (fetchResult) return fetchResult;
@@ -133,12 +150,11 @@ async function tryPuppeteerStrategy() {
     );
 
     if (profileImages.length === 0) {
-      console.log("  No images intercepted via puppeteer, using fallback");
-      return fallbackResult();
+      console.log("  No images intercepted via puppeteer");
+      return null;
     }
 
-    const result = await ocrImages(profileImages, "puppeteer");
-    return result ?? fallbackResult();
+    return ocrImages(profileImages, "puppeteer");
   } finally {
     await browser.close();
   }
@@ -366,6 +382,59 @@ function fallbackResult() {
       },
     ],
   };
+}
+
+function isSupportedImageFormat(buf) {
+  if (buf.length < 12) return false;
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return true; // JPEG
+  if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47)
+    return true; // PNG
+  return false;
+}
+
+// Tier 2 fallback: OCR a menu image manually uploaded to menu-images/<name>.{jpg,jpeg,png}
+async function ocrLocalImage(baseName) {
+  const dir = path.join(__dirname, "..", "menu-images");
+  let imgPath = null;
+  for (const ext of ["jpg", "jpeg", "png"]) {
+    const candidate = path.join(dir, `${baseName}.${ext}`);
+    if (fs.existsSync(candidate)) {
+      imgPath = candidate;
+      break;
+    }
+  }
+  if (!imgPath) return null;
+
+  console.log("  Found local menu image:", imgPath);
+  let buf;
+  try {
+    buf = fs.readFileSync(imgPath);
+  } catch (e) {
+    console.log("  Could not read local image:", e.message);
+    return null;
+  }
+  if (!isSupportedImageFormat(buf)) {
+    console.log("  Local image is not a supported format (need JPEG/PNG)");
+    return null;
+  }
+
+  let text;
+  try {
+    ({
+      data: { text },
+    } = await Tesseract.recognize(buf, "ces"));
+  } catch (e) {
+    console.log("  OCR of local image failed:", e.message);
+    return null;
+  }
+
+  const parsed = parseMenuText(text);
+  if (parsed) {
+    console.log("  Parsed menu from local image, date:", parsed.menuDate);
+  } else {
+    console.log("  parseMenuText found no menu in local image");
+  }
+  return parsed;
 }
 
 module.exports = { scrapeSvoboda };
