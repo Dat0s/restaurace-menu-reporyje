@@ -389,7 +389,7 @@ function parseMenuText(text) {
   return {
     name: "Kantýna STAPO",
     source: "https://www.facebook.com/groups/1396911425536833",
-    phone: null,
+    phone: "+420 739 657 009",
     menuDate,
     scrapedAt: new Date().toISOString(),
     sections: cleanSections,
@@ -400,7 +400,7 @@ function fallbackResult() {
   return {
     name: "Kantýna STAPO",
     source: "https://www.facebook.com/groups/1396911425536833",
-    phone: null,
+    phone: "+420 739 657 009",
     menuDate: "",
     scrapedAt: new Date().toISOString(),
     sections: [
