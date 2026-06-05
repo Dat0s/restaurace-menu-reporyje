@@ -410,6 +410,7 @@ function fallbackResult() {
           {
             name: "Menu nebylo nalezeno. Podívejte se na Facebook skupinu Kantýna STAPO",
             price: "",
+            link: "https://www.facebook.com/groups/1396911425536833",
           },
         ],
       },

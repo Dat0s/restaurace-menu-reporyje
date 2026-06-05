@@ -499,12 +499,19 @@
       for (var ii = 0; ii < s.items.length; ii++) {
         var item = s.items[ii];
         var cls = "menu-item" + (item.soldOut ? " sold-out" : "");
+        var nameHtml = item.link
+          ? '<a href="' +
+            escapeHtml(item.link) +
+            '" target="_blank" rel="noopener">' +
+            escapeHtml(item.name) +
+            "</a>"
+          : escapeHtml(item.name);
         html +=
           '<div class="' +
           cls +
           '">' +
           '<span class="name">' +
-          escapeHtml(item.name) +
+          nameHtml +
           "</span>" +
           '<span class="price">' +
           escapeHtml(item.soldOut ? "Vyprodáno" : item.price || "") +

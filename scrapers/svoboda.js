@@ -377,6 +377,7 @@ function fallbackResult() {
           {
             name: "Menu nebylo nalezeno. Podívejte se na Instagram @svoboda_reznictvi",
             price: "",
+            link: "https://www.instagram.com/svoboda_reznictvi/",
           },
         ],
       },
