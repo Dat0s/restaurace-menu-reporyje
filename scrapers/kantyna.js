@@ -225,7 +225,14 @@ function parseMenuText(text) {
   const lines = rawLines
     .map((l) => l.replace(/\s*\([0-9,\s]+\)\s*/g, "").trim())
     .map((l) => l.replace(/(\d+)\s*k?[Kk][čcČ]/g, "$1 Kč"))
-    .map((l) => l.replace(/\s+\d{1,2}(?:[,\s]+\d{1,2})+[\s.]*$/, "").trim())
+    // Strip trailing allergen-column codes OCR'd onto the dish line
+    // (e.g. "...knedlík 15357", "...salátem 13:7"). Guard the price line
+    // "CENA POLEDNÍHO MENU 119" so the default price is still extractable.
+    .map((l) =>
+      /cena\s+poledního\s+menu/i.test(l)
+        ? l
+        : l.replace(/\s+\d[\d\s.,:]*$/, "").trim(),
+    )
     .filter((l) => l.length > 0);
 
   // Extract default price from "CENA POLEDNÍHO MENU 119"
