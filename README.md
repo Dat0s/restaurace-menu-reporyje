@@ -6,16 +6,17 @@ Agregátor poledních menu restaurací v Řeporyjích. Automaticky stahuje aktu�
 
 ## Restaurace
 
-| Restaurace | Typ menu | Zdroj dat |
-|---|---|---|
-| Kavárna na Náměstí | Denní | HTML scraping |
-| Řeporyjská Sokolovna | Denní | Next.js JSON |
-| Pivovar Řeporyje | Denní (po dnech) | OCR z obrázku |
-| Jídelna Pohotovka | Denní | JSON API |
-| HQ Pippi Grill | Stálé | Statické |
-| DÖNER KEBAB HOUSE | Stálé | Statické |
-| Řeznictví Svoboda | Denní | Instagram OCR |
-| Papa Cipolla | Stálé | Statické |
+| Restaurace           | Typ menu         | Zdroj dat                     |
+| -------------------- | ---------------- | ----------------------------- |
+| Kavárna na Náměstí   | Denní            | HTML scraping                 |
+| Řeporyjská Sokolovna | Denní            | Next.js JSON                  |
+| Pivovar Řeporyje     | Denní (po dnech) | OCR z obrázku                 |
+| Jídelna Pohotovka    | Denní            | JSON API                      |
+| Kantýna STAPO        | Denní (po dnech) | Facebook OCR → ruční obrázek  |
+| Řeznictví Svoboda    | Denní (po dnech) | Instagram OCR → ruční obrázek |
+| HQ Pippi Grill       | Stálé            | Statické                      |
+| DÖNER KEBAB HOUSE    | Stálé            | Statické                      |
+| Papa Cipolla         | Stálé            | Statické                      |
 
 ## Jak to funguje
 
@@ -27,6 +28,21 @@ GitHub Actions (každých 15 min) → Node.js scrapery → menu-data.json → Gi
 2. **Scrapery** stáhnou menu z webů restaurací (HTML, JSON API, OCR)
 3. Výsledky se uloží do `docs/menu-data.json`
 4. **GitHub Pages** servíruje statický frontend z `/docs`
+
+### Kantýna STAPO a Řeznictví Svoboda
+
+Meta blokuje IP adresy GitHub Actions, takže automatické stahování z Facebooku/Instagramu většinou selže. Scrapery proto používají třístupňový postup:
+
+1. Pokus o automatické stažení (funguje z domácí IP, v CI zpravidla ne)
+2. OCR ručně nahraného obrázku z `menu-images/kantyna.jpg` nebo `menu-images/svoboda.jpg`
+3. Záložní karta s odkazem na Facebook / Instagram
+
+**Jak aktualizovat menu ručně** (bez PC, bez skriptů):
+
+1. Uložte screenshot týdenního menu z Facebooku (Kantýna) nebo Instagramu @svoboda_reznictvi
+2. Na github.com otevřete složku `menu-images/` → _Add file_ → _Upload files_
+3. Nahrajte soubor pojmenovaný přesně `kantyna.jpg` nebo `svoboda.jpg` (přepište starý)
+4. Do ~15 minut cron obrázek přečte a web se aktualizuje
 
 ## Lokální spuštění
 
