@@ -38,6 +38,12 @@ function parseIgCookies(raw) {
 }
 
 async function scrapeSvoboda() {
+  const day = new Date().getDay();
+  if (day === 0 || day === 6) {
+    console.log("  Weekend — Řeznictví Svoboda is closed, skipping scrape");
+    return weekendResult();
+  }
+
   // Tier 1: best-effort automated scrape (usually blocked from CI datacenter IPs)
   const auto = await tryAutomated();
   if (auto) return auto;
@@ -436,6 +442,28 @@ async function ocrLocalImage(baseName) {
     console.log("  parseMenuText found no menu in local image");
   }
   return parsed;
+}
+
+function weekendResult() {
+  return {
+    name: "Řeznictví Svoboda",
+    source: "https://www.instagram.com/svoboda_reznictvi/",
+    phone: "+420 251 625 847",
+    menuDate: "",
+    scrapedAt: new Date().toISOString(),
+    sections: [
+      {
+        title: "Polední menu",
+        items: [
+          {
+            name: "Podívejte se na Instagram @svoboda_reznictvi",
+            price: "",
+            link: "https://www.instagram.com/svoboda_reznictvi/",
+          },
+        ],
+      },
+    ],
+  };
 }
 
 module.exports = { scrapeSvoboda };

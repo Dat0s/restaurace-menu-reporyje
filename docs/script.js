@@ -41,6 +41,7 @@
   ];
   var dayOrder = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"];
   var todayName = dayNames[new Date().getDay()];
+  var isWeekend = new Date().getDay() === 0 || new Date().getDay() === 6;
 
   // Render cards
   for (var ri = 0; ri < data.restaurants.length; ri++) {
@@ -52,6 +53,7 @@
       r.name === "Pivovar Řeporyje" ||
       r.name === "Řeznictví Svoboda" ||
       r.name === "Kantýna STAPO";
+    var isWeekendClosure = r.name === "Řeznictví Svoboda" && isWeekend;
 
     // Check if this restaurant has a today section
     var hasTodaySection = false;
@@ -102,13 +104,19 @@
     var sectionsHtml = "";
 
     // For multi-day restaurants on weekend: show "no menu today" message
-    if (isMultiDay && !hasTodaySection && daySections.length > 0) {
+    if (
+      isMultiDay &&
+      !hasTodaySection &&
+      (daySections.length > 0 || isWeekendClosure)
+    ) {
       sectionsHtml +=
         '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
 
-    // Render daily header sections first (e.g. "Polední menu")
-    sectionsHtml += renderSections(dailyHeaderSections, r.sections.length);
+    // Render daily header sections first (e.g. "Polední menu") — skipped on weekend closure (collapsed below)
+    if (!isWeekendClosure) {
+      sectionsHtml += renderSections(dailyHeaderSections, r.sections.length);
+    }
 
     if (isMultiDay && daySections.length > 0) {
       // Render today without highlight (shown plain when it's the only visible day)
@@ -155,6 +163,18 @@
           btnLabel +
           "</button>";
       }
+    } else if (isWeekendClosure) {
+      // Weekend: collapse daily-header + static sections behind "Dnes je zavřeno"
+      var closureSections = dailyHeaderSections.concat(staticSections);
+      if (closureSections.length > 0) {
+        sectionsHtml += '<div class="collapsed-days" hidden>';
+        sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
+        sectionsHtml += renderSections(closureSections, r.sections.length);
+        sectionsHtml += "</div>";
+        sectionsHtml +=
+          '<button class="expand-btn expand-days-btn" type="button">+ Zobrazit týdenní menu</button>';
+        staticSections = [];
+      }
     } else if (!isMultiDay) {
       // Check if restaurant is closed (has "Otevírací doba" section with "Zavřeno")
       var closedSection = null;
@@ -190,7 +210,9 @@
     }
 
     // Render static/permanent sections last (e.g. Ukrajinské speciality, Hlavní jídla, Dezerty)
-    sectionsHtml += renderSections(staticSections, r.sections.length);
+    if (!isWeekendClosure) {
+      sectionsHtml += renderSections(staticSections, r.sections.length);
+    }
 
     var scrapedTime = r.scrapedAt
       ? new Date(r.scrapedAt).toLocaleTimeString("cs-CZ", {
@@ -204,6 +226,7 @@
       "DÖNER KEBAB HOUSE",
       "HQ Pippi Grill",
       "Papa Cipolla",
+      "Mama Bowl",
     ];
     var isStaticMenu = staticMenuNames.indexOf(r.name) >= 0;
     var displayDate = "";
