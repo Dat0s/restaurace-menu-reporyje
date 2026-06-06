@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T20:47:02.526Z",
+  "lastUpdated": "2026-06-06T21:02:28.883Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -1032,8 +1032,72 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-06-06T20:46:52.496Z",
-      "sections": []
+      "scrapedAt": "2026-06-06T21:02:28.880Z",
+      "sections": [
+        {
+          "title": "Předkrmy",
+          "items": [
+            {
+              "name": "Nem Rán",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Nem Chay",
+              "price": "80 Kč"
+            },
+            {
+              "name": "Gyoza",
+              "price": "120 Kč"
+            },
+            {
+              "name": "Ha Cao",
+              "price": "120 Kč"
+            },
+            {
+              "name": "Sweet Potatos",
+              "price": "120 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Hlavní jídla",
+          "items": [
+            {
+              "name": "Phởčko",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bún Bò Nam Bộ",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bún Nem",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Mango Beef",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bánh Bao",
+              "price": "150 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Nápoje",
+          "items": [
+            {
+              "name": "Časadá",
+              "price": "68 Kč"
+            },
+            {
+              "name": "Café Nâu Đá",
+              "price": "99 Kč"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Papa Cipolla",

@@ -34,6 +34,10 @@ async function main() {
         console.log(`  SKIP: no data (keeping previous)`);
         continue;
       }
+      if (!result.sections || result.sections.length === 0) {
+        console.log(`  SKIP: empty sections (keeping previous)`);
+        continue;
+      }
       // Preserve previous menuDate if new scrape has empty date
       if (!result.menuDate) {
         const existing = data.restaurants.find((r) => r.name === result.name);

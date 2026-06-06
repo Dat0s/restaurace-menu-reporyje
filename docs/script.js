@@ -148,11 +148,11 @@
           });
         }
       }
+      if (!hasTodaySection) {
+        sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
+      }
       if (otherDays.length > 0) {
         sectionsHtml += '<div class="collapsed-days" hidden>';
-        if (!hasTodaySection) {
-          sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
-        }
         sectionsHtml += renderSections(otherDays, r.sections.length);
         sectionsHtml += "</div>";
         var btnLabel = hasTodaySection
@@ -164,11 +164,11 @@
           "</button>";
       }
     } else if (isWeekendClosure) {
-      // Weekend: collapse daily-header + static sections behind "Dnes je zavřeno"
+      // Weekend: show "Dnes je zavřeno" immediately, collapse the Instagram link behind button
+      sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
       var closureSections = dailyHeaderSections.concat(staticSections);
       if (closureSections.length > 0) {
         sectionsHtml += '<div class="collapsed-days" hidden>';
-        sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
         sectionsHtml += renderSections(closureSections, r.sections.length);
         sectionsHtml += "</div>";
         sectionsHtml +=
@@ -197,9 +197,9 @@
         // Show closed message (same style as multi-day restaurants), hide menu behind expand button
         sectionsHtml +=
           '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
+        sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
         if (menuSections.length > 0) {
           sectionsHtml += '<div class="collapsed-days" hidden>';
-          sectionsHtml += '<div class="closed-notice">Dnes je zavřeno</div>';
           sectionsHtml += renderSections(menuSections, r.sections.length);
           sectionsHtml += "</div>";
           sectionsHtml +=
