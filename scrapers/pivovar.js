@@ -343,7 +343,8 @@ function weekendResult() {
         title: "Víkend",
         items: [
           {
-            name: "O víkendu polední menu není. Prohlédněte si stálé menu.",
+            name: "stálé menu",
+            prefix: "O víkendu polední menu není. Prohlédněte si ",
             price: "",
             link: "https://pivovarfood.cz/menu",
           },

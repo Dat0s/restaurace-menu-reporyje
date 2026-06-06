@@ -524,13 +524,15 @@
         var cls = "menu-item" + (item.soldOut ? " sold-out" : "");
         var safeLink =
           item.link && /^https?:\/\//i.test(item.link) ? item.link : null;
-        var nameHtml = safeLink
-          ? '<a href="' +
-            escapeHtml(safeLink) +
-            '" target="_blank" rel="noopener">' +
-            escapeHtml(item.name) +
-            "</a>"
-          : escapeHtml(item.name);
+        var nameHtml =
+          (item.prefix ? escapeHtml(item.prefix) : "") +
+          (safeLink
+            ? '<a href="' +
+              escapeHtml(safeLink) +
+              '" target="_blank" rel="noopener">' +
+              escapeHtml(item.name) +
+              "</a>"
+            : escapeHtml(item.name));
         html +=
           '<div class="' +
           cls +
