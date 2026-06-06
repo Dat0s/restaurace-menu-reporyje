@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-06T07:29:49.922Z",
+  "lastUpdated": "2026-06-06T09:34:18.643Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Pátek 5. 6.",
-      "scrapedAt": "2026-06-06T07:29:15.622Z",
+      "menuDate": "Sobota 6. 6.",
+      "scrapedAt": "2026-06-06T09:33:39.727Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -24,16 +24,16 @@
               "price": "295 Kč"
             },
             {
-              "name": "Hovězí na pepři s gratinovanými bramborami",
-              "price": "325 Kč"
+              "name": "Langoš s trhanym uzeným, švestkovou omáčkou a zelím",
+              "price": "235 Kč"
             },
             {
               "name": "Arancini nero s krevetami, chilli a rajčaty",
               "price": "315 Kč"
             },
             {
-              "name": "Tagliatelle se smetanovou omáčkou s liškami",
-              "price": "265 Kč"
+              "name": "Tagliatelle alla Arrabbiata",
+              "price": "245 Kč"
             }
           ]
         },
@@ -66,11 +66,11 @@
               "price": "95 Kč"
             },
             {
-              "name": "Meruňkovo-mandlový koláč s mascarpone",
+              "name": "Jahodovo-mandlový koláč s mascarpone",
               "price": "95 Kč"
             },
             {
-              "name": "Tiramisu",
+              "name": "Linecký koláč s jablky",
               "price": "95 Kč"
             },
             {
@@ -82,8 +82,16 @@
               "price": "95 Kč"
             },
             {
-              "name": "Cheesecake s lesními plody",
+              "name": "Cheesecake s malinami",
               "price": "95 Kč"
+            },
+            {
+              "name": "Jahodovo-mandlový koláč s mascarpone",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Domácí buchta s povidly",
+              "price": "65 Kč"
             }
           ]
         },
@@ -111,7 +119,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "06.06.2026",
-      "scrapedAt": "2026-06-06T07:29:29.544Z",
+      "scrapedAt": "2026-06-06T09:33:56.726Z",
       "sections": [
         {
           "title": "Polévky",
@@ -121,7 +129,7 @@
               "price": "44 Kč"
             },
             {
-              "name": "Kuřecí vývar s masem, zeleninou a těstovinou (0,33l)",
+              "name": "Kuřecí vývar s masem a játrovými knedlíčky ,testoviny, kořenová zelenina (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -234,7 +242,7 @@
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
       "menuDate": "1.6.2026",
-      "scrapedAt": "2026-06-06T07:29:49.913Z",
+      "scrapedAt": "2026-06-06T09:34:18.636Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -328,7 +336,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-06-06T07:29:28.897Z",
+      "scrapedAt": "2026-06-06T09:33:55.789Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -450,7 +458,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 5.6.",
-      "scrapedAt": "2026-06-06T07:29:16.556Z",
+      "scrapedAt": "2026-06-06T09:33:41.051Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -730,7 +738,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "1.6. - 5.6.",
-      "scrapedAt": "2026-06-06T07:29:38.925Z",
+      "scrapedAt": "2026-06-06T09:34:06.819Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -824,7 +832,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-06T07:29:49.914Z",
+      "scrapedAt": "2026-06-06T09:34:18.636Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1025,7 +1033,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-06T07:29:28.999Z",
+      "scrapedAt": "2026-06-06T09:33:55.885Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1098,15 +1106,79 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-06-06T07:29:39.109Z",
-      "sections": []
+      "scrapedAt": "2026-06-06T09:34:08.106Z",
+      "sections": [
+        {
+          "title": "Předkrmy",
+          "items": [
+            {
+              "name": "Nem Rán",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Nem Chay",
+              "price": "80 Kč"
+            },
+            {
+              "name": "Gyoza",
+              "price": "120 Kč"
+            },
+            {
+              "name": "Ha Cao",
+              "price": "120 Kč"
+            },
+            {
+              "name": "Sweet Potatos",
+              "price": "120 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Hlavní jídla",
+          "items": [
+            {
+              "name": "Phởčko",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bún Bò Nam Bộ",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bún Nem",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Mango Beef",
+              "price": "199 Kč"
+            },
+            {
+              "name": "Bánh Bao",
+              "price": "150 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Nápoje",
+          "items": [
+            {
+              "name": "Časadá",
+              "price": "68 Kč"
+            },
+            {
+              "name": "Café Nâu Đá",
+              "price": "99 Kč"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Papa Cipolla",
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-06T07:29:28.999Z",
+      "scrapedAt": "2026-06-06T09:33:55.885Z",
       "sections": [
         {
           "title": "Nejprodávanější",
