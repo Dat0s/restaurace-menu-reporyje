@@ -40,6 +40,25 @@ Pak spusť workflow a zkontroluj log, který tier uspěl:
 gh workflow run scrape.yml --repo Dat0s/restaurace-menu-reporyje
 ```
 
+## 3b. Lokální scraping na PC (doporučeno)
+
+Místo ručního `gh secret set` použij setup skript — z jednoho exportu nastaví
+**všechno najednou** (lokální cookies, volitelně i GH secrets, klon repa
+a scheduled task `ReporyjeMenuScrape`, který Po/Út/Pá v 7–11 h scrapne
+Kantýnu+Svobodu z domácí IP, pokud web nemá aktuální menu):
+
+```powershell
+.\scripts\setup-local-task.ps1 -FbCookies ~\Downloads\facebook.com_cookies.txt `
+                               -IgCookies ~\Downloads\instagram.com_cookies.txt `
+                               -UpdateSecrets
+```
+
+Skript exporty sám **vyfiltruje jen na facebook/instagram cookies** (rozšíření
+často exportují všechny domény včetně banky a práce!) a originály smaže.
+Cookies skončí v `%LOCALAPPDATA%\reporyje-menu\`, log tasku tamtéž
+(`scrape.log`). Když menu nejde stáhnout ani lokálně, dorazí ti e-mail
+z GitHubu (workflow **Menu freshness alert**, Po/Út/Pá ~11:15).
+
 ## 4. Údržba
 
 - Cookies expirují (typicky po pár měsících, nebo když Meta session zneplatní).
