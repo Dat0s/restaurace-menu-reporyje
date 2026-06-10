@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-10T04:45:18.936Z",
+  "lastUpdated": "2026-06-10T06:12:40.515Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 9. 6.",
-      "scrapedAt": "2026-06-10T04:44:41.980Z",
+      "scrapedAt": "2026-06-10T06:12:01.092Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "10.06.2026",
-      "scrapedAt": "2026-06-10T04:44:58.081Z",
+      "scrapedAt": "2026-06-10T06:12:15.995Z",
       "sections": [
         {
           "title": "Polévky",
@@ -174,10 +174,6 @@
               "price": "169 Kč"
             },
             {
-              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Plzeňský hovězí guláš zdobený cibulkou, houskové knedlíky (150g)",
               "price": "169 Kč"
             },
@@ -191,6 +187,10 @@
             },
             {
               "name": "Kachní játra na cibulce, dušená rýže (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
               "price": "159 Kč"
             },
             {
@@ -235,91 +235,16 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "1.6.2026",
-      "scrapedAt": "2026-06-10T04:45:18.927Z",
+      "menuDate": "",
+      "scrapedAt": "2026-06-10T06:12:40.507Z",
       "sections": [
         {
-          "title": "Pondělí",
+          "title": "Polední menu",
           "items": [
             {
-              "name": "Polévka: Česneková s vejcem",
-              "price": "119 Kč"
-            },
-            {
-              "name": "1: Vepřová pečeně se zelím, bramborový knedlík",
-              "price": "119 Kč"
-            },
-            {
-              "name": "2: Paprikový lusk v rajské omáčce, rýže",
-              "price": "119 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Úterý",
-          "items": [
-            {
-              "name": "Polévka: Hráškový krém",
-              "price": "119 Kč"
-            },
-            {
-              "name": "1: Španělský ptáček, rýže",
-              "price": "119 Kč"
-            },
-            {
-              "name": "2 : Kotlíkový guláš s klobásou, chléb LAT",
-              "price": "119 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Středa",
-          "items": [
-            {
-              "name": "Polévka: Vývar s masem a smaženým hráškem",
-              "price": "119 Kč"
-            },
-            {
-              "name": "1: Kapustový karbanátek s bramborovou kaší io",
-              "price": "119 Kč"
-            },
-            {
-              "name": "2: Vepřový perkelt s těstovinami",
-              "price": "119 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Čtvrtek",
-          "items": [
-            {
-              "name": "Polévka: Dršťková z hlívy",
-              "price": "119 Kč"
-            },
-            {
-              "name": "1: Zapečené těstoviny uzeným a sýrem, zelný salát vy",
-              "price": "119 Kč"
-            },
-            {
-              "name": "2: Pečené kuřecí stehno na zelenině s rýží",
-              "price": "119 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Pátek",
-          "items": [
-            {
-              "name": "Polévka: Bramboračka",
-              "price": "119 Kč"
-            },
-            {
-              "name": "1: Pačený prejt se zelím, vařené brambory vý",
-              "price": "119 Kč"
-            },
-            {
-              "name": "2: Smažený vepřový řízek s bramborovým salátem",
-              "price": "119 Kč"
+              "name": "Menu nebylo nalezeno. Podívejte se na Facebook skupinu Kantýna STAPO",
+              "price": "",
+              "link": "https://www.facebook.com/groups/1396911425536833"
             }
           ]
         }
@@ -330,7 +255,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-06-10T04:44:57.419Z",
+      "scrapedAt": "2026-06-10T06:12:15.306Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -452,7 +377,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 9.6.",
-      "scrapedAt": "2026-06-10T04:44:43.148Z",
+      "scrapedAt": "2026-06-10T06:12:02.161Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -726,91 +651,16 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "1.6. - 5.6.",
-      "scrapedAt": "2026-06-10T04:45:08.248Z",
+      "menuDate": "",
+      "scrapedAt": "2026-06-10T06:12:28.723Z",
       "sections": [
         {
-          "title": "Pondělí",
+          "title": "Polední menu",
           "items": [
             {
-              "name": "Dršťková polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Buřtguláš",
-              "price": "139 Kč"
-            },
-            {
-              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Úterý",
-          "items": [
-            {
-              "name": "Gulášová polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Šunkofleky",
-              "price": "139 Kč"
-            },
-            {
-              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Středa",
-          "items": [
-            {
-              "name": "Polévka s játrovou rýží",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Rozlítaný ptáček, rýže",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Čtvrtek",
-          "items": [
-            {
-              "name": "Hrachová polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Hovězí štěpánská, h.knedlík",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
-              "price": ""
-            }
-          ]
-        },
-        {
-          "title": "Pátek",
-          "items": [
-            {
-              "name": "Hovězí polévka",
-              "price": "39 Kč"
-            },
-            {
-              "name": "Ovocné knedliky",
-              "price": "139 Kč"
-            },
-            {
-              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
-              "price": ""
+              "name": "Menu nebylo nalezeno. Podívejte se na Instagram @svoboda_reznictvi",
+              "price": "",
+              "link": "https://www.instagram.com/svoboda_reznictvi/"
             }
           ]
         }
@@ -821,7 +671,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-10T04:45:18.928Z",
+      "scrapedAt": "2026-06-10T06:12:40.507Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1022,7 +872,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-10T04:44:57.524Z",
+      "scrapedAt": "2026-06-10T06:12:15.400Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1167,7 +1017,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-10T04:44:57.524Z",
+      "scrapedAt": "2026-06-10T06:12:15.400Z",
       "sections": [
         {
           "title": "Nejprodávanější",
