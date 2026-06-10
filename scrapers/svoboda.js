@@ -401,6 +401,7 @@ function fallbackResult() {
     source: "https://www.instagram.com/svoboda_reznictvi/",
     phone: "+420 251 625 847",
     menuDate: "",
+    isFallback: true,
     scrapedAt: new Date().toISOString(),
     sections: [
       {

@@ -430,6 +430,7 @@ function fallbackResult() {
     source: "https://www.facebook.com/groups/1396911425536833",
     phone: "+420 739 657 009",
     menuDate: "",
+    isFallback: true,
     scrapedAt: new Date().toISOString(),
     sections: [
       {

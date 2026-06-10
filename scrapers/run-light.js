@@ -43,6 +43,21 @@ async function main() {
         console.log(`  SKIP: empty sections (keeping previous)`);
         continue;
       }
+      // A fallback card must never replace a real menu that is still fresh —
+      // e.g. a CI run where Meta blocks everything must not wipe out a menu
+      // scraped successfully earlier the same week
+      if (result.isFallback) {
+        const existing = data.restaurants.find((r) => r.name === result.name);
+        if (
+          existing &&
+          !existing.isFallback &&
+          existing.menuDate &&
+          isMenuFresh(existing.menuDate)
+        ) {
+          console.log(`  SKIP: fallback card (keeping fresh previous menu)`);
+          continue;
+        }
+      }
       // Preserve previous menuDate if new scrape has empty date —
       // but never resurrect a date from a past week onto a fresh result
       if (!result.menuDate) {
