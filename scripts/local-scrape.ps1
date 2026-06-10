@@ -6,6 +6,8 @@
 # otherwise any native command writing to stderr (npm warnings, git progress)
 # would abort the script. Failures are detected via $LASTEXITCODE instead.
 $ErrorActionPreference = "Continue"
+# Decode native command output (node, git) as UTF-8 so Czech text logs correctly
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 $base = Join-Path $env:LOCALAPPDATA "reporyje-menu"
 $repo = Join-Path $base "repo"
