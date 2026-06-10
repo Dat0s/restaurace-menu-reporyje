@@ -64,13 +64,13 @@ Every scraper must return this shape:
 
 ## Scraper Types
 
-| Type                                              | Tool                     | Restaurants                                                           |
-| ------------------------------------------------- | ------------------------ | --------------------------------------------------------------------- |
-| Static HTML (fetch + cheerio)                     | cheerio                  | Kavárna na Náměstí, Řeporyjská Sokolovna, Mama Bowl                   |
-| JSON API                                          | fetch                    | Jídelna Pohotovka (pohotovka.cz/menu/menu.json, needs Referer header) |
-| Dynamic + OCR                                     | puppeteer + tesseract.js | Pivovar Řeporyje (image menu → Czech OCR → text)                      |
-| 3-tier cascade (automated → local OCR → fallback) | puppeteer + tesseract.js | Kantýna STAPO (Facebook), Řeznictví Svoboda (Instagram)               |
-| Hardcoded static                                  | none                     | Papa Cipolla, HQ Pippi Grill, DÖNER KEBAB HOUSE                       |
+| Type                                                       | Tool                                                               | Restaurants                                                           |
+| ---------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| Static HTML (fetch + cheerio)                              | cheerio                                                            | Kavárna na Náměstí, Řeporyjská Sokolovna, Mama Bowl                   |
+| JSON API                                                   | fetch                                                              | Jídelna Pohotovka (pohotovka.cz/menu/menu.json, needs Referer header) |
+| Dynamic + OCR                                              | puppeteer + tesseract.js                                           | Pivovar Řeporyje (image menu → Czech OCR → text)                      |
+| 4-tier cascade (puppeteer → Python → local OCR → fallback) | puppeteer + Python (facebook-scraper / instaloader) + tesseract.js | Kantýna STAPO (Facebook), Řeznictví Svoboda (Instagram)               |
+| Hardcoded static                                           | none                                                               | Papa Cipolla, HQ Pippi Grill, DÖNER KEBAB HOUSE                       |
 
 ## Adding a New Restaurant
 
@@ -92,7 +92,9 @@ Every scraper must return this shape:
 
 ## Key Gotchas
 
-- **Kantýna & Svoboda — Meta IP blocking**: GitHub Actions datacenter IPs are hard-blocked by Facebook/Instagram. Scrapers use a 3-tier cascade: `tryAutomated()` → `ocrLocalImage()` → `fallbackResult()`. `tryAutomated()` must return `null` (not the fallback) on failure so the local-image tier runs.
+- **Kantýna & Svoboda — Meta IP blocking**: GitHub Actions datacenter IPs are hard-blocked by Facebook/Instagram. Scrapers use a 4-tier cascade: `tryAutomated()` → Python tier (`scrapers/py/fb_group_images.py` via facebook-scraper / `ig_profile_images.py` via instaloader, spawned through `scrapers/py-bridge.js`) → `ocrLocalImage()` → `fallbackResult()`. Each tier must return `null` (not the fallback) on failure so the next tier runs.
+- **Python tier needs cookies**: the FB group redirects to /login and IG graphql returns 403 without a session — `FB_COOKIES`/`IG_COOKIES` secrets must hold cookies of a throwaway account that is a member of the Kantýna FB group. Setup guide: `scrapers/py/README.md`. Without valid cookies the Python tier fails gracefully and the cascade continues.
+- **Freshness guard**: every tier result passes `isMenuFresh(menuDate)` (`scrapers/utils.js`) — menus dated before Monday of the current week are discarded so a stale `menu-images/*.jpg` can never keep last week's menu on the site. Empty/unparseable dates are treated as fresh. `run-light.js` also refuses to copy a stale previous `menuDate` onto a result with an empty date.
 - **menu-images/ fallback**: When automation returns `null`, the scraper OCRs `menu-images/kantyna.jpg` (or `svoboda.jpg`) using Tesseract `ces`. User replaces the file weekly via github.com upload. File must be JPEG or PNG — magic-byte validated before OCR.
 - **Kantýna allergen noise**: `parseMenuText` strips trailing digit sequences from dish lines (allergen column OCR artefacts like "15357" or "13:7") but guards the "CENA POLEDNÍHO MENU NNN" price line so the default price is still extracted.
 - **Pivovar OCR**: Daily menu is an image on pivovarfood.cz (Weblium). The scraper scrolls to trigger lazy loading, finds the image by Weblium resource group ID `6685145de189dbc54c372591`, then runs Czech OCR. Day names (Pondělí–Pátek) are parsed as section headers.

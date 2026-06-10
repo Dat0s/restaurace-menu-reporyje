@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
+const { runPythonScraper } = require("./py-bridge");
+const { isMenuFresh } = require("./utils");
 
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
@@ -45,17 +47,41 @@ async function scrapeSvoboda() {
   }
 
   // Tier 1: best-effort automated scrape (usually blocked from CI datacenter IPs)
-  const auto = await tryAutomated();
+  const auto = freshOrNull(await tryAutomated(), "Automated");
   if (auto) return auto;
 
-  // Tier 2: OCR a manually uploaded image from menu-images/svoboda.{jpg,jpeg,png}
-  console.log("  Automated scrape failed, trying local menu image...");
-  const local = await ocrLocalImage("svoboda");
+  // Tier 2: instaloader (Python) profile feed, OCR the post images
+  console.log("  Automated scrape failed, trying instaloader (Python)...");
+  const py = await runPythonScraper("ig_profile_images.py");
+  if (py && Array.isArray(py.images) && py.images.length > 0) {
+    console.log("  Python tier returned", py.images.length, "image URL(s)");
+    const urls = py.images.map((i) => i.url).filter(Boolean);
+    const pyResult = freshOrNull(
+      await ocrImages(urls, "python"),
+      "Python tier",
+    );
+    if (pyResult) return pyResult;
+  }
+
+  // Tier 3: OCR a manually uploaded image from menu-images/svoboda.{jpg,jpeg,png}
+  console.log("  Python tier failed, trying local menu image...");
+  const local = freshOrNull(await ocrLocalImage("svoboda"), "Local image");
   if (local) return local;
 
-  // Tier 3: friendly fallback card pointing at Instagram
-  console.log("  No local image menu found, using fallback");
+  // Tier 4: friendly fallback card pointing at Instagram
+  console.log("  No fresh menu found, using fallback");
   return fallbackResult();
+}
+
+// Discards results whose menu date belongs to a past week so a stale menu
+// never silently stays on the site.
+function freshOrNull(result, tierName) {
+  if (!result) return null;
+  if (isMenuFresh(result.menuDate)) return result;
+  console.log(
+    `  ${tierName} menu is stale (${result.menuDate}), trying next tier...`,
+  );
+  return null;
 }
 
 async function tryAutomated() {

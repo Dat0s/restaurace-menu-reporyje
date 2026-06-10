@@ -1,0 +1,4 @@
+facebook-scraper
+instaloader
+# requests-html (facebook-scraper dep) imports lxml.html.clean, now a separate package
+lxml_html_clean

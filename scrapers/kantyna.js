@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
+const { runPythonScraper } = require("./py-bridge");
+const { isMenuFresh } = require("./utils");
 
 function isSupportedImageFormat(buf) {
   if (buf.length < 12) return false;
@@ -13,18 +15,39 @@ function isSupportedImageFormat(buf) {
   return false;
 }
 
+// Discards results whose menu date belongs to a past week so a stale menu
+// never silently stays on the site.
+function freshOrNull(result, tierName) {
+  if (!result) return null;
+  if (isMenuFresh(result.menuDate)) return result;
+  console.log(
+    `  ${tierName} menu is stale (${result.menuDate}), trying next tier...`,
+  );
+  return null;
+}
+
 async function scrapeKantyna() {
   // Tier 1: best-effort automated scrape (Facebook group, usually blocked from CI)
-  const auto = await tryAutomated();
+  const auto = freshOrNull(await tryAutomated(), "Puppeteer");
   if (auto) return auto;
 
-  // Tier 2: OCR a manually uploaded image from menu-images/kantyna.{jpg,jpeg,png}
+  // Tier 2: facebook-scraper (Python) feed of the group, OCR the post images
+  console.log("  Puppeteer scrape failed, trying facebook-scraper (Python)...");
+  const py = await runPythonScraper("fb_group_images.py");
+  if (py && Array.isArray(py.images) && py.images.length > 0) {
+    console.log("  Python tier returned", py.images.length, "image URL(s)");
+    const urls = py.images.map((i) => i.url).filter(Boolean);
+    const pyResult = freshOrNull(await ocrImageUrls(urls), "Python tier");
+    if (pyResult) return pyResult;
+  }
+
+  // Tier 3: OCR a manually uploaded image from menu-images/kantyna.{jpg,jpeg,png}
   console.log("  Automated scrape failed, trying local menu image...");
-  const local = await ocrLocalImage("kantyna");
+  const local = freshOrNull(await ocrLocalImage("kantyna"), "Local image");
   if (local) return local;
 
-  // Tier 3: friendly fallback card pointing at the Facebook group
-  console.log("  No local image menu found, using fallback");
+  // Tier 4: friendly fallback card pointing at the Facebook group
+  console.log("  No fresh menu found, using fallback");
   return fallbackResult();
 }
 
@@ -163,57 +186,62 @@ async function tryAutomated() {
       "image URL(s)",
     );
 
-    // Fetch each URL; skip thumbnails (< 30KB); OCR the rest
-    const candidates = [];
-    for (const imageUrl of allUrls) {
-      let imgBuffer;
-      try {
-        const imgResponse = await fetch(imageUrl, {
-          headers: { Referer: "https://www.facebook.com/" },
-        });
-        if (!imgResponse.ok) continue;
-        imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
-      } catch {
-        continue;
-      }
-      if (imgBuffer.length < 30000) continue;
-      // Skip WebP and other formats Tesseract/Leptonica can't read
-      if (!isSupportedImageFormat(imgBuffer)) continue;
-
-      let text;
-      try {
-        ({
-          data: { text },
-        } = await Tesseract.recognize(imgBuffer, "ces"));
-      } catch {
-        continue;
-      }
-      if (!/polední\s*menu|jídelní\s*lístek/i.test(text)) continue;
-
-      const parsed = parseMenuText(text);
-      if (parsed) {
-        console.log("  Found menu, date:", parsed.menuDate);
-        candidates.push(parsed);
-      }
-    }
-
-    if (candidates.length === 0) {
-      console.log("  No menu found in images");
-      return null;
-    }
-
-    candidates.sort((a, b) => {
-      const toDate = (d) => {
-        const m = d.match(/(\d{1,2})\.(\d{1,2})/);
-        return m ? parseInt(m[2]) * 100 + parseInt(m[1]) : 0;
-      };
-      return toDate(b.menuDate) - toDate(a.menuDate);
-    });
-    console.log("  Best candidate date:", candidates[0].menuDate);
-    return candidates[0];
+    return ocrImageUrls(allUrls);
   } finally {
     await browser.close();
   }
+}
+
+// Fetch each URL; skip thumbnails (< 30KB); OCR the rest and return the
+// candidate with the newest menu date. Shared by the puppeteer and Python tiers.
+async function ocrImageUrls(imageUrls) {
+  const candidates = [];
+  for (const imageUrl of imageUrls) {
+    let imgBuffer;
+    try {
+      const imgResponse = await fetch(imageUrl, {
+        headers: { Referer: "https://www.facebook.com/" },
+      });
+      if (!imgResponse.ok) continue;
+      imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
+    } catch {
+      continue;
+    }
+    if (imgBuffer.length < 30000) continue;
+    // Skip WebP and other formats Tesseract/Leptonica can't read
+    if (!isSupportedImageFormat(imgBuffer)) continue;
+
+    let text;
+    try {
+      ({
+        data: { text },
+      } = await Tesseract.recognize(imgBuffer, "ces"));
+    } catch {
+      continue;
+    }
+    if (!/polední\s*menu|jídelní\s*lístek/i.test(text)) continue;
+
+    const parsed = parseMenuText(text);
+    if (parsed) {
+      console.log("  Found menu, date:", parsed.menuDate);
+      candidates.push(parsed);
+    }
+  }
+
+  if (candidates.length === 0) {
+    console.log("  No menu found in images");
+    return null;
+  }
+
+  candidates.sort((a, b) => {
+    const toDate = (d) => {
+      const m = d.match(/(\d{1,2})\.(\d{1,2})/);
+      return m ? parseInt(m[2]) * 100 + parseInt(m[1]) : 0;
+    };
+    return toDate(b.menuDate) - toDate(a.menuDate);
+  });
+  console.log("  Best candidate date:", candidates[0].menuDate);
+  return candidates[0];
 }
 
 function parseMenuText(text) {

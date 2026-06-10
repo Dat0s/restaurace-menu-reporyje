@@ -8,7 +8,12 @@ const { scrapePohotovka } = require("./pohotovka");
 const { scrapeSvoboda } = require("./svoboda");
 const { scrapeMamaBowl } = require("./mamabowl");
 const { scrapeKantyna } = require("./kantyna");
-const { readData, writeData, upsertRestaurant } = require("./utils");
+const {
+  readData,
+  writeData,
+  upsertRestaurant,
+  isMenuFresh,
+} = require("./utils");
 
 async function main() {
   const data = readData();
@@ -38,10 +43,11 @@ async function main() {
         console.log(`  SKIP: empty sections (keeping previous)`);
         continue;
       }
-      // Preserve previous menuDate if new scrape has empty date
+      // Preserve previous menuDate if new scrape has empty date —
+      // but never resurrect a date from a past week onto a fresh result
       if (!result.menuDate) {
         const existing = data.restaurants.find((r) => r.name === result.name);
-        if (existing && existing.menuDate) {
+        if (existing && existing.menuDate && isMenuFresh(existing.menuDate)) {
           result.menuDate = existing.menuDate;
         }
       }

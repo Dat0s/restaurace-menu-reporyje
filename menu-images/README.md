@@ -6,9 +6,18 @@ runner's datacenter IP).
 
 ## How it works
 
-Each 15-minute scrape first tries the automated social-media scrape. If that fails
-(it usually will), the scraper OCRs the image it finds here instead. If there's no
-image either, it shows the "look on Facebook/Instagram" fallback card.
+Each 15-minute scrape walks a 4-tier cascade:
+
+1. Puppeteer scrape of the Facebook group / Instagram profile
+2. Python scrape (`facebook-scraper` / `instaloader`, see `scrapers/py/`) using
+   the `FB_COOKIES` / `IG_COOKIES` secrets — see `scrapers/py/README.md`
+3. OCR of the image uploaded here
+4. The "look on Facebook/Instagram" fallback card
+
+Every tier's result is checked for freshness: if the menu date on the image is
+from a past week, it is discarded and the cascade continues. A stale image here
+therefore no longer keeps last week's menu on the site — it just falls through
+to the fallback card until you upload the new one.
 
 ## How to update a menu (no PC, no scripts)
 
