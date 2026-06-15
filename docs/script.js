@@ -113,8 +113,8 @@
         '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
 
-    // Render daily header sections first (e.g. "Polední menu") — skipped on weekend closure (collapsed below)
-    if (!isWeekendClosure) {
+    // Render daily header sections first (e.g. "Polední menu") — skipped on weekend closure or when closed today
+    if (!isWeekendClosure && (!isMultiDay || hasTodaySection)) {
       sectionsHtml += renderSections(dailyHeaderSections, r.sections.length);
     }
 
