@@ -1,10 +1,10 @@
-const puppeteer = require('puppeteer');
-const path = require('path');
+const puppeteer = require("puppeteer");
+const path = require("path");
 
 async function generateOgImage() {
   const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const page = await browser.newPage();
@@ -102,29 +102,34 @@ async function generateOgImage() {
   <div class="logo">ŘEPORYJE<span class="dot">.</span>INFO</div>
   <div class="tagline">Srozumitelné a ověřené informace o Řeporyjích</div>
   <div class="title">Polední menu v Řeporyjích</div>
-  <div class="subtitle">Aktuální denní nabídka 8 restaurací &bull; Aktualizováno každých 15 minut</div>
+  <div class="subtitle">Aktuální denní nabídka 10 restaurací &bull; Aktualizováno každých 15 minut</div>
   <div class="restaurants">
     <span>Jídelna Pohotovka</span>
     <span>Bistro a Kavárna Na náměstí</span>
     <span>Pivovar Řeporyje</span>
     <span>Řeporyjská Sokolovna</span>
+    <span>Kantýna STAPO</span>
+    <span>Mama Bowl</span>
     <span>Řeznictví Svoboda</span>
-    <span>DÖNER KEBAB HOUSE</span>
     <span>HQ Pippi Grill</span>
     <span>Papa Cipolla</span>
+    <span>DÖNER KEBAB HOUSE</span>
   </div>
 </body>
 </html>`;
 
-  await page.setContent(html, { waitUntil: 'networkidle0' });
+  await page.setContent(html, { waitUntil: "networkidle0" });
   // Wait for fonts to load
-  await new Promise(r => setTimeout(r, 2000));
+  await new Promise((r) => setTimeout(r, 2000));
 
-  const outputPath = path.join(__dirname, '..', 'docs', 'og-image.png');
-  await page.screenshot({ path: outputPath, type: 'png' });
-  console.log('OG image saved to', outputPath);
+  const outputPath = path.join(__dirname, "..", "docs", "og-image.png");
+  await page.screenshot({ path: outputPath, type: "png" });
+  console.log("OG image saved to", outputPath);
 
   await browser.close();
 }
 
-generateOgImage().catch(e => { console.error(e); process.exit(1); });
+generateOgImage().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
