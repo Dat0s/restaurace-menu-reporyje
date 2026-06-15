@@ -28,7 +28,12 @@ function freshOrNull(result, tierName) {
 
 async function scrapeKantyna() {
   // Tier 1: best-effort automated scrape (Facebook group, usually blocked from CI)
-  const auto = freshOrNull(await tryAutomated(), "Puppeteer");
+  // Try with cookies first; if redirected to login (expired cookies), retry anonymously
+  // (the group is public and accessible without a FB account from a residential IP).
+  let auto = freshOrNull(await tryAutomated(true), "Puppeteer");
+  if (!auto && process.env.FB_COOKIES) {
+    auto = freshOrNull(await tryAutomated(false), "Puppeteer (anonymous)");
+  }
   if (auto) return auto;
 
   // Tier 2: facebook-scraper (Python) feed of the group, OCR the post images
@@ -51,7 +56,7 @@ async function scrapeKantyna() {
   return fallbackResult();
 }
 
-async function tryAutomated() {
+async function tryAutomated(useCookies = true) {
   const browser = await puppeteer.launch({
     headless: "new",
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -65,7 +70,7 @@ async function tryAutomated() {
     );
 
     // Inject saved Facebook session cookies if available (JSON or Netscape format)
-    if (process.env.FB_COOKIES) {
+    if (useCookies && process.env.FB_COOKIES) {
       let cookies = [];
       const raw = process.env.FB_COOKIES.trim();
       if (raw.startsWith("[") || raw.startsWith("{")) {
@@ -153,6 +158,12 @@ async function tryAutomated() {
 
     if (debugInfo.url && debugInfo.url.includes("/login")) {
       console.log("  Redirected to login");
+      if (useCookies && process.env.FB_COOKIES) {
+        console.log(
+          "  Cookies may be expired — retrying anonymously (public group)...",
+        );
+        return null; // caller retries without cookies
+      }
       return null;
     }
 
