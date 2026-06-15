@@ -30,14 +30,6 @@ async function scrapeMamaBowl() {
         ],
       },
       {
-        title: "Domácí Drinky",
-        items: [
-          { name: "Domácí Limonáda", price: "68 Kč" },
-          { name: "Časadá (trà sả đá)", price: "85 Kč" },
-          { name: "Cafe Nâu Đá", price: "119 Kč" },
-        ],
-      },
-      {
         title: "Starters",
         items: [
           { name: "Nem Chay", price: "79 Kč" },
@@ -48,6 +40,14 @@ async function scrapeMamaBowl() {
           { name: "Ha Cảo Háp (4 ks)", price: "109 Kč" },
           { name: "Banh Bao – Tradiční", price: "149 Kč" },
           { name: "Banh Bao – Xa Xíu", price: "149 Kč" },
+        ],
+      },
+      {
+        title: "Domácí Drinky",
+        items: [
+          { name: "Domácí Limonáda", price: "68 Kč" },
+          { name: "Časadá (trà sả đá)", price: "85 Kč" },
+          { name: "Cafe Nâu Đá", price: "119 Kč" },
         ],
       },
     ],
