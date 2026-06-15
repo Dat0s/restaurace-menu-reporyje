@@ -230,7 +230,9 @@
     ];
     var isStaticMenu = staticMenuNames.indexOf(r.name) >= 0;
     var displayDate = "";
-    if (isStaticMenu) {
+    if (r.isFallback) {
+      displayDate = "";
+    } else if (isStaticMenu) {
       displayDate = r.menuDate || "Stálé menu";
     } else {
       var now = new Date();
