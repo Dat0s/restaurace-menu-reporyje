@@ -545,6 +545,11 @@
           '<span class="price">' +
           escapeHtml(item.soldOut ? "Vyprodáno" : item.price || "") +
           "</span>" +
+          (item.description
+            ? '<div class="item-desc">' +
+              escapeHtml(item.description) +
+              "</div>"
+            : "") +
           "</div>";
       }
       html += "</section>";

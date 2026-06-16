@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-16T05:29:59.714Z",
+  "lastUpdated": "2026-06-16T06:50:22.180Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 15. 6.",
-      "scrapedAt": "2026-06-16T05:29:11.030Z",
+      "scrapedAt": "2026-06-16T06:49:45.436Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "16.06.2026",
-      "scrapedAt": "2026-06-16T05:29:27.678Z",
+      "scrapedAt": "2026-06-16T06:49:58.844Z",
       "sections": [
         {
           "title": "Polévky",
@@ -330,7 +330,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-06-16T05:29:26.894Z",
+      "scrapedAt": "2026-06-16T06:49:58.174Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -452,7 +452,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 16.6.",
-      "scrapedAt": "2026-06-16T05:29:12.231Z",
+      "scrapedAt": "2026-06-16T06:49:45.994Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -727,7 +727,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "15.6. - 19.6.",
-      "scrapedAt": "2026-06-15T22:05:38.688Z",
+      "scrapedAt": "2026-06-16T06:50:09.029Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -821,7 +821,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T05:29:59.707Z",
+      "scrapedAt": "2026-06-16T06:50:22.169Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1022,7 +1022,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T05:29:26.985Z",
+      "scrapedAt": "2026-06-16T06:49:58.771Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1095,7 +1095,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-06-16T00:10:18.212Z",
+      "scrapedAt": "2026-06-16T06:50:09.178Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1192,6 +1192,71 @@
               "price": "119 Kč"
             }
           ]
+        },
+        {
+          "title": "Daily Combos",
+          "items": [
+            {
+              "name": "Saigon Combo",
+              "price": "239 Kč",
+              "description": "1x bún bò nam bộ, 1x domácí limonáda"
+            },
+            {
+              "name": "Saigon Street Combo",
+              "price": "299 Kč",
+              "description": "1x bún bò nam bộ, jarní závitky (2ks), 1x domácí limonáda"
+            },
+            {
+              "name": "Hanoi Combo",
+              "price": "319 Kč",
+              "description": "1x bún chả, jarní závitky (2ks), 1x domácí limonáda"
+            },
+            {
+              "name": "Hanoi Street Combo",
+              "price": "389 Kč",
+              "description": "gyozy (4ks), jarní závitky (2ks), ha cao (4ks), 1x batátové hranolky, 1x domácí limonáda"
+            },
+            {
+              "name": "Fresh Combo",
+              "price": "239 Kč",
+              "description": "1x mama chicken classic, 1x domácí limonáda"
+            },
+            {
+              "name": "Crispy Combo",
+              "price": "329 Kč",
+              "description": "1x mama crispy chicken, jarní závitky (2ks), 1x domácí limonáda"
+            }
+          ]
+        },
+        {
+          "title": "Combo pro 2",
+          "items": [
+            {
+              "name": "Mama Pro 2 Classic",
+              "price": "559 Kč",
+              "description": "1x mama grilled chicken, 1x bún bò nam bộ, 1x batátové hranolky, 2x domácí limonáda 0,4l"
+            },
+            {
+              "name": "Mama Pro 2 Max",
+              "price": "619 Kč",
+              "description": "1x mama crispy chicken, 1x mama crispy duck, 2x letní závitky kuřecí (4ks), domácí limonáda 0,4l"
+            }
+          ]
+        },
+        {
+          "title": "Family Combo",
+          "items": [
+            {
+              "name": "Mama Family Combo",
+              "price": "899 Kč",
+              "description": "1x mama crispy duck, 1x mango beef, 1x bún bò nam bộ, 1x letní závitky kuřecí (2ks), 1x jarní závitky (2ks), 1x batátové hranolky"
+            },
+            {
+              "name": "Mama Big Family",
+              "price": "1 299 Kč",
+              "description": "1x mama crispy chicken, 1x mama crispy duck, 1x bún chả, 1x bún nem, gyozy (4ks), 2x letní závitky kuřecí (4ks), 1x jarní závitky (2ks), 2x batátové hranolky, 3x domácí limonáda 0,4l"
+            }
+          ]
         }
       ]
     },
@@ -1200,7 +1265,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T05:29:26.985Z",
+      "scrapedAt": "2026-06-16T06:49:58.771Z",
       "sections": [
         {
           "title": "Nejprodávanější",

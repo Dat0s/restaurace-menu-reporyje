@@ -247,9 +247,17 @@ body {
 
 .menu-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 4px 0;
   font-size: 0.95rem;
+}
+
+.item-desc {
+  width: 100%;
+  font-size: 0.78rem;
+  color: #888;
+  padding-top: 1px;
 }
 
 .menu-item .name {
