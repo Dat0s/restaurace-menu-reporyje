@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T06:50:22.180Z",
+  "lastUpdated": "2026-06-16T08:08:01.256Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "16.06.2026",
-      "scrapedAt": "2026-06-16T06:49:58.844Z",
+      "scrapedAt": "2026-06-16T08:07:36.991Z",
       "sections": [
         {
           "title": "Polévky",
@@ -142,6 +142,10 @@
           "title": "Hlavní jídla",
           "items": [
             {
+              "name": "Kuřecí gyros se zelným salátkem, smaženými hranolkami a česnekovým dresingem (150g)",
+              "price": "169 Kč"
+            },
+            {
               "name": "Ceasar salát s kuřecím masem, krutony a parmezánem (150g)",
               "price": "159 Kč"
             },
@@ -154,15 +158,7 @@
               "price": "159 Kč"
             },
             {
-              "name": "Kuřecí gyros se zelným salátkem, smaženými hranolkami a česnekovým dresingem (150g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Kuřecí nudličky Bombay na kari, pórek, zeleninou a rozinkami, dušená rýže (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Moravský vrabec, bílé zelí, variace knedlíků (150g)",
               "price": "159 Kč"
             },
             {
@@ -196,6 +192,10 @@
             {
               "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
               "price": "149 Kč"
+            },
+            {
+              "name": "Moravský vrabec, bílé zelí, variace knedlíků (150g)",
+              "price": "159 Kč"
             }
           ]
         },
@@ -204,11 +204,13 @@
           "items": [
             {
               "name": "Bavorská sekaná s křenem a plnotučnou hořčicí (100g)",
-              "price": "27 Kč"
+              "price": "27 Kč",
+              "soldOut": true
             },
             {
               "name": "Javořický párek s křenem a hořčicí (1ks)",
-              "price": "25 Kč"
+              "price": "25 Kč",
+              "soldOut": true
             },
             {
               "name": "Bageta plněná smaženými řízečky, zeleninou a dresingem (1)",
@@ -330,7 +332,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-06-16T06:49:58.174Z",
+      "scrapedAt": "2026-06-16T08:07:36.405Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -452,7 +454,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 16.6.",
-      "scrapedAt": "2026-06-16T06:49:45.994Z",
+      "scrapedAt": "2026-06-16T08:07:25.178Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -727,7 +729,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "15.6. - 19.6.",
-      "scrapedAt": "2026-06-16T06:50:09.029Z",
+      "scrapedAt": "2026-06-16T08:07:47.167Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -821,7 +823,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T06:50:22.169Z",
+      "scrapedAt": "2026-06-16T08:08:01.242Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1022,7 +1024,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T06:49:58.771Z",
+      "scrapedAt": "2026-06-16T08:07:36.763Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1095,22 +1097,25 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-06-16T06:50:09.178Z",
+      "scrapedAt": "2026-06-16T08:07:47.294Z",
       "sections": [
         {
           "title": "Mama Bowls",
           "items": [
             {
               "name": "Mama Bowl Grilled Chicken",
-              "price": "229 Kč"
+              "price": "229 Kč",
+              "description": "Kuřecí prso, rýže, wakame, edamame, okurka, čerstvá červená a nakládaná žlutá ředkev s Hoisin omáčkou"
             },
             {
               "name": "Mama Bowl Crispy Chicken",
-              "price": "239 Kč"
+              "price": "239 Kč",
+              "description": "Křupavé smažené kuře, rýže, wakame, edamame, okurka, čerstvá červená a nakládaná žlutá ředkev s domácí Hoisin omáčkou"
             },
             {
               "name": "Mama Bowl Crispy Duck",
-              "price": "259 Kč"
+              "price": "259 Kč",
+              "description": "Křupavá pečená kachna, rýže, wakame, edamame, okurka, čerstvá červená a nakládaná žlutá ředkev s Hoisin omáčkou"
             }
           ]
         },
@@ -1119,23 +1124,28 @@
           "items": [
             {
               "name": "Bún Bò Nam Bộ",
-              "price": "199 Kč"
+              "price": "199 Kč",
+              "description": "Restované hovězí maso s rýžovými nudlemi, čerstvým salátem, arašídy a asijskými bylinkami, podávané s rybí omáčkou"
             },
             {
               "name": "Bún Nem",
-              "price": "189 Kč"
+              "price": "189 Kč",
+              "description": "Rýžové nudle se smaženými jarními závitky, čerstvým salátem a rybí omáčkou"
             },
             {
               "name": "Bún Chả",
-              "price": "219 Kč"
+              "price": "219 Kč",
+              "description": "Grilovaný vepřový bůček s rýžovými nudlemi, čerstvým salátem a asijskými bylinkami, podávané s rybí omáčkou"
             },
             {
               "name": "Mango Beef",
-              "price": "199 Kč"
+              "price": "199 Kč",
+              "description": "Čerstvý mangový salát a hovězím masem s naším speciálním dresinkem a praženými arašídy"
             },
             {
               "name": "Phởčko",
-              "price": "199 Kč"
+              "price": "199 Kč",
+              "description": "Vietnamská polévka s plochými rýžovými nudlemi, hovězím nebo kuřecím masem, jarní cibulkou a koriandrem"
             }
           ]
         },
@@ -1144,35 +1154,43 @@
           "items": [
             {
               "name": "Nem Chay",
-              "price": "79 Kč"
+              "price": "79 Kč",
+              "description": "křupavé vegetariánské jarní závitky se sladkokyselou omáčkou"
             },
             {
               "name": "Nem Rán (2 ks)",
-              "price": "89 Kč"
+              "price": "89 Kč",
+              "description": "domácí jarní závitky s masovo-zeleninovou náplní, podávané s rybí omáčkou"
             },
             {
               "name": "Nem Cuốn",
-              "price": "89 Kč"
+              "price": "89 Kč",
+              "description": "letní závitky s kuřecím masem, rýžovými nudlemi, křupavou zeleninou a bohatou hoisin omáčkou"
             },
             {
               "name": "Khoai Lang Chiên",
-              "price": "99 Kč"
+              "price": "99 Kč",
+              "description": "smažené batátové hranolky s chilli-mayo dipem"
             },
             {
               "name": "Gyoza (4 ks)",
-              "price": "109 Kč"
+              "price": "109 Kč",
+              "description": "křupavé taštičky s šťavnatou masovo-zeleninovou náplní, podávané se chilli-mayo a unagi omáčkou"
             },
             {
               "name": "Ha Cảo Háp (4 ks)",
-              "price": "109 Kč"
+              "price": "109 Kč",
+              "description": "napařované tapiokové knedličky plněné krevetami, podávané s unagi omáčkou"
             },
             {
               "name": "Banh Bao – Tradiční",
-              "price": "149 Kč"
+              "price": "149 Kč",
+              "description": "tradiční vietnamské dušené knedličky s vepřovým mletým masem a zeleninou a houbami (1ks)"
             },
             {
               "name": "Banh Bao – Xa Xíu",
-              "price": "149 Kč"
+              "price": "149 Kč",
+              "description": "tradiční vietnamské dušené knedličky s nasládlým BBQ vepřovým masem v kantonském stylu (3ks)"
             }
           ]
         },
@@ -1185,11 +1203,13 @@
             },
             {
               "name": "Časadá (trà sả đá)",
-              "price": "85 Kč"
+              "price": "85 Kč",
+              "description": "domácí ledový čaj s příchutí citronové trávy"
             },
             {
               "name": "Cafe Nâu Đá",
-              "price": "119 Kč"
+              "price": "119 Kč",
+              "description": "vietnamská ledová káva s kondenzovaným mlékem, bohatá, silná, osvěžující"
             }
           ]
         },
@@ -1265,7 +1285,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-06-16T06:49:58.771Z",
+      "scrapedAt": "2026-06-16T08:07:36.762Z",
       "sections": [
         {
           "title": "Nejprodávanější",
