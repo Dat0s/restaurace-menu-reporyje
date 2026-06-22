@@ -448,7 +448,9 @@ function fallbackResult() {
         title: "Polední menu",
         items: [
           {
-            name: "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na Facebooku Kantýny STAPO",
+            prefix:
+              "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
+            name: "Facebooku Kantýny STAPO",
             price: "",
             link: "https://www.facebook.com/groups/1396911425536833",
           },
