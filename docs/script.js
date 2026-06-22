@@ -113,8 +113,10 @@
         '<div class="no-menu-today">Na dnes není žádné denní menu</div>';
     }
 
-    // Render daily header sections first (e.g. "Polední menu") — skipped on weekend closure or when closed today
-    if (!isWeekendClosure && (!isMultiDay || hasTodaySection)) {
+    // Render daily header sections first (e.g. "Polední menu") — skipped on weekend closure or when closed today.
+    // Fallback cards (isFallback) carry their message in a "Polední menu" section with no day sections,
+    // so they must render even for multi-day restaurants that have no today section.
+    if (!isWeekendClosure && (!isMultiDay || hasTodaySection || r.isFallback)) {
       sectionsHtml += renderSections(dailyHeaderSections, r.sections.length);
     }
 
