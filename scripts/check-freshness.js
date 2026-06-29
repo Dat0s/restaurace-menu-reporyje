@@ -9,7 +9,14 @@
 const { isMenuFresh } = require("../scrapers/utils");
 
 const LIVE_URL = "https://jidlo.reporyje.info/menu-data.json";
-const WATCHED = ["Kantýna STAPO", "Řeznictví Svoboda"];
+
+// Static-menu restaurants never change — skip freshness check for those.
+const STATIC_MENUS = new Set([
+  "DÖNER KEBAB HOUSE",
+  "HQ Pippi Grill",
+  "Mama Bowl",
+  "Papa Cipolla",
+]);
 
 async function checkLiveMenus() {
   const res = await fetch(`${LIVE_URL}?cb=${Date.now()}`, {
@@ -17,7 +24,10 @@ async function checkLiveMenus() {
   });
   if (!res.ok) throw new Error(`Fetch of live menu data failed: ${res.status}`);
   const data = await res.json();
-  return WATCHED.map((name) => checkRestaurant(data, name));
+  const dynamic = (data.restaurants || []).filter(
+    (r) => !STATIC_MENUS.has(r.name),
+  );
+  return dynamic.map((r) => checkRestaurant(data, r.name));
 }
 
 function checkRestaurant(data, name) {
@@ -48,8 +58,7 @@ async function main() {
     console.error(
       `\nMenu na jidlo.reporyje.info není aktuální: ${failed
         .map((r) => r.name)
-        .join(", ")}. ` +
-        "Zkontroluj cookies (scrapers/py/README.md) nebo nahraj obrázek do menu-images/.",
+        .join(", ")}.`,
     );
     process.exit(1);
   }
