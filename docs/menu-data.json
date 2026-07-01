@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-01T06:46:40.030Z",
+  "lastUpdated": "2026-07-01T06:57:31.505Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 30. 6.",
-      "scrapedAt": "2026-07-01T06:45:50.661Z",
+      "scrapedAt": "2026-07-01T06:56:40.495Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -95,7 +95,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "01.07.2026",
-      "scrapedAt": "2026-07-01T06:46:06.081Z",
+      "scrapedAt": "2026-07-01T06:56:57.279Z",
       "sections": [
         {
           "title": "Polévky",
@@ -126,6 +126,10 @@
           "title": "Hlavní jídla",
           "items": [
             {
+              "name": "Plněné bramborové knedlíky uzeným masem se špenátem a smaženou cibulkou (300g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Rozlítaný ptáček z hovězího masa s houskovým knedlíkem (150g)",
               "price": "169 Kč"
             },
@@ -140,10 +144,6 @@
             {
               "name": "Pečená kachna, červené zelí, domácí bramborové knedlíky (1/4)",
               "price": "179 Kč"
-            },
-            {
-              "name": "Plněné bramborové knedlíky uzeným masem se špenátem a smaženou cibulkou (300g)",
-              "price": "159 Kč"
             },
             {
               "name": "Smažené sýrové duo ( gouda, hermelín ) vařený brambor, domácí tatarská omačka, zelný salát (150g)",
@@ -166,10 +166,6 @@
               "price": "159 Kč"
             },
             {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Vepřová játra na cibulce a slanině, dušená rýže (150g)",
               "price": "159 Kč"
             },
@@ -183,6 +179,10 @@
             },
             {
               "name": "Moravský vrabec se špenátem, bramborový knedlík (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
             }
           ]
@@ -318,7 +318,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-01T06:46:05.384Z",
+      "scrapedAt": "2026-07-01T06:56:56.344Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -440,7 +440,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 1.7.",
-      "scrapedAt": "2026-07-01T06:45:52.283Z",
+      "scrapedAt": "2026-07-01T06:56:41.899Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -618,7 +618,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-01T06:46:40.022Z",
+      "scrapedAt": "2026-07-01T06:57:31.498Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -819,7 +819,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-01T06:46:05.485Z",
+      "scrapedAt": "2026-07-01T06:56:56.438Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -892,7 +892,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-01T06:46:21.693Z",
+      "scrapedAt": "2026-07-01T06:57:13.338Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1080,7 +1080,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-01T06:46:05.484Z",
+      "scrapedAt": "2026-07-01T06:56:56.438Z",
       "sections": [
         {
           "title": "Nejprodávanější",
