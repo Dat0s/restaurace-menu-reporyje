@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-03T15:32:03.481Z",
+  "lastUpdated": "2026-07-03T15:46:58.371Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 3. 7.",
-      "scrapedAt": "2026-07-03T15:31:11.386Z",
+      "scrapedAt": "2026-07-03T15:45:52.161Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -99,7 +99,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "03.07.2026",
-      "scrapedAt": "2026-07-03T15:31:27.561Z",
+      "scrapedAt": "2026-07-03T15:46:26.179Z",
       "sections": [
         {
           "title": "Polévky",
@@ -142,20 +142,24 @@
               "price": "159 Kč"
             },
             {
-              "name": "Kuřecí rizoto se zeleninou sypané sýrem, znojemská okurka (150g)",
-              "price": "159 Kč"
+              "name": "Kuřecí řízečky s domácím bramborovým salátem, citron (150g)",
+              "price": "169 Kč"
             },
             {
               "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
               "price": "159 Kč"
             },
             {
-              "name": "Sváteční Táborská bašta  s vepřovou pečení, moravským uzeným a klobásou, bílé zelí,variace knedlíků (200g)",
-              "price": "169 Kč"
+              "name": "Rozlítaný ptáček z vepřového masa s dušenou rýží (150g)",
+              "price": "159 Kč"
             },
             {
               "name": "Těstovinový salát s kuřecím masem, šunkou, sýrem a zeleninou zjemněný domácí majonézou, zdobený jarní cibulkou (500g)",
               "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová pečeně v jemné pepřové omáčce se zeleného pepře a koňakem, šťouchaný brambor, zelný salát (150g)",
+              "price": "169 Kč"
             },
             {
               "name": "Vepřová plec na žampionech s houskovým knedlíkem (150g)",
@@ -170,11 +174,11 @@
               "price": "169 Kč"
             },
             {
-              "name": "Moravský vrabec se špenátem, bramborový knedlík (150g)",
+              "name": "Kuřecí rizoto se zeleninou sypané sýrem, znojemská okurka (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
+              "name": "Moravský vrabec se špenátem, bramborový knedlík (150g)",
               "price": "159 Kč"
             }
           ]
@@ -436,7 +440,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 30.6.",
-      "scrapedAt": "2026-07-03T15:31:12.530Z",
+      "scrapedAt": "2026-07-03T15:45:53.279Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -605,7 +609,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-03T15:32:03.474Z",
+      "scrapedAt": "2026-07-03T15:46:58.363Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -806,7 +810,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-03T15:31:26.879Z",
+      "scrapedAt": "2026-07-03T15:46:25.581Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -879,7 +883,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-03T15:31:43.922Z",
+      "scrapedAt": "2026-07-03T15:46:40.110Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1067,7 +1071,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-03T15:31:26.878Z",
+      "scrapedAt": "2026-07-03T15:46:25.581Z",
       "sections": [
         {
           "title": "Nejprodávanější",
