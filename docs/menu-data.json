@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-21T15:31:51.583Z",
+  "lastUpdated": "2026-07-21T15:46:34.519Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 21. 7.",
-      "scrapedAt": "2026-07-21T15:31:04.751Z",
+      "scrapedAt": "2026-07-21T15:45:52.810Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,17 +103,17 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "21.07.2026",
-      "scrapedAt": "2026-07-21T15:31:18.781Z",
+      "scrapedAt": "2026-07-21T15:46:06.328Z",
       "sections": [
         {
           "title": "Polévky",
           "items": [
             {
-              "name": "Kuřecí vývar s masem, zeleninou a těstovinou (0,33l)",
+              "name": "Hovězí vývar se zeleninou, masem a těstovinami (0,33l)",
               "price": "44 Kč"
             },
             {
-              "name": "Květáková s vejci (0,33l)",
+              "name": "Šumavská bramboračka se směsí lesních hub (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -134,11 +134,11 @@
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Chalupářský guláš z vepřového a hovězího masa zdobený cibulkou, houskové knedlíky (150g)",
+              "name": "Bramborové noky Čorizo s kuřecím masem, čorizem, parmská šunka,  česnek, sušené rajčata, rukola (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Bramborové noky Čorizo s kuřecím masem, čorizem, parmská šunka,  česnek, sušené rajčata, rukola (150g)",
+              "name": "Čočka na kyselo 2ks párku, sázené vejce, znojemská okurka, cibulka",
               "price": "159 Kč"
             },
             {
@@ -146,12 +146,16 @@
               "price": "149 Kč"
             },
             {
-              "name": "Hovězí plátek v koprové omáčce,  houskový knedlík (150g)",
-              "price": "169 Kč"
+              "name": "Koprová omáčka, 2ks vejce, houskové knedlíky (150g)",
+              "price": "159 Kč"
             },
             {
-              "name": "Kuřecí  nudličky Bombay, kokosové mléko, rozinky,  dušená rýže (150g)",
+              "name": "Kuřecí směs po čínsku \"Kung pao\" se zeleninou a burskými oříšky, dušená rýže (150g)",
               "price": "159 Kč"
+            },
+            {
+              "name": "Pečená 1/4 kachny, červené zelí, domácí bramborový knedlík (500g)",
+              "price": "179 Kč"
             },
             {
               "name": "Rozlítaný ptáček z hovězího masa s houskovým knedlíkem (150g)",
@@ -162,11 +166,19 @@
               "price": "169 Kč"
             },
             {
+              "name": "Smažené kuřecí mini řízečky na velkém zeleninovém salátu s dresigem ( u tohoto jídla neměníme přílohu) (400g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Smažený karbanátek ,domácí bramborová kaše,okurka (150g)",
+              "price": "169 Kč"
+            },
+            {
               "name": "Vepřové ledvinky na cibulce a slanině, dušená rýže (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Sváteční Táborská bašta  s vepřovou pečení, moravským uzeným a klobásou, bílé zelí,variace knedlíků (200g)",
+              "name": "Zapečený vepřový steak s klobásou a sýrem, smažené americké brambory,domácí tatarská omáčka, zelný salát (150g)",
               "price": "169 Kč"
             },
             {
@@ -219,7 +231,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-21T15:31:51.575Z",
+      "scrapedAt": "2026-07-21T15:46:34.511Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -239,7 +251,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-21T15:31:17.984Z",
+      "scrapedAt": "2026-07-21T15:46:05.585Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -361,7 +373,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 22.7.",
-      "scrapedAt": "2026-07-21T15:31:06.015Z",
+      "scrapedAt": "2026-07-21T15:45:54.013Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -650,7 +662,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-21T15:31:32.373Z",
+      "scrapedAt": "2026-07-21T15:46:16.569Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -669,7 +681,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-21T15:31:51.575Z",
+      "scrapedAt": "2026-07-21T15:46:34.512Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -870,7 +882,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-21T15:31:18.097Z",
+      "scrapedAt": "2026-07-21T15:46:05.697Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -943,7 +955,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-21T15:31:33.052Z",
+      "scrapedAt": "2026-07-21T15:46:16.736Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1131,7 +1143,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-21T15:31:18.096Z",
+      "scrapedAt": "2026-07-21T15:46:05.697Z",
       "sections": [
         {
           "title": "Nejprodávanější",
