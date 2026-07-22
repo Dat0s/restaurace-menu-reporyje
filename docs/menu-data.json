@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-22T05:46:49.208Z",
+  "lastUpdated": "2026-07-22T06:02:16.870Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Úterý 21. 7.",
-      "scrapedAt": "2026-07-22T05:45:55.930Z",
+      "menuDate": "Středa 22. 7.",
+      "scrapedAt": "2026-07-22T06:01:30.205Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -16,8 +16,8 @@
               "price": "75 Kč"
             },
             {
-              "name": "Tom Yum s krevetami, rýžovými nudlemi a shiitake",
-              "price": "175 Kč"
+              "name": "Poke s lososem, zázvorem,  ředkvičkami a mangem",
+              "price": "295 Kč"
             },
             {
               "name": "Čevabčiči s ajvarem, omáčkou z rajčat a pita chlebem",
@@ -34,14 +34,6 @@
             {
               "name": "Hovězí po burgundsku s žampiony, perlovými cibulkami a bramborovou kaší",
               "price": "345 Kč"
-            },
-            {
-              "name": "Kuřecí roláda se smetanovým hráškem, ricottovými noky a silnou kuřecí šťávou",
-              "price": "335 Kč"
-            },
-            {
-              "name": "Tvarohové knedlíky s meruňkami, máslem a mandlemi",
-              "price": "215 Kč"
             },
             {
               "name": "Holandský řízek s bramborovou kaší a kyselou okurkou",
@@ -103,7 +95,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "22.07.2026",
-      "scrapedAt": "2026-07-22T05:46:10.782Z",
+      "scrapedAt": "2026-07-22T06:01:45.142Z",
       "sections": [
         {
           "title": "Polévky",
@@ -232,7 +224,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-22T05:46:49.200Z",
+      "scrapedAt": "2026-07-22T06:02:16.865Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -252,7 +244,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-22T05:46:09.807Z",
+      "scrapedAt": "2026-07-22T06:01:44.370Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -374,7 +366,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 22.7.",
-      "scrapedAt": "2026-07-22T05:45:57.693Z",
+      "scrapedAt": "2026-07-22T06:01:31.359Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -663,7 +655,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-22T05:46:29.545Z",
+      "scrapedAt": "2026-07-22T06:01:58.327Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -682,7 +674,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-22T05:46:49.200Z",
+      "scrapedAt": "2026-07-22T06:02:16.865Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -883,7 +875,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-22T05:46:09.922Z",
+      "scrapedAt": "2026-07-22T06:01:44.507Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -956,7 +948,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-22T05:46:29.912Z",
+      "scrapedAt": "2026-07-22T06:01:58.584Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1144,7 +1136,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-22T05:46:09.922Z",
+      "scrapedAt": "2026-07-22T06:01:44.507Z",
       "sections": [
         {
           "title": "Nejprodávanější",
