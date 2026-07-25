@@ -1,27 +1,23 @@
 {
-  "lastUpdated": "2026-07-25T06:46:25.433Z",
+  "lastUpdated": "2026-07-25T07:01:41.880Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Pátek 24. 7.",
-      "scrapedAt": "2026-07-25T06:45:58.922Z",
+      "menuDate": "Sobota 25. 7.",
+      "scrapedAt": "2026-07-25T07:01:15.842Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Česnečka",
-              "price": "75 Kč"
-            },
-            {
               "name": "Kulajda s pošírovaným vejcem",
               "price": "85 Kč"
             },
             {
-              "name": "Vepřová plec na kmíně s kedlubnovým zelím, bramborové šišky",
-              "price": "285 Kč"
+              "name": "Banger se zeleným pepřem, hráškem a šťouchané brambory",
+              "price": "295 Kč"
             },
             {
               "name": "Poke s lososem, zázvorem,  ředkvičkami a mangem",
@@ -70,11 +66,7 @@
           "title": "DEZERTY",
           "items": [
             {
-              "name": "Jahodovo-mandlový koláč s mascarpone",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Linecký koláč se švestkami a mákem",
+              "name": "Malinový cheesecake",
               "price": "95 Kč"
             },
             {
@@ -84,10 +76,6 @@
             {
               "name": "Zmrzlina - vanilka, pistácie, mango, malina",
               "price": "55 Kč"
-            },
-            {
-              "name": "Borůvkový dort s mascarpone",
-              "price": "95 Kč"
             },
             {
               "name": "Míša dort",
@@ -336,7 +324,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-25T06:46:00.256Z",
+      "scrapedAt": "2026-07-25T07:01:16.935Z",
       "sections": [
         {
           "title": "Víkend",
@@ -356,7 +344,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 24.7.",
-      "scrapedAt": "2026-07-25T06:46:00.255Z",
+      "scrapedAt": "2026-07-25T07:01:16.935Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -644,7 +632,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-07-25T06:46:00.981Z",
+      "scrapedAt": "2026-07-25T07:01:23.650Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -663,7 +651,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-25T06:46:25.425Z",
+      "scrapedAt": "2026-07-25T07:01:41.874Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -864,7 +852,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-25T06:46:00.257Z",
+      "scrapedAt": "2026-07-25T07:01:16.936Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -937,7 +925,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-25T06:46:01.197Z",
+      "scrapedAt": "2026-07-25T07:01:23.888Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1125,7 +1113,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-25T06:46:00.257Z",
+      "scrapedAt": "2026-07-25T07:01:16.936Z",
       "sections": [
         {
           "title": "Nejprodávanější",
