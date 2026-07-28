@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-28T15:33:58.041Z",
+  "lastUpdated": "2026-07-28T15:48:47.395Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 28. 7.",
-      "scrapedAt": "2026-07-28T15:31:17.087Z",
+      "scrapedAt": "2026-07-28T15:46:08.939Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "28.07.2026",
-      "scrapedAt": "2026-07-28T15:31:26.873Z",
+      "scrapedAt": "2026-07-28T15:46:18.769Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,23 +146,11 @@
               "price": "149 Kč"
             },
             {
-              "name": "Kuřecí nudličky na pórku a žampionech, rýže (150g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Segedinský guláš s houskovým  knedlíkem (150g)",
               "price": "159 Kč"
             },
             {
-              "name": "Smažená kuřecí kapsa plněná hermelínem a poličanem , domácí bramborová kaše, okurka, citron (150g)",
-              "price": "169 Kč"
-            },
-            {
               "name": "Znojemská hovězí pečeně s houskovým knedlíkem (150g)",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Pečená krůtí prsa špikované slaninou a mrkví, špenát, bramborový knedlík (150g)",
               "price": "169 Kč"
             },
             {
@@ -214,7 +202,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-28T15:33:58.032Z",
+      "scrapedAt": "2026-07-28T15:48:47.387Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -234,7 +222,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-28T15:31:25.939Z",
+      "scrapedAt": "2026-07-28T15:46:18.105Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -252,7 +240,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 29.7.",
-      "scrapedAt": "2026-07-28T15:31:18.629Z",
+      "scrapedAt": "2026-07-28T15:46:09.862Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -537,7 +525,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-28T15:33:37.385Z",
+      "scrapedAt": "2026-07-28T15:48:28.167Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -556,7 +544,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-28T15:33:58.032Z",
+      "scrapedAt": "2026-07-28T15:48:47.387Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -757,7 +745,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-28T15:31:26.031Z",
+      "scrapedAt": "2026-07-28T15:46:18.192Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -830,7 +818,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-28T15:33:37.637Z",
+      "scrapedAt": "2026-07-28T15:48:28.400Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1018,7 +1006,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-28T15:31:26.031Z",
+      "scrapedAt": "2026-07-28T15:46:18.192Z",
       "sections": [
         {
           "title": "Nejprodávanější",
