@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-29T12:18:42.280Z",
+  "lastUpdated": "2026-07-29T12:33:51.840Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 29. 7.",
-      "scrapedAt": "2026-07-29T12:16:04.551Z",
+      "scrapedAt": "2026-07-29T12:31:13.628Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "29.07.2026",
-      "scrapedAt": "2026-07-29T12:16:14.287Z",
+      "scrapedAt": "2026-07-29T12:31:22.759Z",
       "sections": [
         {
           "title": "Polévky",
@@ -143,10 +143,6 @@
             },
             {
               "name": "Krůtí nudličky v sýrové omáčce Quattro formaggi, těstoviny farfale, parmezán (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Kuřecí mini řízečky na velkém zeleninovém salátu, dresink(neměníme přílohu) (150g)",
               "price": "159 Kč"
             },
             {
@@ -218,7 +214,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-29T12:18:42.273Z",
+      "scrapedAt": "2026-07-29T12:33:51.832Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -238,7 +234,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-29T12:16:13.538Z",
+      "scrapedAt": "2026-07-29T12:31:22.060Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -256,7 +252,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 29.7.",
-      "scrapedAt": "2026-07-29T12:16:05.804Z",
+      "scrapedAt": "2026-07-29T12:31:14.850Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -533,7 +529,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-29T12:18:24.520Z",
+      "scrapedAt": "2026-07-29T12:33:33.283Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -552,7 +548,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-29T12:18:42.273Z",
+      "scrapedAt": "2026-07-29T12:33:51.832Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -753,7 +749,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-29T12:16:13.641Z",
+      "scrapedAt": "2026-07-29T12:31:22.153Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1014,7 +1010,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-29T12:16:13.641Z",
+      "scrapedAt": "2026-07-29T12:31:22.153Z",
       "sections": [
         {
           "title": "Nejprodávanější",
