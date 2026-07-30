@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-30T16:18:55.231Z",
+  "lastUpdated": "2026-07-30T16:33:49.675Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 30. 7.",
-      "scrapedAt": "2026-07-30T16:16:13.646Z",
+      "scrapedAt": "2026-07-30T16:31:10.601Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,17 +103,17 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "30.07.2026",
-      "scrapedAt": "2026-07-30T16:16:24.846Z",
+      "scrapedAt": "2026-07-30T16:31:19.680Z",
       "sections": [
         {
           "title": "Polévky",
           "items": [
             {
-              "name": "Hornická fazolačka s uzeninou (0,33l)",
+              "name": "Gulášová z mletého masa s bramborem (0,33l)",
               "price": "44 Kč"
             },
             {
-              "name": "Kuřecí vývar s masem, zeleninou a těstovinou (0,33l)",
+              "name": "Hovězí vývar s masem a játrovými knedlíčky, babiččiny nudle (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -134,11 +134,19 @@
           "title": "Hlavní jídla",
           "items": [
             {
-              "name": "Frankfurtská vepřová pečeně s párky, houskový knedlík (150g)",
+              "name": "Ceasar salát s kuřecím masem, krutony a parmezánem (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Debrecínská vepřová pečeně s párkem, dušená rýže (150g)",
               "price": "159 Kč"
             },
             {
               "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Humpolecka vepřová směs, žampiony, papriky, pórek, klobása, sypané sýrem, smažené krokety (150g)",
               "price": "159 Kč"
             },
             {
@@ -150,27 +158,23 @@
               "price": "159 Kč"
             },
             {
-              "name": "Mexické chilli con carne z mletého masa s fazolemi, dušená rýže, sypané sýrem (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Pečené kuřecí stehno ala bažant, červené zelí, domácí bramborový knedlík (350g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Smažené kuřecí řízečky, domácí bramborová kaše, citrón, okurka (150g)",
+              "name": "Pečený králík na česneku s bůčkem a špenátem, domácí bramborové knedlík (200g)",
               "price": "169 Kč"
             },
             {
+              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Segedinský guláš s houskovým  knedlíkem (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Trhané kuře na paprice, kolínka (150g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Cmunda po kaplicku ( uzená krkovice, bílé zelí, bramborák sypaný vídeňskou cibulkou) (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Štěpánská vepřová pečeně s houskovým knedlíkem (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
             },
             {
@@ -220,7 +224,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-30T16:18:55.223Z",
+      "scrapedAt": "2026-07-30T16:33:49.664Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -240,7 +244,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-07-30T16:16:24.034Z",
+      "scrapedAt": "2026-07-30T16:31:19.047Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -258,7 +262,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 31.7.",
-      "scrapedAt": "2026-07-30T16:16:15.165Z",
+      "scrapedAt": "2026-07-30T16:31:11.613Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -543,7 +547,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-07-30T16:18:35.341Z",
+      "scrapedAt": "2026-07-30T16:33:30.396Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -562,7 +566,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-30T16:18:55.223Z",
+      "scrapedAt": "2026-07-30T16:33:49.665Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -763,7 +767,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-30T16:16:24.138Z",
+      "scrapedAt": "2026-07-30T16:31:19.145Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -836,7 +840,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-07-30T16:03:40.484Z",
+      "scrapedAt": "2026-07-30T16:33:30.648Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1024,7 +1028,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-07-30T16:16:24.137Z",
+      "scrapedAt": "2026-07-30T16:31:19.145Z",
       "sections": [
         {
           "title": "Nejprodávanější",
