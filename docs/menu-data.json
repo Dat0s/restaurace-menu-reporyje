@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-02T15:01:46.010Z",
+  "lastUpdated": "2026-08-02T15:16:28.050Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Neděle 2. 8.",
-      "scrapedAt": "2026-08-02T15:01:25.407Z",
+      "scrapedAt": "2026-08-02T15:16:07.288Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,17 +107,17 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "02.08.2026",
-      "scrapedAt": "2026-08-02T15:01:27.010Z",
+      "scrapedAt": "2026-08-02T15:16:09.516Z",
       "sections": [
         {
           "title": "Polévky",
           "items": [
             {
-              "name": "Gulášová z mletého masa s bramborem (0,33l)",
+              "name": "Dršťková (0,33l)",
               "price": "44 Kč"
             },
             {
-              "name": "Hovězí vývar se zeleninou, masem a těstovinami (0,33l)",
+              "name": "Kuřecí vývar s masem, zeleninou a těstovinou (0,33l)",
               "price": "44 Kč"
             },
             {
@@ -131,6 +131,55 @@
             {
               "name": "Rohlík",
               "price": "5 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Hlavní jídla",
+          "items": [
+            {
+              "name": "Halušky s uzenou krkovičkou, bílé zelí, smažená cibulka, přelité výpekem ze špeku (400g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Krůtí nudličky ve špenátové omáčce sypané parmezánem, gnocchi, baby špenát (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Široké nudle s mákem a máslem (300g)",
+              "price": "99 Kč"
+            },
+            {
+              "name": "Smažené rybí filé z tresky, domácí bramborový salát,  citrón (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Sváteční Táborská bašta  s vepřovou pečení, moravským uzeným a klobásou, bílé zelí,variace knedlíků (200g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Těstovinový salát s kuřecím masem, šunkou, sýrem a zeleninou zjemněný domácí majonézou (500g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová pečeně na slanině, houskový knedlík (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřová plec dušená s mrkví, vařený brambor (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Vepřový steak s vídeňskou cibulkou, smažené hranolky, domácí tatarka, obloha ze zelného salátu",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Zapečené francouzské brambory s uzeninou a vejci, znojemská okurka (400g)",
+              "price": "159 Kč"
             }
           ]
         },
@@ -174,7 +223,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-08-02T15:01:46.001Z",
+      "scrapedAt": "2026-08-02T15:16:28.041Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -194,7 +243,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "Polední menu",
-      "scrapedAt": "2026-08-02T15:01:26.372Z",
+      "scrapedAt": "2026-08-02T15:16:08.690Z",
       "sections": [
         {
           "title": "Víkend",
@@ -214,7 +263,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 27.7.",
-      "scrapedAt": "2026-08-02T15:01:26.372Z",
+      "scrapedAt": "2026-08-02T15:16:08.690Z",
       "sections": [
         {
           "title": "",
@@ -511,7 +560,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-08-02T15:01:27.010Z",
+      "scrapedAt": "2026-08-02T15:16:09.516Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -530,7 +579,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-02T15:01:46.001Z",
+      "scrapedAt": "2026-08-02T15:16:28.041Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -731,7 +780,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-02T15:01:26.373Z",
+      "scrapedAt": "2026-08-02T15:16:08.691Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -804,7 +853,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-02T15:01:27.210Z",
+      "scrapedAt": "2026-08-02T15:16:09.700Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -992,7 +1041,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-02T15:01:26.373Z",
+      "scrapedAt": "2026-08-02T15:16:08.691Z",
       "sections": [
         {
           "title": "Nejprodávanější",
