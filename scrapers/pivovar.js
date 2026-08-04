@@ -360,6 +360,7 @@ function fallbackResult() {
     source: "https://pivovarfood.cz/#catering",
     phone: "+420 274 772 837",
     menuDate: "Polední menu",
+    isFallback: true,
     scrapedAt: new Date().toISOString(),
     sections: [
       {

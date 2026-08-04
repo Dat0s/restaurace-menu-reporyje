@@ -232,8 +232,15 @@
     ];
     var isStaticMenu = staticMenuNames.indexOf(r.name) >= 0;
     var displayDate = "";
-    if (r.isFallback || isMultiDay) {
+    if (r.isFallback) {
       displayDate = "";
+    } else if (isMultiDay) {
+      if (r.menuDate) {
+        var multiDayDateLower =
+          r.menuDate.charAt(0).toLowerCase() + r.menuDate.slice(1);
+        displayDate =
+          "Na webu restaurace je k dispozici menu z " + multiDayDateLower;
+      }
     } else if (isStaticMenu) {
       displayDate = r.menuDate || "Stálé menu";
     } else {
