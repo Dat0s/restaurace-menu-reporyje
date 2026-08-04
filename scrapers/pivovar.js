@@ -367,7 +367,8 @@ function fallbackResult() {
         title: "Polední menu",
         items: [
           {
-            name: "Menu nebylo nalezeno. Podívejte se na pivovarfood.cz",
+            prefix: "Menu nebylo nalezeno. Podívejte se na ",
+            name: "pivovarfood.cz",
             price: "",
             link: "https://pivovarfood.cz/",
           },
