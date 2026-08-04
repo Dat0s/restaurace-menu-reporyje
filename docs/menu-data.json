@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T06:03:55.982Z",
+  "lastUpdated": "2026-08-04T06:08:20.511Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -227,18 +227,91 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-08-04T06:03:55.975Z",
+      "menuDate": "3.8.2026",
+      "scrapedAt": "2026-08-04T06:08:03.304Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Hrachová s uzeninou",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Zapečené těstoviny se sýrem, okurka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Čevabčiči, vařené brambory, hořčice, cibule",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Zelná s klobásou 13,79 |",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Kuřecí špíz, vařené brambory",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřové výpečky se špenátem, bramborový knedlík 137 |",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývars masem a fritátové nudle",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Pětrosí vejce s bramborovou kaší",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Kuřecí závitek s jasmínovou rýží",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Dršťková z hlívy",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Uzené v křenové omáčce, houskový knedlík",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřová kotleta po srbsku, rýže",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Kulajda s houbami",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Plněné bramborové knedlíky uzeným, zelí, smažená cibulka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený kuřecí řízek s bramborovou kaší",
+              "price": "119 Kč"
             }
           ]
         }
