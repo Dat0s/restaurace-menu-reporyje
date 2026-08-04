@@ -323,15 +323,17 @@
       "name": "Pivovar Řeporyje",
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
-      "menuDate": "Polední menu",
+      "menuDate": "",
+      "isFallback": true,
       "scrapedAt": "2026-08-04T06:31:25.159Z",
       "sections": [
         {
           "title": "Polední menu",
           "items": [
             {
-              "name": "Polední menu nebylo nalezeno. Podívejte se na pivovarfood.cz",
-              "price": ""
+              "name": "Menu nebylo nalezeno. Podívejte se na pivovarfood.cz",
+              "price": "",
+              "link": "https://pivovarfood.cz/"
             }
           ]
         }

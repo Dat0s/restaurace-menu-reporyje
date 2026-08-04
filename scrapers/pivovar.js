@@ -359,7 +359,7 @@ function fallbackResult() {
     name: "Pivovar Řeporyje",
     source: "https://pivovarfood.cz/#catering",
     phone: "+420 274 772 837",
-    menuDate: "Polední menu",
+    menuDate: "",
     isFallback: true,
     scrapedAt: new Date().toISOString(),
     sections: [
@@ -367,8 +367,9 @@ function fallbackResult() {
         title: "Polední menu",
         items: [
           {
-            name: "Polední menu nebylo nalezeno. Podívejte se na pivovarfood.cz",
+            name: "Menu nebylo nalezeno. Podívejte se na pivovarfood.cz",
             price: "",
+            link: "https://pivovarfood.cz/",
           },
         ],
       },
