@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-04T13:04:08.309Z",
+  "lastUpdated": "2026-08-04T13:18:37.958Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 4. 8.",
-      "scrapedAt": "2026-08-04T13:01:24.088Z",
+      "scrapedAt": "2026-08-04T13:15:55.774Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "04.08.2026",
-      "scrapedAt": "2026-08-04T13:01:39.497Z",
+      "scrapedAt": "2026-08-04T13:16:09.773Z",
       "sections": [
         {
           "title": "Polévky",
@@ -320,7 +320,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-04T13:01:38.783Z",
+      "scrapedAt": "2026-08-04T13:16:08.957Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -441,18 +441,18 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Úterý 4.8.",
-      "scrapedAt": "2026-08-04T13:01:25.286Z",
+      "menuDate": "Středa 5.8.",
+      "scrapedAt": "2026-08-04T13:15:56.737Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou  -TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "PO UTČesnečka se šunkou a sýrem",
+              "name": "Brokolicový krém s krutony",
               "price": "39 Kč"
             }
           ]
@@ -461,15 +461,15 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Hovězí maso na česneku, špenát, bramborový knedlík",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený květák s vařeným bramborem,tatarská omáčka",
+              "name": "ST-M1Masové rizoto,sýr,okurka",
               "price": "159 Kč"
             },
             {
-              "name": "UT-MinKuřecí plátek zapečený se sýrem a šunkou., hranolky",
+              "name": "Moravský vrabec, zelí, houskový knedlík",
+              "price": "159 Kč"
+            },
+            {
+              "name": "ST-Min Přírodní vepřová krkovice s fazolkami a anglickou slaninou, sázené 150g vejce, hranolky",
               "price": "169 Kč"
             },
             {
@@ -507,6 +507,15 @@
             {
               "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
               "price": "179 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
             }
           ]
         },
@@ -722,7 +731,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-08-04T13:03:49.218Z",
+      "scrapedAt": "2026-08-04T13:18:19.396Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -742,7 +751,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-04T13:04:08.301Z",
+      "scrapedAt": "2026-08-04T13:18:37.951Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -943,7 +952,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-04T13:01:38.913Z",
+      "scrapedAt": "2026-08-04T13:16:09.074Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1204,7 +1213,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-04T13:01:38.913Z",
+      "scrapedAt": "2026-08-04T13:16:09.074Z",
       "sections": [
         {
           "title": "Nejprodávanější",
