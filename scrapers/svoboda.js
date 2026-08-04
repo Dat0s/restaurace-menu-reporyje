@@ -408,7 +408,8 @@ function fallbackResult() {
         title: "Polední menu",
         items: [
           {
-            name: "Menu nebylo nalezeno. Podívejte se na Instagram @svoboda_reznictvi",
+            prefix: "Menu nebylo nalezeno. Podívejte se na Instagram ",
+            name: "@svoboda_reznictvi",
             price: "",
             link: "https://www.instagram.com/svoboda_reznictvi/",
           },
