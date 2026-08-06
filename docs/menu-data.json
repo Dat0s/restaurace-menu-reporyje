@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-06T11:04:13.204Z",
+  "lastUpdated": "2026-08-06T11:18:40.997Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 6. 8.",
-      "scrapedAt": "2026-08-06T11:01:27.424Z",
+      "scrapedAt": "2026-08-06T11:15:57.934Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "06.08.2026",
-      "scrapedAt": "2026-08-06T11:01:43.024Z",
+      "scrapedAt": "2026-08-06T11:16:13.623Z",
       "sections": [
         {
           "title": "Polévky",
@@ -316,7 +316,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-06T11:01:41.969Z",
+      "scrapedAt": "2026-08-06T11:16:12.700Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -438,7 +438,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 6.8.",
-      "scrapedAt": "2026-08-06T10:46:01.770Z",
+      "scrapedAt": "2026-08-06T11:15:59.271Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -454,16 +454,17 @@
           ]
         },
         {
-          "title": "POLEDNÍ MENU",
+          "title": "DEZERT",
           "items": [
             {
-              "name": "Zapečené šunko-fleky s okurkou",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Smažená kuřecí kapsa plněná mozarelou a sušeným rajčetem,šťouchaný brambor",
-              "price": "169 Kč"
-            },
+              "name": "Brownies",
+              "price": "59 Kč"
+            }
+          ]
+        },
+        {
+          "title": "POLEDNÍ MENU",
+          "items": [
             {
               "name": "ČT-MINKuřecí plátek s hermelínem,hranolky",
               "price": "169 Kč"
@@ -495,15 +496,6 @@
             {
               "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
               "price": "179 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DEZERT",
-          "items": [
-            {
-              "name": "Brownies",
-              "price": "59 Kč"
             }
           ]
         },
@@ -719,7 +711,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-08-06T11:03:53.563Z",
+      "scrapedAt": "2026-08-06T11:18:23.157Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -739,7 +731,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-06T11:04:13.196Z",
+      "scrapedAt": "2026-08-06T11:18:40.991Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -940,7 +932,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-06T11:01:42.088Z",
+      "scrapedAt": "2026-08-06T11:16:12.791Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1013,7 +1005,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-06T11:03:53.837Z",
+      "scrapedAt": "2026-08-06T11:18:23.263Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1201,7 +1193,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-06T11:01:42.087Z",
+      "scrapedAt": "2026-08-06T11:16:12.791Z",
       "sections": [
         {
           "title": "Nejprodávanější",
