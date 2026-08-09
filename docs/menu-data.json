@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-09T06:01:48.044Z",
+  "lastUpdated": "2026-08-09T06:16:13.553Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 7. 8.",
-      "scrapedAt": "2026-08-09T06:01:26.383Z",
+      "scrapedAt": "2026-08-09T06:15:53.138Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "09.08.2026",
-      "scrapedAt": "2026-08-09T06:01:28.244Z",
+      "scrapedAt": "2026-08-09T06:15:54.891Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,10 +146,6 @@
               "price": "159 Kč"
             },
             {
-              "name": "Krůtí nudličky ve špenátové omáčce sypané parmezánem, gnocchi, baby špenát (150g)",
-              "price": "159 Kč"
-            },
-            {
               "name": "Kuřecí nudličky v houbové omáčce, dušená rýže (150g)",
               "price": "159 Kč"
             },
@@ -170,12 +166,8 @@
               "price": "169 Kč"
             },
             {
-              "name": "Segedinský guláš s houskovým  knedlíkem (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
-              "price": "159 Kč"
+              "name": "Smažené vepřové řízečky, domácí bramborový salát, citron (150g)",
+              "price": "169 Kč"
             },
             {
               "name": "Švédské masové koule ve smetanové omáčce s brusinkovým dipem, vařený brambor (5ks)",
@@ -191,10 +183,6 @@
             },
             {
               "name": "Ceasar salát s kuřecím masem, krutony a parmezánem (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Vepřový vrabec se špenátem a domácím bramborovým knedlíkem (150g)",
               "price": "159 Kč"
             }
           ]
@@ -332,7 +320,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-09T06:01:27.486Z",
+      "scrapedAt": "2026-08-09T06:15:54.203Z",
       "sections": [
         {
           "title": "Víkend",
@@ -352,7 +340,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 7.8.",
-      "scrapedAt": "2026-08-09T06:01:27.485Z",
+      "scrapedAt": "2026-08-09T06:15:54.202Z",
       "sections": [
         {
           "title": "",
@@ -645,7 +633,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "",
-      "scrapedAt": "2026-08-09T06:01:28.245Z",
+      "scrapedAt": "2026-08-09T06:15:54.891Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -664,7 +652,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-09T06:01:48.037Z",
+      "scrapedAt": "2026-08-09T06:16:13.545Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -865,7 +853,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-09T06:01:27.487Z",
+      "scrapedAt": "2026-08-09T06:15:54.203Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -938,7 +926,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-09T06:01:28.581Z",
+      "scrapedAt": "2026-08-09T06:15:55.696Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1126,7 +1114,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-09T06:01:27.487Z",
+      "scrapedAt": "2026-08-09T06:15:54.203Z",
       "sections": [
         {
           "title": "Nejprodávanější",
