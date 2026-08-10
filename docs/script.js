@@ -255,18 +255,26 @@
         now.getFullYear();
       // Try to detect if scraped menuDate matches today by extracting day.month
       var menuIsToday = false;
-      if (r.menuDate) {
-        var dateMatch = r.menuDate.match(/(\d{1,2})\s*\.\s*(\d{1,2})/);
-        if (dateMatch) {
-          var menuDay = parseInt(dateMatch[1], 10);
-          var menuMonth = parseInt(dateMatch[2], 10);
-          menuIsToday =
-            menuDay === now.getDate() && menuMonth === now.getMonth() + 1;
-        }
+      var dateMatch = r.menuDate
+        ? r.menuDate.match(/(\d{1,2})\s*\.\s*(\d{1,2})/)
+        : null;
+      if (dateMatch) {
+        var menuDay = parseInt(dateMatch[1], 10);
+        var menuMonth = parseInt(dateMatch[2], 10);
+        menuIsToday =
+          menuDay === now.getDate() && menuMonth === now.getMonth() + 1;
       }
-      var dateStr = menuIsToday ? todayFormatted : r.menuDate || todayFormatted;
-      var dateStrLower = dateStr.charAt(0).toLowerCase() + dateStr.slice(1);
-      displayDate = "Na webu restaurace je k dispozici menu z " + dateStrLower;
+      if (r.menuDate && !dateMatch) {
+        // menuDate holds a status message (e.g. "Polední menu nenalezeno"), not a date — show as-is
+        displayDate = r.menuDate;
+      } else {
+        var dateStr = menuIsToday
+          ? todayFormatted
+          : r.menuDate || todayFormatted;
+        var dateStrLower = dateStr.charAt(0).toLowerCase() + dateStr.slice(1);
+        displayDate =
+          "Na webu restaurace je k dispozici menu z " + dateStrLower;
+      }
     }
 
     // Phone link
