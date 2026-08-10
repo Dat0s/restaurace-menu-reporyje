@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T06:49:00.611Z",
+  "lastUpdated": "2026-08-10T07:03:04.739Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -214,18 +214,91 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-08-10T06:49:00.606Z",
+      "menuDate": "10.8.2026",
+      "scrapedAt": "2026-08-10T07:00:51.914Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Pórková s vejcem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "A: Drůbeží játra na cibulce, rýže",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Holandský řízek s bramborovou kaší",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Česnekový krém",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Záhorácký závitek, šťouchané brambory",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Rozlítaný španělský ptáček s rýží",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývar s játrovými knedlíčky",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Pikantní kuřecí nudličky se zeleninou, bramboráčky",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Pečená krkovice na slanině s jasmínovou rýží",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Dršťková",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Segedínský guláš, houskový knedlík",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený sýr, vařené brambory, tatarská omáčka",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Hráškový krém",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Srbské rizoto se zeleninou a strouhaným sýrem, okurka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "| 2: Smažený kuřecí řízek s bramborovým salátem",
+              "price": "119 Kč"
             }
           ]
         }
