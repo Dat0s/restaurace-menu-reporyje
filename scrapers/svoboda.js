@@ -26,7 +26,16 @@ function parseIgCookies(raw) {
     const arr = Array.isArray(JSON.parse(raw))
       ? JSON.parse(raw)
       : [JSON.parse(raw)];
-    return arr.filter((c) => c.name && c.value);
+    return arr
+      .filter((c) => c.name && c.value)
+      .map((c) => ({
+        name: c.name,
+        value: c.value,
+        domain: c.domain || ".instagram.com",
+        path: c.path || "/",
+        secure: c.secure !== false,
+        ...(c.expirationDate ? { expires: Math.floor(c.expirationDate) } : {}),
+      }));
   }
   return raw
     .split("\n")
@@ -34,9 +43,52 @@ function parseIgCookies(raw) {
     .map((l) => {
       const p = l.split("\t");
       if (p.length < 7) return null;
-      return { name: p[5], value: p[6].trim() };
+      const expires = parseInt(p[4]);
+      return {
+        name: p[5],
+        value: p[6].trim(),
+        domain: p[0] || ".instagram.com",
+        path: p[2] || "/",
+        secure: p[3] === "TRUE",
+        ...(expires > 0 ? { expires } : {}),
+      };
     })
     .filter(Boolean);
+}
+
+// Pulls post image URLs out of an intercepted Instagram API/GraphQL response.
+// Handles both the legacy web_profile_info shape (edge_owner_to_timeline_media)
+// and the newer GraphQL timeline shape (image_versions2 candidates).
+function extractPostImageUrls(json) {
+  const urls = [];
+  const edgeSets = [
+    json?.data?.user?.edge_owner_to_timeline_media?.edges,
+    json?.data?.xdt_api__v1__feed__user_timeline_graphql_connection?.edges,
+  ];
+  for (const edges of edgeSets) {
+    if (!Array.isArray(edges)) continue;
+    for (const e of edges) {
+      const node = e?.node;
+      if (!node) continue;
+      const candidates = [
+        node.display_url,
+        node.image_versions2?.candidates?.[0]?.url,
+        node.carousel_media?.[0]?.image_versions2?.candidates?.[0]?.url,
+      ];
+      const url = candidates.find(Boolean);
+      if (url) urls.push(url);
+    }
+  }
+  // Plain feed/user responses have items[] instead of edges[]
+  if (Array.isArray(json?.items)) {
+    for (const item of json.items) {
+      const url =
+        item?.image_versions2?.candidates?.[0]?.url ??
+        item?.carousel_media?.[0]?.image_versions2?.candidates?.[0]?.url;
+      if (url) urls.push(url);
+    }
+  }
+  return urls;
 }
 
 async function scrapeSvoboda() {
@@ -102,7 +154,15 @@ async function tryAutomated() {
 
   // Strategy 3: puppeteer — intercepts the API call Instagram's own JS makes
   console.log("  Fetch blocked, trying puppeteer...");
-  return tryPuppeteerStrategy();
+  let pupResult = await tryPuppeteerStrategy(true);
+
+  // Strategy 4: a dead session poisons even the profile view (redirect to
+  // login), while anonymous browsing sometimes gets through — retry clean
+  if (!pupResult && process.env.IG_COOKIES) {
+    console.log("  Retrying puppeteer anonymously (without cookies)...");
+    pupResult = await tryPuppeteerStrategy(false);
+  }
+  return pupResult;
 }
 
 async function tryFetchStrategy({ cookieStr, csrfToken } = {}) {
@@ -132,7 +192,7 @@ async function tryFetchStrategy({ cookieStr, csrfToken } = {}) {
   return ocrImages(imageUrls, "fetch");
 }
 
-async function tryPuppeteerStrategy() {
+async function tryPuppeteerStrategy(useCookies = true) {
   const browser = await puppeteer.launch({
     headless: "new",
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -143,22 +203,27 @@ async function tryPuppeteerStrategy() {
     await page.setViewport({ width: 1400, height: 900 });
     await page.setUserAgent(USER_AGENT);
 
-    // Intercept Instagram's own API call — Instagram's JS makes this request
-    // from within the browser with proper browser fingerprinting headers
+    // Inject saved IG session cookies — a logged-in session reliably gets the
+    // profile page (anonymous views hit the login wall most of the time)
+    if (useCookies && process.env.IG_COOKIES) {
+      const cookies = parseIgCookies(process.env.IG_COOKIES);
+      await page.setCookie(...cookies);
+      console.log("  Injected", cookies.length, "IG cookies");
+    }
+
+    // Intercept Instagram's own API/GraphQL calls — Instagram's JS makes these
+    // requests from within the browser with proper fingerprinting headers
     const profileImages = [];
     page.on("response", async (response) => {
       const url = response.url();
       if (
         url.includes("/api/v1/users/web_profile_info/") ||
-        url.includes("/api/v1/feed/user/")
+        url.includes("/api/v1/feed/user/") ||
+        url.includes("/graphql/query")
       ) {
         try {
           const json = await response.json().catch(() => null);
-          const edges =
-            json?.data?.user?.edge_owner_to_timeline_media?.edges ?? [];
-          for (const e of edges) {
-            if (e.node.display_url) profileImages.push(e.node.display_url);
-          }
+          if (json) profileImages.push(...extractPostImageUrls(json));
         } catch {}
       }
     });
@@ -169,10 +234,49 @@ async function tryPuppeteerStrategy() {
     });
     await new Promise((r) => setTimeout(r, 3000));
 
+    // Login wall detection: an invalid/expired session gets redirected off the
+    // profile URL (to / or /accounts/login). Surface this loudly — it means
+    // ig_cookies.txt must be re-exported (see scrapers/py/README.md §4).
+    const finalUrl = page.url();
+    if (!finalUrl.includes("/svoboda_reznictvi")) {
+      console.log("  Redirected to", finalUrl);
+      if (useCookies && process.env.IG_COOKIES) {
+        console.log(
+          "  IG SESSION INVALID/EXPIRED — re-export ig_cookies.txt " +
+            "(scrapers/py/README.md §4)",
+        );
+      }
+      return null;
+    }
+
     // Scroll to trigger any lazy-loaded API calls
     for (let i = 0; i < 3; i++) {
       await page.evaluate(() => window.scrollBy(0, 800));
       await new Promise((r) => setTimeout(r, 1000));
+    }
+
+    // Last resort: grab the profile grid thumbnails straight from the DOM,
+    // preferring the largest srcset candidate for OCR-able resolution
+    if (profileImages.length === 0) {
+      const domUrls = await page
+        .evaluate(() =>
+          Array.from(document.querySelectorAll("main img"))
+            .map((img) => {
+              const srcset = img.srcset
+                ? img.srcset
+                    .split(",")
+                    .map((s) => s.trim().split(" ")[0])
+                    .pop()
+                : null;
+              return srcset || img.src;
+            })
+            .filter((u) => u && u.includes("cdninstagram")),
+        )
+        .catch(() => []);
+      profileImages.push(...domUrls);
+      if (domUrls.length > 0) {
+        console.log("  Collected", domUrls.length, "image URL(s) from DOM");
+      }
     }
 
     console.log(
@@ -494,4 +598,4 @@ function weekendResult() {
   };
 }
 
-module.exports = { scrapeSvoboda };
+module.exports = { scrapeSvoboda, tryPuppeteerStrategy };

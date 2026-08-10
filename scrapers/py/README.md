@@ -62,8 +62,17 @@ z GitHubu (workflow **Menu freshness alert**, Po/Út/Pá ~11:15).
 ## 4. Údržba
 
 - Cookies expirují (typicky po pár měsících, nebo když Meta session zneplatní).
-  Příznak: v logu workflow `Redirected to login` + `No post images found in
-group feed` a web spadne na fallback kartu → zopakuj krok 2–3.
+  Příznaky v logu (workflow i `%LOCALAPPDATA%\reporyje-menu\scrape.log`):
+  - **Facebook**: `Redirected to login` + `No post images found in group feed`
+  - **Instagram**: `IG SESSION INVALID/EXPIRED` (puppeteer tier) a `429 Too
+Many Requests` na `web_profile_info` (fetch + instaloader tiery — IG
+    odpovídá 429 na jakýkoli API dotaz bez platné session, není to skutečný
+    rate-limit)
+
+  Web pak spadne na fallback kartu → zopakuj krok 2–3 (přihlas se throwaway
+  účtem v prohlížeči, znovu exportuj cookies a spusť
+  `scripts/setup-local-task.ps1 -IgCookies ... [-FbCookies ...] -UpdateSecrets`).
+
 - Lokální test bez CI:
 
 ```powershell
