@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-12T23:00:32.559Z",
+  "lastUpdated": "2026-08-12T23:02:09.080Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 12. 8.",
-      "scrapedAt": "2026-08-12T22:57:49.882Z",
+      "scrapedAt": "2026-08-12T23:01:21.052Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "12.08.2026",
-      "scrapedAt": "2026-08-12T22:58:03.226Z",
+      "scrapedAt": "2026-08-12T23:01:34.884Z",
       "sections": [
         {
           "title": "Polévky",
@@ -317,7 +317,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-12T22:58:02.526Z",
+      "scrapedAt": "2026-08-12T23:01:34.065Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -439,7 +439,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 13.8.",
-      "scrapedAt": "2026-08-12T22:57:50.940Z",
+      "scrapedAt": "2026-08-12T23:01:22.146Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -719,7 +719,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "10.8. - 14.8.",
-      "scrapedAt": "2026-08-10T12:25:17.213Z",
+      "scrapedAt": "2026-08-12T23:01:50.988Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -750,7 +750,7 @@
               "price": "139 Kč"
             },
             {
-              "name": "Uzené maso (krk, bok, koleno), pečené koleno:",
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
               "price": ""
             }
           ]
@@ -765,6 +765,10 @@
             {
               "name": "Pečené kuře, brambor",
               "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
             }
           ]
         },
@@ -772,8 +776,16 @@
           "title": "Čtvrtek",
           "items": [
             {
-              "name": "Hovězí guláš, h.knediík",
+              "name": "Hrachová polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Hovězí guláš, h.knedlík",
               "price": "159 Kč"
+            },
+            {
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
+              "price": ""
             }
           ]
         },
@@ -781,8 +793,16 @@
           "title": "Pátek",
           "items": [
             {
+              "name": "Hovězí polévka",
+              "price": "39 Kč"
+            },
+            {
               "name": "Smažený řízek, br. salát",
               "price": "149 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
             }
           ]
         }
@@ -793,7 +813,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-12T23:00:32.552Z",
+      "scrapedAt": "2026-08-12T23:02:09.074Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -994,7 +1014,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-12T22:58:02.633Z",
+      "scrapedAt": "2026-08-12T23:01:34.308Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1067,7 +1087,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-12T23:00:14.729Z",
+      "scrapedAt": "2026-08-12T23:01:51.233Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1255,7 +1275,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-12T22:58:02.633Z",
+      "scrapedAt": "2026-08-12T23:01:34.308Z",
       "sections": [
         {
           "title": "Nejprodávanější",
