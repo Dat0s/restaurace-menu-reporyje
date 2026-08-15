@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-15T14:31:35.056Z",
+  "lastUpdated": "2026-08-15T14:45:15.597Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Sobota 15. 8.",
-      "scrapedAt": "2026-08-15T14:31:13.212Z",
+      "scrapedAt": "2026-08-15T14:44:54.771Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "15.08.2026",
-      "scrapedAt": "2026-08-15T14:31:15.227Z",
+      "scrapedAt": "2026-08-15T14:44:56.408Z",
       "sections": [
         {
           "title": "Polévky",
@@ -127,47 +127,6 @@
             {
               "name": "Rohlík",
               "price": "5 Kč"
-            }
-          ]
-        },
-        {
-          "title": "Hlavní jídla",
-          "items": [
-            {
-              "name": "Hovězí svíčková na smetaně, houskový knedlík, brusinkový terč (150g)",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Pikantní vepřová směs \"Pohotovka\" se žampióny  a zeleninou, smažené hranolky, sypané sýrem (150g)",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Plněné bramborové knedlíky  uzeným masem, bílé zelí, smažená cibulka (300g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Pomalu pečená vepřová kotleta s hříbkovou omáčkou, houskový knedlík (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Srbské vepřové rizoto s kukuřicí a hráškem sypané strouhaným sýrem, okurka (300g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Trhané kuře na paprice, kolínka (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Vepřová játra na cibulce a slanině, dušená rýže (150g)",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Vepřový rozlítaný ptáček s houskovým knedlíkem (150g)",
-              "price": "159 Kč"
             }
           ]
         },
@@ -305,7 +264,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-15T14:31:14.413Z",
+      "scrapedAt": "2026-08-15T14:44:55.747Z",
       "sections": [
         {
           "title": "Víkend",
@@ -325,7 +284,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 10.8.",
-      "scrapedAt": "2026-08-15T14:31:14.413Z",
+      "scrapedAt": "2026-08-15T14:44:55.747Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -605,7 +564,7 @@
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
       "menuDate": "10.8. - 14.8.",
-      "scrapedAt": "2026-08-15T14:31:15.227Z",
+      "scrapedAt": "2026-08-15T14:44:56.408Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -624,7 +583,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-15T14:31:35.047Z",
+      "scrapedAt": "2026-08-15T14:45:15.589Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -825,7 +784,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-15T14:31:14.414Z",
+      "scrapedAt": "2026-08-15T14:44:55.748Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1086,7 +1045,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-15T14:31:14.413Z",
+      "scrapedAt": "2026-08-15T14:44:55.748Z",
       "sections": [
         {
           "title": "Nejprodávanější",
