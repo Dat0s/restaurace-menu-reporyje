@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T07:46:22.928Z",
+  "lastUpdated": "2026-08-17T07:49:28.015Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -239,18 +239,87 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-08-17T07:46:22.920Z",
+      "menuDate": "17.8.2026",
+      "scrapedAt": "2026-08-17T07:49:10.285Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Květáková se zeleninou a vejcem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Pečená sekaná s bramborovou kaší",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Svíčková na smetaně, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Frankfurtská",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřové kostky na zelenině, těstoviny",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Kuřecí kapsa se šunkou a sýrem, vařené brambory",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývars masem a kapáním",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Francouzské brambory zapečené sýrem, zelný salát",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Pečené kuřecí stehno, červené zelí, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Gulášová ]",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřová pečeně, špenát, bramborový knedlík",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Kuřecí plátek na žampionech, jasmínová rýže",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "/ka: Uzená s kroupami",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený vepřový řízek s bramborovou kaší",
+              "price": "119 Kč"
             }
           ]
         }
