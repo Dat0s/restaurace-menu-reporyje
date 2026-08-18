@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-18T04:48:51.457Z",
+  "lastUpdated": "2026-08-18T05:04:08.687Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pondělí 17. 8.",
-      "scrapedAt": "2026-08-18T04:46:01.251Z",
+      "scrapedAt": "2026-08-18T05:01:21.910Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -115,7 +115,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.08.2026",
-      "scrapedAt": "2026-08-18T04:46:16.938Z",
+      "scrapedAt": "2026-08-18T05:01:37.931Z",
       "sections": [
         {
           "title": "Polévky",
@@ -146,6 +146,14 @@
               "price": "169 Kč"
             },
             {
+              "name": "Jelítkový prejt bílé zelí, vařené brambory (150g)",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Kachní játra na cibulce, dušená rýže (150g)",
+              "price": "159 Kč"
+            },
+            {
               "name": "Krůtí nudličky quattro formaggi v sýrové omáčce, těstoviny tagliatele, parmezán (150g)",
               "price": "159 Kč"
             },
@@ -166,7 +174,15 @@
               "price": "159 Kč"
             },
             {
+              "name": "Plzeňský hovězí guláš zdobený cibulkou, houskové knedlíky (150g)",
+              "price": "169 Kč"
+            },
+            {
               "name": "Přírodní vepřová kapsa plněná salámem a sýrem gouda, americké brambory, tatarská omáčka, zelný salát (150g)",
+              "price": "169 Kč"
+            },
+            {
+              "name": "Smažená kapsa\"PREZIDENT \"1/2 kuřecí 1/2 vepřový, plněný šunkou a sýrem, bramborová kaše, citron, okurka (200g)",
               "price": "169 Kč"
             },
             {
@@ -312,7 +328,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-18T04:46:16.117Z",
+      "scrapedAt": "2026-08-18T05:01:37.109Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -434,7 +450,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Úterý 18.8.",
-      "scrapedAt": "2026-08-18T04:46:02.713Z",
+      "scrapedAt": "2026-08-18T05:01:23.283Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -714,7 +730,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-08-18T04:48:29.932Z",
+      "scrapedAt": "2026-08-18T05:03:50.118Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -734,7 +750,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-18T04:48:51.449Z",
+      "scrapedAt": "2026-08-18T05:04:08.679Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -935,7 +951,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-18T04:46:16.223Z",
+      "scrapedAt": "2026-08-18T05:01:37.226Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1008,7 +1024,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-18T04:48:30.211Z",
+      "scrapedAt": "2026-08-18T05:03:50.509Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1196,7 +1212,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-18T04:46:16.222Z",
+      "scrapedAt": "2026-08-18T05:01:37.226Z",
       "sections": [
         {
           "title": "Nejprodávanější",
