@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-19T10:04:03.971Z",
+  "lastUpdated": "2026-08-19T10:18:56.498Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 19. 8.",
-      "scrapedAt": "2026-08-19T10:01:18.914Z",
+      "scrapedAt": "2026-08-19T10:15:59.196Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "19.08.2026",
-      "scrapedAt": "2026-08-19T10:01:34.102Z",
+      "scrapedAt": "2026-08-19T10:16:25.170Z",
       "sections": [
         {
           "title": "Polévky",
@@ -129,6 +129,10 @@
         {
           "title": "Hlavní jídla",
           "items": [
+            {
+              "name": "Smažený sýr Gouda, vařený brambor maštěný máslem, domácí tatarská omáčka,zelný salát (150g)",
+              "price": "169 Kč"
+            },
             {
               "name": "Plněný paprikový lusk v rajské omáčce s houskovým knedlíkem (200g)",
               "price": "169 Kč"
@@ -164,10 +168,6 @@
             {
               "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Smažený sýr Gouda, vařený brambor maštěný máslem, domácí tatarská omáčka,zelný salát (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Těstovinový salát s kuřecím masem, šunkou, sýrem a zeleninou zjemněný domácí majonézou (500g)",
@@ -312,7 +312,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-19T10:01:33.403Z",
+      "scrapedAt": "2026-08-19T10:16:24.016Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -434,7 +434,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 19.8.",
-      "scrapedAt": "2026-08-19T10:01:20.175Z",
+      "scrapedAt": "2026-08-19T10:16:10.191Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -816,7 +816,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-19T10:04:03.964Z",
+      "scrapedAt": "2026-08-19T10:18:56.491Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1017,7 +1017,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-19T10:01:33.506Z",
+      "scrapedAt": "2026-08-19T10:16:24.141Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1278,7 +1278,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-19T10:01:33.505Z",
+      "scrapedAt": "2026-08-19T10:16:24.141Z",
       "sections": [
         {
           "title": "Nejprodávanější",
