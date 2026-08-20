@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-20T07:18:37.108Z",
+  "lastUpdated": "2026-08-20T07:25:13.712Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Středa 19. 8.",
-      "scrapedAt": "2026-08-20T07:15:54.160Z",
+      "menuDate": "Čtvrtek 20. 8.",
+      "scrapedAt": "2026-08-20T07:22:29.478Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -16,16 +16,16 @@
               "price": "85 Kč"
             },
             {
-              "name": "Konfitovaný bůček v hoisin omáčce s pak choi, koriandrem a jasmínovou rýží",
-              "price": "285 Kč"
+              "name": "Koprovka s hovězím masem a bramborami grenaille",
+              "price": "245 Kč"
+            },
+            {
+              "name": "Španělský ptáček s rýží",
+              "price": "265 Kč"
             },
             {
               "name": "Penne alla Arrabbiata s parmazánem",
               "price": "225 Kč"
-            },
-            {
-              "name": "Plněné papriky s rajskou omáčkou a pečenými bramborami",
-              "price": "245 Kč"
             },
             {
               "name": "Holandský řízek s bramborovou kaší a okurkou",
@@ -66,7 +66,7 @@
               "price": "55 Kč"
             },
             {
-              "name": "Meruňkovo-mandlový koláč s mascarpone",
+              "name": "Jablkovo-mandlový koláč s mascarpone",
               "price": "95 Kč"
             },
             {
@@ -79,6 +79,14 @@
             },
             {
               "name": "Brownie",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Tiramisu",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Linecký koláč se švestkami a drobenkou",
               "price": "95 Kč"
             }
           ]
@@ -103,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "20.08.2026",
-      "scrapedAt": "2026-08-20T07:16:07.658Z",
+      "scrapedAt": "2026-08-20T07:22:45.692Z",
       "sections": [
         {
           "title": "Polévky",
@@ -310,7 +318,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-20T07:16:06.815Z",
+      "scrapedAt": "2026-08-20T07:22:44.532Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -432,7 +440,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Čtvrtek 20.8.",
-      "scrapedAt": "2026-08-20T07:15:55.355Z",
+      "scrapedAt": "2026-08-20T07:22:30.865Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -814,7 +822,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-20T07:18:37.100Z",
+      "scrapedAt": "2026-08-20T07:25:13.706Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1015,7 +1023,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-20T07:16:06.961Z",
+      "scrapedAt": "2026-08-20T07:22:44.878Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1088,7 +1096,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-08-20T07:03:53.337Z",
+      "scrapedAt": "2026-08-20T07:24:56.807Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1276,7 +1284,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-20T07:16:06.961Z",
+      "scrapedAt": "2026-08-20T07:22:44.878Z",
       "sections": [
         {
           "title": "Nejprodávanější",
