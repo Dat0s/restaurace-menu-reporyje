@@ -476,6 +476,21 @@ function parseMenuText(text) {
 
   if (hasDaySections) {
     cleanSections = cleanSections.filter((s) => s.title !== "Polední menu");
+    // Every day always lists soup + hlavní jídlo + uzené/pečené maso (3
+    // items). A day with fewer means OCR dropped a line on this pass (seen
+    // in practice: a garbled middle line vanishes entirely instead of being
+    // parsed) - reject the whole result so the cascade retries a different
+    // image/tier rather than publishing an incomplete day.
+    const MIN_ITEMS_PER_DAY = 3;
+    const incompleteDay = cleanSections.find(
+      (s) => s.items.length < MIN_ITEMS_PER_DAY,
+    );
+    if (incompleteDay) {
+      console.log(
+        `  OCR result looks incomplete (${incompleteDay.title} has only ${incompleteDay.items.length} item(s)), discarding`,
+      );
+      return null;
+    }
   } else {
     const allItems = cleanSections.flatMap((s) => s.items);
     const avgLen =
@@ -598,4 +613,4 @@ function weekendResult() {
   };
 }
 
-module.exports = { scrapeSvoboda, tryPuppeteerStrategy };
+module.exports = { scrapeSvoboda, tryPuppeteerStrategy, parseMenuText };
