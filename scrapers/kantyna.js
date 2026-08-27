@@ -230,7 +230,12 @@ async function ocrImageUrls(imageUrls) {
     } catch {
       continue;
     }
-    if (!/polední\s*menu|jídelní\s*lístek/i.test(text)) continue;
+    // Matches both "polední menu" and the genitive "poledního menu" used on
+    // posters like "CENA POLEDNÍHO MENU" (note: \w is ASCII-only in JS, so it
+    // does not match "í" - the alternation is spelled out explicitly instead
+    // of e.g. poledn\w*). A plain "polední" literal misses the genitive form
+    // and silently discards an otherwise-valid, correctly-OCR'd menu image.
+    if (!/poledn(í|ího)\s*menu|jídelní\s*lístek/i.test(text)) continue;
 
     const parsed = parseMenuText(text);
     if (parsed) {
