@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-28T05:20:46.659Z",
+  "lastUpdated": "2026-08-28T05:35:54.693Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Čtvrtek 27. 8.",
-      "scrapedAt": "2026-08-28T05:16:00.662Z",
+      "scrapedAt": "2026-08-28T05:31:09.841Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -333,7 +333,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-08-28T05:16:15.093Z",
+      "scrapedAt": "2026-08-28T05:31:25.858Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -455,7 +455,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 28.8.",
-      "scrapedAt": "2026-08-28T05:16:01.944Z",
+      "scrapedAt": "2026-08-28T05:31:11.793Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -829,7 +829,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-28T05:20:46.653Z",
+      "scrapedAt": "2026-08-28T05:35:54.688Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1030,7 +1030,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-28T05:16:15.196Z",
+      "scrapedAt": "2026-08-28T05:31:25.939Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1291,7 +1291,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-08-28T05:16:15.196Z",
+      "scrapedAt": "2026-08-28T05:31:25.938Z",
       "sections": [
         {
           "title": "Nejprodávanější",
