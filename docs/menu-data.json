@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T05:20:44.722Z",
+  "lastUpdated": "2026-09-08T05:29:40.461Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -219,18 +219,91 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-09-08T05:20:44.714Z",
+      "menuDate": "7.9.2026",
+      "scrapedAt": "2026-09-08T05:29:25.867Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Kulajda s houbami a vejcem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Sekaný přírodní Fízek, vařené brambory, hořčice",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřové na kmíně, špenát, bramborový knedlí",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Luštěninová",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Pečené stehno s nádivkou, bramborová kaše",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Hovězí nudličky „Stroganof,, rýže",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývars masem a smaženým hráškem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Francouzské brambory zapečené sýrem, zclný salát",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Pečená krkovice na česnekuaslanině Šťouchané brambory",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Gulášová",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Chilli con carne, jasmínová rýže",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřový guláš s cibulkou, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Bramboračka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřová kotleta po srbsku s rýží",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený kuřecí řízek s bramborový salát",
+              "price": "119 Kč"
             }
           ]
         }
@@ -633,18 +706,91 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-09-08T05:20:27.217Z",
+      "menuDate": "7.9. - 11.9.",
+      "scrapedAt": "2026-09-08T05:29:40.460Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Menu nebylo nalezeno. Podívejte se na Instagram ",
-              "name": "@svoboda_reznictvi",
-              "price": "",
-              "link": "https://www.instagram.com/svoboda_reznictvi/"
+              "name": "Dršťková polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Katův šleh, rýže",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Gulášová polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Kuře na paprice, těstoviny",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka s játrovou rýží",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Kuře alá bažant, rýže",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Hrachová polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Štepánská hovězí, h.knedlík",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Hovězí polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Smažený řízek, br.salát",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
             }
           ]
         }
