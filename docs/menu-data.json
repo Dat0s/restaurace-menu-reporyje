@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-09-09T10:36:13.556Z",
+  "lastUpdated": "2026-09-09T10:50:53.655Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Středa 9. 9.",
-      "scrapedAt": "2026-09-09T10:31:24.933Z",
+      "scrapedAt": "2026-09-09T10:46:09.258Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -111,7 +111,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "09.09.2026",
-      "scrapedAt": "2026-09-09T10:31:41.423Z",
+      "scrapedAt": "2026-09-09T10:46:24.774Z",
       "sections": [
         {
           "title": "Polévky",
@@ -142,12 +142,16 @@
           "title": "Hlavní jídla",
           "items": [
             {
+              "name": "Kuřecí stehno po staročesku(slanina, česnek)domácí bramborová kaše ,okurka",
+              "price": "159 Kč"
+            },
+            {
               "name": "Domácí dukátové buchtičky s vanilkovým krémem (200g)",
               "price": "149 Kč"
             },
             {
-              "name": "Hovězí plátek v koprové omáčce,  houskový knedlík (150g)",
-              "price": "169 Kč"
+              "name": "Koprová omáčka, 2ks vejce, houskové knedlíky (150g)",
+              "price": "159 Kč"
             },
             {
               "name": "Kuřecí medailonky \"Eržika\", jemné paprikové omáčce smažené bramborové krokety, zelný salát (150g)",
@@ -156,14 +160,6 @@
             {
               "name": "Kuřecí směs po čínsku Sečuán se zeleninou, dušená rýže (150g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Kuřecí stehno po staročesku(slanina, česnek)domácí bramborová kaše ,okurka",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Smažená kuřecí kapsa plněná hermelínem a poličanem , domácí bramborová kaše, okurka, citron (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Smažený sýr Eidam, vařený brambor maštěný máslem, domácí tatarka (150g)",
@@ -325,7 +321,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-09-09T10:31:40.268Z",
+      "scrapedAt": "2026-09-09T10:46:23.615Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -447,7 +443,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 9.9.",
-      "scrapedAt": "2026-09-09T10:31:26.196Z",
+      "scrapedAt": "2026-09-09T10:46:10.521Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -821,7 +817,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-09T10:36:13.548Z",
+      "scrapedAt": "2026-09-09T10:50:53.648Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1022,7 +1018,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-09T10:31:40.383Z",
+      "scrapedAt": "2026-09-09T10:46:23.714Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1095,7 +1091,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-09-09T10:35:55.190Z",
+      "scrapedAt": "2026-09-09T10:50:37.135Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1283,7 +1279,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-09T10:31:40.382Z",
+      "scrapedAt": "2026-09-09T10:46:23.714Z",
       "sections": [
         {
           "title": "Nejprodávanější",
