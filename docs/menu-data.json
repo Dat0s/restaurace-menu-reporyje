@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T06:50:40.989Z",
+  "lastUpdated": "2026-09-14T07:01:04.332Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -653,18 +653,91 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-09-14T06:50:25.048Z",
+      "menuDate": "14.9. - 18.9.",
+      "scrapedAt": "2026-09-14T07:01:04.331Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Menu nebylo nalezeno. Podívejte se na Instagram ",
-              "name": "@svoboda_reznictvi",
-              "price": "",
-              "link": "https://www.instagram.com/svoboda_reznictvi/"
+              "name": "Dršťková polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Kuřecí čína, rýže",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Gulášová polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Srbské žebírko, brambor",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Zabijačková polévka (prdelačka)",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Špagety, mleté, sýr",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Franfurtská polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Vepřová pečeně, zelí, h.knedlík",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Hovězí polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Buchtičky se šodó",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
             }
           ]
         }
