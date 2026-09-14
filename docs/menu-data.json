@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T07:50:41.359Z",
+  "lastUpdated": "2026-09-14T08:00:38.603Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -235,18 +235,91 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-09-14T07:50:41.352Z",
+      "menuDate": "14.9.2026",
+      "scrapedAt": "2026-09-14T08:00:38.210Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Česnekový krém s krutony",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Holandský řízek, bramborová kaše",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Moravský vrabec, špenát, bramborový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Zelňačka s klobásou",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Drůbeží játra na cibulce s jasmínovou rýží",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2 : Svíčková na smetaně, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývars masovými knedlíčky a nudlemi",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Trhané kachní maso, červené zelí, bramboráčky",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Maďarský vepřový perkelt s těstovinami",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Dršťková z hlívy",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Zapečené těstoviny se sýrem, zelný salát",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Segedínský guláš, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Zeleninová",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Špagety s kuřecím masem, smetanou, rukoloua parmazánem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2 Smažený vepřový řízek, vařené brombor",
+              "price": "119 Kč"
             }
           ]
         }
