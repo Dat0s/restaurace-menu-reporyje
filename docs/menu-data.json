@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-09-18T12:20:52.240Z",
+  "lastUpdated": "2026-09-18T12:36:36.180Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Pátek 18. 9.",
-      "scrapedAt": "2026-09-18T12:16:05.204Z",
+      "scrapedAt": "2026-09-18T12:31:54.104Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -103,7 +103,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "18.09.2026",
-      "scrapedAt": "2026-09-18T12:16:22.320Z",
+      "scrapedAt": "2026-09-18T12:32:08.329Z",
       "sections": [
         {
           "title": "Polévky",
@@ -313,7 +313,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-09-18T12:16:21.270Z",
+      "scrapedAt": "2026-09-18T12:32:07.502Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -435,7 +435,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pátek 18.9.",
-      "scrapedAt": "2026-09-18T12:16:07.100Z",
+      "scrapedAt": "2026-09-18T12:31:55.702Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -805,7 +805,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-18T12:20:52.233Z",
+      "scrapedAt": "2026-09-18T12:36:36.172Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1006,7 +1006,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-18T12:16:21.377Z",
+      "scrapedAt": "2026-09-18T12:32:07.634Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1079,7 +1079,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-09-18T12:20:35.720Z",
+      "scrapedAt": "2026-09-18T12:36:19.972Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1267,7 +1267,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-18T12:16:21.377Z",
+      "scrapedAt": "2026-09-18T12:32:07.634Z",
       "sections": [
         {
           "title": "Nejprodávanější",
