@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T05:51:03.010Z",
+  "lastUpdated": "2026-09-21T06:02:45.552Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -226,18 +226,91 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-09-21T05:51:03.002Z",
+      "menuDate": "21.9.2026",
+      "scrapedAt": "2026-09-21T06:00:29.500Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Mexická fazolová",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Sekaná se sýrem, bramborová kaše",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Hovězí na houbách, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Frankfurtská",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřový španělský ptáček s rýží",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený sýr, vařené brambory, tatarská omáčka",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývars masem a kapáním",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Kuřecí „red curry,, s jasmínovou rýží",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřová roláda se šťouchaným bramborem",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Dršťková",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Pečené kuřecí stehno, špecle se zelím",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřové líčka na víně s bramborovou kaší",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Hráškový krém",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Plněné bramborové knedlíky se zelím, smažená cibulka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený vepřový řízek, bramborový salát",
+              "price": "119 Kč"
             }
           ]
         }
