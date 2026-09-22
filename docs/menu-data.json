@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-09-22T13:20:46.679Z",
+  "lastUpdated": "2026-09-22T13:36:08.815Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Úterý 22. 9.",
-      "scrapedAt": "2026-09-22T13:16:02.289Z",
+      "scrapedAt": "2026-09-22T13:31:23.058Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "22.09.2026",
-      "scrapedAt": "2026-09-22T13:16:17.134Z",
+      "scrapedAt": "2026-09-22T13:31:40.773Z",
       "sections": [
         {
           "title": "Polévky",
@@ -316,7 +316,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-09-22T13:16:16.193Z",
+      "scrapedAt": "2026-09-22T13:31:39.701Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -437,18 +437,18 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Úterý 22.9.",
-      "scrapedAt": "2026-09-22T13:16:03.818Z",
+      "menuDate": "Středa 23.9.",
+      "scrapedAt": "2026-09-22T13:31:25.577Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou  -TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "PO UTGulášová polévka",
+              "name": "Hrachová polévka s uzeninou",
               "price": "39 Kč"
             }
           ]
@@ -457,15 +457,15 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Pečená krkovice,špenát,mix knedlíků",
+              "name": "ST-M1Sekaná pečeně,bramborová kaše,okurka",
               "price": "159 Kč"
             },
             {
-              "name": "Mleté hovězí biftečky s nivou, opečený brambor",
-              "price": "169 Kč"
+              "name": "Masová směs v bramboráku,zelný salát",
+              "price": "159 Kč"
             },
             {
-              "name": "UT-MinKuřecí plátek s hermelínem,hranolky",
+              "name": "ST-Min Vepřová krkovice s pikantní švestkovou omáčkou, hranolky",
               "price": "169 Kč"
             },
             {
@@ -495,6 +495,15 @@
             {
               "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
               "price": "179 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Brownies",
+              "price": "59 Kč"
             }
           ]
         },
@@ -803,7 +812,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-22T13:20:46.672Z",
+      "scrapedAt": "2026-09-22T13:36:08.807Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -1004,7 +1013,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-22T13:16:16.301Z",
+      "scrapedAt": "2026-09-22T13:31:39.835Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1077,7 +1086,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-09-22T13:20:30.269Z",
+      "scrapedAt": "2026-09-22T13:35:52.366Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1265,7 +1274,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-09-22T13:16:16.300Z",
+      "scrapedAt": "2026-09-22T13:31:39.835Z",
       "sections": [
         {
           "title": "Nejprodávanější",
