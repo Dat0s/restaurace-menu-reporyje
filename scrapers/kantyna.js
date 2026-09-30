@@ -3,7 +3,7 @@ const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 const { runPythonScraper } = require("./py-bridge");
-const { isMenuFresh } = require("./utils");
+const { isMenuFresh, CLOSED_DAY_RE } = require("./utils");
 
 function isSupportedImageFormat(buf) {
   if (buf.length < 12) return false;
@@ -197,10 +197,55 @@ async function tryAutomated(useCookies = true) {
       "image URL(s)",
     );
 
-    return ocrImageUrls(allUrls);
+    // Full-resolution versions go first: ocrImageUrls keeps the first of
+    // equally-dated candidates, so they win over the feed copies of the same
+    // poster.
+    const fullRes = await collectFullResPhotos(page);
+    return ocrImageUrls([...fullRes, ...allUrls]);
   } finally {
     await browser.close();
   }
+}
+
+// The group feed only serves posters at ~526px wide, where Tesseract drops
+// whole lines (e.g. "Polévka: Gulášová" came out as "P i"). Each group photo's
+// own page (/photo/?fbid=…&set=g…) serves it at up to 2048px, so open the
+// newest few and return their largest image URLs. Best-effort: any failure
+// just leaves the feed-sized images to OCR.
+const MAX_FULL_RES_PHOTOS = 3;
+async function collectFullResPhotos(page) {
+  const urls = [];
+  try {
+    const photoPages = await page.evaluate(() =>
+      Array.from(document.querySelectorAll("a[href*='/photo']"))
+        .filter((a) => /[?&]set=g/.test(a.href) && a.querySelector("img"))
+        .map((a) => a.href),
+    );
+    const seen = new Set();
+    const unique = photoPages.filter((href) => {
+      const fbid = new URL(href).searchParams.get("fbid");
+      if (!fbid || seen.has(fbid)) return false;
+      seen.add(fbid);
+      return true;
+    });
+
+    for (const href of unique.slice(0, MAX_FULL_RES_PHOTOS)) {
+      await page.goto(href, { waitUntil: "networkidle2", timeout: 30000 });
+      await new Promise((r) => setTimeout(r, 1500));
+      const largest = await page.evaluate(
+        () =>
+          Array.from(document.querySelectorAll("img"))
+            .filter((img) => /scontent|fbcdn/.test(img.src))
+            .sort((a, b) => b.naturalWidth - a.naturalWidth)
+            .map((img) => ({ src: img.src, width: img.naturalWidth }))[0],
+      );
+      if (largest && largest.width > 600) urls.push(largest.src);
+    }
+  } catch (e) {
+    console.log("  Full-res photo lookup failed:", e.message);
+  }
+  console.log("  Full-res photo(s):", urls.length);
+  return urls;
 }
 
 // Fetch each URL; skip thumbnails (< 30KB); OCR the rest and return the
@@ -365,6 +410,14 @@ function parseMenuText(text) {
       continue;
     }
 
+    if (CLOSED_DAY_RE.test(line)) {
+      currentItems.push({
+        name: line.charAt(0) + line.slice(1).toLowerCase(),
+        price: "",
+      });
+      continue;
+    }
+
     const priceMatch = line.match(/^(.+?)\s+(\d+)\s*Kč\s*$/);
     if (priceMatch) {
       const name = priceMatch[1].replace(/[.\-–—,:]+$/, "").trim();
@@ -419,10 +472,13 @@ function parseMenuText(text) {
     // fewer means OCR dropped a line on this pass (seen in practice: a
     // garbled middle line vanishes entirely instead of being parsed) -
     // reject the whole result so the cascade retries a different image/tier
-    // rather than publishing an incomplete day.
+    // rather than publishing an incomplete day. A day that only carries a
+    // closure note ("STÁTNÍ SVÁTEK") is legitimately short.
     const MIN_ITEMS_PER_DAY = 3;
     const incompleteDay = cleanSections.find(
-      (s) => s.items.length < MIN_ITEMS_PER_DAY,
+      (s) =>
+        s.items.length < MIN_ITEMS_PER_DAY &&
+        !s.items.every((i) => CLOSED_DAY_RE.test(i.name)),
     );
     if (incompleteDay) {
       console.log(

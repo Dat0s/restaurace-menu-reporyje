@@ -39,6 +39,15 @@ if (-not (Test-Path $repo)) {
 }
 Set-Location $repo
 
+# A run caught up right after wake/boot (StartWhenAvailable) can start before
+# DNS works - git fetch then dies with "Could not resolve host: github.com".
+# Wait up to ~3 minutes for name resolution instead of losing the run.
+for ($i = 0; $i -lt 18; $i++) {
+    try { [void][System.Net.Dns]::GetHostAddresses("github.com"); break }
+    catch { Start-Sleep -Seconds 10 }
+}
+if ($i -gt 0) { Log "waited $($i * 10)s for network" }
+
 if (-not (Run-Logged "git fetch" { git fetch origin --quiet })) { exit 1 }
 if (-not (Run-Logged "git reset" { git reset --hard origin/master --quiet })) { exit 1 }
 

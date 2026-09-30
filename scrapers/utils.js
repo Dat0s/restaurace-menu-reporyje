@@ -70,10 +70,29 @@ function isMenuFresh(menuDate, now = new Date()) {
   return date >= monday && date <= upper;
 }
 
+// A weekly-menu day that only carries a closure note instead of dishes
+// (e.g. "STÁTNÍ SVÁTEK" on a public-holiday Monday). Parsers keep such a
+// line as the day's only item and exempt it from the items-per-day check.
+const CLOSED_DAY_RE = /sv[aá]tek|zav[řr]eno|nevař[ií]me|dovolen[aá]/i;
+
+// Mon-Fri range ("28.9. - 2.10.") of the working week a post belongs to, for
+// menus whose image carries no date. Weekend posts announce the next week.
+function weekRangeOf(date) {
+  const monday = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const dow = monday.getDay();
+  monday.setDate(monday.getDate() + (dow === 0 ? 1 : dow === 6 ? 2 : 1 - dow));
+  const friday = new Date(monday);
+  friday.setDate(monday.getDate() + 4);
+  const fmt = (d) => `${d.getDate()}.${d.getMonth() + 1}.`;
+  return `${fmt(monday)} - ${fmt(friday)}`;
+}
+
 module.exports = {
   readData,
   writeData,
   upsertRestaurant,
   isMenuFresh,
+  CLOSED_DAY_RE,
+  weekRangeOf,
   DATA_PATH,
 };

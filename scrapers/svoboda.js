@@ -3,10 +3,12 @@ const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 const { runPythonScraper } = require("./py-bridge");
-const { isMenuFresh } = require("./utils");
+const { isMenuFresh, CLOSED_DAY_RE, weekRangeOf } = require("./utils");
 
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
+const DAY_TITLES = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"];
 
 const IG_FETCH_HEADERS = {
   "X-IG-App-ID": "936619743392459",
@@ -56,11 +58,12 @@ function parseIgCookies(raw) {
     .filter(Boolean);
 }
 
-// Pulls post image URLs out of an intercepted Instagram API/GraphQL response.
+// Pulls post images out of an intercepted Instagram API/GraphQL response as
+// { url, takenAt } (takenAt = post time in unix seconds, or null).
 // Handles both the legacy web_profile_info shape (edge_owner_to_timeline_media)
 // and the newer GraphQL timeline shape (image_versions2 candidates).
-function extractPostImageUrls(json) {
-  const urls = [];
+function extractPostImages(json) {
+  const images = [];
   const edgeSets = [
     json?.data?.user?.edge_owner_to_timeline_media?.edges,
     json?.data?.xdt_api__v1__feed__user_timeline_graphql_connection?.edges,
@@ -76,7 +79,8 @@ function extractPostImageUrls(json) {
         node.carousel_media?.[0]?.image_versions2?.candidates?.[0]?.url,
       ];
       const url = candidates.find(Boolean);
-      if (url) urls.push(url);
+      const takenAt = node.taken_at ?? node.taken_at_timestamp ?? null;
+      if (url) images.push({ url, takenAt });
     }
   }
   // Plain feed/user responses have items[] instead of edges[]
@@ -85,10 +89,10 @@ function extractPostImageUrls(json) {
       const url =
         item?.image_versions2?.candidates?.[0]?.url ??
         item?.carousel_media?.[0]?.image_versions2?.candidates?.[0]?.url;
-      if (url) urls.push(url);
+      if (url) images.push({ url, takenAt: item.taken_at ?? null });
     }
   }
-  return urls;
+  return images;
 }
 
 async function scrapeSvoboda() {
@@ -107,9 +111,14 @@ async function scrapeSvoboda() {
   const py = await runPythonScraper("ig_profile_images.py");
   if (py && Array.isArray(py.images) && py.images.length > 0) {
     console.log("  Python tier returned", py.images.length, "image URL(s)");
-    const urls = py.images.map((i) => i.url).filter(Boolean);
+    const images = py.images
+      .filter((i) => i.url)
+      .map((i) => ({
+        url: i.url,
+        takenAt: i.date ? Date.parse(i.date) / 1000 : null,
+      }));
     const pyResult = freshOrNull(
-      await ocrImages(urls, "python"),
+      await ocrImages(images, "python"),
       "Python tier",
     );
     if (pyResult) return pyResult;
@@ -188,8 +197,7 @@ async function tryFetchStrategy({ cookieStr, csrfToken } = {}) {
   console.log("  Fetch: found", edges.length, "posts");
   if (edges.length === 0) return null;
 
-  const imageUrls = edges.map((e) => e.node.display_url).filter(Boolean);
-  return ocrImages(imageUrls, "fetch");
+  return ocrImages(extractPostImages(json), "fetch");
 }
 
 async function tryPuppeteerStrategy(useCookies = true) {
@@ -223,7 +231,7 @@ async function tryPuppeteerStrategy(useCookies = true) {
       ) {
         try {
           const json = await response.json().catch(() => null);
-          if (json) profileImages.push(...extractPostImageUrls(json));
+          if (json) profileImages.push(...extractPostImages(json));
         } catch {}
       }
     });
@@ -273,7 +281,7 @@ async function tryPuppeteerStrategy(useCookies = true) {
             .filter((u) => u && u.includes("cdninstagram")),
         )
         .catch(() => []);
-      profileImages.push(...domUrls);
+      profileImages.push(...domUrls.map((url) => ({ url, takenAt: null })));
       if (domUrls.length > 0) {
         console.log("  Collected", domUrls.length, "image URL(s) from DOM");
       }
@@ -296,16 +304,18 @@ async function tryPuppeteerStrategy(useCookies = true) {
   }
 }
 
-async function ocrImages(imageUrls, source) {
-  for (let idx = 0; idx < imageUrls.length; idx++) {
-    const imageUrl = imageUrls[idx];
+// images: [{ url, takenAt }] in feed order (newest first). takenAt (unix
+// seconds or null) lets an undated poster be accepted and dated by its post.
+async function ocrImages(images, source) {
+  for (let idx = 0; idx < images.length; idx++) {
+    const { url: imageUrl, takenAt } = images[idx];
     console.log(
       " ",
       source,
       "trying image",
       idx + 1,
       "/",
-      imageUrls.length,
+      images.length,
       ":",
       imageUrl.substring(0, 80) + "...",
     );
@@ -333,15 +343,30 @@ async function ocrImages(imageUrls, source) {
     } = await Tesseract.recognize(imgBuffer, "ces");
     console.log("  OCR text length:", text.length);
 
-    if (!/denn[ií]\s*menu/i.test(text)) {
-      console.log('  No "DENNÍ MENU" found, trying next...');
+    if (/denn[ií]\s*menu/i.test(text)) {
+      console.log('  Found "DENNÍ MENU" in image', idx + 1);
+      const parsed = parseMenuText(text);
+      if (parsed) return parsed;
+      console.log("  parseMenuText returned null, trying next...");
       continue;
     }
 
-    console.log('  Found "DENNÍ MENU" in image', idx + 1);
-    const parsed = parseMenuText(text);
-    if (parsed) return parsed;
-    console.log("  parseMenuText returned null, trying next...");
+    // Some weeks the poster has no "DENNÍ MENU 21.9.- 25.9." header (seen
+    // after a Monday public holiday: just ÚTERÝ…PÁTEK with dishes). Accept it
+    // only when the post itself is from the current week and the text parses
+    // into day sections, and date it by the post's week.
+    const postWeek = takenAt ? weekRangeOf(new Date(takenAt * 1000)) : null;
+    if (postWeek && isMenuFresh(postWeek)) {
+      const parsed = parseMenuText(text);
+      if (parsed && parsed.sections.some((s) => DAY_TITLES.includes(s.title))) {
+        console.log(
+          `  Undated day-by-day menu in image ${idx + 1}, dating by post week (${postWeek})`,
+        );
+        if (!parsed.menuDate) parsed.menuDate = postWeek;
+        return parsed;
+      }
+    }
+    console.log('  No "DENNÍ MENU" found, trying next...');
   }
 
   return null;
@@ -427,6 +452,14 @@ function parseMenuText(text) {
       continue;
     }
 
+    if (CLOSED_DAY_RE.test(line)) {
+      currentItems.push({
+        name: line.charAt(0) + line.slice(1).toLowerCase(),
+        price: "",
+      });
+      continue;
+    }
+
     const priceMatch = line.match(/^(.+?)\s+(\d+)\s*Kč\s*$/);
     if (priceMatch) {
       const name = priceMatch[1].replace(/[.\-–—,]+$/, "").trim();
@@ -471,7 +504,7 @@ function parseMenuText(text) {
   if (cleanSections.length === 0) return null;
 
   const hasDaySections = cleanSections.some((s) =>
-    ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"].includes(s.title),
+    DAY_TITLES.includes(s.title),
   );
 
   if (hasDaySections) {
@@ -480,10 +513,13 @@ function parseMenuText(text) {
     // items). A day with fewer means OCR dropped a line on this pass (seen
     // in practice: a garbled middle line vanishes entirely instead of being
     // parsed) - reject the whole result so the cascade retries a different
-    // image/tier rather than publishing an incomplete day.
+    // image/tier rather than publishing an incomplete day. A day that only
+    // carries a closure note ("STÁTNÍ SVÁTEK") is legitimately short.
     const MIN_ITEMS_PER_DAY = 3;
     const incompleteDay = cleanSections.find(
-      (s) => s.items.length < MIN_ITEMS_PER_DAY,
+      (s) =>
+        s.items.length < MIN_ITEMS_PER_DAY &&
+        !s.items.every((i) => CLOSED_DAY_RE.test(i.name)),
     );
     if (incompleteDay) {
       console.log(
