@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-19T15:02:54.231Z",
+  "lastUpdated": "2026-10-19T15:11:16.309Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Neděle 18. 10.",
-      "scrapedAt": "2026-10-19T15:01:28.787Z",
+      "scrapedAt": "2026-10-19T15:09:09.132Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -115,7 +115,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "19.10.2026",
-      "scrapedAt": "2026-10-19T15:01:43.768Z",
+      "scrapedAt": "2026-10-19T15:09:24.823Z",
       "sections": [
         {
           "title": "Polévky",
@@ -223,7 +223,7 @@
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
       "menuDate": "19.10.2026",
-      "scrapedAt": "2026-10-19T15:02:46.501Z",
+      "scrapedAt": "2026-10-19T15:11:01.315Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -317,7 +317,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-10-19T15:01:42.753Z",
+      "scrapedAt": "2026-10-19T15:09:23.686Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -438,80 +438,9 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Pondělí 19.10.",
-      "scrapedAt": "2026-10-19T15:01:29.870Z",
+      "menuDate": "Polední menu nenalezeno",
+      "scrapedAt": "2026-10-19T15:09:10.717Z",
       "sections": [
-        {
-          "title": "POLÉVKA",
-          "items": [
-            {
-              "name": "Hovězí vývar s nudlemi a zeleninou -TÝDEN",
-              "price": "39 Kč"
-            },
-            {
-              "name": "PO-P1Italská polévka s bazalkou",
-              "price": "39 Kč"
-            }
-          ]
-        },
-        {
-          "title": "POLEDNÍ MENU",
-          "items": [
-            {
-              "name": "Kuřecí stehno na paprice s houskovým knedlíkem",
-              "price": "159 Kč"
-            },
-            {
-              "name": "Vepřové nudličky \"Itálie\",těstoviny penne",
-              "price": "159 Kč"
-            },
-            {
-              "name": "PO-Min Přírodní vepřová krkovice se slaninou, sázené vejce, hranolky",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený eidam s vařeným bramborem, domácí tatarka",
-              "price": "169 Kč"
-            },
-            {
-              "name": "EXELENT HOT BURGER",
-              "price": "199 Kč"
-            },
-            {
-              "name": "LUCKY BBQ burger",
-              "price": "199 Kč"
-            },
-            {
-              "name": "Smažený kuřecí řízek s domácím bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Smažený vepřový řízek s domácí bramborovým salátem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "Marinovaná křídla s teriyaki omáčkou a hranolkami,coleslaw salát",
-              "price": "179 Kč"
-            },
-            {
-              "name": "Obalovaná křídla HOT s chipotle omáčkou, hranolky,coleslaw salát",
-              "price": "179 Kč"
-            },
-            {
-              "name": "T10Smažená sýrová jehla s vařeným bramborem, tatarská omáčka",
-              "price": "169 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DEZERT",
-          "items": [
-            {
-              "name": "Brownies",
-              "price": "59 Kč"
-            }
-          ]
-        },
         {
           "title": "CELODENNÍ BURGER MENU",
           "items": [
@@ -724,7 +653,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-10-19T15:01:57.909Z",
+      "scrapedAt": "2026-10-19T15:09:41.081Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -744,7 +673,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T15:02:54.226Z",
+      "scrapedAt": "2026-10-19T15:11:16.301Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -945,7 +874,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T15:01:42.965Z",
+      "scrapedAt": "2026-10-19T15:09:23.947Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1018,8 +947,17 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-10-19T15:01:58.213Z",
+      "scrapedAt": "2026-10-19T15:09:41.427Z",
       "sections": [
+        {
+          "title": "Happy Hour",
+          "items": [
+            {
+              "name": "Po–Pá 11:30–13:30: maki sushi zdarma ke každému hlavnímu jídlu",
+              "price": ""
+            }
+          ]
+        },
         {
           "title": "Mama Bowls",
           "items": [
@@ -1109,7 +1047,7 @@
               "description": "křupavé taštičky s šťavnatou masovo-zeleninovou náplní, podávané se chilli-mayo a unagi omáčkou"
             },
             {
-              "name": "Ha Cảo Háp (4 ks)",
+              "name": "Ha Cảo Hấp (4 ks)",
               "price": "109 Kč",
               "description": "napařované tapiokové knedličky plněné krevetami, podávané s unagi omáčkou"
             },
@@ -1217,7 +1155,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T15:01:42.965Z",
+      "scrapedAt": "2026-10-19T15:09:23.947Z",
       "sections": [
         {
           "title": "Nejprodávanější",
