@@ -1,1 +1,4 @@
 node_modules/
+__pycache__/
+# tesseract.js language cache, downloaded on first OCR run
+*.traineddata

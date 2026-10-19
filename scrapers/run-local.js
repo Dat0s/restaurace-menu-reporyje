@@ -52,7 +52,11 @@ async function main() {
     for (const r of results) {
       console.log(`${r.ok ? "OK   " : "STALE"} ${r.name}: ${r.reason}`);
     }
-    stale = results.filter((r) => !r.ok).map((r) => r.name);
+    // checkLiveMenus covers every daily-menu restaurant (for the e-mail
+    // alert); only the Meta-walled ones can be helped by a local scrape
+    stale = results
+      .filter((r) => !r.ok && WATCHED.includes(r.name))
+      .map((r) => r.name);
   }
 
   if (stale.length === 0) {

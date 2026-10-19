@@ -2,13 +2,13 @@
 
 Agregátor poledních menu restaurací v Řeporyjích. Automaticky stahuje aktuální nabídky každých 15 minut a zobrazuje je na jedné stránce.
 
-**🌐 [dat0s.github.io/restaurace-menu-reporyje](https://dat0s.github.io/restaurace-menu-reporyje/)**
+**🌐 [jidlo.reporyje.info](https://jidlo.reporyje.info/)**
 
 ## Restaurace
 
 | Restaurace           | Typ menu         | Zdroj dat                     |
 | -------------------- | ---------------- | ----------------------------- |
-| Kavárna na Náměstí   | Denní            | HTML scraping                 |
+| Bistro a Kavárna Na náměstí | Denní     | HTML scraping                 |
 | Řeporyjská Sokolovna | Denní            | Next.js JSON                  |
 | Pivovar Řeporyje     | Denní (po dnech) | OCR z obrázku                 |
 | Jídelna Pohotovka    | Denní            | JSON API                      |
@@ -17,6 +17,7 @@ Agregátor poledních menu restaurací v Řeporyjích. Automaticky stahuje aktu�
 | HQ Pippi Grill       | Stálé            | Statické                      |
 | DÖNER KEBAB HOUSE    | Stálé            | Statické                      |
 | Papa Cipolla         | Stálé            | Statické                      |
+| Mama Bowl            | Stálé            | Statické (ručně přepsané z obrázků) |
 
 ## Jak to funguje
 
@@ -31,11 +32,14 @@ GitHub Actions (každých 15 min) → Node.js scrapery → menu-data.json → Gi
 
 ### Kantýna STAPO a Řeznictví Svoboda
 
-Meta blokuje IP adresy GitHub Actions, takže automatické stahování z Facebooku/Instagramu většinou selže. Scrapery proto používají třístupňový postup:
+Facebook i Instagram vyžadují přihlášení, proto scrapery používají cookies throwaway účtů (GitHub secrets `FB_COOKIES` / `IG_COOKIES`, návod v [`scrapers/py/README.md`](scrapers/py/README.md)). S platnými cookies funguje stahování i z GitHub Actions; po jejich expiraci spadnou obě restaurace na záložní kartu a je potřeba cookies znovu vyexportovat. Postup má čtyři stupně:
 
-1. Pokus o automatické stažení (funguje z domácí IP, v CI zpravidla ne)
-2. OCR ručně nahraného obrázku z `menu-images/kantyna.jpg` nebo `menu-images/svoboda.jpg`
-3. Záložní karta s odkazem na Facebook / Instagram
+1. Automatické stažení přes puppeteer (s cookies)
+2. Python scrapery (facebook-scraper / instaloader)
+3. OCR ručně nahraného obrázku z `menu-images/kantyna.jpg` nebo `menu-images/svoboda.jpg`
+4. Záložní karta s odkazem na Facebook / Instagram
+
+Jako záloha běží na domácím PC naplánovaná úloha `ReporyjeMenuScrape` (Po/Út/Pá 7–11 h, nastavení `scripts/setup-local-task.ps1`), která stáhne menu z domácí IP, pokud na webu není aktuální.
 
 **Jak aktualizovat menu ručně** (bez PC, bez skriptů):
 
@@ -48,7 +52,9 @@ Meta blokuje IP adresy GitHub Actions, takže automatické stahování z Faceboo
 
 ```bash
 npm ci
+pip install -r scrapers/py/requirements.txt   # volitelné, Python stupeň pro FB/IG
 npm run scrape
+node scripts/prerender.js
 # Otevřete docs/index.html v prohlížeči
 ```
 
