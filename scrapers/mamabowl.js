@@ -32,6 +32,24 @@ async function scrapeMamaBowl() {
             description:
               "Křupavá pečená kachna, rýže, wakame, edamame, okurka, čerstvá červená a nakládaná žlutá ředkev s Hoisin omáčkou",
           },
+          {
+            name: "Chicken Teriyaki Bowl",
+            price: "229 Kč",
+            description:
+              "Křupavé kuřecí Katsu na rýži s čerstvým salátem a okurkou, přelité teriyaki omáčkou a posypané sezamem",
+          },
+          {
+            name: "Duck Teriyaki Bowl",
+            price: "249 Kč",
+            description:
+              "Křupavá kachna na rýži s čerstvým salátem a okurkou, přelité teriyaki omáčkou a posypané sezamem",
+          },
+          {
+            name: "Gà Go Bowl",
+            price: "179 Kč",
+            description:
+              "3× křupavý kuřecí strip, batátové hranolky + 1 omáčka zdarma dle výběru (další extra 20 Kč)",
+          },
         ],
       },
       {
@@ -60,12 +78,6 @@ async function scrapeMamaBowl() {
             price: "199 Kč",
             description:
               "Čerstvý mangový salát a hovězím masem s naším speciálním dresinkem a praženými arašídy",
-          },
-          {
-            name: "Phởčko",
-            price: "199 Kč",
-            description:
-              "Vietnamská polévka s plochými rýžovými nudlemi, hovězím nebo kuřecím masem, jarní cibulkou a koriandrem",
           },
         ],
       },
@@ -124,10 +136,14 @@ async function scrapeMamaBowl() {
       {
         title: "Domácí Drinky",
         items: [
-          { name: "Domácí Limonáda", price: "68 Kč" },
+          {
+            name: "Domácí Limonáda",
+            price: "79 Kč",
+            description: "mangová limonáda s citronovou trávou a limetkou",
+          },
           {
             name: "Časadá (trà sả đá)",
-            price: "85 Kč",
+            price: "89 Kč",
             description: "domácí ledový čaj s příchutí citronové trávy",
           },
           {
