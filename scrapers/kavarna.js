@@ -55,11 +55,24 @@ async function scrapeKavarna() {
     }
   });
 
+  // Closed on Mondays — the site still shows Sunday's menu then. Drop that daily
+  // section and prepend the "closed" marker the frontend collapses the rest behind.
+  // A non-date menuDate keeps check-freshness from flagging Sunday's date as stale.
+  const isClosedMonday = new Date().getDay() === 1 && !/^pondělí/i.test(menuDate);
+  if (isClosedMonday) {
+    const permanent = sections.filter(s => s.title !== 'Hlavní jídla');
+    sections.length = 0;
+    sections.push(
+      { title: '', items: [{ name: 'Na dnes není žádné denní menu', price: '' }] },
+      ...permanent
+    );
+  }
+
   return {
     name: 'Bistro a Kavárna Na náměstí',
     source: 'https://kavarnananamesti.cz/#Menu',
     phone: '+420 739 563 091',
-    menuDate,
+    menuDate: isClosedMonday ? 'V pondělí zavřeno' : menuDate,
     scrapedAt: new Date().toISOString(),
     sections
   };
