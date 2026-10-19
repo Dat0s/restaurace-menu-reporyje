@@ -46,7 +46,7 @@ GitHub Actions (cron */15) → scrapers/run-light.js → docs/menu-data.json
 
 - **scrapers/** — One file per restaurant, each exports an async function returning a standardized object
 - **scrapers/run-light.js** — Orchestrator: runs all scrapers, upserts into JSON, sorts daily-menu restaurants first, then static-menu ones (each group by Czech collation)
-- **scrapers/utils.js** — `readData()`, `writeData()`, `upsertRestaurant()`, `isMenuFresh()` for docs/menu-data.json
+- **scrapers/utils.js** — `readData()`, `writeData()`, `upsertRestaurant()` for docs/menu-data.json, plus helpers shared by the OCR parsers: `isMenuFresh()`, `CLOSED_DAY_RE`, `stripAllergens()`, `weekRangeOf()` (see Key Gotchas)
 - **scripts/prerender.js** — Injects static HTML for each restaurant between `<!-- PRE-RENDERED-MENU -->` markers in `docs/index.html` so crawlers without JS still see menu content; `docs/script.js` replaces it client-side with the interactive version. Runs after every scrape (CI and local task alike) — a manual edit to `menu-data.json` without re-running this leaves the pre-rendered HTML stale.
 - **docs/** — Static frontend (index.html, script.js, style.css) served by GitHub Pages from /docs on master, custom domain via `docs/CNAME`
 - **menu-images/** — Manual fallback intake folder: user uploads `kantyna.jpg` / `svoboda.jpg` weekly via github.com when automated Meta scraping fails
