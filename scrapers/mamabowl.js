@@ -12,6 +12,15 @@ async function scrapeMamaBowl() {
     scrapedAt: new Date().toISOString(),
     sections: [
       {
+        title: "Happy Hour",
+        items: [
+          {
+            name: "Po–Pá 11:30–13:30: maki sushi zdarma ke každému hlavnímu jídlu",
+            price: "",
+          },
+        ],
+      },
+      {
         title: "Mama Bowls",
         items: [
           {
@@ -114,7 +123,7 @@ async function scrapeMamaBowl() {
               "křupavé taštičky s šťavnatou masovo-zeleninovou náplní, podávané se chilli-mayo a unagi omáčkou",
           },
           {
-            name: "Ha Cảo Háp (4 ks)",
+            name: "Ha Cảo Hấp (4 ks)",
             price: "109 Kč",
             description:
               "napařované tapiokové knedličky plněné krevetami, podávané s unagi omáčkou",
