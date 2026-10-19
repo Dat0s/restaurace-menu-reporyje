@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-19T14:52:48.532Z",
+  "lastUpdated": "2026-10-19T14:58:37.249Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "Neděle 18. 10.",
-      "scrapedAt": "2026-10-19T14:50:59.961Z",
+      "scrapedAt": "2026-10-19T14:56:58.755Z",
       "sections": [
         {
           "title": "Hlavní jídla",
@@ -115,7 +115,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "19.10.2026",
-      "scrapedAt": "2026-10-19T14:51:18.340Z",
+      "scrapedAt": "2026-10-19T14:57:13.876Z",
       "sections": [
         {
           "title": "Polévky",
@@ -223,7 +223,7 @@
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
       "menuDate": "19.10.2026",
-      "scrapedAt": "2026-10-19T14:52:35.738Z",
+      "scrapedAt": "2026-10-19T14:58:25.291Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -317,7 +317,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-10-19T14:51:17.090Z",
+      "scrapedAt": "2026-10-19T14:57:12.713Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -439,7 +439,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Pondělí 19.10.",
-      "scrapedAt": "2026-10-19T14:51:01.209Z",
+      "scrapedAt": "2026-10-19T14:57:00.143Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -724,7 +724,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-10-19T14:51:35.851Z",
+      "scrapedAt": "2026-10-19T14:57:29.553Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -744,7 +744,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T14:52:48.523Z",
+      "scrapedAt": "2026-10-19T14:58:37.242Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -945,7 +945,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T14:51:17.211Z",
+      "scrapedAt": "2026-10-19T14:57:12.829Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1018,7 +1018,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-10-19T14:51:36.174Z",
+      "scrapedAt": "2026-10-19T14:57:29.878Z",
       "sections": [
         {
           "title": "Mama Bowls",
@@ -1037,6 +1037,21 @@
               "name": "Mama Bowl Crispy Duck",
               "price": "259 Kč",
               "description": "Křupavá pečená kachna, rýže, wakame, edamame, okurka, čerstvá červená a nakládaná žlutá ředkev s Hoisin omáčkou"
+            },
+            {
+              "name": "Chicken Teriyaki Bowl",
+              "price": "229 Kč",
+              "description": "Křupavé kuřecí Katsu na rýži s čerstvým salátem a okurkou, přelité teriyaki omáčkou a posypané sezamem"
+            },
+            {
+              "name": "Duck Teriyaki Bowl",
+              "price": "249 Kč",
+              "description": "Křupavá kachna na rýži s čerstvým salátem a okurkou, přelité teriyaki omáčkou a posypané sezamem"
+            },
+            {
+              "name": "Gà Go Bowl",
+              "price": "179 Kč",
+              "description": "3× křupavý kuřecí strip, batátové hranolky + 1 omáčka zdarma dle výběru (další extra 20 Kč)"
             }
           ]
         },
@@ -1062,11 +1077,6 @@
               "name": "Mango Beef",
               "price": "199 Kč",
               "description": "Čerstvý mangový salát a hovězím masem s naším speciálním dresinkem a praženými arašídy"
-            },
-            {
-              "name": "Phởčko",
-              "price": "199 Kč",
-              "description": "Vietnamská polévka s plochými rýžovými nudlemi, hovězím nebo kuřecím masem, jarní cibulkou a koriandrem"
             }
           ]
         },
@@ -1120,11 +1130,12 @@
           "items": [
             {
               "name": "Domácí Limonáda",
-              "price": "68 Kč"
+              "price": "79 Kč",
+              "description": "mangová limonáda s citronovou trávou a limetkou"
             },
             {
               "name": "Časadá (trà sả đá)",
-              "price": "85 Kč",
+              "price": "89 Kč",
               "description": "domácí ledový čaj s příchutí citronové trávy"
             },
             {
@@ -1206,7 +1217,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-19T14:51:17.211Z",
+      "scrapedAt": "2026-10-19T14:57:12.829Z",
       "sections": [
         {
           "title": "Nejprodávanější",
