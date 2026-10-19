@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
+const { stripAllergens } = require("./utils");
 
 async function scrapePivovar() {
   const day = new Date().getDay(); // 0 = Sunday, 6 = Saturday
@@ -181,7 +182,7 @@ async function scrapePivovar() {
       // Match: "Item name — 60 Kč" or "Item name 155 Kč" (price at end)
       const priceInLine = line.match(/^(.+?)\s+(\d+)\s*[Kk][čc]\s*$/);
       if (priceInLine) {
-        const name = priceInLine[1].replace(/[.\-–—,]+$/, "").trim();
+        const name = stripAllergens(priceInLine[1]);
         if (name.length > 2) {
           currentItems.push({ name, price: priceInLine[2] + " Kč" });
         }
@@ -206,7 +207,7 @@ async function scrapePivovar() {
 
       if (nextIsPrice && line.length > 3) {
         currentItems.push({
-          name: line.replace(/[.\-–—,]+$/, "").trim(),
+          name: stripAllergens(line),
           price: "",
         });
         continue;
@@ -215,7 +216,7 @@ async function scrapePivovar() {
       // Regular food item line
       if (line.length > 5 && /[a-záčďéěíňóřšťúůýž]/i.test(line)) {
         currentItems.push({
-          name: line.replace(/[.\-–—,]+$/, "").trim(),
+          name: stripAllergens(line),
           price: "",
         });
       }

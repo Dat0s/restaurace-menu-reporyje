@@ -3,7 +3,7 @@ const path = require("path");
 const puppeteer = require("puppeteer");
 const Tesseract = require("tesseract.js");
 const { runPythonScraper } = require("./py-bridge");
-const { isMenuFresh, CLOSED_DAY_RE } = require("./utils");
+const { isMenuFresh, CLOSED_DAY_RE, stripAllergens } = require("./utils");
 
 function isSupportedImageFormat(buf) {
   if (buf.length < 12) return false;
@@ -420,7 +420,7 @@ function parseMenuText(text) {
 
     const priceMatch = line.match(/^(.+?)\s+(\d+)\s*Kč\s*$/);
     if (priceMatch) {
-      const name = priceMatch[1].replace(/[.\-–—,:]+$/, "").trim();
+      const name = stripAllergens(priceMatch[1]);
       if (name.length > 2) {
         currentItems.push({ name, price: priceMatch[2] + " Kč" });
       }
@@ -439,7 +439,7 @@ function parseMenuText(text) {
 
     if (line.length > 10 && /[a-záčďéěíňóřšťúůýž]/i.test(line)) {
       currentItems.push({
-        name: line.replace(/[.\-–—,:]+$/, "").trim(),
+        name: stripAllergens(line),
         price: defaultPrice,
       });
     }

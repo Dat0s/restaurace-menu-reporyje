@@ -75,6 +75,31 @@ function isMenuFresh(menuDate, now = new Date()) {
 // line as the day's only item and exempt it from the items-per-day check.
 const CLOSED_DAY_RE = /sv[aá]tek|zav[řr]eno|nevař[ií]me|dovolen[aá]/i;
 
+// Allergen codes (EU list 1-14) that OCR glues onto a dish name: "(1,3,7)",
+// "A: 1,3,7" or trailing "1,3,7" / "15357" / "13:7", often with the "A" prefix
+// misread as "L", "NA", "Al" ("tatarská omáčka NA7", "zabijačková L3,7,9").
+// A code list never starts with 0, so volumes like "0,5" survive.
+const ALLERGEN_CODES = String.raw`[1-9]\d*(?:\s*[,.:;/]\s*\d+)*`;
+const ALLERGEN_PARENS_RE = new RegExp(
+  String.raw`\s*\(\s*(?:[A-Za-z]{1,2}\s*[:.]?\s*)?${ALLERGEN_CODES}\s*\)`,
+  "g",
+);
+const ALLERGEN_TRAILING_RE = new RegExp(
+  String.raw`\s+(?:(?:alergeny|[A-Za-z]{1,2})\s*[:.]?\s*)?${ALLERGEN_CODES}\s*[.,]?$`,
+  "i",
+);
+
+// Use on every OCR'd dish name (not on raw lines - dates and prices must stay).
+function stripAllergens(name) {
+  let s = name.replace(ALLERGEN_PARENS_RE, "");
+  let prev;
+  do {
+    prev = s;
+    s = s.replace(ALLERGEN_TRAILING_RE, "");
+  } while (s !== prev);
+  return s.replace(/[.\-–—,:;]+$/, "").trim();
+}
+
 // Mon-Fri range ("28.9. - 2.10.") of the working week a post belongs to, for
 // menus whose image carries no date. Weekend posts announce the next week.
 function weekRangeOf(date) {
@@ -93,6 +118,7 @@ module.exports = {
   upsertRestaurant,
   isMenuFresh,
   CLOSED_DAY_RE,
+  stripAllergens,
   weekRangeOf,
   DATA_PATH,
 };
