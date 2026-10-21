@@ -1,20 +1,16 @@
 {
-  "lastUpdated": "2026-10-21T08:16:47.807Z",
+  "lastUpdated": "2026-10-21T08:32:03.695Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
-      "menuDate": "Úterý 20. 10.",
-      "scrapedAt": "2026-10-21T08:15:59.188Z",
+      "menuDate": "Středa 21. 10.",
+      "scrapedAt": "2026-10-21T08:31:15.283Z",
       "sections": [
         {
           "title": "Hlavní jídla",
           "items": [
-            {
-              "name": "Houbová polévka",
-              "price": "75 Kč"
-            },
             {
               "name": "Frankfurtská polévka",
               "price": "75 Kč"
@@ -22,6 +18,10 @@
             {
               "name": "Houbový karbanátek s bramborovou kaší",
               "price": "195 Kč"
+            },
+            {
+              "name": "Tagliatelle Bolognese s parmazánem",
+              "price": "235 Kč"
             },
             {
               "name": "Segedín - plněný kynutý knedlík vepřovým masem se segedínskou omáčkou",
@@ -40,8 +40,8 @@
               "price": "285 Kč"
             },
             {
-              "name": "Massaman curry s kuřecím masem, bramborami a jasmínovou rýží",
-              "price": "245 Kč"
+              "name": "Španělský ptáček s rýží",
+              "price": "285 Kč"
             }
           ]
         },
@@ -70,11 +70,7 @@
               "price": "55 Kč"
             },
             {
-              "name": "Linecký koláč s hruškami a drobenkou",
-              "price": "95 Kč"
-            },
-            {
-              "name": "Mrkvový dort",
+              "name": "Švestkovo-mandlový koláč s mascarpone",
               "price": "95 Kč"
             },
             {
@@ -83,6 +79,10 @@
             },
             {
               "name": "Nutelový cheesecake s lískovými oříšky",
+              "price": "95 Kč"
+            },
+            {
+              "name": "Brownie",
               "price": "95 Kč"
             }
           ]
@@ -107,7 +107,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "21.10.2026",
-      "scrapedAt": "2026-10-21T08:16:13.880Z",
+      "scrapedAt": "2026-10-21T08:31:31.617Z",
       "sections": [
         {
           "title": "Polévky",
@@ -328,7 +328,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-10-21T08:16:12.774Z",
+      "scrapedAt": "2026-10-21T08:31:30.419Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -450,7 +450,7 @@
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
       "menuDate": "Středa 21.10.",
-      "scrapedAt": "2026-10-21T08:16:00.447Z",
+      "scrapedAt": "2026-10-21T08:31:16.760Z",
       "sections": [
         {
           "title": "POLÉVKA",
@@ -735,7 +735,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-10-21T08:16:30.697Z",
+      "scrapedAt": "2026-10-21T08:31:46.541Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -755,7 +755,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-21T08:16:47.799Z",
+      "scrapedAt": "2026-10-21T08:32:03.687Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -956,7 +956,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-21T08:16:12.886Z",
+      "scrapedAt": "2026-10-21T08:31:30.535Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -1029,7 +1029,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-10-21T08:16:31.139Z",
+      "scrapedAt": "2026-10-21T08:31:46.860Z",
       "sections": [
         {
           "title": "Happy Hour",
@@ -1237,7 +1237,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-21T08:16:12.886Z",
+      "scrapedAt": "2026-10-21T08:31:30.535Z",
       "sections": [
         {
           "title": "Nejprodávanější",
