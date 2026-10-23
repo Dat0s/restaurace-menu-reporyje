@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T16:02:14.629Z",
+  "lastUpdated": "2026-10-23T16:08:51.544Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -728,18 +728,91 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-10-23T16:01:56.676Z",
+      "menuDate": "19.10. - 23.10.",
+      "scrapedAt": "2026-10-23T16:08:51.538Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Menu nebylo nalezeno. Podívejte se na Instagram ",
-              "name": "@svoboda_reznictvi",
-              "price": "",
-              "link": "https://www.instagram.com/svoboda_reznictvi/"
+              "name": "Dršťková polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Katův šleh, rýže",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Gulášová polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Vepřové na paprice, těstoviny",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Uzené maso (krk, bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Zabijačková polévka (prdelačka)",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Pečené kuře, brambor",
+              "price": "139 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka s játrovou rýží",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Svíčková omáčka, h.maso, h.knedlík",
+              "price": "159 Kč"
+            },
+            {
+              "name": "Uzené maso (krk,bok, koleno), pečené koleno",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Hovězí polévka",
+              "price": "39 Kč"
+            },
+            {
+              "name": "Smažený řízek, br.salát",
+              "price": "149 Kč"
+            },
+            {
+              "name": "Pečené maso (krk,bok,koleno), ovarové maso",
+              "price": ""
             }
           ]
         }
