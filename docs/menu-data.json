@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T08:46:44.810Z",
+  "lastUpdated": "2026-10-26T09:01:13.948Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -202,18 +202,87 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-10-26T08:46:44.805Z",
+      "menuDate": "26.10.2026",
+      "scrapedAt": "2026-10-26T09:00:33.437Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Cibulačka s vejcem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Trhané maso s červeným zelím, bramboráčky",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2 : Vepřový španělský ptáček s rýží",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Vývar s masem a kapáním",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřový perkelt s tarhoňou",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2 : Smažený sýr, vařené brambory, tatarská omáčka",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Státní svátek",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Dršťková z hlívy",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Špagety bolognese s parmazánem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřové na paprice, houskový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Frankfurtská",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Halušky se zelím a slaninou",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený kuřecí řízek, bramborovou kaší",
+              "price": "119 Kč"
+            },
+            {
+              "name": "DOBROU CHUT",
+              "price": "119 Kč"
             }
           ]
         }
