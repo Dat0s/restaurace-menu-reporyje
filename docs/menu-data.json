@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-26T19:32:04.580Z",
+  "lastUpdated": "2026-10-26T19:46:57.296Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "V pondělí zavřeno",
-      "scrapedAt": "2026-10-26T19:31:15.893Z",
+      "scrapedAt": "2026-10-26T19:46:00.289Z",
       "sections": [
         {
           "title": "",
@@ -79,7 +79,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "26.10.2026",
-      "scrapedAt": "2026-10-26T19:31:35.434Z",
+      "scrapedAt": "2026-10-26T19:46:25.579Z",
       "sections": [
         {
           "title": "Polévky",
@@ -274,7 +274,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-10-26T19:31:34.610Z",
+      "scrapedAt": "2026-10-26T19:46:24.252Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -395,19 +395,32 @@
       "name": "Řeporyjská Sokolovna",
       "source": "https://reporyjskasokolovna.cz/",
       "phone": "+420 731 484 493",
-      "menuDate": "Pondělí 26.10.",
-      "scrapedAt": "2026-10-26T19:31:17.048Z",
+      "menuDate": "Úterý 27.10.",
+      "scrapedAt": "2026-10-26T19:46:11.383Z",
       "sections": [
         {
           "title": "POLÉVKA",
           "items": [
             {
-              "name": "Hovězí vývar s nudlemi a zeleninou -TÝDEN",
+              "name": "Hovězí vývar s nudlemi a zeleninou-TÝDEN",
               "price": "39 Kč"
             },
             {
-              "name": "Zelná polévka s klobásou",
+              "name": "PO UTBoršč se zakysanou smetanou",
               "price": "39 Kč"
+            }
+          ]
+        },
+        {
+          "title": "DEZERT",
+          "items": [
+            {
+              "name": "Čokoládové brownies",
+              "price": "59 Kč"
+            },
+            {
+              "name": "Tradiční jablkový štrůdl s křupavým těstem plným měkkých jablek kořenícího skořice a rozinek",
+              "price": "60 Kč"
             }
           ]
         },
@@ -415,15 +428,15 @@
           "title": "POLEDNÍ MENU",
           "items": [
             {
-              "name": "Maďarský guláš s houskovým knedlíkem",
-              "price": "169 Kč"
-            },
-            {
-              "name": "PO-M2Smažená kuřecí játra,brambory,tatarská omáčka",
+              "name": "Krůtí roláda s listovým špenátem, šťouchaný brambor",
               "price": "159 Kč"
             },
             {
-              "name": "PO-Min Přírodní vepřová krkovice s karamelizovanou cibulkou, hranolky",
+              "name": "Vepřové ragů na paprice,houskový knedlík",
+              "price": "159 Kč"
+            },
+            {
+              "name": "UT-MinKuřecí plátek zapečený se sýrem a šunkou., hranolky",
               "price": "169 Kč"
             },
             {
@@ -455,21 +468,8 @@
               "price": "179 Kč"
             },
             {
-              "name": "T10Sýrový mix ( gouda,hermelín ),brambory,tatarská omáčka",
+              "name": "Sýrový mix ( gouda,hermelín ),brambory,tatarská omáčka",
               "price": "169 Kč"
-            }
-          ]
-        },
-        {
-          "title": "DEZERT",
-          "items": [
-            {
-              "name": "Brownies",
-              "price": "59 Kč"
-            },
-            {
-              "name": "Tradiční jablkový štrůdl s křupavým těstem plným měkkých jablek kořenícího skořice a rozinek",
-              "price": "60 Kč"
             }
           ]
         },
@@ -689,7 +689,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-10-26T19:31:48.553Z",
+      "scrapedAt": "2026-10-26T19:46:40.767Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -709,7 +709,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-26T19:32:04.575Z",
+      "scrapedAt": "2026-10-26T19:46:57.289Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -910,7 +910,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-26T19:31:34.706Z",
+      "scrapedAt": "2026-10-26T19:46:24.371Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -983,7 +983,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-10-26T19:31:48.909Z",
+      "scrapedAt": "2026-10-26T19:46:41.182Z",
       "sections": [
         {
           "title": "Happy Hour",
@@ -1191,7 +1191,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-10-26T19:31:34.706Z",
+      "scrapedAt": "2026-10-26T19:46:24.371Z",
       "sections": [
         {
           "title": "Nejprodávanější",
