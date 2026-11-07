@@ -15,6 +15,17 @@ const {
   isMenuFresh,
 } = require("./utils");
 
+// Undated posters (e.g. Svoboda after a holiday) have an empty menuDate, so
+// freshness is judged by when the menu was scraped: since this week's Monday.
+function scrapedThisWeek(scrapedAt, now = new Date()) {
+  const t = new Date(scrapedAt);
+  if (isNaN(t)) return false;
+  const monday = new Date(now);
+  monday.setHours(0, 0, 0, 0);
+  monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
+  return t >= monday;
+}
+
 async function main() {
   const data = readData();
 
@@ -51,8 +62,9 @@ async function main() {
         if (
           existing &&
           !existing.isFallback &&
-          existing.menuDate &&
-          isMenuFresh(existing.menuDate)
+          (existing.menuDate
+            ? isMenuFresh(existing.menuDate)
+            : scrapedThisWeek(existing.scrapedAt))
         ) {
           console.log(`  SKIP: fallback card (keeping fresh previous menu)`);
           continue;
