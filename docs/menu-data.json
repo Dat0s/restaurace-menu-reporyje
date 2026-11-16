@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-16T09:02:11.581Z",
+  "lastUpdated": "2026-11-16T09:16:41.621Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
       "source": "https://kavarnananamesti.cz/#Menu",
       "phone": "+420 739 563 091",
       "menuDate": "V pondělí zavřeno",
-      "scrapedAt": "2026-11-16T09:01:19.828Z",
+      "scrapedAt": "2026-11-16T09:15:56.247Z",
       "sections": [
         {
           "title": "",
@@ -75,7 +75,7 @@
       "source": "https://pohotovka.cz/#menu",
       "phone": "+420 775 104 350",
       "menuDate": "16.11.2026",
-      "scrapedAt": "2026-11-16T09:01:33.496Z",
+      "scrapedAt": "2026-11-16T09:16:10.434Z",
       "sections": [
         {
           "title": "Polévky",
@@ -130,12 +130,16 @@
               "price": "159 Kč"
             },
             {
-              "name": "Vepřová plec na paprice, kolínka (150g)",
+              "name": "Vepřová plec na paprice, houskový knedlík (150g)",
               "price": "159 Kč"
             },
             {
               "name": "Vepřová plec v mrkvi, vařené brambory (150g)",
               "price": "159 Kč"
+            },
+            {
+              "name": "Vepřový steak zapečený se šunkou a sýrem, smažené hranolky, tatarská omáčka (150g)",
+              "price": "169 Kč"
             },
             {
               "name": "Zabijačková jitrnička, bílé zelí, vařený brambor (150g)",
@@ -144,10 +148,6 @@
             {
               "name": "Zapečené francouzské brambory s uzeninou a vejci, znojemská okurka (400g)",
               "price": "159 Kč"
-            },
-            {
-              "name": "Zapečený vepřový steak s šunkou a sýrem, smažené smažené hranolky,domácí tatarská omáčka, zelný salát (150g)",
-              "price": "169 Kč"
             },
             {
               "name": "Slovenské halušky s brynzou, škvařenou slaninou a cibulkou (300g)",
@@ -197,7 +197,7 @@
       "phone": "+420 739 657 009",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-11-16T09:02:11.573Z",
+      "scrapedAt": "2026-11-16T09:16:41.614Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -217,7 +217,7 @@
       "source": "https://pivovarfood.cz/#catering",
       "phone": "+420 274 772 837",
       "menuDate": "",
-      "scrapedAt": "2026-11-16T09:01:32.736Z",
+      "scrapedAt": "2026-11-16T09:16:09.538Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -358,7 +358,7 @@
       "phone": "+420 251 625 847",
       "menuDate": "",
       "isFallback": true,
-      "scrapedAt": "2026-11-16T09:01:54.947Z",
+      "scrapedAt": "2026-11-16T09:16:25.490Z",
       "sections": [
         {
           "title": "Polední menu",
@@ -378,7 +378,7 @@
       "source": "https://menunet.cz/restaurace/ChIJ78awPAC9C0cRPWrWLiVLFyE/delivery-menu-id/",
       "phone": "+420 731 585 442",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-11-16T09:02:11.573Z",
+      "scrapedAt": "2026-11-16T09:16:41.614Z",
       "sections": [
         {
           "title": "DÖNER KEBAB",
@@ -579,7 +579,7 @@
       "source": "https://pippigrill-stodulky.choiceqr.com/section:menu/sendvice-s-pastrami",
       "phone": "+420 774 304 494",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-11-16T09:01:32.853Z",
+      "scrapedAt": "2026-11-16T09:16:09.635Z",
       "sections": [
         {
           "title": "Do křupava smažené",
@@ -652,7 +652,7 @@
       "source": "https://mamabowl.cz/menu",
       "phone": "+420 704 246 868",
       "menuDate": "",
-      "scrapedAt": "2026-11-16T09:01:55.594Z",
+      "scrapedAt": "2026-11-16T09:16:26.274Z",
       "sections": [
         {
           "title": "Happy Hour",
@@ -860,7 +860,7 @@
       "source": "https://speedlo.cz/app/pizzacipolla/papa-cipolla-reporyje/wb/menu",
       "phone": "+420 725 558 866",
       "menuDate": "Stálé menu",
-      "scrapedAt": "2026-11-16T09:01:32.853Z",
+      "scrapedAt": "2026-11-16T09:16:09.635Z",
       "sections": [
         {
           "title": "Nejprodávanější",
