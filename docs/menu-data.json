@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T07:46:39.747Z",
+  "lastUpdated": "2026-11-20T07:54:46.600Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -238,18 +238,83 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-11-20T07:46:39.742Z",
+      "menuDate": "16.11.2026",
+      "scrapedAt": "2026-11-20T07:54:39.829Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Česneková s vejcem a krutony",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Segedínský guláš s houskovým knedlíkem",
+              "price": "119 Kč"
+            },
+            {
+              "name": "| 2 : Smažený květák, vařené brambory, tatarská omáčka",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Státní svátek",
+              "price": ""
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývar s masovými knedlíčky a nudlemi",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Paprikový lusk v rajské omáčce s rýží",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2 : Kuřecí stripsy v panco strouhance, šťouchané brambory",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Čtvrtek",
+          "items": [
+            {
+              "name": "Polévka: Gulášová",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Špagety s boloňskou omáčkou, parmazán",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Kuřecí kapsa se šunkou a sýrem, bramborová kaše",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Bramboračka s houbami",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Plněné bramborové knedlíky uzeným masem, zelí",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený vepřový řízek, bramborový salát",
+              "price": "119 Kč"
             }
           ]
         }
