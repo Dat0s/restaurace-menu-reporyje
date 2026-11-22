@@ -6,7 +6,7 @@
 # Required env: DEPLOY_KEY (write deploy key, private part) or GITHUB_TOKEN,
 #               FB_COOKIES, IG_COOKIES (same format as the GitHub secrets)
 # Optional env: RUN_TOKEN (enables POST /run?token=... manual trigger)
-FROM node:20-bookworm-slim
+FROM node:24-bookworm-slim
 
 ENV TZ=Europe/Prague \
     DEBIAN_FRONTEND=noninteractive \
@@ -31,7 +31,10 @@ RUN python3 -m venv /opt/venv \
 ENV PATH=/opt/venv/bin:$PATH
 
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund && npx puppeteer browsers install chrome
+# Skip the postinstall download (it can leave a half-extracted folder) and
+# install Chrome explicitly instead
+RUN PUPPETEER_SKIP_DOWNLOAD=1 npm ci --no-audit --no-fund \
+    && npx puppeteer browsers install chrome
 
 COPY . .
 RUN chmod +x scripts/server-scrape.sh
