@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T12:21:40.421Z",
+  "lastUpdated": "2026-11-22T12:29:13.985Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -208,7 +208,7 @@
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
       "menuDate": "16.11.2026",
-      "scrapedAt": "2026-11-22T12:21:31.998Z",
+      "scrapedAt": "2026-11-22T12:28:50.042Z",
       "sections": [
         {
           "title": "Pondělí",
@@ -597,8 +597,8 @@
       "name": "Řeznictví Svoboda",
       "source": "https://www.instagram.com/svoboda_reznictvi/",
       "phone": "+420 251 625 847",
-      "menuDate": "16.11. - 20.11.",
-      "scrapedAt": "2026-11-22T12:20:45.877Z",
+      "menuDate": "",
+      "scrapedAt": "2026-11-22T12:29:13.985Z",
       "sections": [
         {
           "title": "Polední menu",
