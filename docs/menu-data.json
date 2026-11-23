@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T09:17:58.093Z",
+  "lastUpdated": "2026-11-23T09:27:54.694Z",
   "restaurants": [
     {
       "name": "Bistro a Kavárna Na náměstí",
@@ -201,18 +201,86 @@
       "name": "Kantýna STAPO",
       "source": "https://www.facebook.com/groups/1396911425536833",
       "phone": "+420 739 657 009",
-      "menuDate": "",
-      "isFallback": true,
-      "scrapedAt": "2026-11-23T09:17:58.083Z",
+      "menuDate": "23.11.2026",
+      "scrapedAt": "2026-11-23T09:27:29.246Z",
       "sections": [
         {
-          "title": "Polední menu",
+          "title": "Pondělí",
           "items": [
             {
-              "prefix": "Dnešní menu se nepodařilo načíst — aktuální nabídku najdete na ",
-              "name": "Facebooku Kantýny STAPO",
-              "price": "",
-              "link": "https://www.facebook.com/groups/1396911425536833"
+              "name": "Polévka: Květákový krém",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Holandský řízek, bramborová kaše",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Znojemská pečeně s houskovým knedlíkem",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Úterý",
+          "items": [
+            {
+              "name": "Polévka: Smetanová zelná",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Smažené žampiony, vařené brambory, tatarská omáčka",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřové výpečky, špenát, bramborový knedlík",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Středa",
+          "items": [
+            {
+              "name": "Polévka: Vývar s játrovou rýží a nudlemi",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Zapečené těstoviny se sýrem, zelný salát",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Vepřový závitek s klobásou, rýže",
+              "price": "119 Kč"
+            },
+            {
+              "name": "Polévka: Dršťková",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Vepřový katův šleh s bramboráčky",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Kuřecí špíz s klobásou, vařené brambory",
+              "price": "119 Kč"
+            }
+          ]
+        },
+        {
+          "title": "Pátek",
+          "items": [
+            {
+              "name": "Polévka: Hráškový krém s krutony",
+              "price": "119 Kč"
+            },
+            {
+              "name": "1: Sekaná ve svíčkové omáčce, houskový knedlík",
+              "price": "119 Kč"
+            },
+            {
+              "name": "2: Smažený kuřecí řízek, bramborovou kaší",
+              "price": "119 Kč"
             }
           ]
         }
